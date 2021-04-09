@@ -5,7 +5,7 @@
  */
 package Entities;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 /**
  *
@@ -15,10 +15,24 @@ public class Offre_Emploi {
 
     private int id,category_id;
     private String titre, poste, description, location, file, email;
-    private Date date_debut, date_expiration;
-    private float max_salary, min_salary;
+    private LocalDate date_debut, date_expiration;
+    private int max_salary, min_salary;
 
     public Offre_Emploi() {
+    }
+
+    public Offre_Emploi(int category_id, String titre, String poste, String description, String location, String file, String email, LocalDate date_debut, LocalDate date_expiration, int max_salary, int min_salary) {
+        this.category_id = category_id;
+        this.titre = titre;
+        this.poste = poste;
+        this.description = description;
+        this.location = location;
+        this.file = file;
+        this.email = email;
+        this.date_debut = date_debut;
+        this.date_expiration = date_expiration;
+        this.max_salary = max_salary;
+        this.min_salary = min_salary;
     }
 
     public int getId() {
@@ -77,61 +91,53 @@ public class Offre_Emploi {
         this.email = email;
     }
 
-    public Date getDate_debut() {
+    public LocalDate getDate_debut() {
         return date_debut;
     }
 
-    public void setDate_debut(Date date_debut) {
+    public void setDate_debut(LocalDate date_debut) {
         this.date_debut = date_debut;
     }
 
-    public Date getDate_expiration() {
+    public LocalDate getDate_expiration() {
         return date_expiration;
     }
 
-    public void setDate_expiration(Date date_expiration) {
+    public void setDate_expiration(LocalDate date_expiration) {
         this.date_expiration = date_expiration;
     }
 
-    public float getMax_salary() {
+    public int getMax_salary() {
         return max_salary;
     }
 
-    public void setMax_salary(float max_salary) {
+    public void setMax_salary(int max_salary) {
         this.max_salary = max_salary;
     }
 
-    public float getMin_salary() {
+    public int getMin_salary() {
         return min_salary;
     }
 
-    public void setMin_salary(float min_salary) {
+    public void setMin_salary(int min_salary) {
         this.min_salary = min_salary;
     }
 
     @Override
     public String toString() {
-        return ("Offre_Emploi [date_debut="
-                + date_debut
-                + ", date_expiration="
-                + date_expiration
-                + ", description="
-                + description
-                + ", email="
-                + email
-                + ", file="
-                + file
-                + ", location="
-                + location
-                + ", max_salary="
-                + max_salary
-                + ", min_salary="
-                + min_salary
-                + ", poste="
-                + poste
-                + ", titre="
-                + titre
-                + "]");
+        return "Offre_Emploi{" +
+                "category_id=" + category_id +
+                ", titre='" + titre + '\'' +
+                ", poste='" + poste + '\'' +
+                ", description='" + description + '\'' +
+                ", location='" + location + '\'' +
+                ", file='" + file + '\'' +
+                ", email='" + email + '\'' +
+                ", date_debut=" + date_debut +
+                ", date_expiration=" + date_expiration +
+                ", max_salary=" + max_salary +
+                ", min_salary=" + min_salary +
+                '}';
     }
 
     @Override
@@ -176,32 +182,4 @@ public class Offre_Emploi {
         this.category_id = category_id;
     }
 
-    public Offre_Emploi(
-            int id,
-            String titre,
-            String poste,
-            String description,
-            String location,
-            String file,
-            String email,
-            Date date_debut,
-            Date date_expiration,
-            float max_salary,
-            float min_salary,
-            int category
-    ) {
-        this.id = id;
-        this.titre = titre;
-        this.poste = poste;
-        this.description = description;
-        this.location = location;
-        this.file = file;
-        this.email = email;
-        this.date_debut = date_debut;
-        this.date_expiration = date_expiration;
-        this.max_salary = max_salary;
-        this.min_salary = min_salary;
-        this.category_id = category;
-    }
-    
 }
