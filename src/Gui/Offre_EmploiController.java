@@ -6,10 +6,12 @@
 package Gui;
 
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 
+import Entities.Offre_Emploi;
 import Services.Offre_Emploi_Service;
-import javafx.event.ActionEvent;
+import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -44,7 +46,7 @@ public class Offre_EmploiController implements Initializable {
     @FXML
     private TextField tfmin;
     @FXML
-    private ChoiceBox<?> choicecateg;
+    private ChoiceBox<String> choicecateg;
     @FXML
     private Label lbRes;
     @FXML
@@ -55,17 +57,28 @@ public class Offre_EmploiController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+        choicecateg.setItems(FXCollections.observableArrayList(new Offre_Emploi_Service().getCateg())
+        );
+
+        addoffer1.setOnAction(e -> {
+            Offre_Emploi offer = new Offre_Emploi(Integer.parseInt(String.valueOf(choicecateg.getValue())),
+                    tftitle.getText(), tfpost.getText(), tfdesc.getText(), tfloc.getText(), tffile.getText(),
+                    tfemil.getText(), LocalDate.now(), tfexp.getValue(), Integer.parseInt(tfmax.getText()),
+                    Integer.parseInt(tfmin.getText())
+            );
+            new Offre_Emploi_Service().add(offer);
+            afficherOffres();
+        });
+    }
 
     @FXML
-    private void afficherOffres(ActionEvent event) {
+    private void afficherOffres() {
         new Offre_Emploi_Service()
                 .getAll()
                 .stream()
                 .forEach(p -> {
-            lbRes.setText(lbRes.getText()+'\n'+p.toString());
-        });
+                    lbRes.setText(lbRes.getText() + '\n' + p.toString());
+                });
     }
-    
+
 }

@@ -24,12 +24,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="2ebab25f-6027-4964-b68e-97f2758ad027">
-        <schema name="jobapplication" object-types="function, view, dataset trigger, index, table, column, constraint, procedure" />
-        <schema name="mysql" object-types="function, view, table, procedure" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="2ebab25f-6027-4964-b68e-97f2758ad027">
@@ -41,6 +36,9 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="2ebab25f-6027-4964-b68e-97f2758ad027" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="2ebab25f-6027-4964-b68e-97f2758ad027" dataset="jobapplication.offre_emploi" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />

@@ -61,7 +61,7 @@
             <Label layoutX="281.0" layoutY="117.0" prefHeight="18.0" prefWidth="58.0" text="E-mail" />
             <Label layoutX="281.0" layoutY="153.0" prefHeight="18.0" prefWidth="71.0" text="Max Salary" />
             <Label layoutX="281.0" layoutY="189.0" prefHeight="18.0" prefWidth="71.0" text="Min Salary" />
-            <Label layoutX="281.0" layoutY="225.0" prefHeight="18.0" prefWidth="151.0" text="Expiration date" />
+            <Label layoutX="281.0" layoutY="225.0" prefHeight="18.0" prefWidth="90.0" text="Expiration date" />
             <TextField fx:id="tfmin" layoutX="375.0" layoutY="187.0" />
             <Label layoutX="281.0" layoutY="265.0" prefHeight="18.0" prefWidth="90.0" text="Category" />
             <ChoiceBox fx:id="choicecateg" layoutX="376.0" layoutY="262.0" prefWidth="150.0" />
