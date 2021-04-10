@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/jfx-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/jfx-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Offre_Emploi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Offre_Emploi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_EmploiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_EmploiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Offre_Emploi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Offre_Emploi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre_EmploiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +21,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/javafx-sdk-16/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.21717791" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -67,5 +59,19 @@
       <updated>1617981630771</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="266" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618092563065">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="266" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1618092563065" />
+    <state x="393" y="214" key="FileChooserDialogImpl" timestamp="1618091828308">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="393" y="214" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618091828308" />
+    <state x="167" y="47" key="SettingsEditor" timestamp="1618091863753">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="167" y="47" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618091863753" />
   </component>
 </project>
