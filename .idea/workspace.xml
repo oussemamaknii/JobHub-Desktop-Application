@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Gui/AddOffre_EmploiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/DeletOffreEmploi.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_Emploi.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_EmploiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/AddOffre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre_EmploiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/AddOffre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/AddOffre_Emploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/AddOffre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/AddOffre_EmploiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/DeletOffreEmploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/DeletOffreEmploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/DeletOffreEmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/DeletOffreEmploiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,5 +90,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

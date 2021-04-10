@@ -5,7 +5,8 @@
  */
 package Interfaces;
 
-import java.util.ArrayList;
+import Entities.Offre_Emploi;
+import javafx.collections.ObservableList;
 
 /**
  *
@@ -15,6 +16,6 @@ import java.util.ArrayList;
 public interface IService<T> {
 
     public void add(T entity);
-
-    public ArrayList<T> getAll();
+    public void deleteoffre(String id);
+    public ObservableList<Offre_Emploi> getAll();
 }
