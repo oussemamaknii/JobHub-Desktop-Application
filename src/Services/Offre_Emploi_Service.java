@@ -31,17 +31,31 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
 
     public ArrayList<String> getCateg() {
         ArrayList<String> ids = new ArrayList<>();
-        String request = "select id from Category";
+        String request = "select titre from Category";
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);
             while (rs.next()) {
-                ids.add(String.valueOf(rs.getInt("id")));
+                ids.add(rs.getString("titre"));
             }
         } catch (SQLException troubles) {
             troubles.printStackTrace();
         }
         return ids;
+    }
+    public int getCategId(String value){
+        int result = 0;
+        String request = "select id from Category where titre = '" + value+"'";
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                result = rs.getInt("id");
+            }
+        } catch (SQLException troubles) {
+            troubles.printStackTrace();
+        }
+        return result;
     }
 
     @Override

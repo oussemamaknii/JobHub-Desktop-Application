@@ -61,7 +61,7 @@ public class Offre_EmploiController implements Initializable {
         );
 
         addoffer1.setOnAction(e -> {
-            Offre_Emploi offer = new Offre_Emploi(Integer.parseInt(String.valueOf(choicecateg.getValue())),
+            Offre_Emploi offer = new Offre_Emploi(new Offre_Emploi_Service().getCategId(choicecateg.getValue()),
                     tftitle.getText(), tfpost.getText(), tfdesc.getText(), tfloc.getText(), tffile.getText(),
                     tfemil.getText(), LocalDate.now(), tfexp.getValue(), Integer.parseInt(tfmax.getText()),
                     Integer.parseInt(tfmin.getText())
