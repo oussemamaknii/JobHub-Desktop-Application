@@ -25,7 +25,7 @@ import javafx.scene.control.TextField;
  *
  * @author souso
  */
-public class Offre_EmploiController implements Initializable {
+public class AddOffre_EmploiController implements Initializable {
 
     @FXML
     private TextField tfpost;
