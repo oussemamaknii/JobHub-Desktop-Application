@@ -5,38 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/Commande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/Paiement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/Panier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/Produit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/IServiceCommande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/IServicePaiment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/IServicePanier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/IServiceProduit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/ServiceCommande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/ServicePaiment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/ServicePanier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/ServiceProduit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Mail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Offre_Emploi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Offre_Emploi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_EmploiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_EmploiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Connexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Connexion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Offre_Emploi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Offre_Emploi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre_EmploiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
-    </list>
+    <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
