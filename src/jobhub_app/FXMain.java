@@ -27,7 +27,7 @@ public class FXMain extends Application {
         primaryStage.setScene(new Scene(parent));
         primaryStage.setTitle("JobHub Application");
         primaryStage.show();
-/*
+     /*
         primaryStage.setTitle("TalkTo");
         primaryStage.show();*/
     }
