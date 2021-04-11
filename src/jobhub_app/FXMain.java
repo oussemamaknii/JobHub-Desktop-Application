@@ -22,14 +22,14 @@ public class FXMain extends Application {
     
     @Override
     public void start(Stage primaryStage) throws IOException{
-       /* URL root_url = new File("src/Gui/Offre_Emploi.fxml").toURI().toURL();
+        URL root_url = new File("src/Gui/Offre Emploi/Offre_Emploi.fxml").toURI().toURL();
         Parent parent = FXMLLoader.load(root_url);
         primaryStage.setScene(new Scene(parent));
         primaryStage.setTitle("TalkTo");
-        primaryStage.show(); */
-
-        primaryStage.setTitle("TalkTo");
         primaryStage.show();
+/*
+        primaryStage.setTitle("TalkTo");
+        primaryStage.show();*/
     }
 
     /**

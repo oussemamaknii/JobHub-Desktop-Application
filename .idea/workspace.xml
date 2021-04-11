@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/jfx-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/jfx-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Category.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Offre_Emploi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Offre_Emploi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_Emploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_Emploi.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_EmploiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_EmploiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Offre_Emploi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Offre_Emploi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre_EmploiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Connexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Connexion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/PanierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/PanierController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Offre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre Emploi/Offre_Emploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,15 +51,22 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files (x86)/MySQL/Connector J 8.0" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.21717791" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Offre Emploi" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="FXMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="jobhub_app.FXMain" />
       <module name="JobHub_App" />
       <option name="VM_PARAMETERS" value="--module-path C:\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml" />
@@ -84,5 +96,16 @@
       <updated>1617981630771</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

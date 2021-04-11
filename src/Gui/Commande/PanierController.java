@@ -6,9 +6,8 @@
 package Gui.Commande;
 
 import Entities.Panier;
-//import Entitie.User.User;
 import Entities.Cart;
-import GUI.Stock.ShopController2;
+import Gui.Produit.ShopController2;
 import animatefx.animation.Bounce;
 import animatefx.animation.FadeInDown;
 import java.io.IOException;
