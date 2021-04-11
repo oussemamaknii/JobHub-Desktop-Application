@@ -5,7 +5,6 @@
  */
 package Gui;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
@@ -14,7 +13,6 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
 import Entities.Offre_Emploi;
 import Services.Offre_Emploi_Service;
@@ -24,9 +22,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.StageStyle;
 
 /**
  * FXML Controller class
@@ -83,7 +79,7 @@ public class AddOffre_EmploiController implements Initializable {
         try {
             Stage stage1 = (Stage) displaybtn.getScene().getWindow();
             stage1.close();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("DeletOffreEmploi.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Offre Emploi/DeletOffreEmploi.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
             stage.setTitle("JobHub Application");
