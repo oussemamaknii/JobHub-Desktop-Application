@@ -5,10 +5,15 @@
  */
 package Gui;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import Entities.Offre_Emploi;
 import Services.Offre_Emploi_Service;
 import javafx.collections.FXCollections;
@@ -17,7 +22,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 /**
@@ -25,7 +29,7 @@ import javafx.scene.control.TextField;
  *
  * @author souso
  */
-public class Offre_EmploiController implements Initializable {
+public class AddOffre_EmploiController implements Initializable {
 
     @FXML
     private TextField tfpost;
@@ -48,17 +52,16 @@ public class Offre_EmploiController implements Initializable {
     @FXML
     private ChoiceBox<String> choicecateg;
     @FXML
-    private Label lbRes;
-    @FXML
     private Button addoffer1;
+    @FXML
+    private Button displaybtn;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        choicecateg.setItems(FXCollections.observableArrayList(new Offre_Emploi_Service().getCateg())
-        );
+        choicecateg.setItems(FXCollections.observableArrayList(new Offre_Emploi_Service().getCateg()));
 
         addoffer1.setOnAction(e -> {
             Offre_Emploi offer = new Offre_Emploi(new Offre_Emploi_Service().getCategId(choicecateg.getValue()),
@@ -73,12 +76,18 @@ public class Offre_EmploiController implements Initializable {
 
     @FXML
     private void afficherOffres() {
-        new Offre_Emploi_Service()
-                .getAll()
-                .stream()
-                .forEach(p -> {
-                    lbRes.setText(lbRes.getText() + '\n' + p.toString());
-                });
+        try {
+            Stage stage1 = (Stage) displaybtn.getScene().getWindow();
+            stage1.close();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Offre Emploi/DeletOffreEmploi.fxml"));
+            Parent root1 = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("JobHub Application");
+            stage.setScene(new Scene(root1));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }

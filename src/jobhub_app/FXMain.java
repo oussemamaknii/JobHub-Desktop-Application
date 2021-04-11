@@ -25,7 +25,7 @@ public class FXMain extends Application {
         URL root_url = new File("src/Gui/Offre Emploi/Offre_Emploi.fxml").toURI().toURL();
         Parent parent = FXMLLoader.load(root_url);
         primaryStage.setScene(new Scene(parent));
-        primaryStage.setTitle("TalkTo");
+        primaryStage.setTitle("JobHub Application");
         primaryStage.show();
 /*
         primaryStage.setTitle("TalkTo");

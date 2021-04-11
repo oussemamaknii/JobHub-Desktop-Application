@@ -11,16 +11,16 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Calendar;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import Entities.Offre_Emploi;
 import Utils.Connexion;
 import Interfaces.IService;
-import Entities.Category;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 /**
  * @author souso
@@ -43,6 +43,22 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         }
         return ids;
     }
+
+    public String getOffreCateg(String id){
+        String ids ="";
+        String request = "select titre from Category where id = '"+id+"'";
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                ids = rs.getString("titre");
+            }
+        } catch (SQLException troubles) {
+            troubles.printStackTrace();
+        }
+        return ids;
+    }
+
     public int getCategId(String value){
         int result = 0;
         String request = "select id from Category where titre = '" + value+"'";
@@ -57,10 +73,20 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         }
         return result;
     }
+    @Override
+    public void deleteoffre(String id){
+        String request = "delete from offre_emploi where id = '" +id+"'";
+        try {
+            Statement statement = cnx.createStatement();
+            statement.executeUpdate(request);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
 
     @Override
-    public ArrayList<Offre_Emploi> getAll() {
-        ArrayList<Offre_Emploi> offres = new ArrayList<>();
+    public ObservableList<Offre_Emploi> getAll() {
+        ObservableList<Offre_Emploi> offres = FXCollections.observableArrayList();
         String request = "select * from Offre_Emploi";
         try {
             Statement statement = cnx.createStatement();
@@ -105,6 +131,21 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
             st.setDate(9, Date.valueOf(entity.getDate_expiration()));
             st.setInt(10, entity.getMax_salary());
             st.setInt(11, entity.getMin_salary());
+            st.executeUpdate();
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+    }
+
+    public void updateoffre(Offre_Emploi entity, AtomicReference<Offre_Emploi> off){
+        try {
+            String request
+                    = "update offre_emploi set titre = '"+entity.getTitre()+"' ,poste = '"+entity.getPoste()+
+                    "', description = '"+entity.getDescription()+"', location = '"+entity.getLocation()+
+                    "', file = '"+entity.getFile()+"', email = '"+entity.getEmail()+"',categorie_id = "+entity.getCategory()
+                    + ", date_expiration = '"+entity.getDate_expiration()+
+                    "',max_salary = '"+entity.getMax_salary()+"', min_salary = '"+entity.getMin_salary()+"' where id = '"+off.get().getId()+"'";
+            PreparedStatement st = cnx.prepareStatement(request);
             st.executeUpdate();
         } catch (SQLException e) {
             Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
