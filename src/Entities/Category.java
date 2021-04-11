@@ -100,5 +100,5 @@ public class Category {
         this.descriptionc = descriptionc;
         this.couleur = couleur;
     }
-    
+
 }

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <?import com.jfoenix.controls.JFXButton?> -->
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="712.0" prefWidth="1223.0" style="-fx-border-color: transparent;" styleClass="CenterContent" stylesheets="@Commande.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Commande.PanierController">
+   <children>
+      <ScrollPane prefHeight="712.0" prefWidth="1223.0" style="-fx-background-color: transparent;" styleClass="CenterContent" stylesheets="@Commande.css">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1095.0" prefWidth="1216.0" style="-fx-background-color: #FBFCFE; -fx-border-width: 0px 0px 0px 0px;" styleClass="CenterContent" stylesheets="@Commande.css">
+               <children>
+                  <Pane fx:id="banner" layoutX="45.0" layoutY="39.0" prefHeight="146.0" prefWidth="1095.0" styleClass="banner" stylesheets="@Commande.css">
+                     <children>
+                        <Label layoutX="47.0" layoutY="14.0" text="PANIER" textFill="WHITE">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="50.0" prefHeight="31.0" prefWidth="309.0" text="Lorem Ipsum is simply dummy text of the printing" textFill="WHITE">
+                           <font>
+                              <Font name="Source Sans Pro" size="14.0" />
+                           </font>
+                        </Label>
+                       <!-- <JFXButton layoutX="37.0" layoutY="91.0" styleClass="visiterSiteEnLigne" stylesheets="@Commande.css" text="Visiter notre site en ligne" textFill="WHITE" /> -->
+                        <ImageView fitHeight="111.0" fitWidth="183.0" layoutX="919.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/cycling-clipart-animation-2-or-unscreen.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <TableView fx:id="panierView" layoutX="23.0" layoutY="302.0" onMouseClicked="#displaySelected" prefHeight="200.0" prefWidth="677.0" stylesheets="@Commande.css">
+                    <columns>
+                      <TableColumn fx:id="image" prefWidth="110.99996948242188" text="Image" />
+                      <TableColumn fx:id="nom" prefWidth="150.0" text="Nom" />
+                        <TableColumn fx:id="prix" prefWidth="148.0" text="Prix" />
+                        <TableColumn fx:id="quantite" prefWidth="120.0" text="Quantite" />
+                        <TableColumn fx:id="remove" prefWidth="147.0" text="Remove" />
+                    </columns>
+                  </TableView>
+                  <Pane layoutX="859.0" layoutY="299.0" prefHeight="259.0" prefWidth="288.0" style="-fx-background-color: white;" styleClass="EvenementSingle" stylesheets="@Commande.css">
+                     <children>
+                        <Label layoutX="80.0" layoutY="14.0" text="Total Panier">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="73.0" text="SubTotal">
+                           <font>
+                              <Font name="Source Sans Pro" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="115.0" text="Shipping">
+                           <font>
+                              <Font name="Source Sans Pro" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="157.0" text="Taxe Valeur Ajoutée">
+                           <font>
+                              <Font name="Source Sans Pro" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="subTotal" layoutX="189.0" layoutY="73.0" text="\$7500">
+                           <font>
+                              <Font name="Source Sans Pro" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="190.0" layoutY="115.0" text="\$350">
+                           <font>
+                              <Font name="Source Sans Pro" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="193.0" layoutY="157.0" text="\$500">
+                           <font>
+                              <Font name="Source Sans Pro" size="16.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="-3.0" layoutY="203.0" prefHeight="3.0" prefWidth="293.0" styleClass="dividorPane" stylesheets="@Commande.css" />
+                        <Label layoutX="14.0" layoutY="215.0" text="Total">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="total" layoutX="193.0" layoutY="215.0" text="\$500">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <!--
+                  <JFXButton layoutX="862.0" layoutY="600.0" onAction="#displayAdresse" prefHeight="33.0" prefWidth="273.0" ripplerFill="WHITE" style="-fx-background-color: #106AD2;" text="Passer à la commande" textFill="WHITE">
+                     <font>
+                        <Font name="Source Sans Pro Semibold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="862.0" layoutY="648.0" onAction="#displayCatalogue" prefHeight="33.0" prefWidth="273.0" ripplerFill="WHITE" style="-fx-background-color: #106AD2;" text="Retourner au catalogue" textFill="WHITE">
+                     <font>
+                        <Font name="Source Sans Pro Semibold" size="12.0" />
+                     </font>
+                  </JFXButton> -->
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
