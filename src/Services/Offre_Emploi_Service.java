@@ -73,7 +73,7 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         }
         return result;
     }
-    @Override
+
     public void deleteoffre(String id){
         String request = "delete from offre_emploi where id = '" +id+"'";
         try {
@@ -85,7 +85,7 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
     }
 
     @Override
-    public ObservableList<Offre_Emploi> getAll() {
+    public ObservableList<Offre_Emploi> getAll(int id) {
         ObservableList<Offre_Emploi> offres = FXCollections.observableArrayList();
         String request = "select * from Offre_Emploi";
         try {
@@ -101,16 +101,32 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
                 offre.setFile(rs.getString("file"));
                 offre.setEmail(rs.getString("email"));
                 offre.setDate_debut(rs.getDate("date_debut").toLocalDate());
-                offre.setDate_debut(rs.getDate("date_expiration").toLocalDate());
+                offre.setDate_expiration(rs.getDate("date_expiration").toLocalDate());
                 offre.setMax_salary(rs.getInt("max_salary"));
                 offre.setMin_salary(rs.getInt("min_salary"));
-                offre.setCategory(rs.getInt("categorie_id"));
+                offre.setCategory_id(rs.getInt("categorie_id"));
+                offre.setCatname(getcatname(rs.getInt("categorie_id")));
                 offres.add(offre);
             }
         } catch (SQLException e) {
             Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
         }
         return offres;
+    }
+
+    public String getcatname(int id){
+        String request = "select titre from category where id = '"+id+"'";
+        String a = "";
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                a += rs.getString("titre");
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return a;
     }
 
     @Override

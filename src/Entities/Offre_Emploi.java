@@ -14,8 +14,25 @@ import java.time.LocalDate;
 public class Offre_Emploi {
 
     private int id,category_id;
-    private String titre, poste, description, location, file, email;
+    private String titre, poste, description, location, file, email,catname;
     private LocalDate date_debut, date_expiration;
+
+    public int getCategory_id() {
+        return category_id;
+    }
+
+    public void setCategory_id(int category_id) {
+        this.category_id = category_id;
+    }
+
+    public String getCatname() {
+        return catname;
+    }
+
+    public void setCatname(String catname) {
+        this.catname = catname;
+    }
+
     private int max_salary, min_salary;
 
     public Offre_Emploi() {

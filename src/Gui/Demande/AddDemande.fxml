@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Demande.AddDemandeController">
+   <children>
+      <TableView fx:id="table2" layoutX="14.0" layoutY="14.0" prefHeight="194.0" prefWidth="570.0">
+         <columns>
+            <TableColumn fx:id="offtit" prefWidth="75.0" text="Offre title" />
+            <TableColumn fx:id="username" prefWidth="90.0" text="candidat name" />
+            <TableColumn fx:id="stat" prefWidth="75.0" text="Status" />
+            <TableColumn fx:id="stdate" prefWidth="75.0" text="Start date" />
+            <TableColumn fx:id="enddate" prefWidth="75.0" text="End dtae" />
+         </columns>
+      </TableView>
+      <TableView fx:id="table" layoutX="24.0" layoutY="24.0" prefHeight="226.0" prefWidth="566.0">
+         <columns>
+            <TableColumn fx:id="coltitre" prefWidth="60.0" text="titre" />
+            <TableColumn fx:id="colposte" prefWidth="60.0" text="poste" />
+            <TableColumn fx:id="coldesc" prefWidth="75.0" text="description" />
+            <TableColumn fx:id="colloc" prefWidth="75.0" text="location" />
+            <TableColumn fx:id="colemail" prefWidth="75.0" text="email" />
+            <TableColumn fx:id="startdated" prefWidth="75.0" text="start date" />
+            <TableColumn fx:id="colexp" prefWidth="75.0" text="date exp" />
+            <TableColumn fx:id="categ" prefWidth="75.0" text="category" />
+         </columns>
+      </TableView>
+      <Button fx:id="apply" layoutX="24.0" layoutY="302.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Apply to job" />
+      <Button fx:id="delete" layoutX="24.0" layoutY="348.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Delete application" />
+   </children>
+</AnchorPane>
