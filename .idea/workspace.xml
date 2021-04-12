@@ -4,14 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BranchesTreeState">
-    <expand />
-    <select />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:mintoua" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_231.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Category.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Commande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Commande.class" afterDir="false" />
@@ -31,6 +49,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePaiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePaiment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceProduit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceProduit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePaiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePaiment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" afterDir="false" />
@@ -166,7 +185,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="FXMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="FXMain" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="jobhub_app.FXMain" />
@@ -182,11 +201,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.FXMain" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -204,11 +218,45 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="mintoua" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="255" y="133" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618260133784">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="255" y="133" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1618260133784" />
+    <state width="1528" height="296" key="GridCell.Tab.0.bottom" timestamp="1618260137432">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1528" height="296" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618260137432" />
+    <state width="1528" height="296" key="GridCell.Tab.0.center" timestamp="1618260137431">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1528" height="296" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618260137431" />
+    <state width="1528" height="296" key="GridCell.Tab.0.left" timestamp="1618260137431">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1528" height="296" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618260137431" />
+    <state width="1528" height="296" key="GridCell.Tab.0.right" timestamp="1618260137431">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1528" height="296" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618260137431" />
   </component>
 </project>
