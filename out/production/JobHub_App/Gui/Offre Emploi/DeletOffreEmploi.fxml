@@ -15,15 +15,17 @@
       <Button fx:id="deletebtn" layoutX="36.0" layoutY="256.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Delete" />
       <TableView fx:id="table" layoutX="14.0" layoutY="14.0" prefHeight="226.0" prefWidth="566.0">
         <columns>
-          <TableColumn fx:id="coltitre" prefWidth="75.0" text="titre" />
-          <TableColumn fx:id="colposte" prefWidth="75.0" text="poste" />
+          <TableColumn fx:id="coltitre" prefWidth="60.0" text="titre" />
+          <TableColumn fx:id="colposte" prefWidth="60.0" text="poste" />
             <TableColumn fx:id="coldesc" prefWidth="75.0" text="description" />
             <TableColumn fx:id="colloc" prefWidth="75.0" text="location" />
             <TableColumn fx:id="colemail" prefWidth="75.0" text="email" />
+            <TableColumn fx:id="startdated" prefWidth="75.0" text="start date" />
             <TableColumn fx:id="colexp" prefWidth="75.0" text="date exp" />
+            <TableColumn fx:id="categ" prefWidth="75.0" text="category" />
         </columns>
       </TableView>
-      <Button fx:id="updatebtn" layoutX="36.0" layoutY="314.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Update" />
+      <Button fx:id="updatebtn" layoutX="36.0" layoutY="307.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Update" />
       <Pane fx:id="pane" layoutX="580.0" layoutY="19.0" prefHeight="369.0" prefWidth="566.0">
          <children>
             <TextField fx:id="tfpost" layoutX="400.0" layoutY="67.0" />
@@ -49,5 +51,19 @@
             <Button fx:id="update2" layoutX="20.0" layoutY="281.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Update" />
          </children>
       </Pane>
+      <Pane fx:id="showdem" layoutX="593.0" layoutY="5.0" prefHeight="390.0" prefWidth="548.0">
+         <children>
+            <TableView fx:id="table2" layoutX="38.0" layoutY="20.0" prefHeight="249.0" prefWidth="472.0">
+              <columns>
+                <TableColumn fx:id="offtit" prefWidth="75.0" text="Offre title" />
+                <TableColumn fx:id="username" prefWidth="90.0" text="candidat name" />
+                  <TableColumn fx:id="stat" prefWidth="75.0" text="Status" />
+                  <TableColumn fx:id="stdate" prefWidth="75.0" text="Start date" />
+                  <TableColumn fx:id="enddate" prefWidth="75.0" text="End dtae" />
+              </columns>
+            </TableView>
+            <Button fx:id="treatapp" layoutX="9.0" layoutY="303.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Treat application" />
+         </children></Pane>
+      <Button fx:id="seeapp" layoutX="36.0" layoutY="354.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="See Applications" />
    </children>
 </AnchorPane>
