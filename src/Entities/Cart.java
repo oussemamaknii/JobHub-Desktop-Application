@@ -33,9 +33,9 @@ public class Cart {
         this.imageView=new ImageView();
         this.imageView.setFitHeight(50);
         this.imageView.setFitWidth(50);
-        this.imageView.setImage(new Image("/GUI/Images/"+this.image));
+        this.imageView.setImage(new Image("/Gui/Images/"+this.image));
         this.remove=new Button("");
-        ImageView imageButton=new ImageView("/GUI/Images/Icon-awesome-trash-alt.png");
+        ImageView imageButton=new ImageView("/Gui/Images/Icon-awesome-trash-alt.png");
         imageButton.setFitHeight(20);
         imageButton.setFitWidth(20);
         this.remove.setGraphic(imageButton);

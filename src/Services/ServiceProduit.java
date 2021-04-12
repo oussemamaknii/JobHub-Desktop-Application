@@ -3,11 +3,14 @@ package Services;
 import Entities.Produit;
 import Interfaces.IServiceProduit;
 import Utils.Connexion;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -60,13 +63,27 @@ public class ServiceProduit implements IServiceProduit {
     }
 
     @Override
-    public boolean update(Produit produit) throws SQLException {
-        return false;
+    public void update(Produit entity, AtomicReference<Produit> prod) {
+        try {
+        String request=
+                " update products set name='"+entity.getName()+"', ref='"+entity.getRef()+
+                        "', description='"+entity.getDescription()+"', price='"+entity.getPrice()+
+                        "', quantity='"+entity.getQuantity()+"', image='"+entity.getImage()+"' where id ='"+prod.get().getId()+"' ";
+
+        PreparedStatement pst = null;
+
+            pst = cnx.prepareStatement(request);
+            pst.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+
     }
 
     @Override
-    public List<Produit> readAll() throws SQLException {
-        List<Produit> list = new ArrayList();
+    public ObservableList<Produit> readAll() throws SQLException {
+        ObservableList<Produit> list = FXCollections.observableArrayList();
         String requete = "select * from products";
         try{
             PreparedStatement preparedStatement = cnx.prepareStatement(requete);

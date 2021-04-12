@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="403.0" prefWidth="941.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Produit.CardController">
+   <children>
+      <Pane fx:id="pane1" layoutX="7.0" layoutY="5.0" prefHeight="398.0" prefWidth="331.0" styleClass="EvenementSingle">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="bike" stylesheets="@shop.css">
+               <children>
+                  <ImageView fx:id="image" fitHeight="264.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </StackPane>
+            <Label fx:id="marque" layoutX="26.0" layoutY="285.0" prefHeight="28.0" prefWidth="121.0" text="rs">
+               <font>
+                  <Font name="Source Sans Pro Semibold" size="15.0" />
+               </font>
+            </Label>
+            <StackPane layoutX="152.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/logo.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <Label fx:id="prix" layoutX="185.0" layoutY="291.0" text="+650">
+               <font>
+                  <Font name="Source Sans Pro Semibold" size="13.0" />
+               </font>
+            </Label>
+            <StackPane layoutX="244.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <ImageView fx:id="logo_solde" fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Group 278.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <Label fx:id="soldee" layoutX="271.0" layoutY="291.0" text="-300">
+               <font>
+                  <Font name="Source Sans Pro Semibold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="detail" layoutX="102.0" layoutY="341.0"  prefHeight="36.0" prefWidth="101.0" ripplerFill="WHITE" style="-fx-background-color: #106AD2; -fx-background-radius: 15px;" text="Voir Détail" textFill="WHITE">
+               <font>
+                  <Font name="Source Sans Pro Semibold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="id" layoutX="267.0" layoutY="349.0" />
+         </children>
+      </Pane>
+      <StackPane fx:id="trans" layoutX="340.0" opacity="0.0" prefHeight="403.0" prefWidth="568.0">
+         <children>
+            <Group fx:id="groups">
+               <children>
+                  <AnchorPane fx:id="loadPane" prefHeight="366.0" prefWidth="619.0" />
+                  <JFXButton focusTraversable="false" layoutX="500.0"  prefHeight="25.0" prefWidth="24.0" text="X">
+                     <font>
+                        <Font name="Segoe UI Black" size="14.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Group>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

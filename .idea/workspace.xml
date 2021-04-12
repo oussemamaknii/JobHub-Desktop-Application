@@ -1,12 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand />
-    <select />
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:mintoua" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/activation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_231.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Produit/AddProduct.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Produit/Card.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Produit/DeleteProduct.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Produit/DeleteProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Produit/Shop.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Produit/shopbeta.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_Emploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Produit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/PanierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/PanierController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServiceProduit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IServiceProduit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ServiceProduit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ServiceProduit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +62,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -25,7 +71,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1qwDCNEP7Lcz5O0JQ2SHpLTMkFZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,12 +86,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/SceneBuilder/SceneBuilder.exe" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Gui/Produit" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.21717791" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.2122347" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Desktop\JobHub-Desktop-Application\src\Gui\Produit" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="FXMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -82,7 +135,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="mintoua" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -98,38 +163,38 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="266" y="134" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1618094591524" />
-    <state x="162" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1618105806981">
+    <state x="162" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1618181639711">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="162" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1618105806981" />
+    <state x="162" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1618181639711" />
     <state x="542" y="226" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618093800119">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="542" y="226" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1618093800119" />
-    <state x="226" y="216" key="FileChooserDialogImpl" timestamp="1618109188151">
+    <state x="226" y="216" key="FileChooserDialogImpl" timestamp="1618255887593">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="226" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618109188151" />
-    <state width="1552" height="145" key="GridCell.Tab.0.bottom" timestamp="1618115584824">
+    <state x="226" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618255887593" />
+    <state width="1528" height="125" key="GridCell.Tab.0.bottom" timestamp="1618259517144">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1552" height="145" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618115584824" />
-    <state width="1552" height="145" key="GridCell.Tab.0.center" timestamp="1618115584824">
+    <state width="1528" height="125" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618259517144" />
+    <state width="1528" height="125" key="GridCell.Tab.0.center" timestamp="1618259517144">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1552" height="145" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618115584824" />
-    <state width="1552" height="145" key="GridCell.Tab.0.left" timestamp="1618115584814">
+    <state width="1528" height="125" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618259517144" />
+    <state width="1528" height="125" key="GridCell.Tab.0.left" timestamp="1618259517144">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1552" height="145" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618115584814" />
-    <state width="1552" height="145" key="GridCell.Tab.0.right" timestamp="1618115584824">
+    <state width="1528" height="125" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618259517144" />
+    <state width="1528" height="125" key="GridCell.Tab.0.right" timestamp="1618259517144">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1552" height="145" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618115584824" />
-    <state x="0" y="49" key="SettingsEditor" timestamp="1618111688800">
+    <state width="1528" height="125" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618259517144" />
+    <state x="520" y="49" key="SettingsEditor" timestamp="1618259314941">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="0" y="49" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618111688800" />
+    <state x="520" y="49" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618259314941" />
     <state x="224" y="366" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618111671465">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
