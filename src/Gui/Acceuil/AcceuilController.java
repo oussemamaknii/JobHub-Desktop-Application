@@ -29,6 +29,8 @@ public class AcceuilController implements Initializable {
     private Button offbtn;
     @FXML
     private Button dembtn;
+    @FXML
+    private Button exit;
 
     /**
      * Initializes the controller class.
@@ -50,6 +52,11 @@ public class AcceuilController implements Initializable {
             } catch (IOException ioException) {
                 ioException.printStackTrace();
             }
+        });
+
+        exit.setOnAction(e->{
+            Stage stage1 = (Stage) exit.getScene().getWindow();
+            stage1.close();
         });
 
         dembtn.setOnAction(e -> {
