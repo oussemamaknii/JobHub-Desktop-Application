@@ -5,15 +5,19 @@
  */
 package Gui;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
-
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import Entities.Offre_Emploi;
 import Services.Offre_Emploi_Service;
 import javafx.collections.FXCollections;
@@ -23,6 +27,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import jobhub_app.FXMain;
 
 /**
  * FXML Controller class
@@ -55,6 +60,10 @@ public class AddOffre_EmploiController implements Initializable {
     private Button addoffer1;
     @FXML
     private Button displaybtn;
+    @FXML
+    private Button exit;
+    @FXML
+    private Button home;
 
     /**
      * Initializes the controller class.
@@ -72,6 +81,21 @@ public class AddOffre_EmploiController implements Initializable {
             new Offre_Emploi_Service().add(offer);
             afficherOffres();
         });
+
+        home.setOnAction(e->{
+            try {
+                Stage stage1 = (Stage) home.getScene().getWindow();
+                stage1.close();
+                home();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
+        });
+
+        exit.setOnAction(e->{
+            Stage stage1 = (Stage) exit.getScene().getWindow();
+            stage1.close();
+        });
     }
 
     @FXML
@@ -88,6 +112,10 @@ public class AddOffre_EmploiController implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void home() throws IOException {
+        new FXMain().start(new Stage());
     }
 
 }

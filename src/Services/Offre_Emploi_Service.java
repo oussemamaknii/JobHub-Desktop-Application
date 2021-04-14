@@ -76,8 +76,10 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
 
     public void deleteoffre(String id){
         String request = "delete from offre_emploi where id = '" +id+"'";
+        String request1 = "delete from demande_recrutement where offre_id = '" +id+"'";
         try {
             Statement statement = cnx.createStatement();
+            statement.executeUpdate(request1);
             statement.executeUpdate(request);
         } catch (SQLException throwables) {
             throwables.printStackTrace();

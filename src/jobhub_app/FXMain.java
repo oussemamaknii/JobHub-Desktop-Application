@@ -24,6 +24,7 @@ import javafx.stage.StageStyle;
  */
 public class FXMain extends Application {
     public double xOffset,yOffset;
+    public FXMain(){}
     
     @Override
     public void start(Stage primaryStage) throws IOException{
@@ -49,9 +50,6 @@ public class FXMain extends Application {
         primaryStage.setTitle("JobHub Application");
         primaryStage.setScene(scene);
         primaryStage.show();
-     /*
-        primaryStage.setTitle("TalkTo");
-        primaryStage.show();*/
     }
 
     /**

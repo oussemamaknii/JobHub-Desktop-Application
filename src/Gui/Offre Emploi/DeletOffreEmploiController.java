@@ -70,10 +70,6 @@ public class DeletOffreEmploiController implements Initializable {
     @FXML
     private Button update2;
     @FXML
-    private Pane pane;
-    @FXML
-    private Pane showdem;
-    @FXML
     private Button treatapp;
     @FXML
     private Button seeapp;
@@ -93,6 +89,14 @@ public class DeletOffreEmploiController implements Initializable {
     private TableColumn<?, ?> startdated;
     @FXML
     private TableColumn<?, ?> categ;
+    @FXML
+    private Pane paneoffers;
+    @FXML
+    private Pane panedemande;
+    @FXML
+    private Pane paneupdatet;
+    @FXML
+    private Button exit;
 
     /**
      * Initializes the controller class.
@@ -101,14 +105,25 @@ public class DeletOffreEmploiController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         AtomicReference<Offre_Emploi> off = new AtomicReference<>(new Offre_Emploi());
         showOffres();
-        pane.setVisible(false);
-        showdem.setVisible(false);
+        paneoffers.setVisible(true);
+        panedemande.setVisible(false);
+        paneupdatet.setVisible(false);
 
         deletebtn.setOnAction(e -> {
             Offre_Emploi offre = table.getSelectionModel().getSelectedItem();
             if (offre != null) {
-                new Offre_Emploi_Service().deleteoffre(String.valueOf(offre.getId()));
-                showOffres();
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                alert.setTitle("Deleting a job application");
+                alert.setContentText("Do you really wanna delete this application ?");
+                ButtonType okButton = new ButtonType("Yes", ButtonBar.ButtonData.YES);
+                ButtonType cancelButton = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
+                alert.getButtonTypes().setAll(okButton, cancelButton);
+                alert.showAndWait().ifPresent(type -> {
+                    if (type == okButton) {
+                        new Offre_Emploi_Service().deleteoffre(String.valueOf(offre.getId()));
+                        showOffres();
+                    }
+                });
             }
         });
 
@@ -123,8 +138,9 @@ public class DeletOffreEmploiController implements Initializable {
             Offre_Emploi offre = table.getSelectionModel().getSelectedItem();
             if (offre != null) {
                 off.set(offre);
-                showdem.setVisible(false);
-                pane.setVisible(true);
+                paneoffers.setVisible(false);
+                panedemande.setVisible(false);
+                paneupdatet.setVisible(true);
                 choicecateg.setItems(FXCollections.observableArrayList(new Offre_Emploi_Service().getCateg()));
                 tfdesc.setText(offre.getDescription());
                 tfmax.setText(String.valueOf(offre.getMax_salary()));
@@ -146,15 +162,19 @@ public class DeletOffreEmploiController implements Initializable {
                     Integer.parseInt(tfmin.getText())
             );
             new Offre_Emploi_Service().updateoffre(offer,off);
+            paneoffers.setVisible(true);
+            panedemande.setVisible(false);
+            paneupdatet.setVisible(false);
             showOffres();
         });
 
         seeapp.setOnAction(e->{
-            pane.setVisible(false);
-            showdem.setVisible(true);
             Offre_Emploi offre = table.getSelectionModel().getSelectedItem();
             if (offre != null) {
                 showapps(offre.getId());
+                paneoffers.setVisible(false);
+                panedemande.setVisible(true);
+                paneupdatet.setVisible(false);
             }
         });
     }

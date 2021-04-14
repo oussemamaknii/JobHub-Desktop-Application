@@ -127,6 +127,11 @@
                         <Font name="Segoe UI Semibold" size="14.0" />
                      </font>
                   </Button>
+                  <ImageView fitHeight="124.0" fitWidth="249.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0">
+                     <image>
+                        <Image url="@../../../../../Downloads/logo.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </children>
