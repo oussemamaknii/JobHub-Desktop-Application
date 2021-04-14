@@ -10,10 +10,11 @@ import java.util.List;
  */
 public interface IServiceCommande {
 
-    void create (Commande commande) throws SQLException;
+    void create (Commande commande) ;
     boolean delete(int idCommande) throws  SQLException;
     boolean update(int idCommande) throws  SQLException;
     public List<Commande> readAll() throws SQLException;
+    int getLastCommande();
     public Commande getCommande(int idCommande) throws SQLException;
     public int[] statistiques() throws SQLException;
 }

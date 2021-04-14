@@ -9,12 +9,15 @@ package Gui.Produit;
 import Entities.Panier;
 //import Entitie.User.User;
 import Entities.Cart;
+import Entities.Produit;
 import Gui.Commande.ProductSingleController;
 //import GUI.Evenement.EvenementController;
+import Services.ServiceProduit;
 import animatefx.animation.Bounce;
 import animatefx.animation.FadeInDown;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -26,7 +29,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 
 /**
  * FXML Controller class
@@ -35,6 +40,10 @@ import javafx.scene.layout.Pane;
  */
 public class ShopController2 implements Initializable {
 
+    @FXML
+    private HBox shopContainer;
+
+    List<Produit> shopProducts;
     /**
      * Initializes the controller class.
      */
@@ -47,8 +56,36 @@ public class ShopController2 implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        shopProducts = new ArrayList<>(getShopProducts());
+        try {
+            for (Produit prod : shopProducts){
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Book.fxml"));
+                VBox vBox = fxmlLoader.load();
+                BookController bookController = fxmlLoader.getController();
+                System.out.println(prod.toString());
+                bookController.setData(prod);
+                shopContainer.getChildren().add(vBox);
+                }
+        }catch (IOException e) {
+                e.printStackTrace();
+        }
+        //new Bounce(banner).play();
+    }
 
-        new Bounce(banner).play();
+    private List<Produit> getShopProducts(){
+        List<Produit> lp = new ArrayList<>();
+
+        Produit product = new Produit();
+        ArrayList<Produit> products = new ServiceProduit().getAll();
+        products.stream().forEach(p->{
+            product.setName(p.getName());
+            product.setPrice(p.getPrice());
+            product.setImage("/Gui/Images/"+p.getImage());
+            lp.add(product);
+        });
+
+
+        return lp;
     }
 
     @FXML
@@ -63,7 +100,6 @@ public class ShopController2 implements Initializable {
         centerContent.getChildren().removeAll();
         new FadeInDown(fxml).play();
         centerContent.getChildren().setAll(fxml);
-
     }
 
     @FXML

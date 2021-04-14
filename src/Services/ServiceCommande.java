@@ -19,8 +19,26 @@ public class ServiceCommande implements IServiceCommande {
     public ServiceCommande(){
         cnx = Connexion.getInstance().getConnection();
     }
+
     @Override
-    public void create(Commande commande) throws SQLException {
+    public int getLastCommande() {
+        String req = "select * from order order by id desc limit 1";
+        try {
+            PreparedStatement pst = cnx.prepareStatement(req);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()) {
+
+                return rs.getInt(1);
+            }
+
+        } catch (SQLException err) {
+            System.out.println(err.getMessage());
+        }
+        return -1;
+    }
+
+    @Override
+    public void create(Commande commande){
         try {
             String request
                     = "INSERT INTO order(total_payment,state,date,id_user) VALUES(?,?,?,?)";

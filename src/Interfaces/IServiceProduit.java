@@ -4,6 +4,7 @@ import Entities.Produit;
 import javafx.collections.ObservableList;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -15,5 +16,6 @@ public interface IServiceProduit {
     boolean delete(int idProduit) throws SQLException;
     public void update(Produit entity, AtomicReference<Produit> prod);
     public ObservableList <Produit> readAll() throws SQLException;
+    public ArrayList<Produit> getAll();
     boolean verifierQuantite(int idProduit, int quantite) throws SQLException;
 }

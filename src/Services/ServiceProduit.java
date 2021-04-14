@@ -82,8 +82,8 @@ public class ServiceProduit implements IServiceProduit {
     }
 
     @Override
-    public ObservableList<Produit> readAll() throws SQLException {
-        ObservableList<Produit> list = FXCollections.observableArrayList();
+    public ArrayList<Produit> getAll() {
+        ArrayList<Produit> Oblist = new ArrayList<>();
         String requete = "select * from products";
         try{
             PreparedStatement preparedStatement = cnx.prepareStatement(requete);
@@ -94,13 +94,35 @@ public class ServiceProduit implements IServiceProduit {
                         resultSet.getString("ref"),resultSet.getString("description"),resultSet.getFloat("price"),
                         resultSet.getInt("quantity"),resultSet.getString("image"));
 
-                list.add(produit);
+                Oblist.add(produit);
             }
 
         } catch (SQLException err){
             System.out.println(err.getMessage());
         }
-        return list;
+        return Oblist;
+    }
+
+    @Override
+    public ObservableList<Produit> readAll() throws SQLException {
+        ObservableList<Produit> Oblist = FXCollections.observableArrayList();
+        String requete = "select * from products";
+        try{
+            PreparedStatement preparedStatement = cnx.prepareStatement(requete);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()){
+                Produit produit = new Produit(resultSet.getInt("id"),resultSet.getString("name"),
+                        resultSet.getString("ref"),resultSet.getString("description"),resultSet.getFloat("price"),
+                        resultSet.getInt("quantity"),resultSet.getString("image"));
+
+                Oblist.add(produit);
+            }
+
+        } catch (SQLException err){
+            System.out.println(err.getMessage());
+        }
+        return Oblist;
     }
 
     @Override

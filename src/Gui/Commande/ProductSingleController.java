@@ -132,7 +132,7 @@ public class ProductSingleController implements Initializable {
         prix.setText(Integer.toString(p.getPrix()));
         svf = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, p.getQuantite());
         quantite.setValueFactory(svf);
-        imagePanier.setImage(new Image("/GUI/Images/"+p.getImage()));
+        imagePanier.setImage(new Image("/src/Gui/Images/"+p.getImage()));
         if(panier.isEmpty())
         panier.addAll(pa);
         else {
@@ -146,7 +146,7 @@ public class ProductSingleController implements Initializable {
      produitPanier.setQuantite(quantite.getValue());
           System.out.println("quantite"+ produitPanier.getQuantite());
      panier.add(produitPanier);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Commande/Panier.fxml"));
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/src/Gui/Commande/Panier.fxml"));
         Parent fxml = Loader.load();
         PanierController e = Loader.getController();
         //e.redirection(centerContent,panier,user);

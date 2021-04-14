@@ -20,17 +20,17 @@ import javafx.scene.layout.Pane;
 
 public class DeleteProductController implements Initializable {
     @FXML
-    private TableColumn<Offre_Emploi, String> colname;
+    private TableColumn<Produit, String> colname;
     @FXML
-    private TableColumn<Offre_Emploi, String> colref;
+    private TableColumn<Produit, String> colref;
     @FXML
-    private TableColumn<Offre_Emploi, String> coldesc;
+    private TableColumn<Produit, String> coldesc;
     @FXML
-    private TableColumn<Offre_Emploi, String> colprice;
+    private TableColumn<Produit, String> colprice;
     @FXML
-    private TableColumn<Offre_Emploi, String> colquantity;
+    private TableColumn<Produit, String> colquantity;
     @FXML
-    private TableColumn<Offre_Emploi, LocalDate> colimage;
+    private TableColumn<Produit, LocalDate> colimage;
     @FXML
     private Button deletebtn;
     @FXML

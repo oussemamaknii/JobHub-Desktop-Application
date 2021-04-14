@@ -63,7 +63,7 @@ public class AddProductController implements Initializable {
         Stage stage1 =  (Stage) displaybtn.getScene().getWindow();
         stage1.close();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("DeleteProduct.fxml"));
-        Parent root1 = (Parent) fxmlLoader.load();
+        Parent root1 = fxmlLoader.load();
         Stage stage = new Stage();
         stage.setTitle("JobHub Application");
         stage.setScene(new Scene(root1));

@@ -22,8 +22,8 @@ public class FXMain extends Application {
     
     @Override
     public void start(Stage primaryStage) throws IOException{
-        URL root_url = new File("src/Gui/Offre_Emploi.fxml").toURI().toURL();
-     //   URL root_url = new File("src/Gui/Produit/Card.fxml").toURI().toURL();
+       // URL root_url = new File("src/Gui/Offre_Emploi.fxml").toURI().toURL();
+        URL root_url = new File("src/Gui/Produit/Shop2.fxml").toURI().toURL();
         Parent parent = FXMLLoader.load(root_url);
         primaryStage.setScene(new Scene(parent));
         primaryStage.setTitle("TalkTo");

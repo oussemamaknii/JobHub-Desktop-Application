@@ -5,14 +5,23 @@
  */
 package Gui.Commande;
 
+import Entities.Commande;
 import Entities.Panier;
 //import Entitie.User.User;
 import Entities.Cart;
+import Entities.Produit;
 import Gui.Produit.ShopController2;
+import Services.ServiceCommande;
+import Services.ServicePanier;
 import animatefx.animation.Bounce;
 import animatefx.animation.FadeInDown;
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
@@ -41,7 +50,7 @@ import javafx.scene.layout.Pane;
  * @author toshiba
  */
 public class PanierController implements Initializable {
- @FXML
+    @FXML
     private Pane banner;
 
     @FXML
@@ -63,6 +72,7 @@ public class PanierController implements Initializable {
     private TableView<Cart> panierView;
     AnchorPane centerContent;
     ObservableList<Cart> panier = FXCollections.observableArrayList();
+    ObservableList<Produit> card = FXCollections.observableArrayList();
     @FXML
     private Label subTotal;
 
@@ -78,6 +88,37 @@ public class PanierController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         new Bounce(banner).play();
 
+    }
+
+
+    @FXML
+    void passerCommande(ActionEvent event) {
+        ServiceCommande serviceCommande = new ServiceCommande();
+        Date date = Calendar.getInstance().getTime();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        String dateCommande = dateFormat.format(date);
+
+        Commande commande = new Commande(Total,false,dateCommande,1);
+        serviceCommande.create(commande);
+
+        ServicePanier servicePanier = new ServicePanier();
+        for (Cart p : panier){
+            try {
+                servicePanier.add(new Panier(p.getQuantite(),p.getIdProduit(), serviceCommande.getLastCommande() ));
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+    }
+    public void myFunction(Produit prodc){/*
+        image.setCellValueFactory(new PropertyValueFactory<>("Image"));
+        nom.setCellValueFactory(new PropertyValueFactory<>("Nom"));
+        prix.setCellValueFactory(new PropertyValueFactory<>("Prix"));
+        quantite.setCellValueFactory(new PropertyValueFactory<>("Quantite"));
+        remove.setCellValueFactory(new PropertyValueFactory<>("Remove"));
+        card.add(prodc);
+        panierView.setItems(card);
+*/
     }
 
     //public void redirection(AnchorPane c, ObservableList<Cart> pa, User u)
@@ -100,7 +141,7 @@ public class PanierController implements Initializable {
     }
 
     @FXML
-    void displaySelected(MouseEvent event) {
+    void displaySelected(MouseEvent event) {/*
         Cart selected = panierView.getSelectionModel().getSelectedItem();
         System.out.println(selected);
         selected.setQuantite(selected.getSpinner().getValue());
@@ -117,13 +158,14 @@ public class PanierController implements Initializable {
                     }
                 }
             }
-        });
+        });*/
 
     }
 
     @FXML
     void displayCatalogue(ActionEvent event) throws IOException {
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Stock/Shop2.fxml"));
+        //FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Produit/Shop2.fxml"));
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Produit/Shop.fxml"));
         Parent fxml = Loader.load();
         ShopController2 e = Loader.getController();
         //e.redirectionFromPanier(centerContent, panier, user);
