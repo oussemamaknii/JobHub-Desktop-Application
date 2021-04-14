@@ -63,7 +63,8 @@ public class ProductSingleController implements Initializable {
     private Label prix;
     SpinnerValueFactory<Integer> svf;
     ObservableList<Cart> panier = FXCollections.observableArrayList();
-    AnchorPane centerContent;
+    @FXML
+    private AnchorPane centerContent;
     Cart produitPanier;
      //User user;
 
@@ -129,10 +130,10 @@ public class ProductSingleController implements Initializable {
         centerContent = c;
         produitPanier = p;
         nom.setText(p.getNomProduit());
-        prix.setText(Integer.toString(p.getPrix()));
+        prix.setText(Float.toString(p.getPrix()));
         svf = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, p.getQuantite());
         quantite.setValueFactory(svf);
-        imagePanier.setImage(new Image("/src/Gui/Images/"+p.getImage()));
+        imagePanier.setImage(new Image(getClass().getResourceAsStream("/Gui/Images/alchimiste.PNG")));
         if(panier.isEmpty())
         panier.addAll(pa);
         else {

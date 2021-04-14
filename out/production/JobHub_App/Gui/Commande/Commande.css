@@ -30,7 +30,13 @@
         -fx-border-color: rgba(0,0,0,0.1);
 }
 
+.imagesPanier{
+    -fx-border-width:0.5px 0.6px 0.7px 0.5px ;  
+      -fx-border-color: rgba(0,0,0,0.6);
+      -fx-cursor:hand;
+}
 .menuButton:hover{
+    
     -fx-background-color: rgba(0,0,0,0.03);
 }
 .menuButton2:hover{
@@ -61,30 +67,26 @@
 
 
 }
-.Pagination{
-    -fx-background-color: white;
-    -fx-border-color: white;
-    -fx-border-width: 2px 2px 2px 2px;
-}
-.Pagination:hover{
-    -fx-background-color: rgba(0, 0, 0, 0.3);
-  
+.Sidebar{
+    -fx-border-width:0px 0px 0px 0.5px ;  
+    -fx-border-color: rgba(0,0,0,0.1);
+
+
 }
 .CenterContent{
-    -fx-border-width:0px 0px 0px 0px ;
+    -fx-border-width:0px 0px 0px 0px ;  
         -fx-border-color: rgba(0,255,0,1);
 
 }
-.search{
+.focus{
         -fx-effect: dropshadow(three-pass-box, rgb(2,0,252,0.7), 10, 0, 0, 0);
 
 }
-.comment{
-    -fx-border-width:0px 0px 2px 0px ;  
-     -fx-border-color: rgba(0,0,0,0.1);
+.image-view-wrapper:border {
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 5;
 }
-.bike{
-    -fx-border-width:1px 1px 1px 1px ;  
-     -fx-border-color: rgba(0,0,0,0.2);
-
+#panierView .table-column {
+  -fx-alignment: CENTER;
 }

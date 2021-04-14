@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
@@ -62,7 +63,6 @@ public class ShopController2 implements Initializable {
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Book.fxml"));
                 VBox vBox = fxmlLoader.load();
                 BookController bookController = fxmlLoader.getController();
-                System.out.println(prod.toString());
                 bookController.setData(prod);
                 shopContainer.getChildren().add(vBox);
                 }
@@ -74,16 +74,15 @@ public class ShopController2 implements Initializable {
 
     private List<Produit> getShopProducts(){
         List<Produit> lp = new ArrayList<>();
-
-        Produit product = new Produit();
         ArrayList<Produit> products = new ServiceProduit().getAll();
-        products.stream().forEach(p->{
-            product.setName(p.getName());
-            product.setPrice(p.getPrice());
-            product.setImage("/Gui/Images/"+p.getImage());
-            lp.add(product);
-        });
 
+        for (int i = 0; i < products.size(); i++){
+            Produit product = new Produit();
+            product.setName(products.get(i).getName());
+            product.setPrice(products.get(i).getPrice());
+            product.setImage("/Gui/Images/"+products.get(i).getImage());
+            lp.add(product);
+        }
 
         return lp;
     }

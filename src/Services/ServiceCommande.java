@@ -22,13 +22,13 @@ public class ServiceCommande implements IServiceCommande {
 
     @Override
     public int getLastCommande() {
-        String req = "select * from order order by id desc limit 1";
+        String req = "select * from commande order by id desc limit 1";
         try {
             PreparedStatement pst = cnx.prepareStatement(req);
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
 
-                return rs.getInt(1);
+                return rs.getInt("id");
             }
 
         } catch (SQLException err) {
@@ -41,7 +41,7 @@ public class ServiceCommande implements IServiceCommande {
     public void create(Commande commande){
         try {
             String request
-                    = "INSERT INTO order(total_payment,state,date,id_user) VALUES(?,?,?,?)";
+                    = "INSERT INTO commande (total_payment,state,date,id_user) VALUES(?,?,?,?)";
             PreparedStatement st = cnx.prepareStatement(request);
             st.setFloat(1, commande.getTotalPayment());
             st.setBoolean(2,commande.isState());
@@ -56,7 +56,7 @@ public class ServiceCommande implements IServiceCommande {
 
     @Override
     public boolean delete(int idCommande) throws SQLException {
-        String req = "delete from order where id=?";
+        String req = "delete from commande where id=?";
 
         try {
             PreparedStatement pst = cnx.prepareStatement(req);
@@ -86,7 +86,7 @@ public class ServiceCommande implements IServiceCommande {
 
     @Override
     public boolean update(int idCommande) throws SQLException {
-        String req = "update order set state=1 where id=? ";
+        String req = "update commande set state=1 where id=? ";
 
         try {
             PreparedStatement pst = cnx.prepareStatement(req);
@@ -104,7 +104,7 @@ public class ServiceCommande implements IServiceCommande {
     public List<Commande> readAll() throws SQLException {
         List <Commande> list = new ArrayList();
        // String req = "select * from order o inner join user u on u.id=o.id_user";
-        String req = "select * from order";
+        String req = "select * from commande";
 
         try {
             PreparedStatement pst = cnx.prepareStatement(req);
@@ -121,7 +121,7 @@ public class ServiceCommande implements IServiceCommande {
 
     @Override
     public Commande getCommande(int idCommande) throws SQLException {
-        String req = "select * from order where id=?";
+        String req = "select * from commande where id=?";
         try {
             PreparedStatement pst = cnx.prepareStatement(req);
             pst.setInt(1, idCommande);
