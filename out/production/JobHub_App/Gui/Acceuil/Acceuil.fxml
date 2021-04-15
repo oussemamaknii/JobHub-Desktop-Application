@@ -17,7 +17,7 @@
                   <Button fx:id="offbtn" layoutX="412.0" layoutY="42.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="210.0" text="Job Offers" />
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="476.0" prefWidth="266.0" style="-fx-background-color: linear-gradient(to left top, #2596be, #788dd3, #c67abe, #ef7184, #e28743);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="476.0" prefWidth="266.0" style="-fx-background-color: linear-gradient(to left top, #2596be, #788dd3, #c67abe, #ef7184, #e28743);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="672.6" AnchorPane.topAnchor="15.0">
                <children>
                   <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="155.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Donno" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
                      <padding>

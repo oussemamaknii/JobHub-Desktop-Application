@@ -66,6 +66,8 @@ public class AddDemandeController implements Initializable {
     private Button exit;
     @FXML
     private Button home;
+    @FXML
+    private Button seeapps;
 
     /**
      * Initializes the controller class.
@@ -124,6 +126,12 @@ public class AddDemandeController implements Initializable {
                     }
                 });
             }
+        });
+
+        seeapps.setOnAction(e->{
+            table.setVisible(false);
+            table2.setVisible(true);
+            showapplies(iduser);
         });
     }
 

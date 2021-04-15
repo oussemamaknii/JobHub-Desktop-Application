@@ -105,15 +105,36 @@ public class AddOffre_EmploiController implements Initializable {
     }
 
     private void afficherOffres() {
+        //FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Offre Emploi/DeletOffreEmploi.fxml"));
+
+        final double[] xOffset = new double[1];
+        final double[] yOffset = new double[1];
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Offre Emploi/DeletOffreEmploi.fxml"));
-            Parent root1 = (Parent) fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("JobHub Application");
-            stage.setScene(new Scene(root1));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
+            URL root_url = new File("src/Gui/Offre Emploi/DeletOffreEmploi.fxml").toURI().toURL();
+            Parent parent = FXMLLoader.load(root_url);
+            Stage primaryStage = new Stage();
+            Scene scene = new Scene(parent);
+            primaryStage.initStyle(StageStyle.TRANSPARENT);
+            scene.setFill(Color.TRANSPARENT);
+            parent.setOnMousePressed(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    xOffset[0] = event.getSceneX();
+                    yOffset[0] = event.getSceneY();
+                }
+            });
+            parent.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    primaryStage.setX(event.getScreenX() - xOffset[0]);
+                    primaryStage.setY(event.getScreenY() - yOffset[0]);
+                }
+            });
+            primaryStage.setTitle("JobHub Application");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
     }
 

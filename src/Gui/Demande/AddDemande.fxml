@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Demande.AddDemandeController">
    <children>
       <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
          <children>
@@ -19,7 +18,7 @@
                <children>
                   <Pane layoutX="54.0" layoutY="31.0">
                      <children>
-                        <TableView fx:id="table2" prefHeight="194.0" prefWidth="570.0">
+                        <TableView fx:id="table2" layoutX="3.0" layoutY="6.0" prefHeight="231.0" prefWidth="570.0">
                            <columns>
                               <TableColumn fx:id="offtit" prefWidth="75.0" text="Offre title" />
                               <TableColumn fx:id="username" prefWidth="90.0" text="candidat name" />
@@ -28,7 +27,7 @@
                               <TableColumn fx:id="enddate" prefWidth="75.0" text="End dtae" />
                            </columns>
                         </TableView>
-                        <TableView fx:id="table" layoutX="10.0" layoutY="10.0" prefHeight="226.0" prefWidth="566.0">
+                        <TableView fx:id="table" layoutY="6.0" prefHeight="231.0" prefWidth="576.0">
                            <columns>
                               <TableColumn fx:id="coltitre" prefWidth="60.0" text="titre" />
                               <TableColumn fx:id="colposte" prefWidth="60.0" text="poste" />
@@ -42,6 +41,7 @@
                         </TableView>
                         <Button fx:id="apply" layoutX="10.0" layoutY="288.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Apply to job" />
                         <Button fx:id="delete" layoutX="10.0" layoutY="334.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Delete application" />
+                        <Button fx:id="seeapps" layoutX="10.0" layoutY="245.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="See applications" />
                      </children>
                   </Pane>
                </children>

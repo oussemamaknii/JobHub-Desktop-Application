@@ -44,13 +44,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AddOffre_EmploiController">
    <children>
-      <AnchorPane layoutX="24.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+      <AnchorPane layoutX="24.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
          <children>
             <AnchorPane layoutX="255.0" layoutY="39.0" prefHeight="426.0" prefWidth="684.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="40.0" AnchorPane.topAnchor="40.0">
                <children>
-                  <Pane layoutX="74.0" layoutY="106.0">
+                  <Pane layoutX="92.0" layoutY="54.0">
                      <children>
                         <Button fx:id="displaybtn" layoutX="124.0" layoutY="287.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="251.0" text="Display" />
                         <TextField fx:id="tfpost" layoutX="96.0" layoutY="37.0" />
@@ -98,7 +98,7 @@
                         <Font name="Segoe UI Semibold" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="206.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Home" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                  <Button fx:id="home" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="206.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Home" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>

@@ -5,6 +5,7 @@
  */
 package Gui;
 
+import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
@@ -21,6 +22,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+import jobhub_app.FXMain;
 
 /**
  * FXML Controller class
@@ -97,6 +100,8 @@ public class DeletOffreEmploiController implements Initializable {
     private Pane paneupdatet;
     @FXML
     private Button exit;
+    @FXML
+    private Button home;
 
     /**
      * Initializes the controller class.
@@ -125,6 +130,20 @@ public class DeletOffreEmploiController implements Initializable {
                     }
                 });
             }
+        });
+        home.setOnAction(e->{
+            try {
+                Stage stage1 = (Stage) home.getScene().getWindow();
+                stage1.close();
+                home();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
+        });
+
+        exit.setOnAction(e->{
+            Stage stage1 = (Stage) exit.getScene().getWindow();
+            stage1.close();
         });
 
         treatapp.setOnAction(e->{
@@ -177,6 +196,9 @@ public class DeletOffreEmploiController implements Initializable {
                 paneupdatet.setVisible(false);
             }
         });
+    }
+    public void home() throws IOException {
+        new FXMain().start(new Stage());
     }
 
     public void showOffres() {
