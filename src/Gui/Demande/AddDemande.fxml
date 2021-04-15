@@ -54,7 +54,7 @@
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../Downloads/RestaurantMgtSampleUI-master/src/images/icons8_Box_32px.png" />
+                              <Image url="@../../../images/icons8_Box_32px.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -72,7 +72,7 @@
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../Downloads/RestaurantMgtSampleUI-master/src/images/icons8_Home_32px.png" />
+                              <Image url="@../../../images/icons8_Home_32px.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -90,7 +90,7 @@
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../Downloads/RestaurantMgtSampleUI-master/src/images/icons8_Open_Envelope_32px.png" />
+                              <Image url="@../../../images/icons8_Open_Envelope_32px.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -108,7 +108,7 @@
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../Downloads/RestaurantMgtSampleUI-master/src/images/icons8_Person_32px.png" />
+                              <Image url="@../../../images/icons8_Person_32px.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -126,7 +126,7 @@
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../Downloads/RestaurantMgtSampleUI-master/src/images/icons8_Search_52px.png" />
+                              <Image url="@../../../images/icons8_Search_52px.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -144,7 +144,7 @@
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../../Downloads/RestaurantMgtSampleUI-master/src/images/icons8_Sign_Out_32px.png" />
+                              <Image url="@../../../images/icons8_Sign_Out_32px.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -157,7 +157,7 @@
                   </Button>
                   <ImageView fitHeight="124.0" fitWidth="249.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0">
                      <image>
-                        <Image url="@../../../../../Downloads/logo.png" />
+                        <Image url="@../../../images/logo.png" />
                      </image>
                   </ImageView>
                </children>

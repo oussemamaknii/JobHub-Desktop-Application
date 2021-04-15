@@ -96,13 +96,16 @@ public class AddOffre_EmploiController implements Initializable {
             Stage stage1 = (Stage) exit.getScene().getWindow();
             stage1.close();
         });
-    }
 
-    @FXML
-    private void afficherOffres() {
-        try {
+        displaybtn.setOnAction(e->{
             Stage stage1 = (Stage) displaybtn.getScene().getWindow();
             stage1.close();
+            afficherOffres();
+        });
+    }
+
+    private void afficherOffres() {
+        try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Offre Emploi/DeletOffreEmploi.fxml"));
             Parent root1 = (Parent) fxmlLoader.load();
             Stage stage = new Stage();
