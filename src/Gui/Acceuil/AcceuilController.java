@@ -43,10 +43,10 @@ public class AcceuilController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
         offbtn.setOnAction(e -> {
-            final double[] xOffset = new double[1];
-            final double[] yOffset = new double[1];
             Stage stage1 = (Stage) offbtn.getScene().getWindow();
             stage1.close();
+            final double[] xOffset = new double[1];
+            final double[] yOffset = new double[1];
             try {
                 URL root_url = new File("src/Gui/Offre Emploi/AddOffre_Emploi.fxml").toURI().toURL();
                 Parent parent = FXMLLoader.load(root_url);
@@ -82,19 +82,36 @@ public class AcceuilController implements Initializable {
         });
 
         dembtn.setOnAction(e -> {
+            final double[] xOffset = new double[1];
+            final double[] yOffset = new double[1];
+            Stage stage1 = (Stage) offbtn.getScene().getWindow();
+            stage1.close();
             try {
-                Stage stage1 = (Stage) dembtn.getScene().getWindow();
-                stage1.close();
-                Stage primaryStage = new Stage();
                 URL root_url = new File("src/Gui/Demande/AddDemande.fxml").toURI().toURL();
-                Parent parent = null;
-                parent = FXMLLoader.load(root_url);
-
-                primaryStage.setScene(new Scene(parent));
+                Parent parent = FXMLLoader.load(root_url);
+                Stage primaryStage = new Stage();
+                Scene scene = new Scene(parent);
+                primaryStage.initStyle(StageStyle.TRANSPARENT);
+                scene.setFill(Color.TRANSPARENT);
+                parent.setOnMousePressed(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        xOffset[0] = event.getSceneX();
+                        yOffset[0] = event.getSceneY();
+                    }
+                });
+                parent.setOnMouseDragged(new EventHandler<MouseEvent>() {
+                    @Override
+                    public void handle(MouseEvent event) {
+                        primaryStage.setX(event.getScreenX() - xOffset[0]);
+                        primaryStage.setY(event.getScreenY() - yOffset[0]);
+                    }
+                });
                 primaryStage.setTitle("JobHub Application");
+                primaryStage.setScene(scene);
                 primaryStage.show();
-            } catch (IOException ioException) {
-                ioException.printStackTrace();
+            } catch (IOException ex) {
+                ex.printStackTrace();
             }
         });
     }
