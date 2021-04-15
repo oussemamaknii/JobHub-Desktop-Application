@@ -30,11 +30,8 @@
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemande.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Demande/AddDemande.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/AddOffre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre Emploi/AddOffre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/AddOffre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre Emploi/AddOffre_EmploiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/DeletOffreEmploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre Emploi/DeletOffreEmploi.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

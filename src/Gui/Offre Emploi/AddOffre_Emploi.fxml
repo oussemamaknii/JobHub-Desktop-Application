@@ -41,161 +41,161 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AddOffre_EmploiController">
-  <children>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="24.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;">
          <children>
-            <AnchorPane layoutX="30.0" layoutY="62.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
+            <AnchorPane layoutX="255.0" layoutY="39.0" prefHeight="426.0" prefWidth="684.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="40.0" AnchorPane.topAnchor="40.0">
                <children>
-                  <AnchorPane layoutX="255.0" layoutY="39.0" prefHeight="426.0" prefWidth="684.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="40.0" AnchorPane.topAnchor="40.0">
+                  <Pane layoutX="74.0" layoutY="106.0">
                      <children>
-                        <Button fx:id="displaybtn" layoutX="216.0" layoutY="364.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="251.0" text="Display" />
-                        <TextField fx:id="tfpost" layoutX="188.0" layoutY="114.0" />
-                        <TextField fx:id="tfdesc" layoutX="188.0" layoutY="150.0" />
-                        <TextField fx:id="tfloc" layoutX="188.0" layoutY="186.0" />
-                        <TextField fx:id="tffile" layoutX="188.0" layoutY="227.0" />
-                        <TextField fx:id="tfemil" layoutX="441.0" layoutY="80.0" />
-                        <TextField fx:id="tfmax" layoutX="441.0" layoutY="116.0" />
-                        <TextField fx:id="tftitle" layoutX="188.0" layoutY="77.0" />
-                        <DatePicker fx:id="tfexp" layoutX="441.0" layoutY="186.0" prefHeight="26.0" prefWidth="151.0" />
-                        <Label layoutX="92.0" layoutY="81.0" prefHeight="18.0" prefWidth="39.0" text="Title" />
-                        <Label layoutX="92.0" layoutY="118.0" prefHeight="18.0" prefWidth="39.0" text="Post" />
-                        <Label layoutX="92.0" layoutY="154.0" prefHeight="18.0" prefWidth="71.0" text="Description" />
-                        <Label layoutX="92.0" layoutY="190.0" prefHeight="18.0" prefWidth="71.0" text="Location" />
-                        <Label layoutX="92.0" layoutY="230.0" prefHeight="18.0" prefWidth="71.0" text="File" />
-                        <Label layoutX="347.0" layoutY="82.0" prefHeight="18.0" prefWidth="58.0" text="E-mail" />
-                        <Label layoutX="347.0" layoutY="118.0" prefHeight="18.0" prefWidth="71.0" text="Max Salary" />
-                        <Label layoutX="347.0" layoutY="154.0" prefHeight="18.0" prefWidth="71.0" text="Min Salary" />
-                        <Label layoutX="347.0" layoutY="190.0" prefHeight="18.0" prefWidth="90.0" text="Expiration date" />
-                        <TextField fx:id="tfmin" layoutX="441.0" layoutY="152.0" />
-                        <Label layoutX="347.0" layoutY="230.0" prefHeight="18.0" prefWidth="90.0" text="Category" />
-                        <ChoiceBox fx:id="choicecateg" layoutX="442.0" layoutY="227.0" prefWidth="150.0" />
-                        <Button fx:id="addoffer1" layoutX="216.0" layoutY="308.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="251.0" text="Add Offer" />
+                        <Button fx:id="displaybtn" layoutX="124.0" layoutY="287.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="251.0" text="Display" />
+                        <TextField fx:id="tfpost" layoutX="96.0" layoutY="37.0" />
+                        <TextField fx:id="tfloc" layoutX="96.0" layoutY="109.0" />
+                        <TextField fx:id="tfdesc" layoutX="96.0" layoutY="73.0" />
+                        <TextField fx:id="tffile" layoutX="96.0" layoutY="150.0" />
+                        <TextField fx:id="tfemil" layoutX="349.0" layoutY="3.0" />
+                        <TextField fx:id="tfmax" layoutX="349.0" layoutY="39.0" />
+                        <TextField fx:id="tftitle" layoutX="96.0" />
+                        <DatePicker fx:id="tfexp" layoutX="349.0" layoutY="109.0" prefHeight="26.0" prefWidth="151.0" />
+                        <Label layoutY="4.0" prefHeight="18.0" prefWidth="39.0" text="Title" />
+                        <Label layoutY="41.0" prefHeight="18.0" prefWidth="39.0" text="Post" />
+                        <Label layoutY="77.0" prefHeight="18.0" prefWidth="71.0" text="Description" />
+                        <Label layoutY="113.0" prefHeight="18.0" prefWidth="71.0" text="Location" />
+                        <Label layoutY="153.0" prefHeight="18.0" prefWidth="71.0" text="File" />
+                        <Label layoutX="255.0" layoutY="5.0" prefHeight="18.0" prefWidth="58.0" text="E-mail" />
+                        <Label layoutX="255.0" layoutY="41.0" prefHeight="18.0" prefWidth="71.0" text="Max Salary" />
+                        <Label layoutX="255.0" layoutY="77.0" prefHeight="18.0" prefWidth="71.0" text="Min Salary" />
+                        <Label layoutX="255.0" layoutY="113.0" prefHeight="18.0" prefWidth="90.0" text="Expiration date" />
+                        <TextField fx:id="tfmin" layoutX="349.0" layoutY="75.0" />
+                        <Label layoutX="255.0" layoutY="153.0" prefHeight="18.0" prefWidth="90.0" text="Category" />
+                        <ChoiceBox fx:id="choicecateg" layoutX="350.0" layoutY="150.0" prefWidth="150.0" />
+                        <Button fx:id="addoffer1" layoutX="124.0" layoutY="231.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="251.0" text="Add Offer" />
                      </children>
-                  </AnchorPane>
-                  <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="476.0" prefWidth="266.0" style="-fx-background-color: linear-gradient(to left top, #2596be, #788dd3, #c67abe, #ef7184, #e28743);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
-                     <children>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="155.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Donno" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
-                           <padding>
-                              <Insets left="50.0" />
-                           </padding>
-                           <graphic>
-                              <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../images/icons8_Box_32px.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                           <font>
-                              <Font name="Segoe UI Semibold" size="14.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="home" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="206.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Home" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
-                           <padding>
-                              <Insets left="50.0" />
-                           </padding>
-                           <graphic>
-                              <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../images/icons8_Home_32px.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                           <font>
-                              <Font name="Segoe UI Semibold" size="14.0" />
-                           </font>
-                        </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="260.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Email" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
-                           <padding>
-                              <Insets left="50.0" />
-                           </padding>
-                           <graphic>
-                              <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../images/icons8_Open_Envelope_32px.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                           <font>
-                              <Font name="Segoe UI Semibold" size="14.0" />
-                           </font>
-                        </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="316.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Profile" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
-                           <padding>
-                              <Insets left="50.0" />
-                           </padding>
-                           <graphic>
-                              <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../images/icons8_Person_32px.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                           <font>
-                              <Font name="Segoe UI Semibold" size="14.0" />
-                           </font>
-                        </Button>
-                        <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="360.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Search" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
-                           <padding>
-                              <Insets left="50.0" />
-                           </padding>
-                           <graphic>
-                              <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../images/icons8_Search_52px.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                           <font>
-                              <Font name="Segoe UI Semibold" size="14.0" />
-                           </font>
-                        </Button>
-                        <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="415.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Exit" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
-                           <padding>
-                              <Insets left="50.0" />
-                           </padding>
-                           <graphic>
-                              <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../images/icons8_Sign_Out_32px.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <opaqueInsets>
-                              <Insets />
-                           </opaqueInsets>
-                           <font>
-                              <Font name="Segoe UI Semibold" size="14.0" />
-                           </font>
-                        </Button>
-                        <ImageView fitHeight="124.0" fitWidth="249.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0">
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="476.0" prefWidth="266.0" style="-fx-background-color: linear-gradient(to left top, #2596be, #788dd3, #c67abe, #ef7184, #e28743);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <children>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="155.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Donno" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../images/logo.png" />
+                              <Image url="@../../../images/icons8_Box_32px.png" />
                            </image>
                         </ImageView>
-                     </children>
-                  </AnchorPane>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="206.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Home" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Home_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="260.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Email" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Open_Envelope_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="316.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Profile" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Person_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="360.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Search" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Search_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="415.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Exit" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Sign_Out_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Segoe UI Semibold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="124.0" fitWidth="249.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0">
+                     <image>
+                        <Image url="@../../../images/logo.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </children>
-    </AnchorPane>
-  </children>
-</VBox>
+      </AnchorPane>
+   </children>
+</AnchorPane>
