@@ -1,15 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<?import javafx.scene.layout.*?>
-
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Gui.Backoffice.BackofficeController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="579.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Backoffice.BackofficeController">
+   <children>
+      <Button fx:id="btnClose" layoutX="935.0" layoutY="-4.0" mnemonicParsing="false" onMouseClicked="#handleClose" prefHeight="35.0" prefWidth="88.0" stylesheets="@Backend.css" text="LogOut">
+         <graphic>
+            <FontAwesomeIcon fill="#d93730" glyphName="CLOSE" size="20" />
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <VBox prefHeight="585.0" prefWidth="230.0" style="-fx-background-color: #212529;">
+         <children>
+            <Pane prefHeight="157.0" prefWidth="230.0">
+               <children>
+                  <FontAwesomeIcon fill="WHITE" glyphName="IMAGE" layoutX="98.0" layoutY="31.0" size="20" />
+                  <Label layoutX="65.0" layoutY="54.0" prefHeight="17.0" prefWidth="109.0" text="Admin Name" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btnHome" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Home" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="#27d057" glyphName="HOME" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="50.0" top="30.0" />
+               </padding>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnGUser" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Gestion Utilisateurs" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="#27d057" glyphName="USER" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Button>
+            <Button fx:id="btnGProduits" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Gestion Produits" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="#27d057" glyphName="BOOK" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnGCommande" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Gestion Commandes" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="#27d057" glyphName="ARROWS" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnGFormation" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Gestion Formations" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="#27d057" glyphName="ARROWS" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnGEvent" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Gestion Evenements" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="#27d057" glyphName="STAR" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnGRating" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Gestion Ratings" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="#27d057" glyphName="STAR" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <StackPane layoutX="239.0" layoutY="167.0">
+         <children>
+            <GridPane fx:id="pnProducts" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #666;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="190.66668701171875" minHeight="10.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="332.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox prefHeight="61.0" prefWidth="705.0" spacing="20.0">
+                     <children>
+                        <FontAwesomeIcon fx:id="faSearch" fill="#27d057" glyphName="SEARCH" size="20">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin></FontAwesomeIcon>
+                        <TextField fx:id="tfSearch" prefHeight="26.0" prefWidth="332.0" style="-fx-border-color: #27d057;" />
+                        <FontAwesomeIcon fx:id="deletStrash" fill="#e10101" glyphName="TRASH" onMouseClicked="#suppProd" size="15" />
+                        <FontAwesomeIcon fx:id="edit" fill="#33b955" glyphName="PENCIL_SQUARE" onMouseClicked="#editProd" size="15" />
+                        <Button fx:id="btnAddProduct" graphicTextGap="11.0" mnemonicParsing="false" onMouseClicked="#addP" prefHeight="29.0" prefWidth="150.0" stylesheets="@Backend.css" text="Add Product">
+                           <graphic>
+                              <FontAwesomeIcon fill="#27d057" glyphName="PLUS" onMouseClicked="#addP" size="15" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <FontAwesomeIcon fx:id="faRefresh" fill="#27d057" glyphName="REFRESH" onMouseClicked="#refresh" size="20" wrappingWidth="23.14285659790039">
+                     <GridPane.margin>
+                        <Insets left="10.0" top="25.0" />
+                     </GridPane.margin>
+                  </FontAwesomeIcon>
+                  <TableView fx:id="tableProduct" prefHeight="402.0" prefWidth="793.0" stylesheets="@Backend.css" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="idCol" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="nameCol" prefWidth="75.0" text="Author" />
+                        <TableColumn fx:id="refCol" prefWidth="75.0" text="Ref" />
+                        <TableColumn fx:id="descCol" prefWidth="75.0" text="Description" />
+                        <TableColumn fx:id="priceCol" prefWidth="75.0" text="Price" />
+                        <TableColumn fx:id="qtyCol" prefWidth="75.0" text="Quantity" />
+                        <TableColumn fx:id="imgCol" prefWidth="75.0" text="Image" />
+                        <TableColumn fx:id="actionCol" prefWidth="75.0" text="Action" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </GridPane>
+            <GridPane fx:id="pnCommandes" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;" StackPane.alignment="CENTER">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="pnFormations" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="pnHome" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+         </children>
+      </StackPane>
+      <Pane fx:id="pnStatus" layoutX="230.0" layoutY="68.0" prefHeight="86.0" prefWidth="793.0" style="-fx-background-color: #999;">
+         <children>
+            <Label fx:id="lbStatus" layoutX="29.0" layoutY="32.0" prefHeight="29.0" prefWidth="88.0" stylesheets="@Backend.css" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbStatusMin" layoutX="29.0" layoutY="14.0" text="Home/" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>

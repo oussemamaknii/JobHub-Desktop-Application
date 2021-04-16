@@ -13,5 +13,7 @@
     <orderEntry type="library" name="jfoenix-9.0.10" level="project" />
     <orderEntry type="library" name="fontawesomefx-8.2" level="project" />
     <orderEntry type="library" name="activation" level="project" />
+    <orderEntry type="library" name="fontawesomefx-glyphsbrowser-all-1.0" level="project" />
+    <orderEntry type="library" name="gson-2.8.2" level="project" />
   </component>
 </module>

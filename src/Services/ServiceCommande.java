@@ -4,6 +4,8 @@ import Entities.Commande;
 import Interfaces.IServiceCommande;
 import Utils.Connexion;
 import com.sun.jdi.StringReference;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -98,6 +100,25 @@ public class ServiceCommande implements IServiceCommande {
             System.out.println(err.getMessage());
         }
         return false;
+    }
+
+    @Override
+    public ObservableList<Commande> getAll() throws SQLException {
+        ObservableList <Commande> list = FXCollections.observableArrayList();
+        // String req = "select * from order o inner join user u on u.id=o.id_user";
+        String req = "select * from commande";
+
+        try {
+            PreparedStatement pst = cnx.prepareStatement(req);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()){
+                list.add(new Commande(rs.getFloat("total_payment"),rs.getBoolean("state"),rs.getString("date"),rs.getInt("id_user")));
+                return list;
+            }
+        }catch (SQLException err){
+            System.out.println(err.getMessage());
+        }
+        return list;
     }
 
     @Override

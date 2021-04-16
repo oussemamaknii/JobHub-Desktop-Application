@@ -63,6 +63,24 @@ public class ServiceProduit implements IServiceProduit {
     }
 
     @Override
+    public void update2(Produit entity, int id) {
+        try {
+            String request=
+                    " update products set name='"+entity.getName()+"', ref='"+entity.getRef()+
+                            "', description='"+entity.getDescription()+"', price='"+entity.getPrice()+
+                            "', quantity='"+entity.getQuantity()+"', image='"+entity.getImage()+"' where id ='"+id+"' ";
+
+            PreparedStatement pst = null;
+
+            pst = cnx.prepareStatement(request);
+            pst.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+
+    }
+    @Override
     public void update(Produit entity, AtomicReference<Produit> prod) {
         try {
         String request=

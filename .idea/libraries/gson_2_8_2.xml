@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="gson-2.8.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../Index_Passée/PiJava/CycleProJava/Bibliothèques/gson-2.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Index_Passée/PiJava/CycleProJava/Bibliothèques/richtextfx-demos-fat-0.6.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Index_Passée/PiJava/CycleProJava/Bibliothèques/controlsfx-8.40.11.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

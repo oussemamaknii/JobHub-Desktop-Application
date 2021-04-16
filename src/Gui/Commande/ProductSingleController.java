@@ -126,8 +126,8 @@ public class ProductSingleController implements Initializable {
     }
 
     //public void redirection(AnchorPane c, Cart p,ObservableList<Cart> pa,User u)
-    public void redirection(AnchorPane c, Cart p,ObservableList<Cart> pa) {
-        centerContent = c;
+    public AnchorPane redirection(AnchorPane c, Cart p,ObservableList<Cart> pa) {
+       // centerContent = c;
         produitPanier = p;
         nom.setText(p.getNomProduit());
         prix.setText(Float.toString(p.getPrix()));
@@ -140,6 +140,7 @@ public class ProductSingleController implements Initializable {
             panier.clear();;
             panier.addAll(pa);
         }
+        return centerContent;
       //  user=u;
     }
       @FXML

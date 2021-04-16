@@ -26,33 +26,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_glyphsbrowser_all_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Commande/Commande.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Commande/CommandeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingle.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingle.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backend.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Card.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Card.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/DeleteProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/DeleteProductController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceProduit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceProduit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceProduit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceProduit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/ProductSingle.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/ProductSingle.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Backend.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backend.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Commande/ProductSingleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/ProductSingleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Book.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Card.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Card.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddProduct.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddProduct.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/DeleteProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/DeleteProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ShopController2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServiceCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IServiceCommande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServiceProduit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IServiceProduit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/ServiceCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ServiceCommande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ServiceProduit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ServiceProduit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,11 +94,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Index_Passée/PiJava/CycleProJava/Bibliothèques/controlsfx-8.40.11.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.21717791" />
-    <property name="project.structure.side.proportion" value="0.2122347" />
+    <property name="project.structure.side.proportion" value="0.29837704" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -167,38 +174,46 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="150" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1618320290867" />
-    <state x="162" y="154" key="#com.intellij.ide.util.MemberChooser" timestamp="1618406811837">
+    <state x="880" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1618599421501">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="162" y="154" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1618406811837" />
+    <state x="880" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1618599421501" />
+    <state x="605" y="172" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1618531257544">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="605" y="172" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1600.900@0.0.1600.900" timestamp="1618531257544" />
     <state x="542" y="226" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618093800119">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="542" y="226" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1618093800119" />
-    <state x="226" y="216" key="FileChooserDialogImpl" timestamp="1618435218911">
+    <state x="0" y="319" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1618542270687">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="226" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618435218911" />
-    <state width="1508" height="178" key="GridCell.Tab.0.bottom" timestamp="1618441290276">
+    <state x="0" y="319" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.900@0.0.1600.900" timestamp="1618542270687" />
+    <state x="226" y="216" key="FileChooserDialogImpl" timestamp="1618601742920">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1508" height="178" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618441290276" />
-    <state width="1508" height="178" key="GridCell.Tab.0.center" timestamp="1618441290260">
+    <state x="226" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618601742920" />
+    <state width="1554" height="154" key="GridCell.Tab.0.bottom" timestamp="1618609233062">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1508" height="178" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618441290260" />
-    <state width="1508" height="178" key="GridCell.Tab.0.left" timestamp="1618441290260">
+    <state width="1554" height="154" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618609233062" />
+    <state width="1554" height="154" key="GridCell.Tab.0.center" timestamp="1618609233062">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1508" height="178" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618441290260" />
-    <state width="1508" height="178" key="GridCell.Tab.0.right" timestamp="1618441290260">
+    <state width="1554" height="154" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618609233062" />
+    <state width="1554" height="154" key="GridCell.Tab.0.left" timestamp="1618609233062">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1508" height="178" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618441290260" />
-    <state x="294" y="49" key="SettingsEditor" timestamp="1618326830430">
+    <state width="1554" height="154" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618609233062" />
+    <state width="1554" height="154" key="GridCell.Tab.0.right" timestamp="1618609233062">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="294" y="49" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618326830430" />
+    <state width="1554" height="154" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618609233062" />
+    <state x="294" y="49" key="SettingsEditor" timestamp="1618601750121">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="294" y="49" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618601750121" />
     <state x="224" y="366" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618111671465">
       <screen x="0" y="0" width="1600" height="900" />
     </state>

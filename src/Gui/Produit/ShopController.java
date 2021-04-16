@@ -91,7 +91,7 @@ public class ShopController implements Initializable {
         FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Commande/ProductSingle.fxml"));
         Parent fxml = Loader.load();
         ProductSingleController e = Loader.getController();
-        e.redirection(centerContent, produitPanier,panier);
+        centerContent = e.redirection(centerContent, produitPanier,panier);
         System.out.println(centerContent);
         centerContent.getChildren().removeAll();
         new FadeInDown(fxml).play();

@@ -30,7 +30,7 @@ public class DeleteProductController implements Initializable {
     @FXML
     private TableColumn<Produit, String> colquantity;
     @FXML
-    private TableColumn<Produit, LocalDate> colimage;
+    private TableColumn<Produit, String> colimage;
     @FXML
     private Button deletebtn;
     @FXML
@@ -70,7 +70,6 @@ public class DeleteProductController implements Initializable {
                     throwables.printStackTrace();
                 }
                     showProducts();
-
             }
         });
 
@@ -93,9 +92,7 @@ public class DeleteProductController implements Initializable {
                     Float.parseFloat(tfprice.getText()),Integer.parseInt(tfquantity.getText()),
                     tfimage.getText()
             );
-
                 new ServiceProduit().update(prod,product);
-
                 showProducts();
 
         });
