@@ -29,20 +29,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Gui/Acceuil/FXloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_Emploi.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre Emploi/AddOffre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre Emploi/AddOffre_Emploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/AddOffre_EmploiController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/AddOffre_EmploiController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/AddOffre_EmploiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Commande.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Panier.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingle.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/DeletOffreEmploiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemande.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Frontend/Frontend.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre Emploi/AddOffre_Emploi.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre Emploi/DeletOffreEmploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/Shop2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/shop.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/PanierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/PanierController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/ProductSingle.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ProductSingle.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/ProductSingleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ProductSingleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemande.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Demande/AddDemande.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/AddOffre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre Emploi/AddOffre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/AddOffre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre Emploi/AddOffre_EmploiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/DeletOffreEmploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre Emploi/DeletOffreEmploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/DeletOffreEmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Offre Emploi/DeletOffreEmploiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/AddOffre_Emploi.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/AddOffre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/DeletOffreEmploi.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Offre Emploi/DeletOffreEmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/ShopController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/shop.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,7 +117,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\OffreEmploi" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Produit" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Commande" />
       <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Offre Emploi" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Demande" />
     </key>
   </component>
   <component name="RunManager">
@@ -135,5 +175,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

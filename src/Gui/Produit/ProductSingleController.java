@@ -3,22 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Gui.Commande;
+package Gui.Produit;
 
-import Entities.Panier;
 //import Entitie.User.User;
 import Entities.Cart;
+import Gui.Commande.PanierController;
 import animatefx.animation.FadeIn;
 import animatefx.animation.FadeInDown;
-import animatefx.animation.FadeInLeft;
-import animatefx.animation.SlideInLeft;
-import animatefx.animation.SlideInRight;
-import animatefx.animation.SlideOutRight;
-import java.io.IOException;
+
+        import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.ResourceBundle;
+        import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -31,8 +26,7 @@ import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.ContextMenuEvent;
-import javafx.scene.input.MouseEvent;
+        import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -146,7 +140,7 @@ public class ProductSingleController implements Initializable {
      produitPanier.setQuantite(quantite.getValue());
           System.out.println("quantite"+ produitPanier.getQuantite());
      panier.add(produitPanier);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Commande/Panier.fxml"));
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Commande/Panier.fxml"));
         Parent fxml = Loader.load();
         PanierController e = Loader.getController();
         //e.redirection(centerContent,panier,user);

@@ -1,42 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
-  All rights reserved. Use is subject to license terms.
-
-  This file is available and licensed under the following license:
-
-  Redistribution and use in source and binary forms, with or without
-  modification, are permitted provided that the following conditions
-  are met:
-
-  - Redistributions of source code must retain the above copyright
-    notice, this list of conditions and the following disclaimer.
-  - Redistributions in binary form must reproduce the above copyright
-    notice, this list of conditions and the following disclaimer in
-    the documentation and/or other materials provided with the distribution.
-  - Neither the name of Oracle Corporation nor the names of its
-    contributors may be used to endorse or promote products derived
-    from this software without specific prior written permission.
-
-  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -44,36 +14,68 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AddOffre_EmploiController">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.DeletOffreEmploiController">
    <children>
-      <AnchorPane layoutX="24.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
+      <AnchorPane layoutX="34.0" layoutY="34.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
          <children>
             <AnchorPane layoutX="255.0" layoutY="39.0" prefHeight="426.0" prefWidth="684.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="40.0" AnchorPane.topAnchor="40.0">
                <children>
-                  <Pane layoutX="92.0" layoutY="54.0">
+                  <Pane fx:id="paneoffers" layoutX="74.0" layoutY="23.0">
                      <children>
-                        <Button fx:id="displaybtn" layoutX="124.0" layoutY="287.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="251.0" text="Display" />
-                        <TextField fx:id="tfpost" layoutX="96.0" layoutY="37.0" />
-                        <TextField fx:id="tfloc" layoutX="96.0" layoutY="109.0" />
-                        <TextField fx:id="tfdesc" layoutX="96.0" layoutY="73.0" />
-                        <TextField fx:id="tffile" layoutX="96.0" layoutY="150.0" />
-                        <TextField fx:id="tfemil" layoutX="349.0" layoutY="3.0" />
-                        <TextField fx:id="tfmax" layoutX="349.0" layoutY="39.0" />
-                        <TextField fx:id="tftitle" layoutX="96.0" />
-                        <DatePicker fx:id="tfexp" layoutX="349.0" layoutY="109.0" prefHeight="26.0" prefWidth="151.0" />
-                        <Label layoutY="4.0" prefHeight="18.0" prefWidth="39.0" text="Title" />
-                        <Label layoutY="41.0" prefHeight="18.0" prefWidth="39.0" text="Post" />
-                        <Label layoutY="77.0" prefHeight="18.0" prefWidth="71.0" text="Description" />
-                        <Label layoutY="113.0" prefHeight="18.0" prefWidth="71.0" text="Location" />
-                        <Label layoutY="153.0" prefHeight="18.0" prefWidth="71.0" text="File" />
-                        <Label layoutX="255.0" layoutY="5.0" prefHeight="18.0" prefWidth="58.0" text="E-mail" />
-                        <Label layoutX="255.0" layoutY="41.0" prefHeight="18.0" prefWidth="71.0" text="Max Salary" />
-                        <Label layoutX="255.0" layoutY="77.0" prefHeight="18.0" prefWidth="71.0" text="Min Salary" />
-                        <Label layoutX="255.0" layoutY="113.0" prefHeight="18.0" prefWidth="90.0" text="Expiration date" />
-                        <TextField fx:id="tfmin" layoutX="349.0" layoutY="75.0" />
-                        <Label layoutX="255.0" layoutY="153.0" prefHeight="18.0" prefWidth="90.0" text="Category" />
-                        <ChoiceBox fx:id="choicecateg" layoutX="350.0" layoutY="150.0" prefWidth="150.0" />
-                        <Button fx:id="addoffer1" layoutX="124.0" layoutY="231.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="251.0" text="Add Offer" />
+                        <Button fx:id="deletebtn" layoutX="22.0" layoutY="242.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Delete" />
+                        <TableView fx:id="table" prefHeight="226.0" prefWidth="566.0">
+                           <columns>
+                              <TableColumn fx:id="coltitre" prefWidth="60.0" text="titre" />
+                              <TableColumn fx:id="colposte" prefWidth="60.0" text="poste" />
+                              <TableColumn fx:id="coldesc" prefWidth="75.0" text="description" />
+                              <TableColumn fx:id="colloc" prefWidth="75.0" text="location" />
+                              <TableColumn fx:id="colemail" prefWidth="75.0" text="email" />
+                              <TableColumn fx:id="startdated" prefWidth="75.0" text="start date" />
+                              <TableColumn fx:id="colexp" prefWidth="75.0" text="date exp" />
+                              <TableColumn fx:id="categ" prefWidth="75.0" text="category" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="updatebtn" layoutX="22.0" layoutY="293.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Update" />
+                        <Button fx:id="seeapp" layoutX="22.0" layoutY="340.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="See Applications" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="panedemande" layoutX="93.0" layoutY="2.0" prefHeight="302.0" prefWidth="527.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="50.0">
+                     <children>
+                        <TableView fx:id="table2" prefHeight="249.0" prefWidth="472.0">
+                           <columns>
+                              <TableColumn fx:id="offtit" prefWidth="75.0" text="Offre title" />
+                              <TableColumn fx:id="username" prefWidth="90.0" text="candidat name" />
+                              <TableColumn fx:id="stat" prefWidth="75.0" text="Status" />
+                              <TableColumn fx:id="stdate" prefWidth="75.0" text="Start date" />
+                              <TableColumn fx:id="enddate" prefWidth="75.0" text="End dtae" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="treatapp" layoutY="259.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Treat application" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="paneupdatet" layoutX="76.0" layoutY="25.0" prefHeight="369.0" prefWidth="566.0">
+                     <children>
+                        <TextField fx:id="tfpost" layoutX="400.0" layoutY="67.0" />
+                        <TextField fx:id="tfdesc" layoutX="400.0" layoutY="117.0" />
+                        <TextField fx:id="tfloc" layoutX="132.0" layoutY="212.0" />
+                        <TextField fx:id="tffile" layoutX="132.0" layoutY="165.0" />
+                        <TextField fx:id="tfemil" layoutX="132.0" layoutY="117.0" />
+                        <TextField fx:id="tfmax" layoutX="132.0" layoutY="67.0" />
+                        <TextField fx:id="tftitle" layoutX="400.0" layoutY="165.0" />
+                        <DatePicker fx:id="tfexp" layoutX="132.0" layoutY="23.0" prefHeight="26.0" prefWidth="151.0" />
+                        <Label layoutX="321.0" layoutY="169.0" prefHeight="18.0" prefWidth="39.0" text="Title" />
+                        <Label layoutX="321.0" layoutY="71.0" prefHeight="18.0" prefWidth="39.0" text="Post" />
+                        <Label layoutX="305.0" layoutY="121.0" prefHeight="18.0" prefWidth="71.0" text="Description" />
+                        <Label layoutX="29.0" layoutY="216.0" prefHeight="18.0" prefWidth="71.0" text="Location" />
+                        <Label layoutX="39.0" layoutY="169.0" prefHeight="18.0" prefWidth="33.0" text="File" />
+                        <Label layoutX="30.0" layoutY="121.0" prefHeight="18.0" prefWidth="58.0" text="E-mail" />
+                        <Label layoutX="23.0" layoutY="80.0" prefHeight="18.0" prefWidth="71.0" text="Max Salary" />
+                        <Label layoutX="305.0" layoutY="27.0" prefHeight="18.0" prefWidth="71.0" text="Min Salary" />
+                        <Label layoutX="13.0" layoutY="27.0" prefHeight="18.0" prefWidth="90.0" text="Expiration date" />
+                        <TextField fx:id="tfmin" layoutX="400.0" layoutY="19.0" />
+                        <Label layoutX="315.0" layoutY="216.0" prefHeight="18.0" prefWidth="58.0" text="Category" />
+                        <ChoiceBox fx:id="choicecateg" layoutX="401.0" layoutY="211.0" prefWidth="150.0" />
+                        <Button fx:id="update2" layoutX="20.0" layoutY="281.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Update" />
                      </children>
                   </Pane>
                </children>
@@ -134,7 +136,7 @@
                         <Font name="Segoe UI Semibold" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="316.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Profile" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="295.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Profile" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="120.60000000000002" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="295.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>

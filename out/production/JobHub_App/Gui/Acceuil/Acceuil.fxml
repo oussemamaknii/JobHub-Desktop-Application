@@ -5,21 +5,30 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Acceuil.AcceuilController">
    <children>
       <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="47.0">
          <children>
-            <AnchorPane layoutX="255.0" layoutY="39.0" prefHeight="426.0" prefWidth="684.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="40.0" AnchorPane.topAnchor="40.0">
-               <children>
-                  <Button fx:id="dembtn" layoutX="85.0" layoutY="42.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="210.0" text="Apply to a job" />
-                  <Button fx:id="offbtn" layoutX="412.0" layoutY="42.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="210.0" text="Job Offers" />
-               </children>
-            </AnchorPane>
+            <BorderPane fx:id="mainpane" layoutX="279.0" layoutY="119.0" prefHeight="406.0" prefWidth="665.0" style="-fx-background-color: white; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="279.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+               <top>
+                  <Pane prefHeight="20.0" prefWidth="666.0" BorderPane.alignment="CENTER" />
+               </top>
+               <bottom>
+                  <Pane prefHeight="70.0" prefWidth="694.0" BorderPane.alignment="CENTER" />
+               </bottom>
+               <left>
+                  <Pane prefHeight="266.0" prefWidth="70.0" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <Pane prefHeight="266.0" prefWidth="70.0" BorderPane.alignment="CENTER" />
+               </right></BorderPane>
             <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="476.0" prefWidth="266.0" style="-fx-background-color: linear-gradient(to left top, #2596be, #788dd3, #c67abe, #ef7184, #e28743);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="672.6" AnchorPane.topAnchor="15.0">
                <children>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="155.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Donno" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                  <Button fx:id="dembtn" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="155.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Apply to a job" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -55,7 +64,7 @@
                         <Font name="Segoe UI Semibold" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="260.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Email" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                  <Button fx:id="offbtn" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="260.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Job Offers" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
