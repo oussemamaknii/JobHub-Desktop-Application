@@ -5,17 +5,18 @@
  */
 package Gui.Acceuil;
 
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -25,13 +26,24 @@ import javafx.stage.Stage;
 public class AcceuilController implements Initializable {
 
     @FXML
-    private Button offbtn;
-    @FXML
-    private Button dembtn;
-    @FXML
     private Button exit;
     @FXML
     private BorderPane mainpane;
+    @FXML
+    private MenuItem addoffre;
+    @FXML
+    private MenuItem deloff;
+    @FXML
+    private MenuItem upoff;
+    @FXML
+    private MenuItem treatapps;
+    @FXML
+    private MenuItem userapps;
+    @FXML
+    private MenuItem deluserapps;
+    @FXML
+    private MenuItem applytoajob;
+
 
     /**
      * Initializes the controller class.
@@ -39,7 +51,7 @@ public class AcceuilController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
 
-        offbtn.setOnAction(e -> {
+        addoffre.setOnAction(e -> {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/OffreEmploi/AddOffre_Emploi.fxml").toURI().toURL();
@@ -55,7 +67,29 @@ public class AcceuilController implements Initializable {
             stage1.close();
         });
 
-        dembtn.setOnAction(e -> {
+        deloff.setOnAction(e->{
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/OffreEmploi/DeletOffreEmploi.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+
+        treatapps.setOnAction(e->{
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/OffreEmploi/SeeApps.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+
+        userapps.setOnAction(e->{
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/Demande/AddDemande.fxml").toURI().toURL();
@@ -65,6 +99,16 @@ public class AcceuilController implements Initializable {
             Pane view = new FXloader().getPane(root_url);
             mainpane.setCenter(view);
         });
-    }
 
+        upoff.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/OffreEmploi/UpdateOffer.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+    }
 }

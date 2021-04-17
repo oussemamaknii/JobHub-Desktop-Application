@@ -6,7 +6,6 @@
 package Gui.OffreEmploi;
 
 import Entities.Offre_Emploi;
-import Gui.Acceuil.FXloader;
 import Services.Offre_Emploi_Service;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -18,12 +17,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.Pane;
 import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 
 import java.io.File;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.util.ResourceBundle;
@@ -59,8 +55,6 @@ public class AddOffre_EmploiController implements Initializable {
     private ChoiceBox<String> choicecateg;
     @FXML
     private Button addoffer1;
-    @FXML
-    private Button displaybtn;
 
     /**
      * Initializes the controller class.
@@ -97,29 +91,9 @@ public class AddOffre_EmploiController implements Initializable {
                         Integer.parseInt(tfmin.getText())
                 );
                 new Offre_Emploi_Service().add(offer);
-                afficherOffres();
             }
         });
-
-        displaybtn.setOnAction(e -> {
-            Stage stage1 = (Stage) displaybtn.getScene().getWindow();
-            stage1.close();
-            afficherOffres();
-        });
-
     }
-
-    private void afficherOffres() {
-        URL root_url = null;
-        try {
-            root_url = new File("src/Gui/OffreEmploi/DeletOffreEmploi.fxml").toURI().toURL();
-        } catch (MalformedURLException malformedURLException) {
-            malformedURLException.printStackTrace();
-        }
-        Pane view = new FXloader().getPane(root_url);
-        //AcceuilController.setMainpane(view);
-    }
-
 
     @FXML
     private void filechooser(ActionEvent event) {
