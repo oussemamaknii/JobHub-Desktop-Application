@@ -38,30 +38,38 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 
-<Pane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.AddOffre_EmploiController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.AddOffre_EmploiController">
    <children>
-      <TextField fx:id="tfpost" layoutX="96.0" layoutY="37.0" />
-      <TextField fx:id="tfloc" layoutX="96.0" layoutY="109.0" />
-      <TextField fx:id="tfdesc" layoutX="96.0" layoutY="73.0" />
-      <TextField fx:id="tffile" layoutX="96.0" layoutY="150.0" prefHeight="26.0" prefWidth="90.0" />
-      <TextField fx:id="tfemil" layoutX="349.0" layoutY="3.0" />
-      <TextField fx:id="tfmax" layoutX="349.0" layoutY="39.0" />
-      <TextField fx:id="tftitle" layoutX="96.0" />
-      <DatePicker fx:id="tfexp" layoutX="349.0" layoutY="109.0" prefHeight="26.0" prefWidth="151.0" />
-      <Label layoutY="4.0" prefHeight="18.0" prefWidth="39.0" text="Title" />
-      <Label layoutY="41.0" prefHeight="18.0" prefWidth="39.0" text="Post" />
-      <Label layoutY="77.0" prefHeight="18.0" prefWidth="71.0" text="Description" />
-      <Label layoutY="113.0" prefHeight="18.0" prefWidth="71.0" text="Location" />
-      <Label layoutY="153.0" prefHeight="18.0" prefWidth="71.0" text="File" />
-      <Label layoutX="255.0" layoutY="5.0" prefHeight="18.0" prefWidth="58.0" text="E-mail" />
-      <Label layoutX="255.0" layoutY="41.0" prefHeight="18.0" prefWidth="71.0" text="Max Salary" />
-      <Label layoutX="255.0" layoutY="77.0" prefHeight="18.0" prefWidth="71.0" text="Min Salary" />
-      <Label layoutX="255.0" layoutY="113.0" prefHeight="18.0" prefWidth="90.0" text="Expiration date" />
-      <TextField fx:id="tfmin" layoutX="349.0" layoutY="75.0" />
-      <Label layoutX="255.0" layoutY="153.0" prefHeight="18.0" prefWidth="90.0" text="Category" />
-      <ChoiceBox fx:id="choicecateg" layoutX="350.0" layoutY="150.0" prefWidth="150.0" />
-      <Button fx:id="addoffer1" layoutX="124.0" layoutY="231.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="251.0" text="Add Offer" />
-      <Button layoutX="193.0" layoutY="147.0" mnemonicParsing="false" onAction="#filechooser" text="Image" />
+      <Pane fx:id="pane" layoutX="10.0" layoutY="10.0" stylesheets="@../StylSheet/Style.css">
+         <children>
+            <TextField fx:id="tfpost" layoutX="96.0" layoutY="37.0" prefHeight="26.0" prefWidth="198.0" promptText="Post" />
+            <TextField fx:id="tfloc" layoutX="96.0" layoutY="109.0" prefHeight="26.0" prefWidth="198.0" promptText="Location" />
+            <TextField fx:id="tfdesc" layoutX="96.0" layoutY="73.0" prefHeight="26.0" prefWidth="198.0" promptText="Description" />
+            <TextField fx:id="tffile" layoutX="96.0" layoutY="147.0" prefHeight="37.0" prefWidth="118.0" promptText="File" />
+            <TextField fx:id="tfemil" layoutX="434.0" layoutY="-1.0" prefHeight="26.0" prefWidth="212.0" promptText="E-mail" />
+            <TextField fx:id="tfmax" layoutX="434.0" layoutY="35.0" prefHeight="26.0" prefWidth="178.0" promptText="Max Salary " />
+            <TextField fx:id="tftitle" layoutX="96.0" prefHeight="26.0" prefWidth="198.0" promptText="Title" />
+            <DatePicker fx:id="tfexp" layoutX="434.0" layoutY="105.0" prefHeight="26.0" prefWidth="212.0" promptText="Expiration Date" />
+            <Label layoutY="4.0" prefHeight="18.0" prefWidth="39.0" text="Title" />
+            <Label layoutY="41.0" prefHeight="18.0" prefWidth="39.0" text="Post" />
+            <Label layoutY="77.0" prefHeight="18.0" prefWidth="71.0" text="Description" />
+            <Label layoutY="113.0" prefHeight="18.0" prefWidth="71.0" text="Location" />
+            <Label layoutY="153.0" prefHeight="18.0" prefWidth="71.0" text="File" />
+            <Label layoutX="340.0" layoutY="1.0" prefHeight="18.0" prefWidth="58.0" text="E-mail" />
+            <Label layoutX="340.0" layoutY="37.0" prefHeight="18.0" prefWidth="71.0" text="Max Salary" />
+            <Label layoutX="340.0" layoutY="73.0" prefHeight="18.0" prefWidth="71.0" text="Min Salary" />
+            <Label layoutX="340.0" layoutY="109.0" prefHeight="18.0" prefWidth="90.0" text="Expiration date" />
+            <TextField fx:id="tfmin" layoutX="434.0" layoutY="71.0" prefHeight="26.0" prefWidth="178.0" promptText="Min Salary" />
+            <Label layoutX="340.0" layoutY="149.0" prefHeight="18.0" prefWidth="90.0" text="Category" />
+            <ChoiceBox fx:id="choicecateg" layoutX="435.0" layoutY="146.0" prefHeight="28.0" prefWidth="212.0" />
+            <Button fx:id="addoffer1" layoutX="167.0" layoutY="225.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="251.0" text="Add Offer" />
+            <Button layoutX="222.0" layoutY="149.0" mnemonicParsing="false" onAction="#filechooser" prefHeight="37.0" prefWidth="71.0" text="Image" />
+            <Label layoutX="612.0" layoutY="32.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
+            <Label layoutX="612.0" layoutY="70.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
+            <StackPane fx:id="effect" layoutX="115.0" layoutY="70.0" prefHeight="156.0" prefWidth="362.0" />
+         </children>
+      </Pane>
    </children>
 </Pane>

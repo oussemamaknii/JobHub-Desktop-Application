@@ -5,22 +5,18 @@
  */
 package Services;
 
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import Entities.Offre_Emploi;
+import Interfaces.IService;
+import Utils.Connexion;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.ListView;
+
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import Entities.Offre_Emploi;
-import Utils.Connexion;
-import Interfaces.IService;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 /**
  * @author souso
@@ -86,7 +82,35 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         }
     }
 
-    @Override
+    public ListView<Offre_Emploi> getAlll(int id) {
+        ListView<Offre_Emploi> offres = new ListView<>();
+        String request = "select * from Offre_Emploi";
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                Offre_Emploi offre = new Offre_Emploi();
+                offre.setId(rs.getInt("id"));
+                offre.setTitre(rs.getString("titre"));
+                offre.setPoste(rs.getString("poste"));
+                offre.setDescription(rs.getString("description"));
+                offre.setLocation(rs.getString("location"));
+                offre.setFile(rs.getString("file"));
+                offre.setEmail(rs.getString("email"));
+                offre.setDate_debut(rs.getDate("date_debut").toLocalDate());
+                offre.setDate_expiration(rs.getDate("date_expiration").toLocalDate());
+                offre.setMax_salary(rs.getInt("max_salary"));
+                offre.setMin_salary(rs.getInt("min_salary"));
+                offre.setCategory_id(rs.getInt("categorie_id"));
+                offre.setCatname(getcatname(rs.getInt("categorie_id")));
+                offres.getItems().add(offre);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return offres;
+    }
+
     public ObservableList<Offre_Emploi> getAll(int id) {
         ObservableList<Offre_Emploi> offres = FXCollections.observableArrayList();
         String request = "select * from Offre_Emploi";
@@ -131,7 +155,6 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return a;
     }
 
-    @Override
     public void add(Offre_Emploi entity) {
         try {
             String request

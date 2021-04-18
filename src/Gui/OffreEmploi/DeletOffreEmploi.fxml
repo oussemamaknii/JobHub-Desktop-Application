@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.Pane?>
 
-
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.DeletOffreEmploiController">
    <children>
-      <TableView fx:id="table" layoutX="17.0" prefHeight="238.0" prefWidth="566.0">
+      <TableView fx:id="table" layoutX="17.0" prefHeight="8.0" prefWidth="17.0">
          <columns>
             <TableColumn fx:id="coltitre" prefWidth="60.0" text="titre" />
             <TableColumn fx:id="colposte" prefWidth="60.0" text="poste" />
@@ -21,5 +21,6 @@
          </columns>
       </TableView>
       <Button fx:id="deletebtn" layoutX="37.0" layoutY="253.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Dlete Offer" />
+      <ListView fx:id="listdisplay" layoutX="101.0" layoutY="17.0" prefHeight="222.0" prefWidth="484.0" />
    </children>
 </Pane>

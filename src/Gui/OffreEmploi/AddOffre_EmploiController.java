@@ -7,16 +7,24 @@ package Gui.OffreEmploi;
 
 import Entities.Offre_Emploi;
 import Services.Offre_Emploi_Service;
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXDialog;
+import com.jfoenix.controls.JFXDialogLayout;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.scene.effect.BoxBlur;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 
 import java.io.File;
@@ -55,12 +63,17 @@ public class AddOffre_EmploiController implements Initializable {
     private ChoiceBox<String> choicecateg;
     @FXML
     private Button addoffer1;
+    @FXML
+    private Pane pane;
+    @FXML
+    private StackPane effect;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        effect.setDisable(true);
         tfmax.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue,
@@ -70,6 +83,7 @@ public class AddOffre_EmploiController implements Initializable {
                 }
             }
         });
+
         tffile.setEditable(false);
         tfmin.textProperty().addListener(new ChangeListener<String>() {
             @Override
@@ -91,7 +105,25 @@ public class AddOffre_EmploiController implements Initializable {
                         Integer.parseInt(tfmin.getText())
                 );
                 new Offre_Emploi_Service().add(offer);
-            }
+                effect.setDisable(false);
+                BoxBlur blur = new BoxBlur(3,3,3);
+                JFXDialogLayout content = new JFXDialogLayout();
+                content.setHeading(new Text("Adding A Job Offer"));
+                content.setBody(new Text("Your Job\n Title : "+offer.getTitre()+" Post needed : "+offer.getPoste()+"\nHas Been added successfully !"));
+                JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+                JFXButton btn = new JFXButton("Done !");
+                btn.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                        fialog.close();
+                        pane.setEffect(null);
+                        effect.setDisable(true);
+                    }
+                });
+                content.setActions(btn);
+                pane.setEffect(blur);
+                fialog.show();
+                }
         });
     }
 

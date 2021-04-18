@@ -11,7 +11,6 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
 import java.time.LocalDate;
@@ -45,6 +44,8 @@ public class DeletOffreEmploiController implements Initializable {
     private TableColumn<?, ?> startdated;
     @FXML
     private TableColumn<?, ?> categ;
+    @FXML
+    private ListView<Offre_Emploi> listdisplay;
 
     /**
      * Initializes the controller class.
@@ -75,14 +76,9 @@ public class DeletOffreEmploiController implements Initializable {
 
     public void showOffres() {
         ObservableList<Offre_Emploi> offres = new Offre_Emploi_Service().getAll(1);
-        coltitre.setCellValueFactory(new PropertyValueFactory<>("titre"));
-        colposte.setCellValueFactory(new PropertyValueFactory<>("poste"));
-        coldesc.setCellValueFactory(new PropertyValueFactory<>("description"));
-        colloc.setCellValueFactory(new PropertyValueFactory<>("location"));
-        colemail.setCellValueFactory(new PropertyValueFactory<>("email"));
-        colexp.setCellValueFactory(new PropertyValueFactory<>("date_expiration"));
-        startdated.setCellValueFactory(new PropertyValueFactory<>("date_debut"));
-        categ.setCellValueFactory(new PropertyValueFactory<>("catname"));
-        table.setItems(offres);
+
+        listdisplay.setItems(offres);
+        listdisplay.setCellFactory(studentListView -> new OffreListViewCell());
+
     }
 }
