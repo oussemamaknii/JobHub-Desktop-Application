@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="OffreCell" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="662.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="img" fitHeight="99.0" fitWidth="91.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/job.png" />
+         </image></ImageView>
+      <Label fx:id="titre" layoutX="109.0" layoutY="14.0" prefHeight="30.0" prefWidth="78.0" />
+      <Label fx:id="poste" layoutX="109.0" layoutY="62.0" prefHeight="42.0" prefWidth="91.0" />
+      <Label layoutX="220.0" layoutY="9.0" prefHeight="59.0" prefWidth="186.0" />
+      <Label fx:id="location" layoutX="406.0" layoutY="29.0" prefHeight="30.0" prefWidth="111.0" />
+      <Label fx:id="email" layoutX="220.0" layoutY="68.0" prefHeight="30.0" prefWidth="186.0" />
+      <Label fx:id="categ" layoutX="538.0" layoutY="23.0" prefHeight="30.0" prefWidth="105.0" />
+      <Label fx:id="maxsal" layoutX="584.0" layoutY="73.0" prefHeight="30.0" prefWidth="45.0" />
+      <Label layoutX="638.0" layoutY="73.0" prefHeight="30.0" prefWidth="18.0" text="DT" />
+      <Label layoutX="574.0" layoutY="81.0" text="--" />
+      <Label fx:id="minsal" layoutX="501.0" layoutY="73.0" prefHeight="30.0" prefWidth="46.0" />
+      <Label layoutX="547.0" layoutY="75.0" prefHeight="30.0" prefWidth="18.0" text="DT" />
+   </children>
+</AnchorPane>

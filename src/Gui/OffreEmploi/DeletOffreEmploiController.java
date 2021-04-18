@@ -76,9 +76,7 @@ public class DeletOffreEmploiController implements Initializable {
 
     public void showOffres() {
         ObservableList<Offre_Emploi> offres = new Offre_Emploi_Service().getAll(1);
-
         listdisplay.setItems(offres);
-        listdisplay.setCellFactory(studentListView -> new OffreListViewCell());
-
+        listdisplay.setCellFactory(studentListView -> new OffreCell());
     }
 }

@@ -68,8 +68,8 @@
             <Button layoutX="222.0" layoutY="149.0" mnemonicParsing="false" onAction="#filechooser" prefHeight="37.0" prefWidth="71.0" text="Image" />
             <Label layoutX="612.0" layoutY="32.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
             <Label layoutX="612.0" layoutY="70.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
-            <StackPane fx:id="effect" layoutX="115.0" layoutY="70.0" prefHeight="156.0" prefWidth="362.0" />
          </children>
       </Pane>
+      <StackPane fx:id="effect" layoutX="125.0" layoutY="80.0" prefHeight="156.0" prefWidth="362.0" />
    </children>
 </Pane>

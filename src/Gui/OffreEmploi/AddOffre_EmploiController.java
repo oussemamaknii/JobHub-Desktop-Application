@@ -73,6 +73,7 @@ public class AddOffre_EmploiController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        tfexp.setEditable(false);
         effect.setDisable(true);
         tfmax.textProperty().addListener(new ChangeListener<String>() {
             @Override
