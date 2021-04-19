@@ -5,9 +5,6 @@
  */
 package jobhub_app;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -17,6 +14,10 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
 
 /**
  *

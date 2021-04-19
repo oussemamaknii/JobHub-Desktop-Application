@@ -5,22 +5,18 @@
  */
 package Services;
 
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import Entities.Offre_Emploi;
+import Interfaces.IService;
+import Utils.Connexion;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.ListView;
+
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import Entities.Offre_Emploi;
-import Utils.Connexion;
-import Interfaces.IService;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 /**
  * @author souso
@@ -44,9 +40,9 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return ids;
     }
 
-    public String getOffreCateg(String id){
-        String ids ="";
-        String request = "select titre from Category where id = '"+id+"'";
+    public String getOffreCateg(String id) {
+        String ids = "";
+        String request = "select titre from Category where id = '" + id + "'";
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);
@@ -59,9 +55,9 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return ids;
     }
 
-    public int getCategId(String value){
+    public int getCategId(String value) {
         int result = 0;
-        String request = "select id from Category where titre = '" + value+"'";
+        String request = "select id from Category where titre = '" + value + "'";
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);
@@ -74,9 +70,9 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return result;
     }
 
-    public void deleteoffre(String id){
-        String request = "delete from offre_emploi where id = '" +id+"'";
-        String request1 = "delete from demande_recrutement where offre_id = '" +id+"'";
+    public void deleteoffre(String id) {
+        String request = "delete from offre_emploi where id = '" + id + "'";
+        String request1 = "delete from demande_recrutement where offre_id = '" + id + "'";
         try {
             Statement statement = cnx.createStatement();
             statement.executeUpdate(request1);
@@ -86,7 +82,35 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         }
     }
 
-    @Override
+    public ListView<Offre_Emploi> getAlll(int id) {
+        ListView<Offre_Emploi> offres = new ListView<>();
+        String request = "select * from Offre_Emploi";
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                Offre_Emploi offre = new Offre_Emploi();
+                offre.setId(rs.getInt("id"));
+                offre.setTitre(rs.getString("titre"));
+                offre.setPoste(rs.getString("poste"));
+                offre.setDescription(rs.getString("description"));
+                offre.setLocation(rs.getString("location"));
+                offre.setFile(rs.getString("file"));
+                offre.setEmail(rs.getString("email"));
+                offre.setDate_debut(rs.getDate("date_debut").toLocalDate());
+                offre.setDate_expiration(rs.getDate("date_expiration").toLocalDate());
+                offre.setMax_salary(rs.getInt("max_salary"));
+                offre.setMin_salary(rs.getInt("min_salary"));
+                offre.setCategory_id(rs.getInt("categorie_id"));
+                offre.setCatname(getcatname(rs.getInt("categorie_id")));
+                offres.getItems().add(offre);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return offres;
+    }
+
     public ObservableList<Offre_Emploi> getAll(int id) {
         ObservableList<Offre_Emploi> offres = FXCollections.observableArrayList();
         String request = "select * from Offre_Emploi";
@@ -116,8 +140,8 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return offres;
     }
 
-    public String getcatname(int id){
-        String request = "select titre from category where id = '"+id+"'";
+    public String getcatname(int id) {
+        String request = "select titre from category where id = '" + id + "'";
         String a = "";
         try {
             Statement statement = cnx.createStatement();
@@ -131,7 +155,6 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return a;
     }
 
-    @Override
     public void add(Offre_Emploi entity) {
         try {
             String request
@@ -155,18 +178,63 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         }
     }
 
-    public void updateoffre(Offre_Emploi entity, AtomicReference<Offre_Emploi> off){
+    public void updateoffre(Offre_Emploi entity, AtomicReference<Offre_Emploi> off) {
         try {
             String request
-                    = "update offre_emploi set titre = '"+entity.getTitre()+"' ,poste = '"+entity.getPoste()+
-                    "', description = '"+entity.getDescription()+"', location = '"+entity.getLocation()+
-                    "', file = '"+entity.getFile()+"', email = '"+entity.getEmail()+"',categorie_id = "+entity.getCategory()
-                    + ", date_expiration = '"+entity.getDate_expiration()+
-                    "',max_salary = '"+entity.getMax_salary()+"', min_salary = '"+entity.getMin_salary()+"' where id = '"+off.get().getId()+"'";
+                    = "update offre_emploi set titre = '" + entity.getTitre() + "' ,poste = '" + entity.getPoste() +
+                    "', description = '" + entity.getDescription() + "', location = '" + entity.getLocation() +
+                    "', file = '" + entity.getFile() + "', email = '" + entity.getEmail() + "',categorie_id = " + entity.getCategory()
+                    + ", date_expiration = '" + entity.getDate_expiration() +
+                    "',max_salary = '" + entity.getMax_salary() + "', min_salary = '" + entity.getMin_salary() + "' where id = '" + off.get().getId() + "'";
             PreparedStatement st = cnx.prepareStatement(request);
             st.executeUpdate();
         } catch (SQLException e) {
             Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
         }
+    }
+
+    public int countalljobs() {
+        String request = "select count(*) from offre_emploi";
+        int a = 0;
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                a = rs.getInt(1);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return a;
+    }
+
+    public int countallapps() {
+        String request = "select count(*) from demande_recrutement";
+        int a = 0;
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                a = rs.getInt(1);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return a;
+    }
+
+    public int countallappstreated() {
+        String request = "select count(*) from demande_recrutement where status = 1";
+        int a = 0;
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                a = rs.getInt(1);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return a;
     }
 }

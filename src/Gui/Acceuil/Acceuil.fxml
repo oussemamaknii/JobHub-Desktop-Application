@@ -15,15 +15,15 @@
    <children>
       <AnchorPane layoutX="35.0" layoutY="23.0" prefHeight="954.0" prefWidth="960.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="23.0">
          <children>
-            <BorderPane fx:id="mainpane" layoutX="279.0" layoutY="119.0" prefHeight="700.0" prefWidth="665.0" style="-fx-background-color: white; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="120.0" AnchorPane.topAnchor="120.0">
+            <BorderPane fx:id="mainpane" layoutX="279.0" layoutY="119.0" prefHeight="714.0" prefWidth="832.0" style="-fx-background-color: B9D6F2; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="120.0" AnchorPane.topAnchor="120.0">
                <top>
-                  <Pane prefHeight="70.0" prefWidth="666.0" BorderPane.alignment="CENTER" />
+                  <Pane prefHeight="10.0" prefWidth="832.0" BorderPane.alignment="CENTER" />
                </top>
                <bottom>
                   <Pane prefHeight="70.0" prefWidth="694.0" BorderPane.alignment="CENTER" />
                </bottom>
                <left>
-                  <Pane prefHeight="266.0" prefWidth="70.0" BorderPane.alignment="CENTER" />
+                  <Pane prefHeight="634.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
                </left>
                <right>
                   <Pane prefHeight="266.0" prefWidth="90.0" BorderPane.alignment="CENTER" />
@@ -31,9 +31,9 @@
                <center>
                   <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
                </center></BorderPane>
-            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="476.0" prefWidth="266.0" style="-fx-background-color: linear-gradient(to left top, #2596be, #788dd3, #c67abe, #ef7184, #e28743);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="672.6" AnchorPane.topAnchor="250.0">
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="504.0" prefWidth="266.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="816.0" AnchorPane.topAnchor="250.0">
                <children>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="165.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Home" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="141.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -48,10 +48,10 @@
                         <Insets />
                      </opaqueInsets>
                      <font>
-                        <Font name="Segoe UI Semibold" size="14.0" />
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="316.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Profile" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="316.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Profile" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -66,10 +66,10 @@
                         <Insets />
                      </opaqueInsets>
                      <font>
-                        <Font name="Segoe UI Semibold" size="14.0" />
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="360.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Search" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="360.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Search" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="380.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -84,10 +84,10 @@
                         <Insets />
                      </opaqueInsets>
                      <font>
-                        <Font name="Segoe UI Semibold" size="14.0" />
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="415.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="Exit" textFill="#666666" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="45.0">
+                  <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="415.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Exit" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="440.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -102,7 +102,7 @@
                         <Insets />
                      </opaqueInsets>
                      <font>
-                        <Font name="Segoe UI Semibold" size="14.0" />
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
                   <ImageView fitHeight="124.0" fitWidth="249.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0">
@@ -110,12 +110,12 @@
                         <Image url="@../../../images/logo.png" />
                      </image>
                   </ImageView>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="24.0" layoutY="252.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" text="Job Offers" textFill="#666666" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="24.0" layoutY="252.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Offers" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="260.0">
                     <items>
                       <MenuItem fx:id="addoffre" mnemonicParsing="false" text="Add Job Offer" />
                       <MenuItem fx:id="deloff" mnemonicParsing="false" text="Delete Job Offer" />
                         <MenuItem fx:id="upoff" mnemonicParsing="false" text="Update Job Offer" />
-                        <MenuItem fx:id="treatapps" mnemonicParsing="false" text="See Applications Applications" />
+                        <MenuItem fx:id="treatapps" mnemonicParsing="false" text="See Applications" />
                     </items>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
@@ -125,10 +125,13 @@
                         </ImageView>
                      </graphic>
                      <padding>
-                        <Insets left="50.0" />
+                        <Insets left="40.0" />
                      </padding>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
                   </MenuButton>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="6.0" layoutY="205.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" text="Job Applicayions" textFill="#666666" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="6.0" layoutY="205.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Applicayions" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
                      <items>
                         <MenuItem fx:id="userapps" mnemonicParsing="false" text="See my applications" />
                         <MenuItem fx:id="deluserapps" mnemonicParsing="false" text="Delete An application" />
@@ -142,8 +145,11 @@
                         </ImageView>
                      </graphic>
                      <padding>
-                        <Insets left="50.0" />
+                        <Insets left="30.0" />
                      </padding>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
                   </MenuButton>
                </children>
             </AnchorPane>

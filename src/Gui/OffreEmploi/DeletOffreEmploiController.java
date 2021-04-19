@@ -8,15 +8,16 @@ package Gui.OffreEmploi;
 import Entities.Offre_Emploi;
 import Services.Offre_Emploi_Service;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
-import java.time.LocalDate;
 import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicReference;
+import javafx.scene.layout.StackPane;
 
 /**
  * FXML Controller class
@@ -26,25 +27,21 @@ import java.util.concurrent.atomic.AtomicReference;
 public class DeletOffreEmploiController implements Initializable {
 
     @FXML
-    private TableColumn<Offre_Emploi, String> coltitre;
-    @FXML
-    private TableColumn<Offre_Emploi, String> colposte;
-    @FXML
-    private TableColumn<Offre_Emploi, String> coldesc;
-    @FXML
-    private TableColumn<Offre_Emploi, String> colloc;
-    @FXML
-    private TableColumn<Offre_Emploi, String> colemail;
-    @FXML
-    private TableColumn<Offre_Emploi, LocalDate> colexp;
-    @FXML
-    private TableView<Offre_Emploi> table;
-    @FXML
     private Button deletebtn;
     @FXML
-    private TableColumn<?, ?> startdated;
+    private ListView<Offre_Emploi> listdisplay;
     @FXML
-    private TableColumn<?, ?> categ;
+    private Label total;
+    @FXML
+    private Label countaaps;
+    @FXML
+    private Label treatedapps;
+    @FXML
+    private Label nontreated;
+    @FXML
+    private TextField search;
+    @FXML
+    private StackPane effect;
 
     /**
      * Initializes the controller class.
@@ -52,10 +49,12 @@ public class DeletOffreEmploiController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         AtomicReference<Offre_Emploi> off = new AtomicReference<>(new Offre_Emploi());
+        refresh();
         showOffres();
+        search();
 
         deletebtn.setOnAction(e -> {
-            Offre_Emploi offre = table.getSelectionModel().getSelectedItem();
+            Offre_Emploi offre = listdisplay.getSelectionModel().getSelectedItem();
             if (offre != null) {
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
                 alert.setTitle("Deleting a job application");
@@ -66,6 +65,7 @@ public class DeletOffreEmploiController implements Initializable {
                 alert.showAndWait().ifPresent(type -> {
                     if (type == okButton) {
                         new Offre_Emploi_Service().deleteoffre(String.valueOf(offre.getId()));
+                        refresh();
                         showOffres();
                     }
                 });
@@ -75,14 +75,43 @@ public class DeletOffreEmploiController implements Initializable {
 
     public void showOffres() {
         ObservableList<Offre_Emploi> offres = new Offre_Emploi_Service().getAll(1);
-        coltitre.setCellValueFactory(new PropertyValueFactory<>("titre"));
-        colposte.setCellValueFactory(new PropertyValueFactory<>("poste"));
-        coldesc.setCellValueFactory(new PropertyValueFactory<>("description"));
-        colloc.setCellValueFactory(new PropertyValueFactory<>("location"));
-        colemail.setCellValueFactory(new PropertyValueFactory<>("email"));
-        colexp.setCellValueFactory(new PropertyValueFactory<>("date_expiration"));
-        startdated.setCellValueFactory(new PropertyValueFactory<>("date_debut"));
-        categ.setCellValueFactory(new PropertyValueFactory<>("catname"));
-        table.setItems(offres);
+        listdisplay.setItems(offres);
+        listdisplay.setCellFactory(studentListView -> new OffreCell());
+    }
+
+    public void refresh() {
+        total.setText(String.valueOf(new Offre_Emploi_Service().countalljobs()));
+        countaaps.setText(String.valueOf(new Offre_Emploi_Service().countallapps()));
+        treatedapps.setText(String.valueOf(new Offre_Emploi_Service().countallappstreated()));
+        nontreated.setText(String.valueOf(new Offre_Emploi_Service().countallapps() - new Offre_Emploi_Service().countallappstreated()));
+    }
+
+    public void search(){
+        ObservableList<Offre_Emploi> offres = new Offre_Emploi_Service().getAll(1);
+        FilteredList<Offre_Emploi> filteredData = new FilteredList(offres, p -> true);
+        search.textProperty().addListener((observable, oldValue, newValue) -> {
+            filteredData.setPredicate(client -> {
+                // If filter text is empty, display all persons.
+                if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                }
+                // Compare first name and last name of every client with filter text.
+                String lowerCaseFilter = newValue.toLowerCase();
+
+                if (client.getTitre().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; //filter matches first name
+                } else if (client.getLocation().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; //filter matches last name
+                }
+                return false; //Does not match
+            });
+        });
+
+        //Wrap the FilteredList in a SortedList.
+        SortedList<Offre_Emploi> sortedData = new SortedList<>(filteredData);
+
+        //put the sorted list into the listview
+        listdisplay.setItems(sortedData);
+        listdisplay.setCellFactory(studentListView -> new OffreCell());
     }
 }

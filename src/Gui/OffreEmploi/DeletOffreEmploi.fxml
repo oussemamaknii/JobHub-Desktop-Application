@@ -1,25 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.DeletOffreEmploiController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.DeletOffreEmploiController">
    <children>
-      <TableView fx:id="table" layoutX="17.0" prefHeight="238.0" prefWidth="566.0">
-         <columns>
-            <TableColumn fx:id="coltitre" prefWidth="60.0" text="titre" />
-            <TableColumn fx:id="colposte" prefWidth="60.0" text="poste" />
-            <TableColumn fx:id="coldesc" prefWidth="75.0" text="description" />
-            <TableColumn fx:id="colloc" prefWidth="75.0" text="location" />
-            <TableColumn fx:id="colemail" prefWidth="75.0" text="email" />
-            <TableColumn fx:id="startdated" prefWidth="75.0" text="start date" />
-            <TableColumn fx:id="colexp" prefWidth="75.0" text="date exp" />
-            <TableColumn fx:id="categ" prefWidth="75.0" text="category" />
-         </columns>
-      </TableView>
-      <Button fx:id="deletebtn" layoutX="37.0" layoutY="253.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="527.0" text="Dlete Offer" />
+      <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="814.0">
+         <children>
+            <Button fx:id="deletebtn" layoutX="140.0" layoutY="597.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="527.0" stylesheets="@../StylSheet/Style.css" text="Dlete Offer" />
+            <ListView fx:id="listdisplay" layoutX="46.0" layoutY="204.0" prefHeight="372.0" prefWidth="727.0" style="-fx-background-color: #B9D6F2;" stylesheets="@../StylSheet/Style.css" />
+            <HBox alignment="CENTER_LEFT" layoutX="73.0" layoutY="92.0" prefHeight="92.0" prefWidth="682.0" spacing="50.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="total" text="22000" textFill="#2a73ff">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Offers" textFill="#0353a4" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="92.0" prefWidth="121.0">
+                     <children>
+                        <Label fx:id="countaaps" text="1500" textFill="#26bfbc">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Applications" textFill="#0353a4" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="92.0" prefWidth="152.0">
+                     <children>
+                        <Label fx:id="treatedapps" text="1000" textFill="#fa5f7e">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label text="Treated Applications" textFill="#0353a4" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="92.0" prefWidth="185.0">
+                     <children>
+                        <Label fx:id="nontreated" text="780" textFill="#de0000">
+                           <font>
+                              <Font name="System Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <Label text="None Treated Applications" textFill="#0353a4" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <TextField fx:id="search" layoutX="610.0" layoutY="38.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: white; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+            <Label layoutX="14.0" layoutY="34.0" prefHeight="35.0" prefWidth="195.0" text="Delete Job Offers" textFill="#003559">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <StackPane fx:id="effect" layoutX="280.0" layoutY="264.0" prefHeight="150.0" prefWidth="286.0" />
    </children>
 </Pane>
