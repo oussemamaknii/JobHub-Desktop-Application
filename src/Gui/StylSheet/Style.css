@@ -65,7 +65,7 @@
 }
 
 .choice-box {
-  -fx-background-color: linear-gradient(to left top, #2596be, #788dd3, #c67abe, #ef7184, #e28743);
+    -fx-background-color:  linear-gradient(to left top , #0353A4, #006DAA, #003559);
 }
 .choice-box > .label { -fx-text-fill: white; }
 
@@ -102,6 +102,10 @@
     -fx-text-fill: -fx-my-menu-font-color-highlighted;
 }
 
+.Pane .Label{
+    -fx-text-fill: 003559;
+}
+
 /* CONTEXT MENU */
 /*** The context menu that contains a menu's menu items ***/
 .context-menu {
@@ -112,6 +116,6 @@
     -fx-padding: 0.7em 0.57em;
     -fx-font-size: 14px;
     -jfx-button-type: RAISED;
-    -fx-background-color:  linear-gradient(to left top, #2596be, #788dd3, #c67abe, #ef7184, #e28743);
+    -fx-background-color:  linear-gradient(to left top , #0353A4, #006DAA, #003559);
     -fx-text-fill: WHITE;
 }

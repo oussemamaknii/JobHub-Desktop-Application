@@ -11,11 +11,10 @@
     <orderEntry type="library" exported="" name="lib" level="project" />
     <orderEntry type="library" exported="" name="Connector J 8" level="project" />
     <orderEntry type="library" exported="" name="mysql-connector-java-8.0.23" level="project" />
-    <orderEntry type="library" exported="" name="jfoenix-9.0.10" level="project" />
-    <orderEntry type="module-library" exported="" scope="RUNTIME">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../jfoenix-9.0.10.jar!/" />
+          <root url="jar://$MODULE_DIR$/deps/jfoenix-9.0.10.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

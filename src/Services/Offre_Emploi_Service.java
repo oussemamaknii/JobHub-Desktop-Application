@@ -40,9 +40,9 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return ids;
     }
 
-    public String getOffreCateg(String id){
-        String ids ="";
-        String request = "select titre from Category where id = '"+id+"'";
+    public String getOffreCateg(String id) {
+        String ids = "";
+        String request = "select titre from Category where id = '" + id + "'";
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);
@@ -55,9 +55,9 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return ids;
     }
 
-    public int getCategId(String value){
+    public int getCategId(String value) {
         int result = 0;
-        String request = "select id from Category where titre = '" + value+"'";
+        String request = "select id from Category where titre = '" + value + "'";
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);
@@ -70,9 +70,9 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return result;
     }
 
-    public void deleteoffre(String id){
-        String request = "delete from offre_emploi where id = '" +id+"'";
-        String request1 = "delete from demande_recrutement where offre_id = '" +id+"'";
+    public void deleteoffre(String id) {
+        String request = "delete from offre_emploi where id = '" + id + "'";
+        String request1 = "delete from demande_recrutement where offre_id = '" + id + "'";
         try {
             Statement statement = cnx.createStatement();
             statement.executeUpdate(request1);
@@ -140,8 +140,8 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return offres;
     }
 
-    public String getcatname(int id){
-        String request = "select titre from category where id = '"+id+"'";
+    public String getcatname(int id) {
+        String request = "select titre from category where id = '" + id + "'";
         String a = "";
         try {
             Statement statement = cnx.createStatement();
@@ -178,18 +178,63 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         }
     }
 
-    public void updateoffre(Offre_Emploi entity, AtomicReference<Offre_Emploi> off){
+    public void updateoffre(Offre_Emploi entity, AtomicReference<Offre_Emploi> off) {
         try {
             String request
-                    = "update offre_emploi set titre = '"+entity.getTitre()+"' ,poste = '"+entity.getPoste()+
-                    "', description = '"+entity.getDescription()+"', location = '"+entity.getLocation()+
-                    "', file = '"+entity.getFile()+"', email = '"+entity.getEmail()+"',categorie_id = "+entity.getCategory()
-                    + ", date_expiration = '"+entity.getDate_expiration()+
-                    "',max_salary = '"+entity.getMax_salary()+"', min_salary = '"+entity.getMin_salary()+"' where id = '"+off.get().getId()+"'";
+                    = "update offre_emploi set titre = '" + entity.getTitre() + "' ,poste = '" + entity.getPoste() +
+                    "', description = '" + entity.getDescription() + "', location = '" + entity.getLocation() +
+                    "', file = '" + entity.getFile() + "', email = '" + entity.getEmail() + "',categorie_id = " + entity.getCategory()
+                    + ", date_expiration = '" + entity.getDate_expiration() +
+                    "',max_salary = '" + entity.getMax_salary() + "', min_salary = '" + entity.getMin_salary() + "' where id = '" + off.get().getId() + "'";
             PreparedStatement st = cnx.prepareStatement(request);
             st.executeUpdate();
         } catch (SQLException e) {
             Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
         }
+    }
+
+    public int countalljobs() {
+        String request = "select count(*) from offre_emploi";
+        int a = 0;
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                a = rs.getInt(1);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return a;
+    }
+
+    public int countallapps() {
+        String request = "select count(*) from demande_recrutement";
+        int a = 0;
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                a = rs.getInt(1);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return a;
+    }
+
+    public int countallappstreated() {
+        String request = "select count(*) from demande_recrutement where status = 1";
+        int a = 0;
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                a = rs.getInt(1);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return a;
     }
 }

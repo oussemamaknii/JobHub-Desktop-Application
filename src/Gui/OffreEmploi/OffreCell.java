@@ -25,6 +25,8 @@ public class OffreCell extends ListCell<Offre_Emploi> {
     @FXML
     private Label email;
     @FXML
+    private Label desc;
+    @FXML
     private Label categ;
     @FXML
     private Label maxsal;
@@ -32,6 +34,16 @@ public class OffreCell extends ListCell<Offre_Emploi> {
     private Label minsal;
     @FXML
     private ImageView img;
+    @FXML
+    private ImageView tit;
+    @FXML
+    private ImageView pos;
+    @FXML
+    private ImageView cat;
+    @FXML
+    private ImageView lo;
+    @FXML
+    private ImageView em;
 
     private FXMLLoader mLLoader;
 
@@ -57,8 +69,14 @@ public class OffreCell extends ListCell<Offre_Emploi> {
 
             }
             img.setImage(new Image("job.png"));
+            em.setImage(new Image("email.png"));
+            tit.setImage(new Image("title.png"));
+            pos.setImage(new Image("post.png"));
+            cat.setImage(new Image("categpng.png"));
+            lo.setImage(new Image("loc.png"));
             titre.setText(student.getTitre());
             poste.setText(student.getPoste());
+            desc.setText(student.getDescription());
             location.setText(student.getLocation());
             email.setText(student.getEmail());
             categ.setText(student.getCatname());
