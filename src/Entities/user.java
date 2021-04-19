@@ -39,6 +39,21 @@ public class user {
         this.phone = phone;
     }
 
+    public user(String email, String password, String firstName, String lastName, Date dateOfBirth, String adresse, int phone) {
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.adresse = adresse;
+        this.phone = phone;
+    }
+
+    public user(String text, String text1, String text2, String text3, LocalDate value, String text4, String text5) {
+
+    }
+
+
     public int getId() {
         return id;
     }
@@ -101,6 +116,10 @@ public class user {
 
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
     }
 
     public Date getCreatedAt(LocalDate now) {

@@ -30,33 +30,30 @@ import java.util.regex.Pattern;
  */
 public class AddOffre_EmploiController implements Initializable {
 
+    @FXML
     private TextField tfpost;
-    private TextField tfdesc;
+    @FXML
     private TextField tfloc;
+    @FXML
+    private TextField tfdesc;
+    @FXML
     private TextField tffile;
+    @FXML
     private TextField tfemil;
+    @FXML
     private TextField tfmax;
+    @FXML
     private TextField tftitle;
+    @FXML
     private DatePicker tfexp;
+    @FXML
     private TextField tfmin;
+    @FXML
     private ChoiceBox<String> choicecateg;
+    @FXML
     private Button addoffer1;
-    @FXML
-    private TextField tfLastName;
-    @FXML
-    private TextField tfEmail;
-    @FXML
-    private TextField tfAdresse;
-    @FXML
-    private TextField tfPohne;
-    @FXML
-    private TextField tfFirstName;
-    @FXML
-    private DatePicker tfDateOfBirth;
-    @FXML
-    private Button register;
-    @FXML
-    private PasswordField tfPassword;
+
+   
 
     /**
      * Initializes the controller class.
@@ -97,6 +94,7 @@ public class AddOffre_EmploiController implements Initializable {
         });
     }
 
+    @FXML
     private void filechooser(ActionEvent event) {
         FileChooser c = new FileChooser();
         c.getExtensionFilters().add(new FileChooser.ExtensionFilter("image files", "*.jpg"));

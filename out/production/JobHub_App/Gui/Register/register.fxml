@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.AddOffre_EmploiController">
+<Pane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Register.RegisterController">
    <children>
       <TextField fx:id="tfLastName" layoutX="96.0" layoutY="62.0" />
       <TextField fx:id="tfEmail" layoutX="347.0" layoutY="10.0" />

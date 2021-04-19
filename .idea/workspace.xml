@@ -30,7 +30,41 @@
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="Update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/FXloader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ShopController2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/DeletOffreEmploiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/SeeAppsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ProductSingleController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ProductSingleController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Register/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Register/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePaiment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceProduit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Demande_Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePaiment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceProduit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Connexion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/user.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Register/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Register/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Register/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Register/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,12 +96,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/jobhub_app/FXMain.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Gui/Register/RegisterController.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Gui/Register/register.fxml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Interfaces/IService.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Services/Register.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Gui/Acceuil/FXloader.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Entities/user.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gui/Register/RegisterController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gui/Register/register.fxml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
