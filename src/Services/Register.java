@@ -18,7 +18,7 @@ public class Register implements IServiceRegister {
 
     @Override
     public void Register(user u) {
-        String request = "INSERT INTO user (firstName,lastName,email,adresse,dateOfBirth,phone,password,isActive,createdAt) VALUES (?,?,?,?,?,?,?,'1',?) ";
+        String request = "INSERT INTO user (firstName,lastName,email,adresse,dateOfBirth,phone,password,isActive,createdAt,roles) VALUES (?,?,?,?,?,?,?,'1',?,'a:1:{i:0;s:9:\"ROLE_USER\";}') ";
         try {
             PreparedStatement pst = cnx.prepareStatement(request);
             pst.setString(1,u.getFirstName());
@@ -28,8 +28,9 @@ public class Register implements IServiceRegister {
             pst.setDate(5, (Date) u.getDateOfBirth());
             pst.setInt(6,u.getPhone());
             pst.setString(7,u.getPassword());
-            pst.setInt(8,u.getIsActive());
-            pst.setDate(9,(Date)u.getCreatedAt(LocalDate.now()) );
+
+            pst.setDate(8,(Date)u.getCreatedAt(LocalDate.now()) );
+
 
 
 

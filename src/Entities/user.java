@@ -21,23 +21,7 @@ public class user {
     private String imageName;
     private int phone;
 
-    public user(int id, String email, String password, int isActive, String roles, String firstName, String lastName, Date dateOfBirth, Date createdAt, Date activatedAt, Date updatedAt, String adresse, String professionalTitle, String imageName, int phone) {
-        this.id = id;
-        this.email = email;
-        this.password = password;
-        this.isActive = isActive;
-        this.roles = roles;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-        this.createdAt = createdAt;
-        this.activatedAt = activatedAt;
-        this.updatedAt = updatedAt;
-        this.adresse = adresse;
-        this.professionalTitle = professionalTitle;
-        this.imageName = imageName;
-        this.phone = phone;
-    }
+
 
     public user(String email, String password, String firstName, String lastName, Date dateOfBirth, String adresse, int phone) {
         this.email = email;

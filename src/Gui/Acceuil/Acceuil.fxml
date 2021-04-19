@@ -151,6 +151,28 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </MenuButton>
+                  <Button fx:id="login" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="110.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: transparent;" text="Sign In" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="signup" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="130.0" layoutY="110.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: transparent;" text="Sign Up" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
          </children>

@@ -31,8 +31,6 @@ public class RegisterController implements Initializable {
     @FXML
     private TextField tfAdresse;
     @FXML
-    private TextField tfPohne;
-    @FXML
     private TextField tfFirstName;
     @FXML
     private DatePicker tfDateOfBirth;
@@ -40,6 +38,8 @@ public class RegisterController implements Initializable {
     private Button register;
     @FXML
     private PasswordField tfPassword;
+    @FXML
+    private TextField tfPhone;
 
     /**
      * Initializes the controller class.
@@ -48,13 +48,49 @@ public class RegisterController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
 
         register.setOnAction(e -> {
+            if (testfields()) {
 
-                user register1 = new user(tfEmail.getText(),tfPassword.getText(),tfFirstName.getText(),tfLastName.getText(),
-                        tfDateOfBirth.getValue(),tfAdresse.getText(),tfPohne.getText() );
-                new Register().Register(register1);
+            user register1 = new user(tfEmail.getText(), tfPassword.getText(), tfFirstName.getText(), tfLastName.getText(),
+                    tfDateOfBirth.getValue(), tfAdresse.getText(), tfPhone.getText());
+            new Register().Register(register1);}
 
         });
 
-    }    
-    
+    }
+    public boolean testfields(){
+        if (tfFirstName.getText().isEmpty()) {
+            tfFirstName.setStyle("-fx-border-color :red ; -fx-border-width : 2px;");
+            new animatefx.animation.Shake(tfFirstName).play();
+            return false;
+        } else
+            tfFirstName.setStyle(null);
+        if (tfLastName.getText().isEmpty()) {
+            tfLastName.setStyle("-fx-border-color :red ; -fx-border-width : 2px;");
+            new animatefx.animation.Shake(tfLastName).play();
+            return false;
+        } else
+            tfLastName.setStyle(null);
+        if (tfPassword.getText().length() < 6) {
+            tfPassword.setStyle("-fx-border-color :red ; -fx-border-width : 2px;");
+            new animatefx.animation.Shake(tfPassword).play();
+            return false;
+        } else
+            tfPassword.setStyle(null);
+        if (tfPhone.getText().contains(" /(?!-)(?!.*-)[A-Za-z]+(?<!-)/")) {
+            tfPhone.setStyle("-fx-border-color :red ; -fx-border-width : 2px;");
+            new animatefx.animation.Shake(tfPhone).play();
+            return false;
+        } else
+            tfPhone.setStyle(null);
+        if (tfEmail.getText().contains(" /[A-Z]/")) {
+            tfEmail.setStyle("-fx-border-color :red ; -fx-border-width : 2px;");
+            new animatefx.animation.Shake(tfEmail).play();
+            return false;
+        } else
+            tfPhone.setStyle(null);
+
+        return true;
+
+    }
+
 }

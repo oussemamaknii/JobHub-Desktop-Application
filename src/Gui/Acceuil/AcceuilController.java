@@ -43,6 +43,10 @@ public class AcceuilController implements Initializable {
     private MenuItem deluserapps;
     @FXML
     private MenuItem applytoajob;
+    @FXML
+    private Button login;
+    @FXML
+    private Button signup;
 
 
     /**
@@ -55,6 +59,16 @@ public class AcceuilController implements Initializable {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/OffreEmploi/AddOffre_Emploi.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+        signup.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/Register/register.fxml").toURI().toURL();
             } catch (MalformedURLException malformedURLException) {
                 malformedURLException.printStackTrace();
             }
