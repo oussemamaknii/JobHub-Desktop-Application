@@ -5,8 +5,6 @@
  */
 package Interfaces;
 
-import Entities.Demande_Recrutement;
-import Entities.Offre_Emploi;
 import javafx.collections.ObservableList;
 
 /**
@@ -18,4 +16,5 @@ public interface IService<T> {
 
     public void add(T entity);
     public ObservableList<T> getAll(int id);
+
 }

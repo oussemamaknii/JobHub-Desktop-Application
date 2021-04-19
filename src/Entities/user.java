@@ -1,0 +1,195 @@
+package Entities;
+
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.Objects;
+
+public class user {
+    private int id;
+    private String email;
+    private String password;
+    private int isActive;
+    private String roles;
+    private String firstName;
+    private String lastName;
+    private Date dateOfBirth;
+    private Date createdAt;
+    private Date activatedAt;
+    private Date updatedAt;
+    private String adresse;
+    private String professionalTitle;
+    private String imageName;
+    private int phone;
+
+    public user(int id, String email, String password, int isActive, String roles, String firstName, String lastName, Date dateOfBirth, Date createdAt, Date activatedAt, Date updatedAt, String adresse, String professionalTitle, String imageName, int phone) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+        this.isActive = isActive;
+        this.roles = roles;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.createdAt = createdAt;
+        this.activatedAt = activatedAt;
+        this.updatedAt = updatedAt;
+        this.adresse = adresse;
+        this.professionalTitle = professionalTitle;
+        this.imageName = imageName;
+        this.phone = phone;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public int getIsActive() {
+        return isActive;
+    }
+
+    public void setIsActive(int isActive) {
+        this.isActive = isActive;
+    }
+
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public Date getCreatedAt(LocalDate now) {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public Date getActivatedAt() {
+        return activatedAt;
+    }
+
+    public void setActivatedAt(Date activatedAt) {
+        this.activatedAt = activatedAt;
+    }
+
+    public Date getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(Date updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
+    public String getAdresse() {
+        return adresse;
+    }
+
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
+    }
+
+    public String getProfessionalTitle() {
+        return professionalTitle;
+    }
+
+    public void setProfessionalTitle(String professionalTitle) {
+        this.professionalTitle = professionalTitle;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
+    }
+
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        user user = (user) o;
+        return getId() == user.getId() && getIsActive() == user.getIsActive() && getPhone() == user.getPhone() && getEmail().equals(user.getEmail()) && getPassword().equals(user.getPassword()) && Objects.equals(getRoles(), user.getRoles()) && Objects.equals(getFirstName(), user.getFirstName()) && Objects.equals(getLastName(), user.getLastName()) && Objects.equals(getDateOfBirth(), user.getDateOfBirth()) && Objects.equals(getCreatedAt(LocalDate.now()), user.getCreatedAt(LocalDate.now())) && Objects.equals(getActivatedAt(), user.getActivatedAt()) && Objects.equals(getUpdatedAt(), user.getUpdatedAt()) && Objects.equals(getAdresse(), user.getAdresse()) && Objects.equals(getProfessionalTitle(), user.getProfessionalTitle()) && Objects.equals(getImageName(), user.getImageName());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getEmail(), getPassword(), getIsActive(), getRoles(), getFirstName(), getLastName(), getDateOfBirth(), getCreatedAt(LocalDate.now()), getActivatedAt(), getUpdatedAt(), getAdresse(), getProfessionalTitle(), getImageName(), getPhone());
+    }
+
+    @Override
+    public String toString() {
+        return "user{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", isActive=" + isActive +
+                ", roles='" + roles + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", createdAt=" + createdAt +
+                ", activatedAt=" + activatedAt +
+                ", updatedAt=" + updatedAt +
+                ", adresse='" + adresse + '\'' +
+                ", professionalTitle='" + professionalTitle + '\'' +
+                ", imageName='" + imageName + '\'' +
+                ", phone=" + phone +
+                '}';
+    }
+}
