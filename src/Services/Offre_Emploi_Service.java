@@ -10,7 +10,6 @@ import Interfaces.IService;
 import Utils.Connexion;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.scene.control.ListView;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -82,8 +81,8 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         }
     }
 
-    public ListView<Offre_Emploi> getAlll(int id) {
-        ListView<Offre_Emploi> offres = new ListView<>();
+    public ObservableList<Offre_Emploi> getAll(int id) {
+        ObservableList<Offre_Emploi> offres = FXCollections.observableArrayList();
         String request = "select * from Offre_Emploi";
         try {
             Statement statement = cnx.createStatement();
@@ -103,7 +102,7 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
                 offre.setMin_salary(rs.getInt("min_salary"));
                 offre.setCategory_id(rs.getInt("categorie_id"));
                 offre.setCatname(getcatname(rs.getInt("categorie_id")));
-                offres.getItems().add(offre);
+                offres.add(offre);
             }
         } catch (SQLException e) {
             Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
@@ -111,9 +110,9 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
         return offres;
     }
 
-    public ObservableList<Offre_Emploi> getAll(int id) {
+    public ObservableList<Offre_Emploi> getAll(int from,int to) {
         ObservableList<Offre_Emploi> offres = FXCollections.observableArrayList();
-        String request = "select * from Offre_Emploi";
+        String request = "select * from Offre_Emploi limit "+from+","+to;
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);

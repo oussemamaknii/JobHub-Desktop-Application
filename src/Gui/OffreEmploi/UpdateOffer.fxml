@@ -4,21 +4,21 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.UpdateOfferController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="779.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.UpdateOfferController">
    <children>
-      <AnchorPane fx:id="pane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="673.0" prefWidth="798.0">
+      <AnchorPane fx:id="pane" layoutX="20.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="737.0" prefWidth="798.0">
          <children>
-            <Pane fx:id="paneupdatet" layoutX="32.0" layoutY="271.0" prefHeight="362.0" prefWidth="678.0" stylesheets="@../StylSheet/Style.css">
+            <Pane fx:id="paneupdatet" layoutX="49.0" layoutY="361.0" prefHeight="362.0" prefWidth="678.0" stylesheets="@../StylSheet/Style.css">
                <children>
-                  <Button fx:id="update2" layoutX="20.0" layoutY="274.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="640.0" text="Set fields" />
-                  <Button fx:id="update" layoutX="20.0" layoutY="318.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="640.0" text="Update" />
+                  <Button fx:id="update2" layoutX="20.0" layoutY="267.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="640.0" text="Set fields" />
+                  <Button fx:id="update" layoutX="20.0" layoutY="318.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="640.0" text="Update" />
                   <Pane fx:id="pane1" layoutX="16.0" layoutY="14.0" prefHeight="242.0" prefWidth="647.0" stylesheets="@../StylSheet/Style.css">
                      <children>
                         <TextField fx:id="tfpost" layoutX="96.0" layoutY="66.0" prefHeight="26.0" prefWidth="198.0" promptText="Post" />
@@ -29,8 +29,8 @@
                         <TextField fx:id="tfmax" layoutX="434.0" layoutY="64.0" prefHeight="26.0" prefWidth="178.0" promptText="Max Salary " />
                         <TextField fx:id="tftitle" layoutX="96.0" layoutY="29.0" prefHeight="26.0" prefWidth="198.0" promptText="Title" />
                         <DatePicker fx:id="tfexp" layoutX="434.0" layoutY="134.0" prefHeight="26.0" prefWidth="212.0" promptText="Expiration Date" />
-                        <Label layoutY="4.0" prefHeight="18.0" prefWidth="39.0" text="Title" />
-                        <Label layoutY="41.0" prefHeight="18.0" prefWidth="39.0" text="Post" />
+                        <Label layoutY="39.0" prefHeight="18.0" prefWidth="39.0" text="Title" />
+                        <Label layoutY="68.0" prefHeight="18.0" prefWidth="39.0" text="Post" />
                         <Label layoutY="106.0" prefHeight="18.0" prefWidth="71.0" text="Description" />
                         <Label layoutY="142.0" prefHeight="18.0" prefWidth="71.0" text="Location" />
                         <Label layoutY="182.0" prefHeight="18.0" prefWidth="71.0" text="File" />
@@ -42,26 +42,21 @@
                         <Label layoutX="340.0" layoutY="178.0" prefHeight="18.0" prefWidth="90.0" text="Category" />
                         <ChoiceBox fx:id="choicecateg" layoutX="435.0" layoutY="175.0" prefHeight="28.0" prefWidth="212.0" />
                         <Button layoutX="222.0" layoutY="178.0" mnemonicParsing="false" onAction="#filechooser" prefHeight="37.0" prefWidth="71.0" text="Image" />
-                        <Label layoutX="612.0" layoutY="32.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
-                        <Label layoutX="612.0" layoutY="70.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
+                        <Label layoutX="619.0" layoutY="66.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
+                        <Label layoutX="619.0" layoutY="104.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
                      </children>
                   </Pane>
                </children>
             </Pane>
-            <TableView fx:id="table" prefHeight="287.0" prefWidth="761.0" stylesheets="@../StylSheet/table.css">
-               <columns>
-                  <TableColumn fx:id="coltitre" text="Title" />
-                  <TableColumn fx:id="colposte" text="Post" />
-                  <TableColumn fx:id="coldesc" prefWidth="130.0" text="Description" />
-                  <TableColumn fx:id="colloc" prefWidth="90.0" text="Location" />
-                  <TableColumn fx:id="colemail" prefWidth="90.0" text="Email" />
-                  <TableColumn fx:id="startdated" text="Start Date" />
-                  <TableColumn fx:id="colexp" text="ExpDate" />
-                  <TableColumn fx:id="categ" minWidth="0.0" prefWidth="88.0" text="Category" />
-               </columns>
-            </TableView>
+            <ListView fx:id="listdisplay" layoutX="44.0" layoutY="38.0" prefHeight="362.0" prefWidth="710.0" />
+            <Label layoutX="49.0" layoutY="-4.0" prefHeight="28.0" prefWidth="195.0" text="Update Job Offers" textFill="#003559">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="search" layoutX="543.0" layoutY="6.0" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: white; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
          </children>
       </AnchorPane>
-      <StackPane fx:id="effect" layoutX="-123.0" layoutY="283.0" prefHeight="107.0" prefWidth="305.0" AnchorPane.bottomAnchor="283.0" AnchorPane.leftAnchor="-123.0" AnchorPane.rightAnchor="616.0" AnchorPane.topAnchor="283.0" />
+      <StackPane fx:id="effect" layoutX="264.0" layoutY="312.0" prefHeight="154.0" prefWidth="292.0" AnchorPane.bottomAnchor="313.0" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="312.0" />
    </children>
 </AnchorPane>
