@@ -20,6 +20,21 @@ public class Demande_Service implements IService {
 
     }
 
+    public int countalluserapps(int id) {
+        String request = "select count(*) from demande_recrutement where candidat_id = '" + id + "' ";
+        int a = 0;
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                a = rs.getInt(1);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return a;
+    }
+
     @Override
     public ObservableList<Demande_Recrutement> getAll(int id) {
         ObservableList<Demande_Recrutement> offres = FXCollections.observableArrayList();
@@ -45,9 +60,9 @@ public class Demande_Service implements IService {
         return offres;
     }
 
-    public ObservableList<Demande_Recrutement> getAllUser(int id) {
+    public ObservableList<Demande_Recrutement> getAllUser(int id, int from, int to) {
         ObservableList<Demande_Recrutement> offres = FXCollections.observableArrayList();
-        String request = "select * from demande_recrutement where candidat_id = '" + id + "'";
+        String request = "select * from demande_recrutement where candidat_id = '" + id + "' limit " + from + "," + to;
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);
@@ -176,5 +191,93 @@ public class Demande_Service implements IService {
         } catch (SQLException e) {
             Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
         }
+    }
+
+    public ObservableList<Offre_Emploi> tri(String value) {
+        if (value == "Categprie") {
+            ObservableList<Offre_Emploi> offres = FXCollections.observableArrayList();
+            String request = "select * from Offre_Emploi o join category c on o.categorie_id = c.id order by c.titre";
+            try {
+                Statement statement = cnx.createStatement();
+                ResultSet rs = statement.executeQuery(request);
+                while (rs.next()) {
+                    Offre_Emploi offre = new Offre_Emploi();
+                    offre.setId(rs.getInt("id"));
+                    offre.setTitre(rs.getString("titre"));
+                    offre.setPoste(rs.getString("poste"));
+                    offre.setDescription(rs.getString("description"));
+                    offre.setLocation(rs.getString("location"));
+                    offre.setFile(rs.getString("file"));
+                    offre.setEmail(rs.getString("email"));
+                    offre.setDate_debut(rs.getDate("date_debut").toLocalDate());
+                    offre.setDate_expiration(rs.getDate("date_expiration").toLocalDate());
+                    offre.setMax_salary(rs.getInt("max_salary"));
+                    offre.setMin_salary(rs.getInt("min_salary"));
+                    offre.setCategory_id(rs.getInt("categorie_id"));
+                    offre.setCatname(getcatname(rs.getInt("categorie_id")));
+                    offres.add(offre);
+                }
+            } catch (SQLException e) {
+                Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+            }
+            return offres;
+        }
+        if (value == "Date Expiration") {
+            ObservableList<Offre_Emploi> offres = FXCollections.observableArrayList();
+            String request = "select * from Offre_Emploi order by date_expiration";
+            try {
+                Statement statement = cnx.createStatement();
+                ResultSet rs = statement.executeQuery(request);
+                while (rs.next()) {
+                    Offre_Emploi offre = new Offre_Emploi();
+                    offre.setId(rs.getInt("id"));
+                    offre.setTitre(rs.getString("titre"));
+                    offre.setPoste(rs.getString("poste"));
+                    offre.setDescription(rs.getString("description"));
+                    offre.setLocation(rs.getString("location"));
+                    offre.setFile(rs.getString("file"));
+                    offre.setEmail(rs.getString("email"));
+                    offre.setDate_debut(rs.getDate("date_debut").toLocalDate());
+                    offre.setDate_expiration(rs.getDate("date_expiration").toLocalDate());
+                    offre.setMax_salary(rs.getInt("max_salary"));
+                    offre.setMin_salary(rs.getInt("min_salary"));
+                    offre.setCategory_id(rs.getInt("categorie_id"));
+                    offre.setCatname(getcatname(rs.getInt("categorie_id")));
+                    offres.add(offre);
+                }
+            } catch (SQLException e) {
+                Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+            }
+            return offres;
+        }
+        if (value == "Post") {
+            ObservableList<Offre_Emploi> offres = FXCollections.observableArrayList();
+            String request = "select * from Offre_Emploi order by Poste";
+            try {
+                Statement statement = cnx.createStatement();
+                ResultSet rs = statement.executeQuery(request);
+                while (rs.next()) {
+                    Offre_Emploi offre = new Offre_Emploi();
+                    offre.setId(rs.getInt("id"));
+                    offre.setTitre(rs.getString("titre"));
+                    offre.setPoste(rs.getString("poste"));
+                    offre.setDescription(rs.getString("description"));
+                    offre.setLocation(rs.getString("location"));
+                    offre.setFile(rs.getString("file"));
+                    offre.setEmail(rs.getString("email"));
+                    offre.setDate_debut(rs.getDate("date_debut").toLocalDate());
+                    offre.setDate_expiration(rs.getDate("date_expiration").toLocalDate());
+                    offre.setMax_salary(rs.getInt("max_salary"));
+                    offre.setMin_salary(rs.getInt("min_salary"));
+                    offre.setCategory_id(rs.getInt("categorie_id"));
+                    offre.setCatname(getcatname(rs.getInt("categorie_id")));
+                    offres.add(offre);
+                }
+            } catch (SQLException e) {
+                Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+            }
+            return offres;
+        }
+        return null;
     }
 }

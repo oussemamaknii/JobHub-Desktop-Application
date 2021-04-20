@@ -9,6 +9,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="library" name="Connector J 8" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.231" level="project" />
     <orderEntry type="library" exported="" name="Connector J 8" level="project" />
     <orderEntry type="library" exported="" name="mysql-connector-java-8.0.23" level="project" />
     <orderEntry type="module-library" exported="">

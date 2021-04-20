@@ -12,7 +12,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.DeletOffreEmploiController">
    <children>
-      <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="814.0">
+      <Pane fx:id="pane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="814.0">
          <children>
             <Button fx:id="deletebtn" layoutX="140.0" layoutY="597.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="527.0" stylesheets="@../StylSheet/Style.css" text="Dlete Offer" />
             <ListView fx:id="listdisplay" layoutX="46.0" layoutY="204.0" prefHeight="372.0" prefWidth="727.0" style="-fx-background-color: #B9D6F2;" stylesheets="@../StylSheet/Style.css" />

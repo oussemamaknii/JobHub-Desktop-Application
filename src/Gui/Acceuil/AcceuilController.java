@@ -39,10 +39,6 @@ public class AcceuilController implements Initializable {
     private MenuItem treatapps;
     @FXML
     private MenuItem userapps;
-    @FXML
-    private MenuItem deluserapps;
-    @FXML
-    private MenuItem applytoajob;
 
 
     /**
