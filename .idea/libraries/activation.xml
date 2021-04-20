@@ -1,9 +1,6 @@
 <component name="libraryTable">
   <library name="activation">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../Index_Passée/PiJava/CycleProJava/Bibliothèques/activation.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../../Index_Passée/PiJava/CycleProJava/Bibliothèques/mail.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>
