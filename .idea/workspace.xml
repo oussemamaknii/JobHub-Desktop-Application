@@ -29,11 +29,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +64,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar" />
+    <property name="last_opened_file_path" value="C:/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.21717791" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -131,5 +127,31 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="514" y="202" key="FileChooserDialogImpl" timestamp="1618876727871">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="514" y="202" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618876727871" />
+    <state width="1516" height="154" key="GridCell.Tab.0.bottom" timestamp="1618876652582">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="154" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618876652582" />
+    <state width="1516" height="154" key="GridCell.Tab.0.center" timestamp="1618876652581">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="154" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618876652581" />
+    <state width="1516" height="154" key="GridCell.Tab.0.left" timestamp="1618876652581">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="154" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618876652581" />
+    <state width="1516" height="154" key="GridCell.Tab.0.right" timestamp="1618876652582">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="154" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618876652582" />
+    <state x="288" y="35" key="SettingsEditor" timestamp="1618876732036">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="288" y="35" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618876732036" />
   </component>
 </project>
