@@ -29,19 +29,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/Gui/StylSheet/test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_Emploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/DeletOffreEmploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/DeletOffreEmploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/DeletOffreEmploiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/ListCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/ListCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/OffreCell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/StylSheet/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/StylSheet/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Demande_Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePaiment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceProduit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_Emploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploi.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/ListCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/ListCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/OffreCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/OffreCell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/StylSheet/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/StylSheet/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" afterDir="false" />
+>>>>>>> ef84692a279f0940923468d1fc369cf4fbc3d5f2
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -64,16 +102,30 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="C:/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deps/jfoenix-9.0.10.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+>>>>>>> ef84692a279f0940923468d1fc369cf4fbc3d5f2
     <property name="project.structure.proportion" value="0.21717791" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\StylSheet" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\images" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Offre Emploi" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\res" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\OffreEmploi" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\res" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Produit" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Commande" />
     </key>
   </component>
   <component name="RunManager">
@@ -104,6 +156,9 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -128,6 +183,7 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="WindowStateProjectService">
     <state x="514" y="202" key="FileChooserDialogImpl" timestamp="1618876727871">
       <screen x="0" y="0" width="1600" height="900" />
@@ -153,5 +209,20 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="288" y="35" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618876732036" />
+=======
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+>>>>>>> ef84692a279f0940923468d1fc369cf4fbc3d5f2
   </component>
 </project>

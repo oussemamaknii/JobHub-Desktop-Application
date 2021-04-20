@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.AddOffre_EmploiController">
+   <children>
+      <Pane fx:id="pane" layoutX="7.0" layoutY="12.0" prefHeight="394.0" prefWidth="647.0" stylesheets="@../StylSheet/Style.css">
+         <children>
+            <TextField fx:id="tfpost" layoutX="96.0" layoutY="155.0" prefHeight="26.0" prefWidth="198.0" promptText="Post" />
+            <TextField fx:id="tfloc" layoutX="96.0" layoutY="227.0" prefHeight="26.0" prefWidth="198.0" promptText="Location" />
+            <TextField fx:id="tfdesc" layoutX="96.0" layoutY="191.0" prefHeight="26.0" prefWidth="198.0" promptText="Description" />
+            <TextField fx:id="tffile" layoutX="96.0" layoutY="265.0" prefHeight="37.0" prefWidth="118.0" promptText="File" />
+            <TextField fx:id="tfemil" layoutX="434.0" layoutY="117.0" prefHeight="26.0" prefWidth="212.0" promptText="E-mail" />
+            <TextField fx:id="tfmax" layoutX="434.0" layoutY="153.0" prefHeight="26.0" prefWidth="178.0" promptText="Max Salary " />
+            <TextField fx:id="tftitle" layoutX="96.0" layoutY="118.0" prefHeight="26.0" prefWidth="198.0" promptText="Title" />
+            <DatePicker fx:id="tfexp" layoutX="434.0" layoutY="223.0" prefHeight="26.0" prefWidth="212.0" promptText="Expiration Date" />
+            <Label layoutY="122.0" prefHeight="18.0" prefWidth="39.0" text="Title" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutY="159.0" prefHeight="18.0" prefWidth="39.0" text="Post" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutY="195.0" prefHeight="18.0" prefWidth="71.0" text="Description" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutY="231.0" prefHeight="18.0" prefWidth="71.0" text="Location" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutY="271.0" prefHeight="18.0" prefWidth="71.0" text="File" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="340.0" layoutY="119.0" prefHeight="18.0" prefWidth="58.0" text="E-mail" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="340.0" layoutY="155.0" prefHeight="18.0" prefWidth="71.0" text="Max Salary" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="340.0" layoutY="191.0" prefHeight="18.0" prefWidth="71.0" text="Min Salary" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <Label layoutX="340.0" layoutY="227.0" prefHeight="18.0" prefWidth="90.0" text="Expiration date" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <TextField fx:id="tfmin" layoutX="434.0" layoutY="189.0" prefHeight="26.0" prefWidth="178.0" promptText="Min Salary" />
+            <Label layoutX="340.0" layoutY="267.0" prefHeight="18.0" prefWidth="90.0" text="Category" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+            <ChoiceBox fx:id="choicecateg" layoutX="435.0" layoutY="264.0" prefHeight="28.0" prefWidth="212.0" />
+            <Button fx:id="addoffer1" layoutX="167.0" layoutY="343.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="251.0" text="Add Offer" />
+            <Button layoutX="222.0" layoutY="267.0" mnemonicParsing="false" onAction="#filechooser" prefHeight="37.0" prefWidth="71.0" text="Image" />
+            <Label layoutX="612.0" layoutY="150.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
+            <Label layoutX="612.0" layoutY="188.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
+            <StackPane fx:id="effect" layoutX="147.0" layoutY="145.0" prefHeight="156.0" prefWidth="362.0" />
+            <Label layoutX="50.0" layoutY="36.0" prefHeight="35.0" prefWidth="251.0" text="Add A Job Offer" textFill="#003559">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

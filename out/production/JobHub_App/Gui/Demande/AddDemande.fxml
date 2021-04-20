@@ -3,12 +3,11 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Demande.AddDemandeController">
+<Pane prefHeight="373.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Demande.AddDemandeController">
    <children>
-      <TableView fx:id="table2" layoutX="14.0" layoutY="14.0" prefHeight="194.0" prefWidth="570.0">
+      <TableView fx:id="table2" layoutX="3.0" layoutY="6.0" prefHeight="231.0" prefWidth="570.0">
          <columns>
             <TableColumn fx:id="offtit" prefWidth="75.0" text="Offre title" />
             <TableColumn fx:id="username" prefWidth="90.0" text="candidat name" />
@@ -17,7 +16,7 @@
             <TableColumn fx:id="enddate" prefWidth="75.0" text="End dtae" />
          </columns>
       </TableView>
-      <TableView fx:id="table" layoutX="24.0" layoutY="24.0" prefHeight="226.0" prefWidth="566.0">
+      <TableView fx:id="table" layoutY="6.0" prefHeight="231.0" prefWidth="576.0">
          <columns>
             <TableColumn fx:id="coltitre" prefWidth="60.0" text="titre" />
             <TableColumn fx:id="colposte" prefWidth="60.0" text="poste" />
@@ -29,7 +28,8 @@
             <TableColumn fx:id="categ" prefWidth="75.0" text="category" />
          </columns>
       </TableView>
-      <Button fx:id="apply" layoutX="24.0" layoutY="302.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Apply to job" />
-      <Button fx:id="delete" layoutX="24.0" layoutY="348.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Delete application" />
+      <Button fx:id="apply" layoutX="10.0" layoutY="288.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Apply to job" />
+      <Button fx:id="delete" layoutX="10.0" layoutY="334.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Delete application" />
+      <Button fx:id="seeapps" layoutX="10.0" layoutY="245.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="See applications" />
    </children>
-</AnchorPane>
+</Pane>

@@ -5,9 +5,6 @@
  */
 package jobhub_app;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.URL;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -18,12 +15,17 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+
 /**
  *
  * @author souso
  */
 public class FXMain extends Application {
     public double xOffset,yOffset;
+    public FXMain(){}
     
     @Override
     public void start(Stage primaryStage) throws IOException{
@@ -49,9 +51,6 @@ public class FXMain extends Application {
         primaryStage.setTitle("JobHub Application");
         primaryStage.setScene(scene);
         primaryStage.show();
-     /*
-        primaryStage.setTitle("TalkTo");
-        primaryStage.show();*/
     }
 
     /**

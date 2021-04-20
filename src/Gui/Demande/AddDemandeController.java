@@ -5,6 +5,7 @@
  */
 package Gui.Demande;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -17,6 +18,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
+import jobhub_app.FXMain;
 
 /**
  * FXML Controller class
@@ -59,6 +62,8 @@ public class AddDemandeController implements Initializable {
     private Button apply;
     @FXML
     private Button delete;
+    @FXML
+    private Button seeapps;
 
     /**
      * Initializes the controller class.
@@ -103,6 +108,16 @@ public class AddDemandeController implements Initializable {
                 });
             }
         });
+
+        seeapps.setOnAction(e->{
+            table.setVisible(false);
+            table2.setVisible(true);
+            showapplies(iduser);
+        });
+    }
+
+    public void home() throws IOException {
+        new FXMain().start(new Stage());
     }
 
     public void showoffers() {
