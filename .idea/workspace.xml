@@ -25,15 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/activation1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_glyphsbrowser_all_1_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_101.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" afterDir="false" />
-    </list>
+    <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,26 +163,26 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="848" y="143" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618878234515" />
-    <state width="1516" height="314" key="GridCell.Tab.0.bottom" timestamp="1618878131467">
+    <state width="1516" height="86" key="GridCell.Tab.0.bottom" timestamp="1618878491004">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1516" height="314" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618878131467" />
-    <state width="1516" height="314" key="GridCell.Tab.0.center" timestamp="1618878131467">
+    <state width="1516" height="86" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618878491004" />
+    <state width="1516" height="86" key="GridCell.Tab.0.center" timestamp="1618878491003">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1516" height="314" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618878131467" />
-    <state width="1516" height="314" key="GridCell.Tab.0.left" timestamp="1618878131466">
+    <state width="1516" height="86" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618878491003" />
+    <state width="1516" height="86" key="GridCell.Tab.0.left" timestamp="1618878491003">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1516" height="314" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618878131466" />
-    <state width="1516" height="314" key="GridCell.Tab.0.right" timestamp="1618878131467">
+    <state width="1516" height="86" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618878491003" />
+    <state width="1516" height="86" key="GridCell.Tab.0.right" timestamp="1618878491004">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1516" height="314" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618878131467" />
-    <state x="294" y="49" key="SettingsEditor" timestamp="1618878240268">
+    <state width="1516" height="86" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618878491004" />
+    <state x="294" y="49" key="SettingsEditor" timestamp="1618878479261">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="294" y="49" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618878240268" />
+    <state x="294" y="49" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618878479261" />
     <state x="224" y="366" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618111671465">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
