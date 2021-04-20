@@ -46,6 +46,7 @@
       <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/UpdateOfferController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/UpdateOfferController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Demande_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Demande_Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" afterDir="false" />
+>>>>>>> ef84692a279f0940923468d1fc369cf4fbc3d5f2
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
