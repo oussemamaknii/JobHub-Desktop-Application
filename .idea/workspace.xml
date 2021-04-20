@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -29,57 +26,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/src/Gui/StylSheet/test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/DeletOffreEmploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/DeletOffreEmploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/DeletOffreEmploiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/ListCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/ListCell.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/OffreCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/StylSheet/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/StylSheet/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Demande_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePaiment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceProduit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/ListCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/ListCell.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/OffreCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/OffreCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/StylSheet/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/StylSheet/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" afterDir="false" />
->>>>>>> ef84692a279f0940923468d1fc369cf4fbc3d5f2
+      <change beforePath="$PROJECT_DIR$/Librairies.rar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -102,35 +61,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="C:/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Librairies/fontawesomefx-glyphsbrowser-all-1.0.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
-=======
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/deps/jfoenix-9.0.10.jar" />
-    <property name="project.structure.last.edited" value="Modules" />
->>>>>>> ef84692a279f0940923468d1fc369cf4fbc3d5f2
     <property name="project.structure.proportion" value="0.21717791" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.32958803" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\StylSheet" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\images" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\res" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\OffreEmploi" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\res" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Produit" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Commande" />
+      <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Desktop\JobHub-Desktop-Application\out\production\JobHub_App\Gui\Commande" />
+      <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Desktop\JobHub-Desktop-Application\src\Gui\Produit" />
+      <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Desktop\JobHub-Desktop-Application\src\jobhub_app" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="FXMain" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-16" />
+    <configuration name="FXMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jobhub_app.FXMain" />
       <module name="JobHub_App" />
       <option name="VM_PARAMETERS" value="--module-path C:\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml" />
@@ -144,6 +91,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FXMain" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -155,9 +107,6 @@
       <updated>1617981630771</updated>
     </task>
     <servers />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -183,46 +132,84 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="WindowStateProjectService">
-    <state x="514" y="202" key="FileChooserDialogImpl" timestamp="1618876727871">
+    <state x="429" y="152" key="#Inspections" timestamp="1618113113157">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="514" y="202" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618876727871" />
-    <state width="1516" height="154" key="GridCell.Tab.0.bottom" timestamp="1618876652582">
+    <state x="429" y="152" key="#Inspections/0.0.1600.900@0.0.1600.900" timestamp="1618113113157" />
+    <state x="150" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618320290867">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1516" height="154" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618876652582" />
-    <state width="1516" height="154" key="GridCell.Tab.0.center" timestamp="1618876652581">
+    <state x="150" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1618320290867" />
+    <state x="880" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1618599421501">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1516" height="154" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618876652581" />
-    <state width="1516" height="154" key="GridCell.Tab.0.left" timestamp="1618876652581">
+    <state x="880" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1618599421501" />
+    <state x="605" y="172" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1618531257544">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1516" height="154" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618876652581" />
-    <state width="1516" height="154" key="GridCell.Tab.0.right" timestamp="1618876652582">
+    <state x="605" y="172" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1600.900@0.0.1600.900" timestamp="1618531257544" />
+    <state x="542" y="226" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618093800119">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1516" height="154" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618876652582" />
-    <state x="288" y="35" key="SettingsEditor" timestamp="1618876732036">
+    <state x="542" y="226" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1618093800119" />
+    <state x="0" y="319" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1618542270687">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="288" y="35" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618876732036" />
-=======
+    <state x="0" y="319" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.900@0.0.1600.900" timestamp="1618542270687" />
+    <state x="611" y="345" key="DetectedRootsChooserDialog" timestamp="1618878006227">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="611" y="345" key="DetectedRootsChooserDialog/0.0.1600.900@0.0.1600.900" timestamp="1618878006227" />
+    <state x="848" y="143" key="FileChooserDialogImpl" timestamp="1618878234515">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="848" y="143" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618878234515" />
+    <state width="1516" height="231" key="GridCell.Tab.0.bottom" timestamp="1618919383512">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="231" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618919383512" />
+    <state width="1516" height="231" key="GridCell.Tab.0.center" timestamp="1618919383512">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="231" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618919383512" />
+    <state width="1516" height="231" key="GridCell.Tab.0.left" timestamp="1618919383511">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="231" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618919383511" />
+    <state width="1516" height="231" key="GridCell.Tab.0.right" timestamp="1618919383512">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="231" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618919383512" />
+    <state x="294" y="49" key="SettingsEditor" timestamp="1618878479261">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="294" y="49" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618878479261" />
+    <state x="224" y="366" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618111671465">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="224" y="366" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1600.900@0.0.1600.900" timestamp="1618111671465" />
+    <state x="353" y="210" width="899" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1618409894978">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="353" y="210" width="899" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1600.900@0.0.1600.900" timestamp="1618409894978" />
+    <state x="793" y="0" width="814" height="907" key="dock-window-1" timestamp="1618415134753">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="793" y="0" width="814" height="907" key="dock-window-1/0.0.1600.900@0.0.1600.900" timestamp="1618415134753" />
+    <state x="442" y="221" key="run.anything.popup" timestamp="1618436773357">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="442" y="221" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1618436773357" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <properties class="java.lang.ClassCastException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
->>>>>>> ef84692a279f0940923468d1fc369cf4fbc3d5f2
   </component>
 </project>

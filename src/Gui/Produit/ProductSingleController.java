@@ -3,17 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Gui.Produit;
+package Gui.Commande;
 
+import Entities.Panier;
 //import Entitie.User.User;
 import Entities.Cart;
-import Gui.Commande.PanierController;
 import animatefx.animation.FadeIn;
 import animatefx.animation.FadeInDown;
-
-        import java.io.IOException;
+import animatefx.animation.FadeInLeft;
+import animatefx.animation.SlideInLeft;
+import animatefx.animation.SlideInRight;
+import animatefx.animation.SlideOutRight;
+import java.io.IOException;
 import java.net.URL;
-        import java.util.ResourceBundle;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -26,7 +31,8 @@ import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-        import javafx.scene.input.MouseEvent;
+import javafx.scene.input.ContextMenuEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -57,7 +63,8 @@ public class ProductSingleController implements Initializable {
     private Label prix;
     SpinnerValueFactory<Integer> svf;
     ObservableList<Cart> panier = FXCollections.observableArrayList();
-    AnchorPane centerContent;
+    @FXML
+    private AnchorPane centerContent;
     Cart produitPanier;
      //User user;
 
@@ -119,20 +126,21 @@ public class ProductSingleController implements Initializable {
     }
 
     //public void redirection(AnchorPane c, Cart p,ObservableList<Cart> pa,User u)
-    public void redirection(AnchorPane c, Cart p,ObservableList<Cart> pa) {
-        centerContent = c;
+    public AnchorPane redirection(AnchorPane c, Cart p,ObservableList<Cart> pa) {
+       // centerContent = c;
         produitPanier = p;
         nom.setText(p.getNomProduit());
-        prix.setText(Integer.toString(p.getPrix()));
+        prix.setText(Float.toString(p.getPrix()));
         svf = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, p.getQuantite());
         quantite.setValueFactory(svf);
-        imagePanier.setImage(new Image("/GUI/Images/"+p.getImage()));
+        imagePanier.setImage(new Image(getClass().getResourceAsStream("/Gui/Images/alchimiste.PNG")));
         if(panier.isEmpty())
         panier.addAll(pa);
         else {
             panier.clear();;
             panier.addAll(pa);
         }
+        return centerContent;
       //  user=u;
     }
       @FXML
@@ -140,7 +148,7 @@ public class ProductSingleController implements Initializable {
      produitPanier.setQuantite(quantite.getValue());
           System.out.println("quantite"+ produitPanier.getQuantite());
      panier.add(produitPanier);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Commande/Panier.fxml"));
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/src/Gui/Commande/Panier.fxml"));
         Parent fxml = Loader.load();
         PanierController e = Loader.getController();
         //e.redirection(centerContent,panier,user);
