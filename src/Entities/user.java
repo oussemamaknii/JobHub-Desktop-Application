@@ -12,7 +12,7 @@ public class user {
     private String roles;
     private String firstName;
     private String lastName;
-    private Date dateOfBirth;
+    private LocalDate dateOfBirth;
     private Date createdAt;
     private Date activatedAt;
     private Date updatedAt;
@@ -21,21 +21,15 @@ public class user {
     private String imageName;
     private int phone;
 
-
-
-    public user(String email, String password, String firstName, String lastName, Date dateOfBirth, String adresse, int phone) {
-        this.email = email;
-        this.password = password;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-        this.adresse = adresse;
-        this.phone = phone;
-    }
-
-    public user(String text, String text1, String text2, String text3, LocalDate value, String text4, String text5) {
-
-    }
+public user (String email, String password, String firstName, String lastName, LocalDate dateOfBirth, String adresse, int phone ){
+    this.email = email;
+    this.password = password;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dateOfBirth = dateOfBirth;
+    this.adresse = adresse;
+    this.phone = phone;
+}
 
 
     public int getId() {
@@ -94,11 +88,12 @@ public class user {
         this.lastName = lastName;
     }
 
-    public Date getDateOfBirth() {
+
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -167,12 +162,12 @@ public class user {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         user user = (user) o;
-        return getId() == user.getId() && getIsActive() == user.getIsActive() && getPhone() == user.getPhone() && getEmail().equals(user.getEmail()) && getPassword().equals(user.getPassword()) && Objects.equals(getRoles(), user.getRoles()) && Objects.equals(getFirstName(), user.getFirstName()) && Objects.equals(getLastName(), user.getLastName()) && Objects.equals(getDateOfBirth(), user.getDateOfBirth()) && Objects.equals(getCreatedAt(LocalDate.now()), user.getCreatedAt(LocalDate.now())) && Objects.equals(getActivatedAt(), user.getActivatedAt()) && Objects.equals(getUpdatedAt(), user.getUpdatedAt()) && Objects.equals(getAdresse(), user.getAdresse()) && Objects.equals(getProfessionalTitle(), user.getProfessionalTitle()) && Objects.equals(getImageName(), user.getImageName());
+        return getId() == user.getId() && getIsActive() == user.getIsActive() && getPhone() == user.getPhone() && Objects.equals(getEmail(), user.getEmail()) && Objects.equals(getPassword(), user.getPassword()) && Objects.equals(getRoles(), user.getRoles()) && Objects.equals(getFirstName(), user.getFirstName()) && Objects.equals(getLastName(), user.getLastName()) && Objects.equals(getDateOfBirth(), user.getDateOfBirth()) && Objects.equals(createdAt, user.createdAt) && Objects.equals(getActivatedAt(), user.getActivatedAt()) && Objects.equals(getUpdatedAt(), user.getUpdatedAt()) && Objects.equals(getAdresse(), user.getAdresse()) && Objects.equals(getProfessionalTitle(), user.getProfessionalTitle()) && Objects.equals(getImageName(), user.getImageName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getEmail(), getPassword(), getIsActive(), getRoles(), getFirstName(), getLastName(), getDateOfBirth(), getCreatedAt(LocalDate.now()), getActivatedAt(), getUpdatedAt(), getAdresse(), getProfessionalTitle(), getImageName(), getPhone());
+        return Objects.hash(getId(), getEmail(), getPassword(), getIsActive(), getRoles(), getFirstName(), getLastName(), getDateOfBirth(), createdAt, getActivatedAt(), getUpdatedAt(), getAdresse(), getProfessionalTitle(), getImageName(), getPhone());
     }
 
     @Override

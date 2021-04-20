@@ -50,8 +50,9 @@ public class RegisterController implements Initializable {
         register.setOnAction(e -> {
             if (testfields()) {
 
+
             user register1 = new user(tfEmail.getText(), tfPassword.getText(), tfFirstName.getText(), tfLastName.getText(),
-                    tfDateOfBirth.getValue(), tfAdresse.getText(), tfPhone.getText());
+                    tfDateOfBirth.getValue(), tfAdresse.getText(), Integer.parseInt(tfPhone.getText()));
             new Register().Register(register1);}
 
         });
