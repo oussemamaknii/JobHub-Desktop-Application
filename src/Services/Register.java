@@ -5,6 +5,7 @@ import Interfaces.IServiceRegister;
 import Utils.Connexion;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.*;
 import java.util.logging.Level;
@@ -26,7 +27,12 @@ public class Register implements IServiceRegister {
             pst.setString(4, u.getAdresse());
             pst.setDate(5, Date.valueOf(u.getDateOfBirth()));
             pst.setInt(6, u.getPhone());
-            pst.setString(7, u.getPassword());
+            String pwd = BCrypt.hashpw(u.getPassword(),BCrypt.gensalt(13));
+            pst.setString(7, pwd.substring(0,2)+"y"+pwd.substring(3));
+
+
+
+
 
             pst.executeUpdate();
             System.out.println("Your account has been created");

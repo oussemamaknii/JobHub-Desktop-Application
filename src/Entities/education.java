@@ -18,6 +18,9 @@ public class education {
         this.dateTo = dateTo;
     }
 
+    public education() {
+    }
+
     public int getId() {
         return id;
     }

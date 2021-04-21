@@ -15,6 +15,10 @@ public class candidateResume {
         this.experience = experience;
     }
 
+    public candidateResume() {
+
+    }
+
     public int getId() {
         return id;
     }

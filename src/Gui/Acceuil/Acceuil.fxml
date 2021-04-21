@@ -175,11 +175,10 @@
                         </ImageView>
                      </graphic>
                   </MenuButton>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="3.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="291.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Browse Candidates" textFill="WHITE">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="3.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="291.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Browse Profiles" textFill="WHITE">
                      <items>
                         <MenuItem fx:id="candidatesProfiles" mnemonicParsing="false" text="Candidates Profiles" />
-                        <MenuItem fx:id="candidatesResumes" mnemonicParsing="false" text="Candidates Resumes" />
-                        <MenuItem fx:id="company1" mnemonicParsing="false" text="Company" />
+                        <MenuItem fx:id="companiesProfiles" mnemonicParsing="false" text="Companies Profiles" />
                      </items>
                      <padding>
                         <Insets left="40.0" />

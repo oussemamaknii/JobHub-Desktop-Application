@@ -4,11 +4,12 @@ import Entities.candidateResume;
 import Entities.education;
 import Interfaces.ICareer;
 import Utils.Connexion;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class CareerService implements ICareer {
     Connection cnx = Connexion.getInstance().getConnection();
@@ -41,6 +42,48 @@ public class CareerService implements ICareer {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+
+    }
+
+    @Override
+    public ObservableList<candidateResume> showResumes() {
+        ObservableList<candidateResume> resumes = FXCollections.observableArrayList();
+        String request = "select * from candidate_resume";
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                candidateResume candidateresumes1 = new candidateResume();
+                candidateresumes1.setResumeHeadline(rs.getString("resume_headline"));
+                candidateresumes1.setSkills(rs.getString("skills"));
+                candidateresumes1.setExperience(rs.getString("experience"));
+                resumes.add(candidateresumes1);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return resumes;
+    }
+
+    @Override
+    public ObservableList<education> showEducations() {
+        ObservableList<education> educations = FXCollections.observableArrayList();
+        String request = "select * from education";
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                education education1 = new education();
+                education1.setCourse(rs.getString("course"));
+                education1.setInstitute(rs.getString("institute"));
+                education1.setDateFrom(rs.getDate("date_from").toLocalDate());
+                education1.setDateTo(rs.getDate("date_to").toLocalDate());
+                educations.add(education1);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return educations;
 
     }
 }

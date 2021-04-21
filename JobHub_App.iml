@@ -11,5 +11,6 @@
     <orderEntry type="library" name="Connector J 8" level="project" />
     <orderEntry type="library" name="jfoenix-9.0.10" level="project" />
     <orderEntry type="library" name="mysql-connector-java-8.0.23" level="project" />
+    <orderEntry type="library" name="jBCrypt-0.4.1" level="project" />
   </component>
 </module>
