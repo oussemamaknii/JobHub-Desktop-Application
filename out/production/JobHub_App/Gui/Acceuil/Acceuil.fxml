@@ -116,6 +116,7 @@
                       <MenuItem fx:id="deloff" mnemonicParsing="false" text="Delete Job Offer" />
                         <MenuItem fx:id="upoff" mnemonicParsing="false" text="Update Job Offer" />
                         <MenuItem fx:id="treatapps" mnemonicParsing="false" text="See Applications" />
+                        <MenuItem fx:id="stat" mnemonicParsing="false" text="Offer Statistiques" />
                     </items>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">

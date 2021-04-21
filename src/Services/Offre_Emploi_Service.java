@@ -10,6 +10,7 @@ import Interfaces.IService;
 import Utils.Connexion;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.chart.PieChart;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -37,6 +38,25 @@ public class Offre_Emploi_Service implements IService<Offre_Emploi> {
             troubles.printStackTrace();
         }
         return ids;
+    }
+
+    public ObservableList<PieChart.Data> getdata(){
+        ObservableList<PieChart.Data> list = FXCollections.observableArrayList();
+        String request = "select count(o.id),c.titre from Offre_Emploi o join category c on o.categorie_id = c.id "
+                +"group by c.titre";
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                String titre = rs.getString(2);
+                Double count = rs.getDouble(1);
+                PieChart.Data data = new PieChart.Data(titre,count);
+                list.add(data);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return list;
     }
 
     public String getOffreCateg(String id) {

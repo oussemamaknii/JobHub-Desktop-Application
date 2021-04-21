@@ -39,6 +39,8 @@ public class AcceuilController implements Initializable {
     private MenuItem treatapps;
     @FXML
     private MenuItem userapps;
+    @FXML
+    private MenuItem stat;
 
 
     /**
@@ -100,6 +102,17 @@ public class AcceuilController implements Initializable {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/OffreEmploi/UpdateOffer.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+
+        stat.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/OffreEmploi/stat.fxml").toURI().toURL();
             } catch (MalformedURLException malformedURLException) {
                 malformedURLException.printStackTrace();
             }
