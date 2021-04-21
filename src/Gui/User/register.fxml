@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane stylesheets="@../StylSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Register.RegisterController">
+<Pane stylesheets="@../StylSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.User.RegisterController">
    <children>
       <TextField fx:id="tfLastName" layoutX="96.0" layoutY="62.0" stylesheets="@../StylSheet/Style.css" />
       <TextField fx:id="tfEmail" layoutX="347.0" layoutY="10.0" stylesheets="@../StylSheet/Style.css" />

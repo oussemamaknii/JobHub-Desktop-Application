@@ -31,6 +31,10 @@ public user (String email, String password, String firstName, String lastName, L
     this.phone = phone;
 }
 
+    public user() {
+
+    }
+
 
     public int getId() {
         return id;

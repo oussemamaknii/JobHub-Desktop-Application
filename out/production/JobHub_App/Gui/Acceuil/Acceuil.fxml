@@ -33,7 +33,7 @@
                </center></BorderPane>
             <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="504.0" prefWidth="266.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="816.0" AnchorPane.topAnchor="250.0">
                <children>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="141.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="125.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="125.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -155,11 +155,31 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="308.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Profile" textFill="WHITE">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="6.0" layoutY="311.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="291.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Profile" textFill="WHITE">
                      <items>
                         <MenuItem fx:id="updateProfile" mnemonicParsing="false" text="See Your Profile" />
                         <MenuItem fx:id="resume" mnemonicParsing="false" text="Resume" />
                         <MenuItem fx:id="company" mnemonicParsing="false" text="Company" />
+                     </items>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Person_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuButton>
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="3.0" layoutY="167.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="291.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Browse Candidates" textFill="WHITE">
+                     <items>
+                        <MenuItem fx:id="candidatesProfiles" mnemonicParsing="false" text="Candidates Profiles" />
+                        <MenuItem fx:id="candidatesResumes" mnemonicParsing="false" text="Candidates Resumes" />
+                        <MenuItem fx:id="company1" mnemonicParsing="false" text="Company" />
                      </items>
                      <padding>
                         <Insets left="40.0" />

@@ -53,6 +53,12 @@ public class AcceuilController implements Initializable {
     private MenuItem resume;
     @FXML
     private MenuItem company;
+    @FXML
+    private MenuItem candidatesProfiles;
+    @FXML
+    private MenuItem candidatesResumes;
+    @FXML
+    private MenuItem company1;
 
 
     /**
@@ -134,6 +140,16 @@ public class AcceuilController implements Initializable {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/Career/career.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+        candidatesProfiles.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/User/ShowUsers.fxml").toURI().toURL();
             } catch (MalformedURLException malformedURLException) {
                 malformedURLException.printStackTrace();
             }

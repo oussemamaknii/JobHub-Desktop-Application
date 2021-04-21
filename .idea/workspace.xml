@@ -29,22 +29,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_231.xml~HEAD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_231.xml~master" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/bytes_0_4_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_231.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_232.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/User/showUsers.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/user.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/candidateResume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/candidateResume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/education.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Register/RegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Register/register.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/user.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Career/career.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Career/career.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Register/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Register/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServiceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IServiceRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +80,8 @@
     <setting file="file://$PROJECT_DIR$/src/Services/Register.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Gui/Acceuil/FXloader.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Entities/user.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Gui/Register/RegisterController.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/Gui/Register/register.fxml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gui/User/RegisterController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gui/User/register.fxml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedIndex" value="1" />

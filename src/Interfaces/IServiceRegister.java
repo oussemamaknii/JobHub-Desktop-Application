@@ -1,11 +1,10 @@
 package Interfaces;
 
 import Entities.user;
-
-import java.util.List;
+import javafx.collections.ObservableList;
 
 public interface IServiceRegister {
     public void Register(user u);
     public void updateprofile(user User);
-    public List<user> showUsers();
+    public ObservableList<user> showUsers();
 }
