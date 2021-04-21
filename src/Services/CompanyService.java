@@ -18,10 +18,12 @@ public class CompanyService implements IServiceCompany {
     @Override
     public void AddCompany(company comp) {
 
+
     }
 
     @Override
     public void updateCompany(company comp) {
+
 
     }
 
@@ -37,7 +39,8 @@ public class CompanyService implements IServiceCompany {
                 company1.setCompanyName(rs.getString("company_name"));
                 company1.setFoundedDate(rs.getDate("founded_date").toLocalDate());
                 company1.setWebsite(rs.getString("website"));
-                company1.setCountry(rs.getString("country"));
+                company1.setCompanyAdress(rs.getString("company_adress"));
+                company1.setCategory(rs.getString("category"));
                 company1.setContactEmail(rs.getString("contact_email"));
                 company1.setContactPhone(rs.getInt("contact_phone"));
                 company1.setFacebookLink(rs.getString("facebook_link"));

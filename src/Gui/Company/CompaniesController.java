@@ -42,6 +42,8 @@ public class CompaniesController implements Initializable {
     private TableColumn<?, ?> colContactEmail;
     @FXML
     private TableColumn<?, ?> colContactPhone;
+    @FXML
+    private TableColumn<?, ?> colCategory;
 
     /**
      * Initializes the controller class.
@@ -58,7 +60,8 @@ public class CompaniesController implements Initializable {
         colCompanyName.setCellValueFactory(new PropertyValueFactory<>("companyName"));
         colFoundedDate.setCellValueFactory(new PropertyValueFactory<>("foundedDate"));
         colWebsite.setCellValueFactory(new PropertyValueFactory<>("website"));
-        colCountry.setCellValueFactory(new PropertyValueFactory<>("country"));
+        colCountry.setCellValueFactory(new PropertyValueFactory<>("companyAdress"));
+        colCategory.setCellValueFactory(new PropertyValueFactory<>("category"));
         colContactEmail.setCellValueFactory(new PropertyValueFactory<>("contactEmail"));
         colContactPhone.setCellValueFactory(new PropertyValueFactory<>("contactPhone"));
         colFacebook.setCellValueFactory(new PropertyValueFactory<>("facebookLink"));

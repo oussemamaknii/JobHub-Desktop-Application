@@ -29,28 +29,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jBCrypt_0_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Company/companies.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/IServiceCompany.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/CompanyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Company/addCompany.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/candidateResume.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/candidateResume.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/education.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/education.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/ICareer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/ICareer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/CareerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/CareerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Register.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/candidateResume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/candidateResume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/education.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/ICareer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ICareer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/CareerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CareerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Company/CompaniesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Company/CompaniesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Company/companies.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Company/companies.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/CompanyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/CompanyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Company/CompaniesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Company/CompaniesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Company/companies.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Company/companies.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CompanyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +53,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -174,7 +161,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="mintoua" />
+                        <option value="rayen" />
                       </list>
                     </value>
                   </entry>
@@ -189,6 +176,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update" />
+    <MESSAGE value="Added some views + Bcrypt" />
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
   <component name="XDebuggerManager">
