@@ -29,42 +29,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="Update">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_231.xml~HEAD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_231.xml~master" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/bytes_0_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_231.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_232.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/FXloader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ShopController2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/DeletOffreEmploiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/SeeAppsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ProductSingleController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ProductSingleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Register/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Register/register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePaiment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceProduit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Demande_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePaiment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceProduit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Connexion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/user.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Register/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Register/RegisterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Register/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Register/register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/candidateResume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/candidateResume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/education.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Career/career.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Career/career.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +83,9 @@
     <setting file="file://$PROJECT_DIR$/src/Gui/Register/RegisterController.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Gui/Register/register.fxml" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -122,12 +105,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pi_java-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.21717791" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -209,7 +192,15 @@
           <properties class="java.lang.NumberFormatException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

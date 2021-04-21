@@ -9,9 +9,7 @@ public class candidateResume {
     private String skills;
     private String experience;
 
-    public candidateResume(int id, int user_id, String resumeHeadline, String skills, String experience) {
-        this.id = id;
-        this.user_id = user_id;
+    public candidateResume(String resumeHeadline, String skills, String experience) {
         this.resumeHeadline = resumeHeadline;
         this.skills = skills;
         this.experience = experience;

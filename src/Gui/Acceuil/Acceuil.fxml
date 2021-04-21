@@ -51,24 +51,6 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="316.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Profile" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
-                     <padding>
-                        <Insets left="50.0" />
-                     </padding>
-                     <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../images/icons8_Person_32px.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                     <font>
-                        <Font name="Leelawadee UI Semilight" size="14.0" />
-                     </font>
-                  </Button>
                   <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="360.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Search" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="380.0">
                      <padding>
                         <Insets left="50.0" />
@@ -173,6 +155,26 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="308.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="217.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Profile" textFill="WHITE">
+                     <items>
+                        <MenuItem fx:id="updateProfile" mnemonicParsing="false" text="See Your Profile" />
+                        <MenuItem fx:id="resume" mnemonicParsing="false" text="Resume" />
+                        <MenuItem fx:id="company" mnemonicParsing="false" text="Company" />
+                     </items>
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Person_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuButton>
                </children>
             </AnchorPane>
          </children>

@@ -1,6 +1,6 @@
 package Entities;
 
-import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class education {
@@ -8,12 +8,10 @@ public class education {
     private int resumeId;
     private String course;
     private String institute;
-    private Date dateFrom;
-    private Date dateTo;
+    private LocalDate dateFrom;
+    private LocalDate dateTo;
 
-    public education(int id, int resumeId, String course, String institute, Date dateFrom, Date dateTo) {
-        this.id = id;
-        this.resumeId = resumeId;
+    public education(String course, String institute, LocalDate dateFrom, LocalDate dateTo) {
         this.course = course;
         this.institute = institute;
         this.dateFrom = dateFrom;
@@ -52,19 +50,19 @@ public class education {
         this.institute = institute;
     }
 
-    public Date getDateFrom() {
+    public LocalDate getDateFrom() {
         return dateFrom;
     }
 
-    public void setDateFrom(Date dateFrom) {
+    public void setDateFrom(LocalDate dateFrom) {
         this.dateFrom = dateFrom;
     }
 
-    public Date getDateTo() {
+    public LocalDate getDateTo() {
         return dateTo;
     }
 
-    public void setDateTo(Date dateTo) {
+    public void setDateTo(LocalDate dateTo) {
         this.dateTo = dateTo;
     }
 
