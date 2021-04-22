@@ -39,6 +39,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_10.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
@@ -49,6 +50,11 @@
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" afterDir="false" />
+=======
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" afterDir="false" />
+>>>>>>> mintoua
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entities/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
@@ -61,6 +67,7 @@
       <change beforePath="$PROJECT_DIR$/src/Services/ServiceCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ServiceCommande.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utils/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Mail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
+>>>>>>> c7293e16a9311eb9005635f66c269810b5478e94
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +205,26 @@
     <state x="611" y="345" key="DetectedRootsChooserDialog" timestamp="1618878006227">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
+<<<<<<< HEAD
+    <state x="226" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618601742920" />
+    <state width="1516" height="154" key="GridCell.Tab.0.bottom" timestamp="1618624804260">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="154" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618624804260" />
+    <state width="1516" height="154" key="GridCell.Tab.0.center" timestamp="1618624804260">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="154" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618624804260" />
+    <state width="1516" height="154" key="GridCell.Tab.0.left" timestamp="1618624804259">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="154" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618624804259" />
+    <state width="1516" height="154" key="GridCell.Tab.0.right" timestamp="1618624804260">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1516" height="154" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618624804260" />
+    <state x="294" y="49" key="SettingsEditor" timestamp="1618601750121">
+=======
     <state x="611" y="345" key="DetectedRootsChooserDialog/0.0.1600.900@0.0.1600.900" timestamp="1618878006227" />
     <state x="848" y="143" key="FileChooserDialogImpl" timestamp="1619043494250">
       <screen x="0" y="0" width="1600" height="900" />
@@ -214,8 +241,19 @@
     <state width="1540" height="111" key="GridCell.Tab.0.left" timestamp="1619094537612">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
+<<<<<<< HEAD
     <state width="1540" height="111" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619094537612" />
     <state width="1540" height="111" key="GridCell.Tab.0.right" timestamp="1619094537613">
+=======
+<<<<<<< HEAD
+    <state width="1516" height="86" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618878491003" />
+    <state width="1516" height="86" key="GridCell.Tab.0.right" timestamp="1618878491004">
+>>>>>>> 2c7194930a65b2dab89caddfbc241cea12d88146
+=======
+    <state width="1544" height="230" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618924078929" />
+    <state width="1544" height="230" key="GridCell.Tab.0.right" timestamp="1618924078929">
+>>>>>>> c7293e16a9311eb9005635f66c269810b5478e94
+>>>>>>> mintoua
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1540" height="111" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619094537613" />

@@ -60,27 +60,7 @@
                               <Font name="Source Sans Pro" size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="14.0" layoutY="115.0" text="Shipping">
-                           <font>
-                              <Font name="Source Sans Pro" size="16.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="14.0" layoutY="157.0" text="Taxe Valeur Ajoutée">
-                           <font>
-                              <Font name="Source Sans Pro" size="16.0" />
-                           </font>
-                        </Label>
                         <Label fx:id="subTotal" layoutX="189.0" layoutY="73.0" text="\$7500">
-                           <font>
-                              <Font name="Source Sans Pro" size="16.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="190.0" layoutY="115.0" text="\$350">
-                           <font>
-                              <Font name="Source Sans Pro" size="16.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="193.0" layoutY="157.0" text="\$500">
                            <font>
                               <Font name="Source Sans Pro" size="16.0" />
                            </font>
