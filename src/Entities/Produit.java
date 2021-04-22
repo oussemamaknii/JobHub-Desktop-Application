@@ -19,6 +19,14 @@ public class Produit {
 
     }
 
+    public Produit(String name,String ref, String description,float price, int quantity, String image){
+        this.name = name;
+        this.ref =  ref;
+        this.description = description;
+        this.price = price;
+        this.quantity= quantity;
+        this.image = image;
+    }
     public Produit(int id, String name,String ref, String description,float price, int quantity, String image){
         this.id = id;
         this.name = name;

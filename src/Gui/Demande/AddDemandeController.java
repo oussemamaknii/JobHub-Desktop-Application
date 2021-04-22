@@ -5,21 +5,29 @@
  */
 package Gui.Demande;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
-
 import Entities.Demande_Recrutement;
 import Entities.Offre_Emploi;
+import Gui.OffreEmploi.OffreCell;
 import Services.Demande_Service;
-import Services.Offre_Emploi_Service;
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXDialog;
+import com.jfoenix.controls.JFXDialogLayout;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.Stage;
-import jobhub_app.FXMain;
+import javafx.scene.effect.BoxBlur;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
+
+import java.net.URL;
+import java.util.ResourceBundle;
 
 /**
  * FXML Controller class
@@ -41,42 +49,48 @@ public class AddDemandeController implements Initializable {
     @FXML
     private TableColumn<?, ?> enddate;
     @FXML
-    private TableView<Offre_Emploi> table;
-    @FXML
-    private TableColumn<?, ?> coltitre;
-    @FXML
-    private TableColumn<?, ?> colposte;
-    @FXML
-    private TableColumn<?, ?> coldesc;
-    @FXML
-    private TableColumn<?, ?> colloc;
-    @FXML
-    private TableColumn<?, ?> colemail;
-    @FXML
-    private TableColumn<?, ?> startdated;
-    @FXML
-    private TableColumn<?, ?> colexp;
-    @FXML
-    private TableColumn<?, ?> categ;
-    @FXML
     private Button apply;
     @FXML
     private Button delete;
     @FXML
     private Button seeapps;
+    @FXML
+    private ListView<Offre_Emploi> table;
+    @FXML
+    private Pagination page;
+    int alluserapps = new Demande_Service().countalluserapps(5);
+    int from = 0, to = 0,itemperpage = 5;
+    @FXML
+    private ChoiceBox<String> tri;
+    @FXML
+    private Label lab;
+    @FXML
+    private Pane pane;
+    @FXML
+    private StackPane effect;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        int iduser = 5;
+        ObservableList<String> list = FXCollections.observableArrayList("Post","Categprie","Date Expiration");
+        tri.setItems(list);
         table.setVisible(false);
-        table2.setVisible(true);
+        tri.setVisible(false);
+        lab.setVisible(false);
+        table2.setVisible(false);
+        int iduser = 5;
         showapplies(iduser);
+
+        tri.setOnAction(e->{
+            showofferstri(tri.getValue());
+        });
 
         apply.setOnAction(e -> {
             table.setVisible(true);
+            tri.setVisible(true);
+            lab.setVisible(true);
             table2.setVisible(false);
             showoffers();
             Offre_Emploi offre = table.getSelectionModel().getSelectedItem();
@@ -84,12 +98,16 @@ public class AddDemandeController implements Initializable {
                 new Demande_Service().apply(offre.getId(), iduser);
                 showapplies(iduser);
                 table.setVisible(false);
+                page.setVisible(true);
                 table2.setVisible(true);
             }
         });
 
         delete.setOnAction(e -> {
             table.setVisible(false);
+            tri.setVisible(false);
+            lab.setVisible(false);
+            page.setVisible(true);
             table2.setVisible(true);
             showapplies(iduser);
             Demande_Recrutement demande = table2.getSelectionModel().getSelectedItem();
@@ -106,41 +124,70 @@ public class AddDemandeController implements Initializable {
                         showapplies(iduser);
                     }
                 });
+            }else {
+                effect.setDisable(false);
+                BoxBlur blur = new BoxBlur(3,3,3);
+                JFXDialogLayout content = new JFXDialogLayout();
+                content.setHeading(new Text("Error"));
+                content.setBody(new Text("Select An Application So You Can  \n Delete it !!"));
+                JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+                JFXButton btn = new JFXButton("Done !");
+                btn.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                        fialog.close();
+                        pane.setEffect(null);
+                        effect.setDisable(true);
+                    }
+                });
+                content.setActions(btn);
+                pane.setEffect(blur);
+                fialog.show();
             }
         });
 
-        seeapps.setOnAction(e->{
+        seeapps.setOnAction(e -> {
             table.setVisible(false);
+            tri.setVisible(false);
+            lab.setVisible(false);
             table2.setVisible(true);
             showapplies(iduser);
         });
     }
 
-    public void home() throws IOException {
-        new FXMain().start(new Stage());
+    public void showofferstri(String value){
+        ObservableList<Offre_Emploi> offres = new Demande_Service().tri(value);
+        table.setItems(offres);
+        table.setCellFactory(studentListView -> new OffreCell());
     }
 
     public void showoffers() {
+        table.setVisible(true);
+        page.setVisible(false);
+        table2.setVisible(false);
         ObservableList<Offre_Emploi> offres = new Demande_Service().get_not_applied_jobs();
-        coltitre.setCellValueFactory(new PropertyValueFactory<>("titre"));
-        colposte.setCellValueFactory(new PropertyValueFactory<>("poste"));
-        coldesc.setCellValueFactory(new PropertyValueFactory<>("description"));
-        colloc.setCellValueFactory(new PropertyValueFactory<>("location"));
-        colemail.setCellValueFactory(new PropertyValueFactory<>("email"));
-        colexp.setCellValueFactory(new PropertyValueFactory<>("date_expiration"));
-        startdated.setCellValueFactory(new PropertyValueFactory<>("date_debut"));
-        categ.setCellValueFactory(new PropertyValueFactory<>("catname"));
         table.setItems(offres);
+        table.setCellFactory(studentListView -> new OffreCell());
     }
 
     public void showapplies(int id) {
-        ObservableList<Demande_Recrutement> offres = new Demande_Service().getAllUser(id);
+        table.setVisible(false);
+        page.setVisible(true);
+        table2.setVisible(true);
         username.setCellValueFactory(new PropertyValueFactory<>("username"));
         offtit.setCellValueFactory(new PropertyValueFactory<>("offtit"));
         stat.setCellValueFactory(new PropertyValueFactory<>("status"));
         stdate.setCellValueFactory(new PropertyValueFactory<>("date_debut"));
         enddate.setCellValueFactory(new PropertyValueFactory<>("date_expiration"));
-        table2.setItems(offres);
+        page.setPageCount((alluserapps / itemperpage) + 1);
+        page.setPageFactory(this::createtable);
+    }
+
+    public Node createtable(int pageindex) {
+        from = pageindex * itemperpage;
+        to = itemperpage;
+        table2.setItems(FXCollections.observableList(new Demande_Service().getAllUser(5,from, to)));
+        return table2;
     }
 
 }

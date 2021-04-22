@@ -26,7 +26,7 @@ import java.net.URL;
 public class FXMain extends Application {
     public double xOffset,yOffset;
     public FXMain(){}
-    
+
     @Override
     public void start(Stage primaryStage) throws IOException{
         URL root_url = new File("src/Gui/Acceuil/Acceuil.fxml").toURI().toURL();
@@ -59,5 +59,5 @@ public class FXMain extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }

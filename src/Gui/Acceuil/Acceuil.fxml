@@ -11,27 +11,27 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Acceuil.AcceuilController">
+<AnchorPane prefHeight="1000.0" prefWidth="1238.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Acceuil.AcceuilController">
    <children>
       <AnchorPane layoutX="35.0" layoutY="23.0" prefHeight="954.0" prefWidth="960.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="23.0">
          <children>
-            <BorderPane fx:id="mainpane" layoutX="279.0" layoutY="119.0" prefHeight="714.0" prefWidth="832.0" style="-fx-background-color: B9D6F2; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="120.0" AnchorPane.topAnchor="120.0">
+            <BorderPane fx:id="mainpane" layoutX="279.0" layoutY="33.0" prefHeight="785.0" prefWidth="910.0" style="-fx-background-color: B9D6F2; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="136.0" AnchorPane.topAnchor="33.0">
                <top>
                   <Pane prefHeight="10.0" prefWidth="832.0" BorderPane.alignment="CENTER" />
                </top>
                <bottom>
-                  <Pane prefHeight="70.0" prefWidth="694.0" BorderPane.alignment="CENTER" />
+                  <Pane prefHeight="34.0" prefWidth="910.0" BorderPane.alignment="CENTER" />
                </bottom>
                <left>
-                  <Pane prefHeight="634.0" prefWidth="30.0" BorderPane.alignment="CENTER" />
+                  <Pane prefHeight="634.0" prefWidth="18.0" BorderPane.alignment="CENTER" />
                </left>
                <right>
-                  <Pane prefHeight="266.0" prefWidth="90.0" BorderPane.alignment="CENTER" />
+                  <Pane prefHeight="634.0" prefWidth="36.0" BorderPane.alignment="CENTER" />
                </right>
                <center>
-                  <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                  <Pane prefHeight="703.0" prefWidth="856.0" BorderPane.alignment="CENTER" />
                </center></BorderPane>
-            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="504.0" prefWidth="266.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="816.0" AnchorPane.topAnchor="250.0">
+            <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="504.0" prefWidth="287.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="250.0">
                <children>
                   <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="3.0" layoutY="125.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="125.0">
                      <padding>
@@ -98,6 +98,7 @@
                       <MenuItem fx:id="deloff" mnemonicParsing="false" text="Delete Job Offer" />
                         <MenuItem fx:id="upoff" mnemonicParsing="false" text="Update Job Offer" />
                         <MenuItem fx:id="treatapps" mnemonicParsing="false" text="See Applications" />
+                        <MenuItem fx:id="stat" mnemonicParsing="false" text="Offer Statistiques" />
                     </items>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
@@ -115,9 +116,7 @@
                   </MenuButton>
                   <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="6.0" layoutY="205.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Applicayions" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
                      <items>
-                        <MenuItem fx:id="userapps" mnemonicParsing="false" text="See my applications" />
-                        <MenuItem fx:id="deluserapps" mnemonicParsing="false" text="Delete An application" />
-                        <MenuItem fx:id="applytoajob" mnemonicParsing="false" text="Apply to a job" />
+                        <MenuItem fx:id="userapps" mnemonicParsing="false" text="Manage Applications" />
                      </items>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">

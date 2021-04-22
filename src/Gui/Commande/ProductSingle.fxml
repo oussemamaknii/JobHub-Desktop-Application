@@ -14,13 +14,13 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="712.0" prefWidth="1223.0" style="-fx-border-color: transparent;" styleClass="CenterContent" stylesheets="@../Commande/Commande.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Produit.ProductSingleController">
+<AnchorPane id="AnchorPane" prefHeight="712.0" prefWidth="1223.0" style="-fx-border-color: transparent;" styleClass="CenterContent" stylesheets="@Commande.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Commande.ProductSingleController">
    <children>
-      <ScrollPane prefHeight="712.0" prefWidth="1223.0" style="-fx-background-color: transparent;" styleClass="CenterContent" stylesheets="@../Commande/Commande.css">
+      <ScrollPane prefHeight="712.0" prefWidth="1223.0" style="-fx-background-color: transparent;" styleClass="CenterContent" stylesheets="@Commande.css">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1095.0" prefWidth="1216.0" style="-fx-background-color: #FBFCFE; -fx-border-width: 0px 0px 0px 0px;" styleClass="CenterContent" stylesheets="@../Commande/Commande.css">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1095.0" prefWidth="1216.0" style="-fx-background-color: #FBFCFE; -fx-border-width: 0px 0px 0px 0px;" styleClass="CenterContent" stylesheets="@Commande.css">
                <children>
-                  <Pane fx:id="banner" layoutX="45.0" layoutY="39.0" prefHeight="146.0" prefWidth="1095.0" styleClass="banner" stylesheets="@../Commande/Commande.css">
+                  <Pane fx:id="banner" layoutX="45.0" layoutY="39.0" prefHeight="146.0" prefWidth="1095.0" styleClass="banner" stylesheets="@Commande.css">
                      <children>
                         <Label layoutX="47.0" layoutY="14.0" text="PANIER" textFill="WHITE">
                            <font>
@@ -69,7 +69,7 @@
                   </Label>
                   <HBox layoutX="304.0" layoutY="570.0" prefHeight="100.0" prefWidth="314.0">
                      <children>
-                        <StackPane onMouseClicked="#imagePanier1OnClick" prefHeight="25.0" prefWidth="41.0" styleClass="imagesPanier" stylesheets="@../Commande/Commande.css">
+                        <StackPane onMouseClicked="#imagePanier1OnClick" prefHeight="25.0" prefWidth="41.0" styleClass="imagesPanier" stylesheets="@Commande.css">
                            <children>
                               <ImageView fx:id="imagePanier1" fitHeight="105.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -78,7 +78,7 @@
                               </ImageView>
                            </children>
                         </StackPane>
-                        <StackPane layoutX="10.0" layoutY="10.0" onMouseClicked="#imagePanier2OnClick" prefHeight="25.0" prefWidth="41.0" styleClass="imagesPanier" stylesheets="@../Commande/Commande.css">
+                        <StackPane layoutX="10.0" layoutY="10.0" onMouseClicked="#imagePanier2OnClick" prefHeight="25.0" prefWidth="41.0" styleClass="imagesPanier" stylesheets="@Commande.css">
                            <children>
                               <ImageView fx:id="imagePanier2" fitHeight="105.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -90,7 +90,7 @@
                               <Insets left="10.0" />
                            </HBox.margin>
                         </StackPane>
-                        <StackPane layoutX="117.0" layoutY="10.0" onMouseClicked="#imagePanier3OnClick" prefHeight="25.0" prefWidth="41.0" styleClass="imagesPanier" stylesheets="@../Commande/Commande.css">
+                        <StackPane layoutX="117.0" layoutY="10.0" onMouseClicked="#imagePanier3OnClick" prefHeight="25.0" prefWidth="41.0" styleClass="imagesPanier" stylesheets="@Commande.css">
                            <children>
                               <ImageView fx:id="imagePanier3" fitHeight="105.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
                                  <image>

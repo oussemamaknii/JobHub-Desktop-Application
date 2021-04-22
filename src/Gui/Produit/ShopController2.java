@@ -3,18 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Gui.Commande;
+package Gui.Produit;
 
 
+import Entities.Panier;
 //import Entitie.User.User;
 import Entities.Cart;
+import Gui.Commande.ProductSingleController;
 //import GUI.Evenement.EvenementController;
-import Gui.Produit.ProductSingleController;
 import animatefx.animation.Bounce;
 import animatefx.animation.FadeInDown;
 import java.io.IOException;
 import java.net.URL;
-        import java.util.ResourceBundle;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -51,7 +54,7 @@ public class ShopController2 implements Initializable {
     @FXML
     void produit1(ActionEvent event) throws IOException {
         Cart produitPanier = new Cart(1, "Road Bicycles", 200, 1, "2.jpg", 0);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Produit/ProductSingle.fxml"));
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Commande/ProductSingle.fxml"));
         Parent fxml = Loader.load();
         ProductSingleController e = Loader.getController();
         System.out.println(centerContent);
@@ -66,7 +69,7 @@ public class ShopController2 implements Initializable {
     @FXML
     void produit2(ActionEvent event) throws IOException {
         Cart produitPanier = new Cart(2, "Mountain Bicycles", 400, 1, "3.jpg", 0);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Produit/ProductSingle.fxml"));
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Commande/ProductSingle.fxml"));
         Parent fxml = Loader.load();
         ProductSingleController e = Loader.getController();
         //e.redirection(centerContent, produitPanier,panier,user);
@@ -79,7 +82,7 @@ public class ShopController2 implements Initializable {
   @FXML
     void produit3(ActionEvent event) throws IOException {
       Cart produitPanier = new Cart(3, "Course Bicycles", 600, 1, "3.jpg", 0);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Produit/ProductSingle.fxml"));
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Commande/ProductSingle.fxml"));
         Parent fxml = Loader.load();
         ProductSingleController e = Loader.getController();
         //e.redirection(centerContent, produitPanier,panier,user);
