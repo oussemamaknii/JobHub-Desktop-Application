@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Gui.User;
+
 import Entities.user;
 import Gui.Acceuil.FXloader;
 import Services.LoginService;
@@ -11,10 +12,17 @@ import Utils.Connexion;
 import Utils.Controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.io.File;
@@ -33,6 +41,9 @@ import java.util.ResourceBundle;
  * @author Ryaan
  */
 public class LoginController implements Initializable {
+    Stage stage = new Stage();
+    Scene scene;
+
     private BorderPane mainpane;
     @FXML
     private TextField email;
@@ -60,15 +71,33 @@ public class LoginController implements Initializable {
     private void login(ActionEvent event) throws SQLException, IOException {
         // Last solution
         if (service.getUserByuserName(email.getText()).getRoles().equals("a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}")) {
-            URL root_url = null;
-            try {
-                root_url = new File("src/Gui/Company/companies.fxml").toURI().toURL();
-            } catch (MalformedURLException malformedURLException) {
-                malformedURLException.printStackTrace();
-            }
-            Pane view = new FXloader().getPane(root_url);
-            mainpane.setCenter(view);
+            Parent root = FXMLLoader.load(getClass().getResource("/Gui/Backoffice/Backoffice.fxml"));
+            Scene scene = new Scene(root);
+            Node node =(Node)event.getSource();
+            stage = (Stage)node.getScene().getWindow();
+            stage.close();
+
+            stage.setScene(scene);
+            stage.show();
+            stage.setResizable(false);
+            return;
         }
+        if (!service.getUserByuserName(email.getText()).getRoles().equals("a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}")) {
+            Parent root = FXMLLoader.load(getClass().getResource("/Gui/Acceuil/Acceuil.fxml"));
+            Scene scene = new Scene(root);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            scene.setFill(Color.TRANSPARENT);
+            Node node =(Node)event.getSource();
+            stage = (Stage)node.getScene().getWindow();
+            stage.close();
+
+            stage.setScene(scene);
+            stage.show();
+            stage.setResizable(false);
+            return;
+        }
+
+
         Connection cnx = Connexion.getInstance().getConnection();
         String req = "Select * from user where email=?";
         PreparedStatement prs = cnx.prepareStatement(req);
@@ -81,7 +110,7 @@ public class LoginController implements Initializable {
         else{
         if (BCrypt.checkpw(pw.getText(), rs.getString("password").substring(0, 2) + "a" + rs.getString("password").substring(3))) {
                 if (!remember.isSelected()){
-                    String req1= "Select id from fos_user where email=? ";
+                    String req1= "Select id from user where email=? ";
                     PreparedStatement prs1= cnx.prepareStatement(req1);
                     prs.setString(1, email.getText());
                     ResultSet res= prs.executeQuery();
