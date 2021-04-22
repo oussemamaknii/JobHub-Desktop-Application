@@ -25,38 +25,12 @@ import java.net.URL;
  */
 public class FXMain extends Application {
     public double xOffset,yOffset;
-
-    public double xOffset,yOffset;
     public FXMain(){}
-    
+
     @Override
     public void start(Stage primaryStage) throws IOException{
-       // URL root_url = new File("src/Gui/Offre_Emploi.fxml").toURI().toURL();
-        /*URL root_url = new File("src/Gui/Produit/Shop.fxml").toURI().toURL();
         URL root_url = new File("src/Gui/Acceuil/Acceuil.fxml").toURI().toURL();
         Parent parent = FXMLLoader.load(root_url);
-        primaryStage.setScene(new Scene(parent));
-        primaryStage.setTitle("JobHub");
-        primaryStage.show();*/
-        Parent root = FXMLLoader.load(getClass().getResource("/Gui/Produit/Shop.fxml"));
-
-        root.setOnMousePressed(event -> {
-            xOffset = event.getSceneX();
-            yOffset = event.getSceneY();
-        });
-
-        root.setOnMouseDragged(event -> {
-            primaryStage.setX(event.getScreenX() - xOffset);
-            primaryStage.setY(event.getScreenY() - yOffset);
-        });
-
-        primaryStage.setTitle("JOBHUBDASHBOARD");
-        primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
-    /*
-        primaryStage.setTitle("TalkTo");
-        primaryStage.show();*/
         Scene scene = new Scene(parent);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         scene.setFill(Color.TRANSPARENT);
@@ -85,5 +59,5 @@ public class FXMain extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }

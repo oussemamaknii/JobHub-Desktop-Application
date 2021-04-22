@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -16,15 +19,7 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:mintoua" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
@@ -32,6 +27,7 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/itextpdf_5_4_0.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/mail.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Entities/SendEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/stat.fxml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Utils/pdf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/activation.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/activation1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/activation1.xml" afterDir="false" />
@@ -41,24 +37,25 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_10.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/BookController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" afterDir="false" />
-=======
-<<<<<<< HEAD
-=======
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" afterDir="false" />
->>>>>>> mintoua
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entities/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Produit/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" afterDir="false" />
@@ -66,21 +63,10 @@
       <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ShopController2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interfaces/IServiceCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IServiceCommande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/ServiceCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ServiceCommande.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utils/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Mail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
->>>>>>> c7293e16a9311eb9005635f66c269810b5478e94
-    </list>
-    <list default="true" id="5f4d4204-6496-447a-9e48-ce02dd7edbfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/stat.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,10 +87,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1qwDCNEP7Lcz5O0JQ2SHpLTMkFZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -113,6 +95,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1rRkOCZa99RN6xUlIpN6Pvv3DjM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -229,7 +214,6 @@
     <state x="611" y="345" key="DetectedRootsChooserDialog" timestamp="1618878006227">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-<<<<<<< HEAD
     <state x="226" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618601742920" />
     <state width="1516" height="154" key="GridCell.Tab.0.bottom" timestamp="1618624804260">
       <screen x="0" y="0" width="1600" height="900" />
@@ -247,8 +231,7 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1516" height="154" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618624804260" />
-    <state x="294" y="49" key="SettingsEditor" timestamp="1618601750121">
-=======
+    <state x="294" y="49" key="SettingsEditor" timestamp="1618601750121" />
     <state x="611" y="345" key="DetectedRootsChooserDialog/0.0.1600.900@0.0.1600.900" timestamp="1618878006227" />
     <state x="848" y="143" key="FileChooserDialogImpl" timestamp="1619043494250">
       <screen x="0" y="0" width="1600" height="900" />
@@ -265,19 +248,12 @@
     <state width="1540" height="111" key="GridCell.Tab.0.left" timestamp="1619094537612">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-<<<<<<< HEAD
     <state width="1540" height="111" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619094537612" />
-    <state width="1540" height="111" key="GridCell.Tab.0.right" timestamp="1619094537613">
-=======
-<<<<<<< HEAD
+    <state width="1540" height="111" key="GridCell.Tab.0.right" timestamp="1619094537613" />
     <state width="1516" height="86" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618878491003" />
-    <state width="1516" height="86" key="GridCell.Tab.0.right" timestamp="1618878491004">
->>>>>>> 2c7194930a65b2dab89caddfbc241cea12d88146
-=======
+    <state width="1516" height="86" key="GridCell.Tab.0.right" timestamp="1618878491004" />
     <state width="1544" height="230" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618924078929" />
     <state width="1544" height="230" key="GridCell.Tab.0.right" timestamp="1618924078929">
->>>>>>> c7293e16a9311eb9005635f66c269810b5478e94
->>>>>>> mintoua
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state width="1540" height="111" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619094537613" />
