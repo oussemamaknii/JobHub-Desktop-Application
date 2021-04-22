@@ -361,21 +361,21 @@ public class BackofficeController implements Initializable {
 
             FilteredList<Commande> filteredData = new FilteredList<>(commandes,b->true);
             tfSearchOrder.textProperty().addListener((Observable,oldValue,newValue)->{
-               filteredData.setPredicate(order->{
-                   if (newValue == null || newValue.isEmpty()){
-                       return  true;
-                   }
-                   String lowerCaseFilter = newValue.toLowerCase();
-                   if (order.getDate().toLowerCase().indexOf(lowerCaseFilter)!=-1){
-                       return true; //filter matches name
-                   }else if (String.valueOf(order.isState()).indexOf(lowerCaseFilter)!=-1){
-                       return true; //filter matches ref
-                   }
-                   else if (String.valueOf(order.getIdUser()).indexOf(lowerCaseFilter)!=-1)
-                       return true; // filter matches qty
-                        else
-                            return false; // does not match
-               });
+                filteredData.setPredicate(order->{
+                    if (newValue == null || newValue.isEmpty()){
+                        return  true;
+                    }
+                    String lowerCaseFilter = newValue.toLowerCase();
+                    if (order.getDate().toLowerCase().indexOf(lowerCaseFilter)!=-1){
+                        return true; //filter matches name
+                    }else if (String.valueOf(order.isState()).indexOf(lowerCaseFilter)!=-1){
+                        return true; //filter matches ref
+                    }
+                    else if (String.valueOf(order.getIdUser()).indexOf(lowerCaseFilter)!=-1)
+                        return true; // filter matches qty
+                    else
+                        return false; // does not match
+                });
             });
 
             SortedList<Commande> sortedData = new SortedList<>(filteredData);

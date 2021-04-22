@@ -26,7 +26,202 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Librairies.rar" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_8_40_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/formation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Category.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/DeleteFormation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/DeleteFormationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Formation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/LiseFormation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/UpdateFormation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/UpdateFormationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/TrayTester.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/activation.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/controlsfx-8.40.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/fontawesomefx-8.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/fontawesomefx-glyphsbrowser-all-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/gson-2.8.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/gson-2.8.2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/itextpdf-5.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/itextpdf-5.4.0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/jfoenix-8.0.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/jfoenix-9.0.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/lombok.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/mail.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/mail.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/mysql-connector-java-5.1.23-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/rating-java-0.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/richtextfx-demos-fat-0.6.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/slf4j-api-1.7.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/slf4j-log4j12-1.7.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Librairies/techsoftemail.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Formation_Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/categorie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/formation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/Category.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/DeleteFormation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/DeleteFormationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/LiseFormation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/UpdateFormation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/UpdateFormationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Categorie_Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Formation_Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Connector_J_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/activation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/activation1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_glyphsbrowser_all_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_glyphsbrowser_all_1_01.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_8_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_101.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_231.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_233.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Commande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Commande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Paiement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Paiement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Panier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Panier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Produit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Produit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/CommandeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/CommandeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingle.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Shop2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_Emploi.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/AddOffre_EmploiController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Offre_Emploi.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/DeleteProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/DeleteProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ProductSingle.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ProductSingle.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop2.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/shop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePaiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePaiment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceProduit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceProduit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePaiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePaiment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceProduit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceProduit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/AnimateFXInterpolator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/AnimateFXInterpolator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/AnimationFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/AnimationFX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Bounce.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Bounce.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceInDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceInDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceInLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceInLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceInRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceInRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceInUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceInUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceOutDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceOutDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceOutLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceOutLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceOutRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceOutRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceOutUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/BounceOutUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInDownBig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInDownBig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInLeftBig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInLeftBig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInRightBig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInRightBig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInUpBig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeInUpBig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutDownBig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutDownBig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutLeftBig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutLeftBig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutRightBig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutRightBig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutUpBig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FadeOutUpBig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Flash.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Flash.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Flip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Flip.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FlipInX.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FlipInX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FlipInY.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FlipInY.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FlipOutX.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FlipOutX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FlipOutY.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/FlipOutY.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/GlowBackground.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/GlowBackground.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/GlowText.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/GlowText.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Hinge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Hinge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/JackInTheBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/JackInTheBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Jello.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Jello.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/LightSpeedIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/LightSpeedIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/LightSpeedOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/LightSpeedOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Pulse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Pulse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RollIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RollIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RollOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RollOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateInDownLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateInDownLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateInDownRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateInDownRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateInUpLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateInUpLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateInUpRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateInUpRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateOutDownLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateOutDownLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateOutDownRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateOutDownRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateOutUpLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateOutUpLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateOutUpRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RotateOutUpRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RubberBand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/RubberBand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Shake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Shake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideInDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideInDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideInLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideInLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideInRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideInRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideInUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideInUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideOutDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideOutDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideOutLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideOutLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideOutRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideOutRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideOutUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/SlideOutUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Swing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Swing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Tada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Tada.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Wobble.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/Wobble.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomInDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomInDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomInLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomInLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomInRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomInRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomInUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomInUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomOut.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomOut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomOutDown.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomOutDown.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomOutLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomOutLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomOutRight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomOutRight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomOutUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/animation/ZoomOutUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/util/ParallelAnimationFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/util/ParallelAnimationFX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/util/SequentialAnimationFX.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/animatefx/util/SequentialAnimationFX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_Emploi.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/UpdateOfferController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/UpdateOfferController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +240,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1qwDCNEP7Lcz5O0JQ2SHpLTMkFZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,6 +252,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -61,7 +260,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Librairies/fontawesomefx-glyphsbrowser-all-1.0.jar" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.21717791" />
     <property name="project.structure.side.proportion" value="0.32958803" />
@@ -69,7 +268,13 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
+  </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Services" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Desktop\JobHub-Desktop-Application\out\production\JobHub_App\Gui\Commande" />
       <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Desktop\JobHub-Desktop-Application\src\Gui\Produit" />
@@ -77,7 +282,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="FXMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="FXMain" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jobhub_app.FXMain" />
       <module name="JobHub_App" />
       <option name="VM_PARAMETERS" value="--module-path C:\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml" />
@@ -91,11 +296,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.FXMain" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -132,75 +332,8 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="429" y="152" key="#Inspections" timestamp="1618113113157">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="429" y="152" key="#Inspections/0.0.1600.900@0.0.1600.900" timestamp="1618113113157" />
-    <state x="150" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618320290867">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="150" y="193" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1618320290867" />
-    <state x="880" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1618599421501">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="880" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1618599421501" />
-    <state x="605" y="172" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1618531257544">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="605" y="172" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1600.900@0.0.1600.900" timestamp="1618531257544" />
-    <state x="542" y="226" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618093800119">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="542" y="226" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1618093800119" />
-    <state x="0" y="319" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1618542270687">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="0" y="319" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1600.900@0.0.1600.900" timestamp="1618542270687" />
-    <state x="611" y="345" key="DetectedRootsChooserDialog" timestamp="1618878006227">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="611" y="345" key="DetectedRootsChooserDialog/0.0.1600.900@0.0.1600.900" timestamp="1618878006227" />
-    <state x="848" y="143" key="FileChooserDialogImpl" timestamp="1618878234515">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="848" y="143" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618878234515" />
-    <state width="1516" height="231" key="GridCell.Tab.0.bottom" timestamp="1618919383512">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1516" height="231" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618919383512" />
-    <state width="1516" height="231" key="GridCell.Tab.0.center" timestamp="1618919383512">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1516" height="231" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618919383512" />
-    <state width="1516" height="231" key="GridCell.Tab.0.left" timestamp="1618919383511">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1516" height="231" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618919383511" />
-    <state width="1516" height="231" key="GridCell.Tab.0.right" timestamp="1618919383512">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state width="1516" height="231" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618919383512" />
-    <state x="294" y="49" key="SettingsEditor" timestamp="1618878479261">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="294" y="49" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618878479261" />
-    <state x="224" y="366" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618111671465">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="224" y="366" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1600.900@0.0.1600.900" timestamp="1618111671465" />
-    <state x="353" y="210" width="899" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1618409894978">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="353" y="210" width="899" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1600.900@0.0.1600.900" timestamp="1618409894978" />
-    <state x="793" y="0" width="814" height="907" key="dock-window-1" timestamp="1618415134753">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="793" y="0" width="814" height="907" key="dock-window-1/0.0.1600.900@0.0.1600.900" timestamp="1618415134753" />
-    <state x="442" y="221" key="run.anything.popup" timestamp="1618436773357">
-      <screen x="0" y="0" width="1600" height="900" />
-    </state>
-    <state x="442" y="221" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1618436773357" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

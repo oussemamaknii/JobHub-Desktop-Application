@@ -105,10 +105,10 @@ public class AddProductController implements Initializable {
                     throwables.printStackTrace();
                 }
             }else {
-                    new ServiceProduit().update2(produit,productId);
-                    Stage stg = (Stage) addproduct.getScene().getWindow();
-                    clean();
-                    stg.close();
+                new ServiceProduit().update2(produit,productId);
+                Stage stg = (Stage) addproduct.getScene().getWindow();
+                clean();
+                stg.close();
             }
 
         }

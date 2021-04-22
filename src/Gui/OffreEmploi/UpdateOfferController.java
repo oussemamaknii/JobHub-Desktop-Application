@@ -7,6 +7,7 @@ package Gui.OffreEmploi;
 
 import Entities.Offre_Emploi;
 import Services.Offre_Emploi_Service;
+
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXDialog;
 import com.jfoenix.controls.JFXDialogLayout;

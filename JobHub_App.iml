@@ -7,16 +7,19 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="mysql-connector-java-8.0.23" level="project" />
-    <orderEntry type="library" name="lib" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-8.0.231" level="project" />
-    <orderEntry type="library" name="jfoenix-9.0.10" level="project" />
-    <orderEntry type="library" name="fontawesomefx-8.2" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Downloads/jdk-12.0.1" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="javafx.web" level="project" />
     <orderEntry type="library" name="activation" level="project" />
-    <orderEntry type="library" name="fontawesomefx-glyphsbrowser-all-1.0" level="project" />
-    <orderEntry type="library" name="gson-2.8.2" level="project" />
-    <orderEntry type="library" name="jfoenix-9.0.101" level="project" />
-    <orderEntry type="library" name="activation1" level="project" />
-    <orderEntry type="library" name="fontawesomefx-glyphsbrowser-all-1.01" level="project" />
+    <orderEntry type="library" name="controlsfx-8.40.11" level="project" />
+    <orderEntry type="library" name="lib1" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.23" level="project" />
   </component>
 </module>
