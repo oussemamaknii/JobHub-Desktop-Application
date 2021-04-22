@@ -29,23 +29,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/glassfish_corba_omgapi_4_2_0_b002.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deps/glassfish-corba-omgapi-4.2.0-b002.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deps/omg.corba.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/LoginData.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Controller.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LoginData.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/User/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/User/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/User/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/User/login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/LoginService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Register.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/User/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/User/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,9 +97,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.21717791" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.33287483" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>

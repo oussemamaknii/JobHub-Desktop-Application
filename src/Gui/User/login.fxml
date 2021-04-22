@@ -25,7 +25,7 @@
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button fx:id="register" layoutX="217.0" layoutY="353.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Login" />
+            <Button fx:id="login" layoutX="217.0" layoutY="353.0" mnemonicParsing="false" onAction="#login" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Login" />
             <PasswordField fx:id="pw" layoutX="288.0" layoutY="202.0" prefHeight="35.0" prefWidth="171.0" />
             <Label layoutX="83.0" layoutY="22.0" prefHeight="53.0" prefWidth="619.0" stylesheets="@../StylSheet/Style.css" text="Login now and don't miss the latest job offers " textFill="#e10606">
                <font>

@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package Gui.User;
-
 import Entities.user;
 import Gui.Acceuil.FXloader;
 import Services.LoginService;
@@ -28,8 +27,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-import static org.omg.CORBA.ORB.init;
-
 /**
  * FXML Controller class
  *
@@ -47,9 +44,9 @@ public class LoginController implements Initializable {
     @FXML
     private Label msg;
     @FXML
-    private Button register;
-    @FXML
     private CheckBox remember;
+    @FXML
+    private Button login;
 
     /**
      * Initializes the controller class.
@@ -57,7 +54,9 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         LoginService.readinifile(path, email, pw,remember);
+
     }
+    @FXML
     private void login(ActionEvent event) throws SQLException, IOException {
         // Last solution
         if (service.getUserByuserName(email.getText()).getRoles().equals("a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}")) {
@@ -71,10 +70,10 @@ public class LoginController implements Initializable {
             mainpane.setCenter(view);
         }
         Connection cnx = Connexion.getInstance().getConnection();
-        String req = "Select * from user where (email=?)";
+        String req = "Select * from user where email=?";
         PreparedStatement prs = cnx.prepareStatement(req);
         prs.setString(1, email.getText());
-        prs.setString(2, email.getText());
+
         ResultSet rs = prs.executeQuery();
         if (!rs.next()){
             msg.setText("Username incorrect");
@@ -82,17 +81,17 @@ public class LoginController implements Initializable {
         else{
         if (BCrypt.checkpw(pw.getText(), rs.getString("password").substring(0, 2) + "a" + rs.getString("password").substring(3))) {
                 if (!remember.isSelected()){
-                    String req1= "Select id from fos_user where username=? ";
+                    String req1= "Select id from fos_user where email=? ";
                     PreparedStatement prs1= cnx.prepareStatement(req1);
                     prs.setString(1, email.getText());
-                    ResultSet res= prs1.executeQuery();
+                    ResultSet res= prs.executeQuery();
                     while (res.next()){
                         x= res.getInt("id");
                     }
                     user user= new user();
                     user.setId(x);
                     Controller.setUserId(x);
-                    init();
+
                     URL root_url = null;
                     try {
                         root_url = new File("src/Gui/User/login.fxml").toURI().toURL();
