@@ -3,15 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/souso/Desktop/JobHub_App/src/Gui/Offre_EmploiController.java</file>
-            <file>file:/C:/Users/souso/Desktop/JobHub_App/nbproject/build-impl.xml</file>
-            <file>file:/C:/Users/souso/Desktop/JobHub_App/src/Services/Offre_Emploi_Service.java</file>
-            <file>file:/C:/Users/souso/Desktop/JobHub_App/src/Entities/Offre_Emploi.java</file>
-            <file>file:/C:/Users/souso/Desktop/JobHub_App/src/Entities/Category.java</file>
-            <file>file:/C:/Users/souso/Desktop/JobHub_App/src/Interfaces/IService.java</file>
-            <file>file:/C:/Users/souso/Desktop/JobHub_App/src/Utils/Connexion.java</file>
-            <file>file:/C:/Users/souso/Desktop/JobHub_App/src/jobhub_app/FXMain.java</file>
-            <file>file:/C:/Users/souso/Desktop/JobHub_App/src/Gui/Offre_Emploi.fxml</file>
+            <file>file:/C:/Users/souso/Desktop/JobHub-Desktop-Application/src/Gui/Demande/AddDemandeController.java</file>
+            <file>file:/C:/Users/souso/Desktop/JobHub-Desktop-Application/src/Gui/OffreEmploi/UpdateOfferController.java</file>
+            <file>file:/C:/Users/souso/Desktop/JobHub-Desktop-Application/src/Gui/OffreEmploi/StatController.java</file>
+            <file>file:/C:/Users/souso/Desktop/JobHub-Desktop-Application/src/Gui/OffreEmploi/AddOffre_EmploiController.java</file>
+            <file>file:/C:/Users/souso/Desktop/JobHub-Desktop-Application/src/Gui/Acceuil/AcceuilController.java</file>
+            <file>file:/C:/Users/souso/Desktop/JobHub-Desktop-Application/src/Gui/OffreEmploi/SeeAppsController.java</file>
+            <file>file:/C:/Users/souso/Desktop/JobHub-Desktop-Application/src/Gui/OffreEmploi/DeletOffreEmploiController.java</file>
+            <file>file:/C:/Users/souso/Desktop/JobHub-Desktop-Application/src/Services/Offre_Emploi_Service.java</file>
         </group>
     </open-files>
 </project-private>

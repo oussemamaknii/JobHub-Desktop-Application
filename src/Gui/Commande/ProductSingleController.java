@@ -63,8 +63,7 @@ public class ProductSingleController implements Initializable {
     private Label prix;
     SpinnerValueFactory<Integer> svf;
     ObservableList<Cart> panier = FXCollections.observableArrayList();
-    @FXML
-    private AnchorPane centerContent;
+    AnchorPane centerContent;
     Cart produitPanier;
      //User user;
 
@@ -126,21 +125,20 @@ public class ProductSingleController implements Initializable {
     }
 
     //public void redirection(AnchorPane c, Cart p,ObservableList<Cart> pa,User u)
-    public AnchorPane redirection(AnchorPane c, Cart p,ObservableList<Cart> pa) {
-       // centerContent = c;
+    public void redirection(AnchorPane c, Cart p,ObservableList<Cart> pa) {
+        centerContent = c;
         produitPanier = p;
         nom.setText(p.getNomProduit());
-        prix.setText(Float.toString(p.getPrix()));
+        prix.setText(Integer.toString(p.getPrix()));
         svf = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, p.getQuantite());
         quantite.setValueFactory(svf);
-        imagePanier.setImage(new Image(getClass().getResourceAsStream("/Gui/Images/alchimiste.PNG")));
+        imagePanier.setImage(new Image("/GUI/Images/"+p.getImage()));
         if(panier.isEmpty())
         panier.addAll(pa);
         else {
             panier.clear();;
             panier.addAll(pa);
         }
-        return centerContent;
       //  user=u;
     }
       @FXML
@@ -148,7 +146,7 @@ public class ProductSingleController implements Initializable {
      produitPanier.setQuantite(quantite.getValue());
           System.out.println("quantite"+ produitPanier.getQuantite());
      panier.add(produitPanier);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/src/Gui/Commande/Panier.fxml"));
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Commande/Panier.fxml"));
         Parent fxml = Loader.load();
         PanierController e = Loader.getController();
         //e.redirection(centerContent,panier,user);

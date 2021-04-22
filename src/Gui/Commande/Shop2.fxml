@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="712.0" prefWidth="1223.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Commande.ShopController2">
+
+   <children>
+      <ScrollPane prefHeight="768.0" prefWidth="1223.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="2500.0" prefWidth="1216.0" style="-fx-background-color: #FBFCFE;">
+               <children>
+                  <Pane fx:id="banner" layoutX="45.0" layoutY="39.0" prefHeight="146.0" prefWidth="1095.0" styleClass="banner" stylesheets="@shop.css">
+                     <children>
+                        <Label layoutX="47.0" layoutY="14.0" text="SHOP" textFill="WHITE">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="50.0" prefHeight="31.0" prefWidth="309.0" text="Lorem Ipsum is simply dummy text of the printing" textFill="WHITE">
+                           <font>
+                              <Font name="Source Sans Pro" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="111.0" fitWidth="183.0" layoutX="916.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/cycling-clipart-animation-2-or-unscreen.gif" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="33.0" layoutY="329.0" prefHeight="116.0" prefWidth="327.0" style="-fx-background-color: white;" styleClass="search" stylesheets="@shop.css">
+                     <children>
+                        <StackPane layoutX="200.0" layoutY="680.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </StackPane>
+                        <StackPane layoutX="52.0" layoutY="688.0" prefHeight="17.0" prefWidth="64.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </StackPane>
+                        <TextField layoutX="39.0" layoutY="37.0" prefHeight="42.0" prefWidth="255.0" promptText="Search" />
+
+                     </children>
+                  </Pane>
+                  <Pane layoutX="33.0" layoutY="525.0" prefHeight="377.0" prefWidth="331.0" style="-fx-background-color: white;" styleClass="search" stylesheets="@shop.css">
+                     <children>
+                        <Label layoutX="68.0" layoutY="34.0" prefHeight="28.0" prefWidth="121.0" text="CATEGORIES">
+                           <font>
+                              <Font name="Source Sans Pro" size="21.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="50.0" layoutY="32.0" prefHeight="32.0" prefWidth="4.0" style="-fx-background-color: #106AD2;" />
+                        <VBox layoutX="48.0" layoutY="97.0" prefHeight="210.0" prefWidth="162.0">
+                           <children>
+                              <!--a revoir-->
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="45.0" layoutY="955.0" prefHeight="377.0" prefWidth="331.0" style="-fx-background-color: white;" styleClass="search" stylesheets="@shop.css">
+                     <children>
+                        <Label layoutX="68.0" layoutY="34.0" prefHeight="28.0" prefWidth="121.0" text="COLOR">
+                           <font>
+                              <Font name="Source Sans Pro" size="21.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="50.0" layoutY="32.0" prefHeight="32.0" prefWidth="4.0" style="-fx-background-color: #106AD2;" />
+                        <VBox layoutX="48.0" layoutY="97.0" prefHeight="210.0" prefWidth="162.0">
+                           <children>
+                                 <!--a revoir-->
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="45.0" layoutY="1398.0" prefHeight="276.0" prefWidth="331.0" style="-fx-background-color: white;" styleClass="search" stylesheets="@shop.css">
+                     <children>
+                        <Label layoutX="68.0" layoutY="34.0" prefHeight="28.0" prefWidth="121.0" text="SIZE">
+                           <font>
+                              <Font name="Source Sans Pro" size="21.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="50.0" layoutY="32.0" prefHeight="32.0" prefWidth="4.0" style="-fx-background-color: #106AD2;" />
+                        <VBox layoutX="48.0" layoutY="97.0" prefHeight="210.0" prefWidth="162.0">
+                           <children>
+                              <!--a revoir-->
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="450.0" layoutY="347.0" prefHeight="398.0" prefWidth="330.0" styleClass="EvenementSingle">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="bike" stylesheets="@shop.css">
+                           <children>
+                              <ImageView fitHeight="264.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/2.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="26.0" layoutY="285.0" prefHeight="28.0" prefWidth="121.0" text="Road Bicycles">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="15.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="152.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/logo.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="185.0" layoutY="291.0" text="+650">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="244.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="271.0" layoutY="291.0" text="-300">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </Pane>
+                  <Pane layoutX="854.0" layoutY="807.0" prefHeight="398.0" prefWidth="330.0" styleClass="EvenementSingle">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="bike" stylesheets="@shop.css">
+                           <children>
+                              <ImageView fitHeight="264.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/2.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="26.0" layoutY="285.0" prefHeight="28.0" prefWidth="121.0" text="Road Bicycles">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="15.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="152.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/logo.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="185.0" layoutY="291.0" text="+650">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="244.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="271.0" layoutY="291.0" text="-300">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </Pane>
+                  <Pane layoutX="854.0" layoutY="347.0" prefHeight="398.0" prefWidth="330.0" styleClass="EvenementSingle">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="bike" stylesheets="@shop.css">
+                           <children>
+                              <ImageView fitHeight="264.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/3.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="26.0" layoutY="285.0" prefHeight="28.0" prefWidth="121.0" text="Mountain Bicycles">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="15.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="152.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/logo.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="185.0" layoutY="291.0" text="+650">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="244.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="271.0" layoutY="291.0" text="-300">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="450.0" layoutY="807.0" prefHeight="398.0" prefWidth="330.0" styleClass="EvenementSingle">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="bike" stylesheets="@shop.css">
+                           <children>
+                              <ImageView fitHeight="264.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/5.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="26.0" layoutY="285.0" prefHeight="28.0" prefWidth="121.0" text="Course BiCycles">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="15.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="152.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/logo.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="185.0" layoutY="291.0" text="+650">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="244.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="271.0" layoutY="291.0" text="-300">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </Pane>
+                  <Pane layoutX="854.0" layoutY="1250.0" prefHeight="398.0" prefWidth="330.0" styleClass="EvenementSingle">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="bike" stylesheets="@shop.css">
+                           <children>
+                              <ImageView fitHeight="264.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/2.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="26.0" layoutY="285.0" prefHeight="28.0" prefWidth="121.0" text="Hobby Bikes">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="15.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="152.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/logo.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="185.0" layoutY="291.0" text="+650">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="244.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="271.0" layoutY="291.0" text="-300">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+
+                     </children>
+                  </Pane>
+                  <Pane layoutX="450.0" layoutY="1250.0" prefHeight="398.0" prefWidth="330.0" styleClass="EvenementSingle">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" styleClass="bike" stylesheets="@shop.css">
+                           <children>
+                              <ImageView fitHeight="264.0" fitWidth="326.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/2.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="26.0" layoutY="285.0" prefHeight="28.0" prefWidth="121.0" text="Sport Bikes">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="15.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="152.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/logo.png" />
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="185.0" layoutY="291.0" text="+650">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+                        <StackPane layoutX="244.0" layoutY="289.0" prefHeight="17.0" prefWidth="27.0" styleClass="logo" stylesheets="@../Frontend/Frontend.css">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+
+                                 </image>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                        <Label layoutX="271.0" layoutY="291.0" text="-300">
+                           <font>
+                              <Font name="Source Sans Pro Semibold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
