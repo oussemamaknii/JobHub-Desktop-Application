@@ -6,10 +6,7 @@ import Utils.Connexion;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -17,8 +14,24 @@ public class CompanyService implements IServiceCompany {
     Connection cnx = Connexion.getInstance().getConnection();
     @Override
     public void AddCompany(company comp) {
+        String request = "INSERT INTO company (company_name,contact_email,company_adress,founded_date,website,contact_phone,category,facebook_link) VALUES (?,?,?,?,?,?,?,?) ";
+        try {
+            PreparedStatement pst = cnx.prepareStatement(request);
+            pst.setString(1, comp.getCompanyName());
+            pst.setString(2, comp.getContactEmail());
+            pst.setString(3, comp.getCompanyAdress());
+            pst.setDate(4, Date.valueOf(comp.getFoundedDate()));
+            pst.setString(5, comp.getWebsite());
+            pst.setInt(6, comp.getContactPhone());
+            pst.setString(7, comp.getCategory());
+            pst.setString(8, comp.getFacebookLink());
+            pst.executeUpdate();
+            System.out.println("Your Company Profile has been created");
 
 
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
 
     @Override

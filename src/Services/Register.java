@@ -30,10 +30,6 @@ public class Register implements IServiceRegister {
             String pwd = BCrypt.hashpw(u.getPassword(),BCrypt.gensalt(13));
             pst.setString(7, pwd.substring(0,2)+"y"+pwd.substring(3));
 
-
-
-
-
             pst.executeUpdate();
             System.out.println("Your account has been created");
 

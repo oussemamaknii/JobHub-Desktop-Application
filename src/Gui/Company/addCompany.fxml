@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Gui.Company.AddCompanyController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="572.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Company.AddCompanyController">
+   <children>
+      <Pane layoutY="1.0" prefHeight="572.0" prefWidth="703.0" stylesheets="@../StylSheet/Style.css">
+         <children>
+            <TextField fx:id="tfCompanyEmail" layoutX="172.0" layoutY="110.0" stylesheets="@../StylSheet/Style.css" />
+            <TextField fx:id="tfWebsite" layoutX="417.0" layoutY="69.0" stylesheets="@../StylSheet/Style.css" />
+            <TextField fx:id="tfCompanyAdress" layoutX="172.0" layoutY="151.0" stylesheets="@../StylSheet/Style.css" />
+            <TextField fx:id="tfCategory" layoutX="417.0" layoutY="152.0" stylesheets="@../StylSheet/Style.css" />
+            <TextField fx:id="tfCompanyName" layoutX="173.0" layoutY="69.0" stylesheets="@../StylSheet/Style.css" />
+            <DatePicker fx:id="foundedDate" layoutX="172.0" layoutY="199.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
+            <Label layoutX="81.0" layoutY="72.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Company Name" />
+            <Label layoutX="81.0" layoutY="114.0" prefHeight="18.0" prefWidth="81.0" stylesheets="@../StylSheet/Style.css" text="Contact Email" />
+            <Label layoutX="76.0" layoutY="155.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Company Adress" />
+            <Label layoutX="343.0" layoutY="72.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Website" />
+            <Label layoutX="324.0" layoutY="114.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Company Phone" />
+            <Label layoutX="346.0" layoutY="155.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Category" />
+            <Label layoutX="81.0" layoutY="203.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Founded Date" />
+            <TextField fx:id="tfFacebook" layoutX="417.0" layoutY="192.0" stylesheets="@../StylSheet/Style.css" />
+            <Label layoutX="346.0" layoutY="195.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Facebook" />
+            <Button fx:id="addCompany" layoutX="217.0" layoutY="306.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Create Company Profile" />
+            <TextField fx:id="tfCompanyPhone" layoutX="417.0" layoutY="111.0" stylesheets="@../StylSheet/Style.css" />
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>

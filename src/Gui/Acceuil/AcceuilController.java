@@ -164,5 +164,25 @@ public class AcceuilController implements Initializable {
             Pane view = new FXloader().getPane(root_url);
             mainpane.setCenter(view);
         });
+        company.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/Company/addCompany.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+        login.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/User/login.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
     }
 }

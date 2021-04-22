@@ -38,6 +38,9 @@ public class company {
     public company() {
     }
 
+    public company(String companyName, String contactEmail, String companyAdress, LocalDate foundedDate, String website, int contactPhone, String category, String facebookLink) {
+    }
+
     public int getId() {
         return id;
     }
@@ -142,12 +145,13 @@ public class company {
         this.stars = stars;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         company company = (company) o;
-        return getId() == company.getId() && getContactPhone() == company.getContactPhone() && Double.compare(company.getStars(), getStars()) == 0 && Objects.equals(getWebsite(), company.getWebsite()) && getFoundedDate().equals(company.getFoundedDate()) && Objects.equals(getCategory(), company.getCategory()) && Objects.equals(getCountry(), company.getCountry()) && Objects.equals(getDescription(), company.getDescription()) && getCompanyName().equals(company.getCompanyName()) && getContactEmail().equals(company.getContactEmail()) && getCompanyAdress().equals(company.getCompanyAdress()) && Objects.equals(getFacebookLink(), company.getFacebookLink()) && Objects.equals(getTwitterLink(), company.getTwitterLink());
+        return getId() == company.getId() && getContactPhone() == company.getContactPhone() && Double.compare(company.getStars(), getStars()) == 0 && Objects.equals(getWebsite(), company.getWebsite()) && Objects.equals(getFoundedDate(), company.getFoundedDate()) && Objects.equals(getCategory(), company.getCategory()) && Objects.equals(getCountry(), company.getCountry()) && Objects.equals(getDescription(), company.getDescription()) && Objects.equals(getCompanyName(), company.getCompanyName()) && Objects.equals(getContactEmail(), company.getContactEmail()) && Objects.equals(getCompanyAdress(), company.getCompanyAdress()) && Objects.equals(getFacebookLink(), company.getFacebookLink()) && Objects.equals(getTwitterLink(), company.getTwitterLink());
     }
 
     @Override

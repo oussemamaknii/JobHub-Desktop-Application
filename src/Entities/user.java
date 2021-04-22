@@ -35,6 +35,14 @@ public user (String email, String password, String firstName, String lastName, L
 
     }
 
+    public user(int id, String email, String password, int isActive, String roles) {
+    this.id = id;
+    this.email = email;
+    this.password = password;
+    this.isActive = isActive;
+    this.roles = roles;
+    }
+
 
     public int getId() {
         return id;
