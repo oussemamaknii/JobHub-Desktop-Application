@@ -13,5 +13,6 @@
     <orderEntry type="library" name="mysql-connector-java-8.0.23" level="project" />
     <orderEntry type="library" name="jBCrypt-0.4.1" level="project" />
     <orderEntry type="library" name="ini4j-0.5.1" level="project" />
+    <orderEntry type="library" name="glassfish-corba-omgapi-4.2.0-b002" level="project" />
   </component>
 </module>

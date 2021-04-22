@@ -37,19 +37,14 @@ public class Register implements IServiceRegister {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-
-
     }
-
     @Override
     public void updateprofile(user User) {
-
     }
-
     @Override
     public ObservableList<user> showUsers() {
         ObservableList<user> users = FXCollections.observableArrayList();
-        String request = "select * from user";
+        String request = "select * from user where roles not like 'a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}'";
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);

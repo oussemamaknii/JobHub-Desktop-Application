@@ -2,6 +2,7 @@ package Services;
 
 import Entities.user;
 import Utils.Connexion;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.ini4j.Wini;
@@ -50,7 +51,7 @@ public class LoginService {
 
     }
 
-    public static void readinifile(String path, TextField email, PasswordField pw){
+    public static void readinifile(String path, TextField email, PasswordField pw, CheckBox remember){
         File file = new File(path);
         if(file.exists()){
             try {
@@ -92,7 +93,7 @@ public class LoginService {
 
     public ResultSet user(String username , String password) throws SQLException {
 
-        String req= "Select * from user where (email=?) and password=?";
+        String req= "Select * from user where email=? and password=?";
         PreparedStatement prs= cnx.prepareStatement(req);
         prs.setString(1, username);
         prs.setString(2, password);
@@ -101,14 +102,7 @@ public class LoginService {
     }
 
 
-    public ResultSet check_email(String email) throws SQLException {
 
-        String req= "Select * from user where email=?";
-        PreparedStatement prs= cnx.prepareStatement(req);
-        prs.setString(1, email);
-        rs= prs.executeQuery();
-        return rs;
-    }
     public user getUserByuserName(String email) {
         try {
             String req = "select * from user where email=?";
@@ -123,7 +117,6 @@ public class LoginService {
         } catch (SQLException ex) {
             Logger.getLogger(LoginService.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return null;}
-
-
+        return null;
+}
 }

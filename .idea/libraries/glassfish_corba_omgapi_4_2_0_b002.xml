@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="glassfish-corba-omgapi-4.2.0-b002">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/deps/glassfish-corba-omgapi-4.2.0-b002.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
