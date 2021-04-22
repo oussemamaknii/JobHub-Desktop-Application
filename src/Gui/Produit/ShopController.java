@@ -87,7 +87,7 @@ public class ShopController implements Initializable {
     }
     @FXML
     void produit1(ActionEvent event) throws IOException {
-        Cart produitPanier = new Cart(1, "Road Bicycles", 200, 1, "/Gui/Images/2.jpg", 0);
+        /*Cart produitPanier = new Cart(1, "Road Bicycles", 200, 1, "/Gui/Images/2.jpg", 0);
         FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Commande/ProductSingle.fxml"));
         Parent fxml = Loader.load();
         ProductSingleController e = Loader.getController();
@@ -95,19 +95,19 @@ public class ShopController implements Initializable {
         System.out.println(centerContent);
         centerContent.getChildren().removeAll();
         new FadeInDown(fxml).play();
-        centerContent.getChildren().setAll(fxml);
+        centerContent.getChildren().setAll(fxml);*/
     }
 
     @FXML
     void produit2(ActionEvent event) throws IOException {
-        Cart produitPanier = new Cart(2, "Mountain Bicycles", 400, 1, "3.jpg", 0);
+      /*  Cart produitPanier = new Cart(2, "Mountain Bicycles", 400, 1, "3.jpg", 0);
         FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Commande/ProductSingle.fxml"));
         Parent fxml = Loader.load();
         ProductSingleController e = Loader.getController();
         e.redirection(centerContent, produitPanier,panier);
         centerContent.getChildren().removeAll();
         new FadeInDown(fxml).play();
-        centerContent.getChildren().setAll(fxml);
+        centerContent.getChildren().setAll(fxml);*/
 
     }
 }

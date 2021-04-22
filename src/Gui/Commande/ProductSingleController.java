@@ -129,7 +129,7 @@ public class ProductSingleController implements Initializable {
         centerContent = c;
         produitPanier = p;
         nom.setText(p.getNomProduit());
-        prix.setText(Integer.toString(p.getPrix()));
+        prix.setText(Float.toString(p.getPrix()));
         svf = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100, p.getQuantite());
         quantite.setValueFactory(svf);
         imagePanier.setImage(new Image("/GUI/Images/"+p.getImage()));
