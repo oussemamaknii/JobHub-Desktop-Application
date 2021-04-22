@@ -1,5 +1,5 @@
 package Utils;
-/*
+
 import java.io.IOException;
 import java.util.Properties;
 import javax.activation.DataHandler;
@@ -20,7 +20,7 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMultipart;
 import Utils.pdf;
 
- */
+
 
 
 /**
@@ -28,7 +28,7 @@ import Utils.pdf;
  * @author Mintoua
  */
 
-/*
+
 public class Mail {
     public Mail() {
     }
@@ -90,4 +90,3 @@ public class Mail {
     }
 }
 
- */

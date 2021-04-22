@@ -87,7 +87,7 @@ public class ShopController implements Initializable {
     }
     @FXML
     void produit1(ActionEvent event) throws IOException {
-        Cart produitPanier = new Cart(1, "Road Bicycles", 200, 1, "2.jpg", 0);
+        Cart produitPanier = new Cart(1, "Road Bicycles", 200, 1, "/Gui/Images/2.jpg", 0);
         FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Commande/ProductSingle.fxml"));
         Parent fxml = Loader.load();
         ProductSingleController e = Loader.getController();

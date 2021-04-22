@@ -25,7 +25,43 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="" />
+    <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_8_40_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/itextpdf_5_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/SendEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/pdf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/activation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/activation1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/activation1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_glyphsbrowser_all_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Shop.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Shop.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ShopController2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServiceCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IServiceCommande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ServiceCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ServiceCommande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,15 +95,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Librairies/fontawesomefx-glyphsbrowser-all-1.0.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Librairies/itextpdf-5.4.0.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.21717791" />
-    <property name="project.structure.side.proportion" value="0.32958803" />
+    <property name="project.structure.side.proportion" value="0.22596754" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Entities" />
+      <recent name="Utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Desktop\JobHub-Desktop-Application\out\production\JobHub_App\Gui\Commande" />
       <recent name="E:\Etudes\ESPRIT\Esprit_3A28\Semestre 2\PiDev\Desktop\JobHub-Desktop-Application\src\Gui\Produit" />
@@ -159,30 +199,30 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="611" y="345" key="DetectedRootsChooserDialog/0.0.1600.900@0.0.1600.900" timestamp="1618878006227" />
-    <state x="848" y="143" key="FileChooserDialogImpl" timestamp="1618878234515">
+    <state x="848" y="143" key="FileChooserDialogImpl" timestamp="1619043494250">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="848" y="143" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1618878234515" />
-    <state width="1544" height="230" key="GridCell.Tab.0.bottom" timestamp="1618924078929">
+    <state x="848" y="143" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1619043494250" />
+    <state width="1540" height="111" key="GridCell.Tab.0.bottom" timestamp="1619094537613">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1544" height="230" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1618924078929" />
-    <state width="1544" height="230" key="GridCell.Tab.0.center" timestamp="1618924078929">
+    <state width="1540" height="111" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619094537613" />
+    <state width="1540" height="111" key="GridCell.Tab.0.center" timestamp="1619094537612">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1544" height="230" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1618924078929" />
-    <state width="1544" height="230" key="GridCell.Tab.0.left" timestamp="1618924078929">
+    <state width="1540" height="111" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619094537612" />
+    <state width="1540" height="111" key="GridCell.Tab.0.left" timestamp="1619094537612">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1544" height="230" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1618924078929" />
-    <state width="1544" height="230" key="GridCell.Tab.0.right" timestamp="1618924078929">
+    <state width="1540" height="111" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619094537612" />
+    <state width="1540" height="111" key="GridCell.Tab.0.right" timestamp="1619094537613">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1544" height="230" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1618924078929" />
-    <state x="-231" y="49" key="SettingsEditor" timestamp="1618921087096">
+    <state width="1540" height="111" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619094537613" />
+    <state x="31" y="49" width="1312" height="851" key="SettingsEditor" timestamp="1619043501763">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="-231" y="49" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1618921087096" />
+    <state x="31" y="49" width="1312" height="851" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1619043501763" />
     <state x="224" y="366" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1618111671465">
       <screen x="0" y="0" width="1600" height="900" />
     </state>

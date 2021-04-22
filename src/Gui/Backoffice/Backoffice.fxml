@@ -224,6 +224,14 @@
                   </TableView>
                </children>
             </GridPane>
+            <GridPane fx:id="pnHome" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
             <GridPane fx:id="pnCommandes" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #666;">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -243,7 +251,10 @@
                         <TextField fx:id="tfSearchOrder" prefHeight="26.0" prefWidth="332.0" style="-fx-border-color: #27d057;" />
                         <FontAwesomeIcon fx:id="deletStrashOrder" fill="#e10101" glyphName="TRASH" onMouseClicked="#suppProd" size="15" />
                         <FontAwesomeIcon fx:id="editOrder" fill="#33b955" glyphName="PENCIL_SQUARE" onMouseClicked="#editProd" size="15" />
-                        <Button fx:id="ViewStats" graphicTextGap="11.0" mnemonicParsing="false" onMouseClicked="#addP" prefHeight="29.0" prefWidth="150.0" stylesheets="@Backend.css" text="Statistiques" />
+                        <Button fx:id="ViewStats" graphicTextGap="11.0" mnemonicParsing="false" onMouseClicked="#addP" prefHeight="29.0" prefWidth="150.0" stylesheets="@Backend.css" text="Statistiques" textFill="WHITE">
+                           <font>
+                              <Font name="Bell MT Bold" size="14.0" />
+                           </font></Button>
                      </children>
                   </HBox>
                   <FontAwesomeIcon fx:id="faRefreshOrder" fill="#27d057" glyphName="REFRESH" onMouseClicked="#refresh" size="20" wrappingWidth="23.14285659790039">
@@ -265,14 +276,6 @@
                      </columnResizePolicy>
                   </TableView>
                </children>
-            </GridPane>
-            <GridPane fx:id="pnHome" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
-               </rowConstraints>
             </GridPane>
          </children>
       </StackPane>

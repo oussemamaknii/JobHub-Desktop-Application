@@ -27,10 +27,14 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -38,6 +42,9 @@ import javafx.scene.layout.VBox;
  * @author toshiba
  */
 public class ShopController2 implements Initializable {
+
+    @FXML
+    private ImageView shoppingImg;
 
     @FXML
     private HBox shopContainer;
@@ -55,6 +62,7 @@ public class ShopController2 implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+
         shopProducts = new ArrayList<>(getShopProducts());
         try {
             for (Produit prod : shopProducts){
@@ -67,8 +75,10 @@ public class ShopController2 implements Initializable {
         }catch (IOException e) {
                 e.printStackTrace();
         }
-        //new Bounce(banner).play();
+        new Bounce(banner).play();
     }
+
+
 
     private List<Produit> getShopProducts(){
         List<Produit> lp = new ArrayList<>();
@@ -99,32 +109,6 @@ public class ShopController2 implements Initializable {
         centerContent.getChildren().setAll(fxml);
     }
 
-    @FXML
-    void produit2(ActionEvent event) throws IOException {
-        Cart produitPanier = new Cart(2, "Mountain Bicycles", 400, 1, "3.jpg", 0);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Commande/ProductSingle.fxml"));
-        Parent fxml = Loader.load();
-        ProductSingleController e = Loader.getController();
-        //e.redirection(centerContent, produitPanier,panier,user);
-        e.redirection(centerContent, produitPanier,panier);
-        centerContent.getChildren().removeAll();
-        new FadeInDown(fxml).play();
-        centerContent.getChildren().setAll(fxml);
-
-    }
-  @FXML
-    void produit3(ActionEvent event) throws IOException {
-      Cart produitPanier = new Cart(3, "Course Bicycles", 600, 1, "3.jpg", 0);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Commande/ProductSingle.fxml"));
-        Parent fxml = Loader.load();
-        ProductSingleController e = Loader.getController();
-        //e.redirection(centerContent, produitPanier,panier,user);
-        e.redirection(centerContent, produitPanier,panier);
-        centerContent.getChildren().removeAll();
-        new FadeInDown(fxml).play();
-        centerContent.getChildren().setAll(fxml);
-
-    }
 
     // public void redirection(AnchorPane c,User u)
     public void redirection(AnchorPane c) {

@@ -40,12 +40,13 @@ public class Cart {
         this.imageView=new ImageView();
         this.imageView.setFitHeight(50);
         this.imageView.setFitWidth(50);
-        /*this.imageView.setImage(new Image("Gui/Images/"+this.image));
+        this.imageView.setImage(new Image(getClass().getResourceAsStream(this.image)));
         this.remove=new Button("");
-        ImageView imageButton=new ImageView("Gui/Images/Icon-awesome-trash-alt.png");
+        ImageView imageButton=new ImageView();
+        imageButton.setImage(new Image(getClass().getResourceAsStream("/Gui/Images/Icon-awesome-trash-alt.png")));
         imageButton.setFitHeight(20);
         imageButton.setFitWidth(20);
-        this.remove.setGraphic(imageButton);*/
+        this.remove.setGraphic(imageButton);
         this.idCommande=idCommande;
 
     }

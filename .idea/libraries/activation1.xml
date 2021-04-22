@@ -2,7 +2,6 @@
   <library name="activation1">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../../../../Index_Passée/PiJava/CycleProJava/Bibliothèques/activation.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../../../Index_Passée/PiJava/CycleProJava/Bibliothèques/controlsfx-8.40.11.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../../Index_Passée/PiJava/CycleProJava/Bibliothèques/fontawesomefx-8.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/../../../../../Index_Passée/PiJava/CycleProJava/Bibliothèques/gson-2.8.2.jar!/" />
       <root url="file://$PROJECT_DIR$/../../../.." />
