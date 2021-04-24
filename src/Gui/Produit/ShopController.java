@@ -13,101 +13,78 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class ShopController implements Initializable {
+
     @FXML
-    private TableColumn<Produit, String> colname;
-    @FXML
-    private TableColumn<Produit, String> colref;
-    @FXML
-    private TableColumn<Produit, String> coldesc;
-    @FXML
-    private TableColumn<Produit, String> colprice;
-    @FXML
-    private TableColumn<Produit, String> colquantity;
-    @FXML
-    private TableColumn<Produit, LocalDate> colimage;
-    @FXML
-    private TableView<Produit> table;
-    ObservableList<Cart> panier = FXCollections.observableArrayList();
-    private AnchorPane centerContent;
+    private GridPane productGrid;
+
     @FXML
     private Pane banner;
+
+    private List<Produit> productsList;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         new Bounce(banner).play();
+        loadProductPane();
     }
-
-    @FXML
-    void addCart(ActionEvent event) {
+    void loadProductPane(){
+        productsList = new ArrayList<>(getShopProducts());
+        int column = 0;
+        int row =1;
 
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Gui/Commande/Panier.fxml"));
-            Parent root = (Parent) loader.load();
+            for (Produit prod : productsList){
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("myBook.fxml"));
 
-            PanierController panierController = loader.getController();
-            panierController.redirection(centerContent,panier);
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.show();
-        } catch (IOException e) {
+                HBox hBoxItem = fxmlLoader.load();
+                MyBookController bookController = fxmlLoader.getController();
+                bookController.setData(prod);
+                if (column == 3){
+                    column=0;
+                    ++row;
+                }
+
+                productGrid.add(hBoxItem,column++,row);
+                GridPane.setMargin(hBoxItem, new Insets(10));
+            }
+        }catch (IOException e) {
             e.printStackTrace();
         }
     }
+    private List<Produit> getShopProducts(){
+        List<Produit> lp = new ArrayList<>();
+        ArrayList<Produit> products = new ServiceProduit().getAll();
 
-    public void showProducts() {
-        try {
-            ObservableList<Produit> products = new ServiceProduit().readAll();
-            colname.setCellValueFactory(new PropertyValueFactory<>("name"));
-            colref.setCellValueFactory(new PropertyValueFactory<>("ref"));
-            coldesc.setCellValueFactory(new PropertyValueFactory<>("description"));
-            colprice.setCellValueFactory(new PropertyValueFactory<>("price"));
-            colimage.setCellValueFactory(new PropertyValueFactory<>("image"));
-            table.setItems(products);
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        for (int i = 0; i < products.size(); i++){
+            Produit product = new Produit();
+            product.setName(products.get(i).getName());
+            product.setPrice(products.get(i).getPrice());
+            product.setImage("/Gui/Images/"+products.get(i).getImage());
+            lp.add(product);
         }
 
-    }
-    @FXML
-    void produit1(ActionEvent event) throws IOException {
-        /*Cart produitPanier = new Cart(1, "Road Bicycles", 200, 1, "/Gui/Images/2.jpg", 0);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Commande/ProductSingle.fxml"));
-        Parent fxml = Loader.load();
-        ProductSingleController e = Loader.getController();
-        centerContent = e.redirection(centerContent, produitPanier,panier);
-        System.out.println(centerContent);
-        centerContent.getChildren().removeAll();
-        new FadeInDown(fxml).play();
-        centerContent.getChildren().setAll(fxml);*/
+        return lp;
     }
 
-    @FXML
-    void produit2(ActionEvent event) throws IOException {
-      /*  Cart produitPanier = new Cart(2, "Mountain Bicycles", 400, 1, "3.jpg", 0);
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/GUI/Commande/ProductSingle.fxml"));
-        Parent fxml = Loader.load();
-        ProductSingleController e = Loader.getController();
-        e.redirection(centerContent, produitPanier,panier);
-        centerContent.getChildren().removeAll();
-        new FadeInDown(fxml).play();
-        centerContent.getChildren().setAll(fxml);*/
-
-    }
 }

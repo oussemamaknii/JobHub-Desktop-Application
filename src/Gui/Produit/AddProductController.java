@@ -61,14 +61,13 @@ public class AddProductController implements Initializable {
 
     @FXML
     private JFXButton cancel;
+
     private boolean update;
     int productId;
 
-
-
     int currentValueQty;
     String productImage;
-    boolean setRec = false;
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -94,7 +93,7 @@ public class AddProductController implements Initializable {
             alert.showAndWait();
         }else {
             Produit produit = new Produit(name,ref,desc,prix,qty,img);
-            if(!setRec){
+            if(!update){
                 try {
                     new ServiceProduit().add(produit);
                     Stage stg = (Stage) addproduct.getScene().getWindow();
@@ -149,12 +148,11 @@ public class AddProductController implements Initializable {
 
     public void setRecords(int id, String ref,String nom, Float prix,String desc,String img){
         productId = id;
-        setRec = true;
         tfref.setText(ref);
         tfname.setText(nom);
-        tfprice.setText(String.valueOf(prix));
+        tfprice.setText(String.valueOf(prix)+"  DT");
         tfdesc.setText(desc);
-        loadImg.setImage(new Image(getClass().getResourceAsStream("/Gui/Images/"+img)));
+        loadImg.setImage(new Image(getClass().getResourceAsStream(img)));
         btnImage.setText("Upload");
     }
 }

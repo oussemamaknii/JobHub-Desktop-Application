@@ -25,13 +25,13 @@ import javafx.fxml.Initializable;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.util.Callback;
 
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
-import java.util.logging.Logger;
 
 public class BackofficeController implements Initializable {
     @FXML
@@ -88,68 +88,15 @@ public class BackofficeController implements Initializable {
     @FXML
     private TextField tfSearch;
 
-    @FXML
-    private Button btnAddProduct;
 
     @FXML
     private FontAwesomeIcon faRefresh;
 
     @FXML
-    private TableView<Produit> tableProduct;
-
-    @FXML
-    private TableColumn<Produit, String> idCol;
-
-    @FXML
-    private TableColumn<Produit, String> nameCol;
-
-    @FXML
-    private TableColumn<Produit, String> refCol;
-
-    @FXML
-    private TableColumn<Produit, String> descCol;
-
-    @FXML
-    private TableColumn<Produit, String> priceCol;
-
-    @FXML
-    private TableColumn<Produit, String> qtyCol;
-
-    @FXML
-    private TableColumn<Produit, String> imgCol;
-
-    @FXML
-    private TableColumn<Produit, String> actionCol;
-
-    @FXML
-    private FontAwesomeIcon deletStrash;
-
-    @FXML
-    private FontAwesomeIcon edit;
-
-    @FXML
-    private FontAwesomeIcon faSearchOrder;
-
-    @FXML
     private TextField tfSearchOrder;
 
     @FXML
-    private FontAwesomeIcon deletStrashOrder;
-
-    @FXML
-    private FontAwesomeIcon editOrder;
-
-    @FXML
-    private Button ViewStats;
-
-    @FXML
-    private FontAwesomeIcon faRefreshOrder;
-
-    @FXML
     private TableView<Commande> tableOrder;
-
-    @FXML
-    private TableColumn<Commande, String> idColOrder;
 
     @FXML
     private TableColumn<Commande, String> totalColOrder;
@@ -164,8 +111,10 @@ public class BackofficeController implements Initializable {
     private TableColumn<Commande, String> idUserColOrder;
 
     @FXML
-    private TableColumn<Commande, ChoiceBox<String>> PanierColOrder;
+    private GridPane productGrid;
 
+
+    private List<Produit> productsList;
     ObservableList <Produit> dataList;
 
 
@@ -173,6 +122,7 @@ public class BackofficeController implements Initializable {
     Produit productTab = null ;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        loadDataInPaneProduit();
 
     }
 
@@ -198,7 +148,6 @@ public class BackofficeController implements Initializable {
             lbStatus.setText("Produits");
             pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(43,99,63), CornerRadii.EMPTY, Insets.EMPTY)));
             pnProducts.toFront();
-            searchProd();
         }
         else
         if(event.getSource() == btnGCommande){
@@ -236,6 +185,32 @@ public class BackofficeController implements Initializable {
         }
     }
 
+    void loadDataInPaneProduit(){
+        productsList = new ArrayList<>(getProducts());
+        int column = 0;
+        int row =1;
+
+        try {
+            for (Produit prod : productsList){
+                FXMLLoader fxmlLoader = new FXMLLoader();
+                fxmlLoader.setLocation(getClass().getResource("Book.fxml"));
+
+                HBox hBoxItem = fxmlLoader.load();
+                BookController bookController = fxmlLoader.getController();
+                bookController.setData(prod);
+                if (column == 1){
+                    column=0;
+                    ++row;
+                }
+
+                productGrid.add(hBoxItem,column++,row);
+                GridPane.setMargin(hBoxItem, new Insets(10));
+            }
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     @FXML
     void addP(MouseEvent event) {
         try {
@@ -261,90 +236,13 @@ public class BackofficeController implements Initializable {
         } catch (IOException exception) {
             exception.printStackTrace();
         }
+        loadDataInPaneProduit();
     }
 
     @FXML
     void refresh(MouseEvent event) {
         if(event.getSource()== faRefresh){
-            searchProd();
-        }
-    }
-
-    @FXML
-    void editProd(MouseEvent event){
-        productTab = tableProduct.getSelectionModel().getSelectedItem();
-        FXMLLoader loader = new FXMLLoader ();
-        loader.setLocation(getClass().getResource("/Gui/Produit/AddProduct.fxml"));
-        try {
-            loader.load();
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-
-        AddProductController addPController = loader.getController();
-        addPController.setUpdate(true);
-        addPController.setRecords(productTab.getId(),productTab.getRef(),productTab.getName(),
-                productTab.getPrice(),productTab.getDescription(),productTab.getImage());
-        Parent parent = loader.getRoot();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(parent));
-        stage.initStyle(StageStyle.UTILITY);
-        stage.show();
-        searchProd();
-    }
-
-    @FXML
-    void suppProd(MouseEvent event){
-        Produit produit = tableProduct.getSelectionModel().getSelectedItem();
-        if(produit != null){
-            try {
-                new ServiceProduit().delete(produit.getId());
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-            searchProd();
-        }
-    }
-
-
-    @FXML
-    void searchProd(){
-        try {
-            nameCol.setCellValueFactory(new PropertyValueFactory<>("name"));
-            refCol.setCellValueFactory(new PropertyValueFactory<>("ref"));
-            descCol.setCellValueFactory(new PropertyValueFactory<>("description"));
-            priceCol.setCellValueFactory(new PropertyValueFactory<>("price"));
-            qtyCol.setCellValueFactory(new PropertyValueFactory<>("quantity"));
-            imgCol.setCellValueFactory(new PropertyValueFactory<>("image"));
-
-            dataList = new ServiceProduit().readAll();
-            tableProduct.setItems(dataList);
-
-            FilteredList<Produit> filteredData = new FilteredList<>(dataList,b->true);
-            tfSearch.textProperty().addListener((Observable,oldValue,newValue)->{
-                filteredData.setPredicate(product->{
-                    if (newValue == null || newValue.isEmpty()){
-                        return  true;
-                    }
-                    String lowerCaseFilter = newValue.toLowerCase();
-                    if (product.getName().toLowerCase().indexOf(lowerCaseFilter)!=-1){
-                        return true; //filter matches name
-                    }else if (product.getRef().toLowerCase().indexOf(lowerCaseFilter)!=-1){
-                        return true; //filter matches ref
-                    }
-                    else if (String.valueOf(product.getQuantity()).indexOf(lowerCaseFilter)!=-1)
-                        return true; // filter matches qty
-                    else
-                        return false; // does not match
-                });
-            });
-
-            SortedList<Produit> sortedData = new SortedList<>(filteredData);
-            sortedData.comparatorProperty().bind(tableProduct.comparatorProperty());
-            tableProduct.setItems(sortedData);
-
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            loadDataInPaneProduit();
         }
     }
 
@@ -352,7 +250,6 @@ public class BackofficeController implements Initializable {
     void searchOrder(){
         try {
             ObservableList<Commande> commandes = new ServiceCommande().getAll();
-            idColOrder.setCellValueFactory(new PropertyValueFactory<>("id"));
             totalColOrder.setCellValueFactory(new PropertyValueFactory<>("totalPayment"));
             stateColOrder.setCellValueFactory(new PropertyValueFactory<>("state"));
             DateColOrder.setCellValueFactory(new PropertyValueFactory<>("date"));
@@ -385,6 +282,25 @@ public class BackofficeController implements Initializable {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+    }
+
+    private List<Produit> getProducts(){
+        List<Produit> lp = new ArrayList<>();
+        ArrayList<Produit> products = new ServiceProduit().getAll();
+
+        for (int i = 0; i < products.size(); i++){
+            Produit product = new Produit();
+            product.setName(products.get(i).getName());
+            product.setPrice(products.get(i).getPrice());
+            product.setImage("/Gui/Images/"+products.get(i).getImage());
+            product.setDescription(products.get(i).getDescription());
+            product.setQuantity(products.get(i).getQuantity());
+            product.setRef(products.get(i).getRef());
+            product.setId(products.get(i).getId());
+            lp.add(product);
+        }
+
+        return lp;
     }
 
 }

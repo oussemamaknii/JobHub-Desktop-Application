@@ -51,7 +51,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="316.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Profile" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="360.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Profile" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="360.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -69,7 +69,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="360.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Search" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="380.0">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="414.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Search" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="414.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -87,7 +87,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="415.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Exit" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="440.0">
+                  <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutY="460.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Exit" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="460.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -145,6 +145,25 @@
                      </graphic>
                      <padding>
                         <Insets left="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutY="309.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="287.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Shop" textFill="WHITE">
+                     <items>
+                        <MenuItem fx:id="shopMI" mnemonicParsing="false" text="Shop" />
+                        <MenuItem fx:id="cartMI" mnemonicParsing="false" text="Cart" />
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Icon%20awesome-cart-arrow-down.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="40.0" />
                      </padding>
                      <font>
                         <Font name="Leelawadee UI Semilight" size="14.0" />

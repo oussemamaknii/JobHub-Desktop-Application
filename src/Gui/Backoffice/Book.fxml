@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Backoffice.BookController">
+   <children>
+      <Pane prefHeight="75.0" prefWidth="716.0">
+         <children>
+            <ImageView fx:id="productImage" fitHeight="75.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/alchimiste.PNG" />
+               </image>
+            </ImageView>
+            <Label fx:id="lbName" layoutX="79.0" layoutY="20.0" prefHeight="23.0" prefWidth="95.0" text="Idriss " />
+            <Label fx:id="lbRef" layoutX="174.0" layoutY="23.0" prefHeight="17.0" prefWidth="95.0" text="15Aber15" />
+            <Label fx:id="lbQty" layoutX="365.0" layoutY="23.0" prefHeight="17.0" prefWidth="41.0" text="5" />
+            <Label fx:id="lbPrice" layoutX="301.0" layoutY="23.0" prefHeight="17.0" prefWidth="26.0" text="12" />
+            <Label fx:id="lbDesc" layoutX="428.0" prefHeight="75.0" prefWidth="179.0" text="Description" />
+            <FontAwesomeIcon fx:id="edit" fill="#33b955" glyphName="PENCIL_SQUARE" layoutX="669.0" layoutY="42.0" onMouseClicked="#editProd" size="30" text="" />
+            <FontAwesomeIcon fx:id="deletStrash" fill="#e10101" glyphName="TRASH" layoutX="625.0" layoutY="41.0" onMouseClicked="#suppProd" size="30" wrappingWidth="25.714284896850586" />
+         </children>
+      </Pane>
+   </children>
+</HBox>

@@ -74,6 +74,7 @@ public class ServiceProduit implements IServiceProduit {
 
             pst = cnx.prepareStatement(request);
             pst.executeUpdate();
+            System.out.println("Produit modifié de la BD");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

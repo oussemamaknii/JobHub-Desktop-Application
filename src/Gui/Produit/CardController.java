@@ -151,14 +151,13 @@ public class CardController implements Initializable {
         }
     }
     public void prixTotal() {
-        int subtotal = 0, total2 = 850;
+        int subtotal = 0;
         for (Cart panier1 : panier) {
             subtotal += panier1.getQuantite() * panier1.getPrix();
         }
-        total2 =  subtotal;
-        Total = total2;
-        total.setText("$" + Integer.toString(total2));
-        subTotal.setText("$" + Integer.toString(subtotal));
+
+        Total = subtotal;
+        total.setText("$" + Integer.toString(subtotal));
     }
 
 }
