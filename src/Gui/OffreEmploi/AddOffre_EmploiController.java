@@ -53,8 +53,6 @@ public class AddOffre_EmploiController implements Initializable {
     @FXML
     private TextField tfdesc;
     @FXML
-    private TextField tfloc;
-    @FXML
     private TextField tffile;
     @FXML
     private TextField tfemil;
@@ -62,6 +60,8 @@ public class AddOffre_EmploiController implements Initializable {
     private TextField tfmax;
     @FXML
     private TextField tftitle;
+    @FXML
+    private BorderPane loc;
     @FXML
     private DatePicker tfexp;
     @FXML
@@ -76,6 +76,7 @@ public class AddOffre_EmploiController implements Initializable {
     private BorderPane map;
     @FXML
     private StackPane effect;
+    AutoCompleteAddressField tfloc = new AutoCompleteAddressField();
 
     double lat;
     double lon;
@@ -145,27 +146,16 @@ public class AddOffre_EmploiController implements Initializable {
 
     private void autocomplete() {
 
-        AutoCompleteAddressField text = new AutoCompleteAddressField();
-        text.getEntryMenu().setOnAction((ActionEvent e) ->
+        tfloc.getEntryMenu().setOnAction((ActionEvent e) ->
         {
             ((MenuItem) e.getTarget()).addEventHandler(Event.ANY, (Event event) ->
             {
-                if (text.getLastSelectedObject() != null) {
-                    text.setText(text.getLastSelectedObject().toString());
-                    PlaceDetails place = AutoCompleteAddressField.getPlace((AddressPrediction) text.getLastSelectedObject());
-                    if (place != null) {
-                        tfloc.setText(
-                                StringUtils.join(
-                                        AutoCompleteAddressField.getComponentLongName(place.addressComponents, AddressComponentType.STREET_NUMBER),
-                                        " ",
-                                        AutoCompleteAddressField.getComponentLongName(place.addressComponents, AddressComponentType.ROUTE))
-                        );
-                    } else {
-                        tfloc.clear();
-                    }
+                if (tfloc.getLastSelectedObject() != null) {
+                    tfloc.setText(tfloc.getLastSelectedObject().toString());
                 }
             });
         });
+        loc.setCenter(tfloc);
     }
 
     private void showmap() {

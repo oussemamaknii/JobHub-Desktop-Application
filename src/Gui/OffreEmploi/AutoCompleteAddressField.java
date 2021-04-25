@@ -10,7 +10,9 @@ import com.google.maps.model.AddressComponentType;
 import com.google.maps.model.AutocompletePrediction;
 import com.google.maps.model.PlaceDetails;
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.TreeSet;
+import java.util.function.Function;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.application.Platform;
@@ -19,11 +21,16 @@ import javafx.beans.value.ObservableValue;
 public class AutoCompleteAddressField extends AutoCompleteTextField
 {
 
-    private static final String API_KEY = "AIzaSyB5WEs73ZKe8-8YdYVDH8qAhIE38O_njO4";
+    private static final String API_KEY = "AIzaSyDeLKairWJQj4083je1h-J6J23aggAgBo4";
 
     public AutoCompleteAddressField()
     {
-        super(new TreeSet<>((AddressPrediction o1, AddressPrediction o2) -> o1.toString().compareTo(o2.toString())));
+        super(new TreeSet<>(Comparator.comparing(new Function<AddressPrediction, String>() {
+            @Override
+            public String apply(AddressPrediction addressPrediction) {
+                return addressPrediction.toString();
+            }
+        })));
 
         textProperty().addListener((ObservableValue<? extends String> o, String oldValue, String newValue) ->
         {

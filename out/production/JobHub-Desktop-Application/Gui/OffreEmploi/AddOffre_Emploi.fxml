@@ -47,7 +47,6 @@
       <Pane fx:id="pane" layoutX="7.0" layoutY="12.0" prefHeight="721.0" prefWidth="647.0" stylesheets="@../StylSheet/Style.css">
          <children>
             <TextField fx:id="tfpost" layoutX="97.0" layoutY="94.0" prefHeight="26.0" prefWidth="198.0" promptText="Post" />
-            <TextField fx:id="tfloc" layoutX="96.0" layoutY="217.0" prefHeight="26.0" prefWidth="198.0" promptText="Location" />
             <TextField fx:id="tfdesc" layoutX="97.0" layoutY="130.0" prefHeight="26.0" prefWidth="198.0" promptText="Description" />
             <TextField fx:id="tffile" layoutX="98.0" layoutY="166.0" prefHeight="37.0" prefWidth="118.0" promptText="File" />
             <TextField fx:id="tfemil" layoutX="435.0" layoutY="56.0" prefHeight="26.0" prefWidth="212.0" promptText="E-mail" />
@@ -107,6 +106,7 @@
                </font>
             </Label>
             <BorderPane fx:id="map" layoutX="14.0" layoutY="262.0" prefHeight="399.0" prefWidth="620.0" style="-fx-background-color: #B9D6F2;" />
+            <BorderPane fx:id="loc" layoutX="97.0" layoutY="217.0" prefHeight="28.0" prefWidth="198.0" />
          </children>
       </Pane>
    </children>
