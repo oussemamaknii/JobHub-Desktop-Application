@@ -7,6 +7,7 @@ public class Demande_Recrutement {
     private int id, offre_id, candidat_id;
     LocalDate date_debut, date_expiration;
     String offtit,username;
+    boolean status;
 
     public String getOfftit() {
         return offtit;
@@ -102,7 +103,7 @@ public class Demande_Recrutement {
         this.date_expiration = date_expiration;
     }
 
-    public boolean isStatus() {
+    public boolean getStatus() {
         return status;
     }
 
@@ -110,5 +111,4 @@ public class Demande_Recrutement {
         this.status = status;
     }
 
-    boolean status;
 }
