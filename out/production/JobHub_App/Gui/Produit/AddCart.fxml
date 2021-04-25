@@ -10,10 +10,10 @@
 
 <AnchorPane fx:id="centerContent" maxHeight="-1.0" maxWidth="-1.0" prefHeight="601.0" prefWidth="901.0" style="-fx-background-radius: 1em;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Produit.AddCartController">
    <children>
-      <Label fx:id="lbDesc" layoutX="611.0" layoutY="180.0" prefHeight="140.0" prefWidth="229.0" text="Description" />
+      <Label fx:id="lbDesc" layoutX="580.0" layoutY="180.0" prefHeight="140.0" prefWidth="229.0" text="Description" />
       <Label fx:id="lbPrice" layoutX="113.0" layoutY="389.0" prefHeight="18.0" prefWidth="71.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);" text="Price" textFill="WHITE">
          <font>
-            <Font name="Bernard MT Condensed" size="18.0" />
+            <Font name="Arial" size="18.0" />
          </font></Label>
       <Spinner fx:id="sPquantity" editable="true" layoutX="149.0" layoutY="460.0" />
       <ImageView fx:id="loadImg" fitHeight="164.0" fitWidth="259.0" layoutX="84.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" />
@@ -51,14 +51,14 @@
             <Font name="Berlin Sans FB" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lbRef" layoutX="329.0" layoutY="389.0" prefHeight="22.0" prefWidth="119.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);" text="Ref" textFill="WHITE">
+      <Label fx:id="lbRef" layoutX="329.0" layoutY="386.0" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);" text="Ref" textFill="WHITE">
          <font>
-            <Font name="Bernard MT Condensed" size="18.0" />
+            <Font name="Arial" size="18.0" />
          </font>
       </Label>
       <Label fx:id="lbName" layoutX="113.0" layoutY="125.0" prefHeight="22.0" prefWidth="186.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);" text="Name" textFill="WHITE">
          <font>
-            <Font name="Bernard MT Condensed" size="18.0" />
+            <Font name="Arial" size="18.0" />
          </font>
       </Label>
    </children>

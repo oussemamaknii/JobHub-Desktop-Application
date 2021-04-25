@@ -4,22 +4,29 @@ import Entities.Cart;
 import Entities.Commande;
 import Entities.Panier;
 import Entities.SendEmail;
+import Gui.Commande.PaymentController;
 import Services.ServiceCommande;
 import Services.ServicePanier;
+import Utils.Mail;
 import animatefx.animation.Bounce;
+import animatefx.animation.FadeInDown;
 import com.itextpdf.text.DocumentException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 import org.controlsfx.control.Notifications;
 
@@ -30,11 +37,14 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class CardController implements Initializable {
 
@@ -66,6 +76,8 @@ public class CardController implements Initializable {
 
     @FXML
     private Button removebtn;
+    @FXML
+    private AnchorPane centerContent;
     ObservableList<Cart> panier = FXCollections.observableArrayList();
 
     float Total;
@@ -74,8 +86,15 @@ public class CardController implements Initializable {
         new Bounce(banner).play();
     }
 
-    public void displayCart(ObservableList<Cart> panierCart){
+    @FXML
+    void cancel(MouseEvent event) {
+        Stage stg = (Stage) removebtn.getScene().getWindow();
+        stg.close();
+    }
 
+    public void displayCart(ObservableList<Cart> panierCart, AnchorPane aP){
+
+        centerContent = aP;
         if (panier.isEmpty()) {
             panier.addAll(panierCart);
         } else {
@@ -94,6 +113,8 @@ public class CardController implements Initializable {
     void displaySelected(MouseEvent event) {
         Cart selected = panierView.getSelectionModel().getSelectedItem();
         selected.setQuantite(selected.getSpinner().getValue());
+        panierView.refresh();
+        prixTotal();
         selected.getRemove().setOnAction(new EventHandler<ActionEvent>() {
             public void handle(ActionEvent e) {
                 Iterator<Cart> it = panier.iterator();
@@ -126,20 +147,6 @@ public class CardController implements Initializable {
                 .position(Pos.BOTTOM_RIGHT);
         notificationBuilder2.showConfirm();*/
         serviceCommande.create(commande);
-
-        SendEmail sm;
-        sm = new SendEmail("romuald.motchehokamguia@esprit.tn", "validation de commande", "votre commande chez cyclepro a été validée avec "
-                + "success");
-
-        ServicePanier servicePanier = new ServicePanier();
-        for (Cart p : panier){
-            try {
-                servicePanier.add(new Panier(p.getQuantite(),p.getIdProduit(), serviceCommande.getLastCommande() ));
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
-        }
-
         try {
             serviceCommande.historique(serviceCommande.getLastCommande(),panier);
         } catch (DocumentException e) {
@@ -149,6 +156,45 @@ public class CardController implements Initializable {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        /*
+        try {
+            Mail.sendMail("tpkdmta@gmail.com");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
+        ServicePanier servicePanier = new ServicePanier();
+        for (Cart p : panier){
+            try {
+               // System.out.println(p.getIdProduit());
+                servicePanier.add(new Panier(p.getQuantite(),p.getIdProduit(), serviceCommande.getLastCommande() ));
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+        Alert dg = new Alert(Alert.AlertType.CONFIRMATION);
+        dg.setTitle("ConfrimationDialogbox");
+        dg.setContentText("Paiement Paypal");
+        dg.setHeaderText("Effectuer le paiement");
+        dg.showAndWait().ifPresent(response -> {
+                    if (response == ButtonType.OK) {
+                        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Commande/Payment.fxml"));
+                        Parent fxml;
+                        try {
+                            fxml = Loader.load();
+                            PaymentController e = Loader.getController();
+                            e.redirection(centerContent, panier, Total, serviceCommande.getLastCommande());
+                            centerContent.getChildren().removeAll();
+                            new FadeInDown(fxml).play();
+                            centerContent.getChildren().setAll(fxml);
+                        } catch (IOException ex) {
+                            System.out.println(ex.getMessage());
+                        }
+
+                    }
+                }
+        );
+
+
     }
     public void prixTotal() {
         int subtotal = 0;

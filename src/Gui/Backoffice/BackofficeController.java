@@ -5,6 +5,7 @@ import Entities.Produit;
 import Gui.Produit.AddProductController;
 import Services.ServiceCommande;
 import Services.ServiceProduit;
+import animatefx.animation.FadeInDown;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -113,6 +114,12 @@ public class BackofficeController implements Initializable {
     @FXML
     private GridPane productGrid;
 
+    @FXML
+    private GridPane prodGrid;
+
+    @FXML
+    private AnchorPane anchorProd;
+
 
     private List<Produit> productsList;
     ObservableList <Produit> dataList;
@@ -123,7 +130,6 @@ public class BackofficeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         loadDataInPaneProduit();
-
     }
 
     @FXML
@@ -204,6 +210,7 @@ public class BackofficeController implements Initializable {
                 }
 
                 productGrid.add(hBoxItem,column++,row);
+
                 GridPane.setMargin(hBoxItem, new Insets(10));
             }
         }catch (IOException e) {
@@ -242,7 +249,34 @@ public class BackofficeController implements Initializable {
     @FXML
     void refresh(MouseEvent event) {
         if(event.getSource()== faRefresh){
-            loadDataInPaneProduit();
+            productsList = new ArrayList<>(getProducts());
+            int column = 0;
+            int row =1;
+
+            try {
+                for (Produit prod : productsList){
+                    FXMLLoader fxmlLoader = new FXMLLoader();
+                    fxmlLoader.setLocation(getClass().getResource("Book.fxml"));
+
+                    HBox hBoxItem = fxmlLoader.load();
+                    BookController bookController = fxmlLoader.getController();
+                    bookController.setData(prod);
+                    if (column == 1){
+                        column=0;
+                        ++row;
+                    }
+
+                    productGrid.getChildren().removeAll();
+                    new FadeInDown(hBoxItem).play();
+                    prodGrid.add(hBoxItem,column++,row);
+                    productGrid.getChildren().setAll(prodGrid);
+
+
+                    GridPane.setMargin(hBoxItem, new Insets(10));
+                }
+            }catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

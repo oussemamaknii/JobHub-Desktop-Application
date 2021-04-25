@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="273.0" prefWidth="201.0" stylesheets="@shop.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Produit.MyBookController">
    <children>
       <Pane prefHeight="273.0" prefWidth="201.0" styleClass="beta" stylesheets="@shop.css">
@@ -21,7 +20,7 @@
             </ImageView>
             <Button layoutX="65.0" layoutY="238.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="17.0" prefWidth="74.0" text="Add Cart">
                <font>
-                  <Font name="Bauhaus 93" size="14.0" />
+                  <Font name="Arial Bold" size="13.0" />
                </font>
             </Button>
             <TextField fx:id="productPrice" layoutX="65.0" layoutY="205.0" prefHeight="25.0" prefWidth="82.0" text="productPrice" />

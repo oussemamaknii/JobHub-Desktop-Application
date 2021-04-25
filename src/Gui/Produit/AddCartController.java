@@ -76,6 +76,7 @@ public class AddCartController implements Initializable {
     void addProduct(MouseEvent event) {
 
         produitPanier.setQuantite(sPquantity.getValue());
+        produitPanier.setIdProduit(productId);
         //System.out.println("Qté"+produitPanier.getQuantite());
         panier.add(produitPanier);
 
@@ -88,7 +89,7 @@ public class AddCartController implements Initializable {
         }
         Parent parent = loader.getRoot();
         CardController cardController = loader.getController();
-        cardController.displayCart(panier);
+        cardController.displayCart(panier,centerContent);
         centerContent.getChildren().removeAll();
         new FadeInDown(parent).play();
         centerContent.getChildren().setAll(parent);

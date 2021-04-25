@@ -3,7 +3,6 @@ package Gui.Produit;
 import Entities.Cart;
 import Entities.Produit;
 import Gui.Commande.PanierController;
-import Gui.Commande.ProductSingleController;
 import Services.ServiceProduit;
 import animatefx.animation.Bounce;
 import animatefx.animation.FadeInDown;
@@ -39,8 +38,11 @@ public class ShopController implements Initializable {
     @FXML
     private Pane banner;
 
-    private List<Produit> productsList;
+    @FXML
+    private Pane centerContent;
 
+    private List<Produit> productsList;
+    ObservableList<Cart> panier = FXCollections.observableArrayList();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -80,11 +82,21 @@ public class ShopController implements Initializable {
             Produit product = new Produit();
             product.setName(products.get(i).getName());
             product.setPrice(products.get(i).getPrice());
+            product.setId(products.get(i).getId());
+            product.setRef(products.get(i).getRef());
+            product.setQuantity(products.get(i).getQuantity());
             product.setImage("/Gui/Images/"+products.get(i).getImage());
+            product.setDescription(products.get(i).getDescription());
             lp.add(product);
         }
 
         return lp;
+    }
+
+    public void redirectionFromPayment(AnchorPane c) {
+        centerContent = c;
+        panier.clear();
+
     }
 
 }

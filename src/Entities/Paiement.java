@@ -16,6 +16,14 @@ public class Paiement {
     private int anneeExpiration;
     private int idCommande;
 
+    public Paiement(String cardHolderName, int cardNumber, int securityCode, int moiExpiration, int anneeExpiration, int idCommande) {
+        this.cardHolderName = cardHolderName;
+        this.cardNumber = cardNumber;
+        this.securityCode = securityCode;
+        this.moiExpiration = moiExpiration;
+        this.anneeExpiration = anneeExpiration;
+        this.idCommande = idCommande;
+    }
     public Paiement(int id, String cardHolderName, int cardNumber, int securityCode, int moiExpiration, int anneeExpiration, int idCommande) {
         this.id = id;
         this.cardHolderName = cardHolderName;

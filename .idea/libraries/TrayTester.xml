@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="TrayTester">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Librairies/TrayTester.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/techsoftemail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/slf4j-log4j12-1.7.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/slf4j-api-1.7.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/richtextfx-demos-fat-0.6.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/rating-java-0.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/lombok.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/log4j-1.2.17.jar!/" />
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+  </library>
+</component>

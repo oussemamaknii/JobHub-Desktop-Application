@@ -25,5 +25,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="TrayTester" level="project" />
+    <orderEntry type="library" name="jakarta.xml.bind-api-3.0.0" level="project" />
+    <orderEntry type="library" name="javax.mail" level="project" />
   </component>
 </module>

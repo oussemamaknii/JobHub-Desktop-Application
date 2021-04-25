@@ -84,7 +84,8 @@ public class AddProductController implements Initializable {
         String ref = tfref.getText();
         String desc = tfdesc.getText();
         Float prix = Float.parseFloat(tfprice.getText());
-        int qty = currentValueQty;
+
+        int qty = sPquantity.getValue();
         String img = productImage;
         if(name.isEmpty()||ref.isEmpty()||desc.isEmpty()||prix.isNaN()||img.isEmpty()||(img ==null)){
             Alert alert = new Alert(Alert.AlertType.ERROR);

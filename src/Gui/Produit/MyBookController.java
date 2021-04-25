@@ -68,11 +68,12 @@ public class MyBookController {
         Image image = new Image(getClass().getResourceAsStream(produit.getImage()));
         productImage.setImage(image);
         productName.setText(produit.getName());
-        productPrice.setText(String.valueOf(produit.getPrice())+" DT");
+        productPrice.setText(String.valueOf(produit.getPrice()));
         idProduit = produit.getId();
         ref = produit.getRef();
         desc = produit.getDescription();
         img = produit.getImage();
         qtyStock = produit.getQuantity();
     }
+
 }

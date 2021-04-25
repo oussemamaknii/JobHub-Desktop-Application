@@ -10,7 +10,6 @@ import Entities.Panier;
 //import Entitie.User.User;
 import Entities.Cart;
 import Entities.Produit;
-import Gui.Produit.ShopController2;
 import Services.ServiceCommande;
 import Services.ServicePanier;
 import animatefx.animation.Bounce;
@@ -160,20 +159,6 @@ public class PanierController implements Initializable {
         });*/
 
     }
-
-    @FXML
-    void displayCatalogue(ActionEvent event) throws IOException {
-        //FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Produit/Shop2.fxml"));
-        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Produit/Shop.fxml"));
-        Parent fxml = Loader.load();
-        ShopController2 e = Loader.getController();
-        //e.redirectionFromPanier(centerContent, panier, user);
-        e.redirectionFromPanier(centerContent, panier);
-        centerContent.getChildren().removeAll();
-        new FadeInDown(fxml).play();
-        centerContent.getChildren().setAll(fxml);
-    }
-
 
 
     public void prixTotal() {
