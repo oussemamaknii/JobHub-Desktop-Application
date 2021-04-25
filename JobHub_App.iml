@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/images" type="java-resource" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="16" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="lib" level="project" />
-    <orderEntry type="library" name="Connector J 8" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-8.0.231" level="project" />
     <orderEntry type="library" exported="" name="Connector J 8" level="project" />
-    <orderEntry type="library" exported="" name="mysql-connector-java-8.0.23" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -22,5 +18,12 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" exported="" name="jxmapsdemo" level="project" />
+    <orderEntry type="library" exported="" name="jfoenix-9.0.10" level="project" />
+    <orderEntry type="library" exported="" name="activation-1.1.1" level="project" />
+    <orderEntry type="library" exported="" name="map" level="project" />
+    <orderEntry type="library" exported="" name="javax.mail" level="project" />
+    <orderEntry type="library" exported="" name="mysql-connector-java-8.0.23" level="project" />
+    <orderEntry type="library" name="javafx.base" level="project" />
   </component>
 </module>
