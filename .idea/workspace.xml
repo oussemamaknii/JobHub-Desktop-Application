@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="909ab576-dcc5-410f-8430-b6569c5175fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AutoCompleteAddressField$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/images/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_EmploiController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_EmploiController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_EmploiController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_EmploiController$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_EmploiController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_EmploiController$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_EmploiController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_EmploiController$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_EmploiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AddOffre_EmploiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AutoCompleteAddressField$AddressPrediction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AutoCompleteAddressField$AddressPrediction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AutoCompleteAddressField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/AutoCompleteAddressField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_Emploi.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_Emploi.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AutoCompleteAddressField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AutoCompleteAddressField.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
