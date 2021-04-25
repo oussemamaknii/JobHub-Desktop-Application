@@ -3,6 +3,7 @@ package Services;
 import Entities.user;
 import Interfaces.IServiceRegister;
 import Utils.Connexion;
+import Utils.Controller;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import org.mindrot.jbcrypt.BCrypt;
@@ -11,7 +12,8 @@ import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class Register implements IServiceRegister {
+public class Register extends Controller implements IServiceRegister {
+
 
     Connection cnx = Connexion.getInstance().getConnection();
 
@@ -40,6 +42,7 @@ public class Register implements IServiceRegister {
     }
     @Override
     public void updateprofile(user User) {
+        String request1 = "UPDATE user SET first_name=?,last_name=?,date_of_birth=?,email=? password=?,adresse=?,phone=?,professional_title=? where id=?";
     }
     @Override
     public ObservableList<user> showUsers() {

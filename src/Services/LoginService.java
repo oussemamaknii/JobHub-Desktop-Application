@@ -7,11 +7,13 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.ini4j.Wini;
 
+
 import java.io.File;
 import java.io.IOException;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 public class LoginService {
     PreparedStatement pst;
@@ -79,10 +81,7 @@ public class LoginService {
         return rs;
     }
 
-
-
-
-    public ResultSet userbyid(Integer id) throws SQLException {
+    public ResultSet userbyid(int id) throws SQLException {
 
         String req= "Select * from user where id=? ";
         PreparedStatement prs= cnx.prepareStatement(req);
@@ -102,6 +101,22 @@ public class LoginService {
     }
 
 
+    public user getUserById(int id) {
+        try {
+            String req = "select * from user where id=?";
+            user u = null;
+            PreparedStatement ps = cnx.prepareStatement(req);
+            ps.setInt(1, id);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                u = new user(rs.getInt(1), rs.getString(2), rs.getString(3),rs.getInt(4),rs.getString("roles"));
+            }
+            return u;
+        } catch (SQLException ex) {
+            Logger.getLogger(LoginService.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
 
     public user getUserByuserName(String email) {
         try {

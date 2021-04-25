@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="396.0" prefWidth="662.0" stylesheets="@../StylSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.User.RegisterController">
+<Pane prefHeight="372.0" prefWidth="631.0" stylesheets="@../StylSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.User.RegisterController">
    <children>
       <TextField fx:id="tfLastName" layoutX="154.0" layoutY="103.0" stylesheets="@../StylSheet/Style.css" />
       <TextField fx:id="tfEmail" layoutX="406.0" layoutY="41.0" stylesheets="@../StylSheet/Style.css" />

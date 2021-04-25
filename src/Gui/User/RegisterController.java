@@ -9,10 +9,7 @@ import Entities.user;
 import Services.Register;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -40,6 +37,22 @@ public class RegisterController implements Initializable {
     private PasswordField tfPassword;
     @FXML
     private TextField tfPhone;
+    @FXML
+    private TextField tfProfessionalTitle;
+    @FXML
+    private Label showFirstName;
+    @FXML
+    private Label showEmail;
+    @FXML
+    private Label showLastName;
+    @FXML
+    private Label showAdresse;
+    @FXML
+    private Label showProfessionalTitle;
+    @FXML
+    private Label showPhone;
+    @FXML
+    private Label showDateOfBirth;
 
     /**
      * Initializes the controller class.
@@ -54,9 +67,7 @@ public class RegisterController implements Initializable {
             user register1 = new user(tfEmail.getText(), tfPassword.getText(), tfFirstName.getText(), tfLastName.getText(),
                     tfDateOfBirth.getValue(), tfAdresse.getText(), Integer.parseInt(tfPhone.getText()));
             new Register().Register(register1);}
-
         });
-
     }
     public boolean testfields(){
         if (tfFirstName.getText().isEmpty()) {

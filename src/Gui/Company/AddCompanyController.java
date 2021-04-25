@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package Gui.Company;
-
 import Entities.company;
 import Services.CompanyService;
 import javafx.fxml.FXML;
@@ -42,12 +41,16 @@ public class AddCompanyController implements Initializable {
     @FXML
     private Button addCompany;
 
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+
         addCompany.setOnAction(e -> {
+
+
             if (testfields()) {
 
 

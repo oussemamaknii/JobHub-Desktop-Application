@@ -7,6 +7,7 @@ package Gui.Company;
 
 import Entities.company;
 import Services.CompanyService;
+import Services.LoginService;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -44,6 +45,8 @@ public class CompaniesController implements Initializable {
     private TableColumn<?, ?> colContactPhone;
     @FXML
     private TableColumn<?, ?> colCategory;
+
+
 
     /**
      * Initializes the controller class.

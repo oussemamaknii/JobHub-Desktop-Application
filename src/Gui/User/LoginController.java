@@ -34,13 +34,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
-
 /**
  * FXML Controller class
  *
  * @author Ryaan
  */
-public class LoginController implements Initializable {
+public class LoginController extends Controller implements Initializable {
     Stage stage = new Stage();
     Scene scene;
 
@@ -69,40 +68,12 @@ public class LoginController implements Initializable {
     }
     @FXML
     private void login(ActionEvent event) throws SQLException, IOException {
-        // Last solution
-        if (service.getUserByuserName(email.getText()).getRoles().equals("a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}")) {
-            Parent root = FXMLLoader.load(getClass().getResource("/Gui/Backoffice/Backoffice.fxml"));
-            Scene scene = new Scene(root);
-            Node node =(Node)event.getSource();
-            stage = (Stage)node.getScene().getWindow();
-            stage.close();
-
-            stage.setScene(scene);
-            stage.show();
-            stage.setResizable(false);
-            return;
-        }
-        if (!service.getUserByuserName(email.getText()).getRoles().equals("a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}")) {
-            Parent root = FXMLLoader.load(getClass().getResource("/Gui/Acceuil/Acceuil.fxml"));
-            Scene scene = new Scene(root);
-            stage.initStyle(StageStyle.TRANSPARENT);
-            scene.setFill(Color.TRANSPARENT);
-            Node node =(Node)event.getSource();
-            stage = (Stage)node.getScene().getWindow();
-            stage.close();
-
-            stage.setScene(scene);
-            stage.show();
-            stage.setResizable(false);
-            return;
-        }
 
 
         Connection cnx = Connexion.getInstance().getConnection();
         String req = "Select * from user where email=?";
         PreparedStatement prs = cnx.prepareStatement(req);
         prs.setString(1, email.getText());
-
         ResultSet rs = prs.executeQuery();
         if (!rs.next()){
             msg.setText("Username incorrect");
@@ -120,10 +91,22 @@ public class LoginController implements Initializable {
                     user user= new user();
                     user.setId(x);
                     Controller.setUserId(x);
+                    if (service.getUserByuserName(email.getText()).getRoles().equals("a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}")) {
 
+                        Parent root = FXMLLoader.load(getClass().getResource("/Gui/Backoffice/Backoffice.fxml"));
+                        Scene scene = new Scene(root);
+                        Node node =(Node)event.getSource();
+                        stage = (Stage)node.getScene().getWindow();
+                        stage.close();
+
+                        stage.setScene(scene);
+                        stage.show();
+                        stage.setResizable(false);
+                        return;
+                    }
                     URL root_url = null;
                     try {
-                        root_url = new File("src/Gui/User/login.fxml").toURI().toURL();
+                        root_url = new File("src/Gui/Acceuil/Acceuil.fxml").toURI().toURL();
                     } catch (MalformedURLException malformedURLException) {
                         malformedURLException.printStackTrace();
                     }
@@ -134,15 +117,31 @@ public class LoginController implements Initializable {
             System.out.println("Success");
             String req1 = "Select id from user where email=? ";
             PreparedStatement prs1 = cnx.prepareStatement(req1);
-            prs.setString(1, email.getText());
+            prs1.setString(1, email.getText());
             ResultSet res = prs.executeQuery();
             while (res.next()) {
                 x = res.getInt("id");
             }
-            user u = new user();
+            Controller.setUserId(x);
         } else {
             msg.setText("Invalid Password!");
         }
+        }
+        // Last solution
+
+        if (!service.getUserByuserName(email.getText()).getRoles().equals("a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}")) {
+            Parent root = FXMLLoader.load(getClass().getResource("/Gui/Acceuil/Acceuil.fxml"));
+            Scene scene = new Scene(root);
+            stage.initStyle(StageStyle.TRANSPARENT);
+            scene.setFill(Color.TRANSPARENT);
+            Node node =(Node)event.getSource();
+            stage = (Stage)node.getScene().getWindow();
+            stage.close();
+
+            stage.setScene(scene);
+            stage.show();
+            stage.setResizable(false);
+            return;
         }
         }
     }

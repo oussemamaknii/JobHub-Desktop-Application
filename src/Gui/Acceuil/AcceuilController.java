@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -40,10 +41,6 @@ public class AcceuilController implements Initializable {
     @FXML
     private MenuItem userapps;
     @FXML
-    private MenuItem deluserapps;
-    @FXML
-    private MenuItem applytoajob;
-    @FXML
     private Button login;
     @FXML
     private Button signup;
@@ -57,6 +54,12 @@ public class AcceuilController implements Initializable {
     private MenuItem candidatesProfiles;
     @FXML
     private MenuItem companiesProfiles;
+    @FXML
+    private TextField showloggeduser;
+    @FXML
+    private MenuItem stat;
+
+
 
 
     /**
@@ -178,6 +181,16 @@ public class AcceuilController implements Initializable {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/User/login.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+        updateProfile.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/User/updateProfile.fxml").toURI().toURL();
             } catch (MalformedURLException malformedURLException) {
                 malformedURLException.printStackTrace();
             }
