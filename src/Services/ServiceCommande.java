@@ -229,8 +229,6 @@ public class ServiceCommande implements IServiceCommande {
         System.out.println("Montant " + this.getCommande(idCommande).getTotalPayment());
         Paragraph p7 = new Paragraph(" ");
         Paragraph p4 = new Paragraph(" ");
-        Paragraph p5 = new Paragraph(" ");
-        Paragraph p6 = new Paragraph(" ");
         Paragraph p = new Paragraph("Ci-joint votre facture");
         //Paragraph p1 = new Paragraph("Utilisateur: " + user.getUsername());
         Paragraph p1 = new Paragraph("Utilisateur: name ");
@@ -238,13 +236,11 @@ public class ServiceCommande implements IServiceCommande {
         Paragraph p3 = new Paragraph("Email: useremail" );
         Paragraph p2 = new Paragraph("Montant: " + this.getCommande(idCommande).getTotalPayment() + "$ ");
         try {
-            document.add(Image.getInstance("E:\\Etudes\\ESPRIT\\Esprit_3A28\\Semestre 2\\PiDev\\Desktop\\FinalWork\\JobHub-Desktop-Application\\src\\Gui\\Images\\logo.png"));
+            document.add(Image.getInstance("E:\\Etudes\\ESPRIT\\Esprit_3A28\\Semestre 2\\PiDev\\Desktop\\FinalWork\\JobHub-Desktop-Application\\images\\logo.png"));
         } catch (IOException ex) {
             Logger.getLogger(ServiceCommande.class.getName()).log(Level.SEVERE, null, ex);
         }
         document.add(p4);
-        document.add(p5);
-        document.add(p6);
         document.add(p7);
         document.add(p);
         document.add(p1);
@@ -253,18 +249,12 @@ public class ServiceCommande implements IServiceCommande {
         document.add(new Paragraph(" "));
         document.add(new Paragraph(" "));
         PdfPTable table = new PdfPTable(6);
-        PdfPCell c1 = new PdfPCell(new Phrase("Produit"));
-        table.addCell(c1);
-        c1 = new PdfPCell(new Phrase("Prix"));
-        table.addCell(c1);
-        c1 = new PdfPCell(new Phrase("Etat"));
-        table.addCell(c1);
-        c1 = new PdfPCell(new Phrase("Date"));
-        table.addCell(c1);
-        c1 = new PdfPCell(new Phrase("Quantite"));
-        table.addCell(c1);
-        c1 = new PdfPCell(new Phrase("Adresse"));
-        table.addCell(c1);
+        table.addCell("Produit");
+        table.addCell("Prix");
+        table.addCell("Etat");
+        table.addCell("Date");
+        table.addCell("Quantité");
+        table.addCell("Adresse");
         table.setHeaderRows(1);
 
         for (Cart panier : paniers) {

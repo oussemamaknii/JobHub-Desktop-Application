@@ -23,254 +23,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/TrayTester.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jakarta_xml_bind_api_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Commande/Payment.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Commande/PaymentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/openidconnect/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/openidconnect/CreateFromAuthorizationCodeParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/openidconnect/CreateFromRefreshTokenParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/openidconnect/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/openidconnect/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/openidconnect/Tokeninfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/openidconnect/Userinfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/openidconnect/UserinfoParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Agreement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/AgreementDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/AgreementStateDescriptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/AgreementTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/AgreementTransactions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/AlternatePayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Amount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Authorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/BankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/BankToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/BaseAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Billing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/BillingAgreementToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/BillingInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CancelNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Capture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Card3dSecureInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CarrierAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CarrierAccountToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CartBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/ChargeModels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Cost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CountryCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CreateProfileResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Credit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CreditCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CreditCardHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CreditCardToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CreditFinancingOffered.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CurrencyConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/CustomAmount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/DefinitionsLinkdescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/DetailedRefund.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Details.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/ErrorDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/EventList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/EventType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/EventTypeList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/ExtendedBankAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/ExternalFunding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/FileAttachment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/FlowConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/FmfDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/FundingDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/FundingInstrument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/FundingOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/FundingSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/FuturePayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/HyperSchema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Incentive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InputFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InstallmentInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InstallmentOption.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Invoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InvoiceAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InvoiceItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InvoiceNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Invoices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InvoicingMetaData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InvoicingNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InvoicingPaymentDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InvoicingRefundDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/InvoicingSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/ItemList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Links.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Measurement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/MerchantInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/MerchantPreferences.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Metadata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/NameValuePair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/OverrideChargeModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Participant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Patch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PatchRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Payee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Payer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PayerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PayerNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PaymentCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PaymentCardToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PaymentDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PaymentDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PaymentExecution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PaymentHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PaymentInstruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PaymentOptions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PaymentSummary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PaymentTerm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Payout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PayoutBatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PayoutBatchHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PayoutItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PayoutItemDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PayoutSenderBatchHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Percentage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Plan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PlanList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PotentialPayerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Presentation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/PrivateLabelCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/ProcessorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/RecipientBankingInstruction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/RedirectUrls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Refund.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/RefundDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/RefundRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/RelatedResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Sale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/ShippingAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/ShippingCost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/ShippingInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Tax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Template.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/TemplateData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/TemplateSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/TemplateSettingsMetadata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Templates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Terms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/TransactionBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Transactions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/WebProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/WebProfileList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/Webhook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/api/payments/WebhookList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/APICallPreHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/APICallPreHandlerFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/ClientCredentials.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/ConfigManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/DefaultHttpConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/GoogleAppEngineHttpConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/HttpConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/HttpConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/HttpStatusCodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/NVPUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/ReflectionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/SDKUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/SDKVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/SSLUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/codec/BinaryDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/codec/BinaryEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/codec/CharEncoding.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/codec/Decoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/codec/DecoderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/codec/Encoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/codec/EncoderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/codec/binary/Base64.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/codec/binary/BaseNCodec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/codec/binary/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/credential/TokenAuthorization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/exception/BaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/exception/ClientActionRequiredException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/exception/HttpErrorException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/exception/InvalidCredentialException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/exception/InvalidResponseDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/exception/MissingCredentialException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/exception/OAuthException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/exception/PayPalException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/exception/SSLConfigurationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/APIContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/AccessToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/HttpMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/JSONFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/OAuthTokenCredential.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/PayPalModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/PayPalRESTException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/PayPalResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/QueryParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/RESTAPICallPreHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/rest/RESTUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/sdk/info/SDKVersionImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/util/PayPalURLEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/util/ResourceLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/paypal/base/util/UserAgentHeader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Connector_J_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Paiement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Paiement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/SendEmail$SMTPAuthenticator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/SendEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/SendEmail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Facture.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Facture.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingle.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddCart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddCart.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddCartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Card.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Card.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Payment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PaymentController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ProductSingle.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/myBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/myBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Mail$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Mail$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Mail.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Utils/Mail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Paiement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Paiement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/SendEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/SendEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Facture.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/Facture.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/PanierController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/PanierController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/ProductSingle.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/ProductSingleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddCart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddCart.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Card.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Card.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/Payment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/PaymentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/MyBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/MyBookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ProductSingle.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Shop.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/myBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/myBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ServiceCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ServiceCommande.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utils/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +79,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/Gui/Produit" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Librairies/javax.mail.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.27085203" />
@@ -418,26 +185,26 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="611" y="345" key="DetectedRootsChooserDialog/0.0.1600.900@0.0.1600.900" timestamp="1619280184604" />
-    <state x="848" y="143" key="FileChooserDialogImpl" timestamp="1619368610268">
+    <state x="848" y="143" key="FileChooserDialogImpl" timestamp="1619444250400">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="848" y="143" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1619368610268" />
-    <state width="1540" height="177" key="GridCell.Tab.0.bottom" timestamp="1619371101826">
+    <state x="848" y="143" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1619444250400" />
+    <state width="1540" height="100" key="GridCell.Tab.0.bottom" timestamp="1619450146949">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="177" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619371101826" />
-    <state width="1540" height="177" key="GridCell.Tab.0.center" timestamp="1619371101826">
+    <state width="1540" height="100" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619450146949" />
+    <state width="1540" height="100" key="GridCell.Tab.0.center" timestamp="1619450146949">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="177" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619371101826" />
-    <state width="1540" height="177" key="GridCell.Tab.0.left" timestamp="1619371101826">
+    <state width="1540" height="100" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619450146949" />
+    <state width="1540" height="100" key="GridCell.Tab.0.left" timestamp="1619450146949">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="177" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619371101826" />
-    <state width="1540" height="177" key="GridCell.Tab.0.right" timestamp="1619371101826">
+    <state width="1540" height="100" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619450146949" />
+    <state width="1540" height="100" key="GridCell.Tab.0.right" timestamp="1619450146949">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="177" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619371101826" />
+    <state width="1540" height="100" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619450146949" />
     <state x="91" y="61" width="923" height="808" key="SettingsEditor" timestamp="1619368616423">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -462,6 +229,10 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="442" y="221" key="run.anything.popup/0.0.1600.900@0.0.1600.900" timestamp="1619288226979" />
+    <state x="465" y="221" key="search.everywhere.popup" timestamp="1619371132650">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="465" y="221" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1619371132650" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

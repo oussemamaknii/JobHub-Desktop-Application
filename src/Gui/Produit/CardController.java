@@ -137,15 +137,15 @@ public class CardController implements Initializable {
         Date date = Calendar.getInstance().getTime();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         String dateCommande = dateFormat.format(date);
-
+/*
         Commande commande = new Commande(Total,false,dateCommande,1);
-        /*Notifications notificationBuilder2 = Notifications.create()
+        Notifications notificationBuilder2 = Notifications.create()
                 .title("Confrimation Commande")
                 .text("Commande ajoutée avec succès")
                 .graphic(null)
                 .hideAfter(Duration.seconds(5))
                 .position(Pos.BOTTOM_RIGHT);
-        notificationBuilder2.showConfirm();*/
+        notificationBuilder2.showConfirm();
         serviceCommande.create(commande);
         try {
             serviceCommande.historique(serviceCommande.getLastCommande(),panier);
@@ -156,12 +156,12 @@ public class CardController implements Initializable {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        /*
+
         try {
             Mail.sendMail("tpkdmta@gmail.com");
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
+        }
         ServicePanier servicePanier = new ServicePanier();
         for (Cart p : panier){
             try {
@@ -170,14 +170,15 @@ public class CardController implements Initializable {
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
-        }
+        }*/
+
         Alert dg = new Alert(Alert.AlertType.CONFIRMATION);
         dg.setTitle("ConfrimationDialogbox");
         dg.setContentText("Paiement Paypal");
         dg.setHeaderText("Effectuer le paiement");
         dg.showAndWait().ifPresent(response -> {
                     if (response == ButtonType.OK) {
-                        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Commande/Payment.fxml"));
+                       /* FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Commande/Payment.fxml"));
                         Parent fxml;
                         try {
                             fxml = Loader.load();
@@ -188,7 +189,20 @@ public class CardController implements Initializable {
                             centerContent.getChildren().setAll(fxml);
                         } catch (IOException ex) {
                             System.out.println(ex.getMessage());
+                        }*/
+                        FXMLLoader loader = new FXMLLoader ();
+                        loader.setLocation(getClass().getResource("/Gui/Commande/Payment.fxml"));
+                        try {
+                            loader.load();
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
                         }
+                        Parent parent = loader.getRoot();
+                        PaymentController payController = loader.getController();
+                        payController.redirection(centerContent, panier, Total, serviceCommande.getLastCommande());
+                        centerContent.getChildren().removeAll();
+                        new FadeInDown(parent).play();
+                        centerContent.getChildren().setAll(parent);
 
                     }
                 }

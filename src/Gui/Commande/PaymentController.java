@@ -240,6 +240,7 @@ public class PaymentController implements Initializable {
                         if (link.getRel().equalsIgnoreCase("approval_url")) {
                             paypalRedirectLink = link.getHref();
                             WebEngine engine = webview.getEngine();
+                            System.out.println("là");
                             engine.executeScript("window.location=\"" + paypalRedirectLink + "\";");
                             webview.setVisible(true);
                             new FadeInDown(webview).play();
