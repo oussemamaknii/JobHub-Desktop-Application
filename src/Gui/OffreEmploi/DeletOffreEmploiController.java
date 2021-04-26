@@ -7,17 +7,25 @@ package Gui.OffreEmploi;
 
 import Entities.Offre_Emploi;
 import Services.Offre_Emploi_Service;
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXDialog;
+import com.jfoenix.controls.JFXDialogLayout;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.effect.BoxBlur;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicReference;
-import javafx.scene.layout.StackPane;
 
 /**
  * FXML Controller class
@@ -42,6 +50,8 @@ public class DeletOffreEmploiController implements Initializable {
     private TextField search;
     @FXML
     private StackPane effect;
+    @FXML
+    private Pane pane;
 
     /**
      * Initializes the controller class.
@@ -69,6 +79,25 @@ public class DeletOffreEmploiController implements Initializable {
                         showOffres();
                     }
                 });
+            }else {
+                effect.setDisable(false);
+                BoxBlur blur = new BoxBlur(3,3,3);
+                JFXDialogLayout content = new JFXDialogLayout();
+                content.setHeading(new Text("Error"));
+                content.setBody(new Text("Select A Job So You Can Delete \n The Job !!"));
+                JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+                JFXButton btn = new JFXButton("Done !");
+                btn.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                        fialog.close();
+                        pane.setEffect(null);
+                        effect.setDisable(true);
+                    }
+                });
+                content.setActions(btn);
+                pane.setEffect(blur);
+                fialog.show();
             }
         });
     }

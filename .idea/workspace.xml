@@ -3,31 +3,8 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:mintoua" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
-  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/bin.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_101.xml" afterDir="false" />
@@ -163,29 +140,49 @@
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain$2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" />
+=======
+    <list default="true" id="5f4d4204-6496-447a-9e48-ce02dd7edbfe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Gui/Demande/DemandeCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Demande/DemandeListCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemande.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemande.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/StatController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/StatController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/StatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/StatController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Demande_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Demande_Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Demande_Recrutement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Demande_Recrutement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemande.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Demande/AddDemande.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Demande_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Demande_Service.java" afterDir="false" />
+>>>>>>> master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
+        <option value="package-info" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1qwDCNEP7Lcz5O0JQ2SHpLTMkFZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1rRkOCZa99RN6xUlIpN6Pvv3DjM" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -193,89 +190,53 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="C:/javafx-sdk-16/lib" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.21717791" />
     <property name="project.structure.side.proportion" value="0.32958803" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="build.tools" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../javafx-sdk-16/legal" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.13927579" />
+    <property name="project.structure.side.proportion" value="0.35765123" />
+>>>>>>> master
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\StylSheet" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\images" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\res" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\OffreEmploi" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\res" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Produit" />
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Commande" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Demande" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="FXMain" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Java/jdk-16" />
-      <option name="MAIN_CLASS_NAME" value="jobhub_app.FXMain" />
-      <module name="JobHub_App" />
-      <option name="VM_PARAMETERS" value="--module-path C:\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jobhub_app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="" />
-      <created>1617981630771</created>
+      <changelist id="5f4d4204-6496-447a-9e48-ce02dd7edbfe" name="Default Changelist" comment="" />
+      <created>1618941488543</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1617981630771</updated>
+      <updated>1618941488543</updated>
     </task>
     <servers />
-  </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="mintoua" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="WindowStateProjectService">
     <state x="559" y="216" key="FileChooserDialogImpl" timestamp="1618878929431">
       <screen x="0" y="0" width="1600" height="900" />
@@ -316,4 +277,6 @@
     <expand />
     <select />
   </component>
+=======
+>>>>>>> master
 </project>

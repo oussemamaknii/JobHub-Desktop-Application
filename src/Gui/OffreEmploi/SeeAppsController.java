@@ -9,16 +9,25 @@ import Entities.Demande_Recrutement;
 import Entities.Offre_Emploi;
 import Services.Demande_Service;
 import Services.Offre_Emploi_Service;
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXDialog;
+import com.jfoenix.controls.JFXDialogLayout;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.effect.BoxBlur;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
+import javafx.scene.text.Text;
 
 import java.net.URL;
-import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 /**
@@ -28,20 +37,6 @@ import java.util.ResourceBundle;
  */
 public class SeeAppsController implements Initializable {
 
-    @FXML
-    private TableColumn<Offre_Emploi, String> coltitre;
-    @FXML
-    private TableColumn<Offre_Emploi, String> colposte;
-    @FXML
-    private TableColumn<Offre_Emploi, String> coldesc;
-    @FXML
-    private TableColumn<Offre_Emploi, String> colloc;
-    @FXML
-    private TableColumn<Offre_Emploi, String> colemail;
-    @FXML
-    private TableColumn<Offre_Emploi, LocalDate> colexp;
-    @FXML
-    private TableView<Offre_Emploi> table;
     @FXML
     private TableView<Demande_Recrutement> table2;
     @FXML
@@ -55,15 +50,17 @@ public class SeeAppsController implements Initializable {
     @FXML
     private TableColumn<?, ?> enddate;
     @FXML
-    private TableColumn<?, ?> startdated;
-    @FXML
-    private TableColumn<?, ?> categ;
-    @FXML
     private Button seeapp;
     @FXML
     private Button treatapp;
     @FXML
     private Button displayoff;
+    @FXML
+    private ListView<Offre_Emploi> table;
+    @FXML
+    private StackPane effect;
+    @FXML
+    private Pane pane;
 
     /**
      * Initializes the controller class.
@@ -80,24 +77,53 @@ public class SeeAppsController implements Initializable {
                 showapps(offre.getId());
                 table.setVisible(false);
                 table2.setVisible(true);
+            }else {
+                effect.setDisable(false);
+                BoxBlur blur = new BoxBlur(3,3,3);
+                JFXDialogLayout content = new JFXDialogLayout();
+                content.setHeading(new Text("Error"));
+                content.setBody(new Text("Select A Job So You Can See \n Your Job Applications"));
+                JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+                JFXButton btn = new JFXButton("Done !");
+                btn.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                        fialog.close();
+                        pane.setEffect(null);
+                        effect.setDisable(true);
+                    }
+                });
+                content.setActions(btn);
+                pane.setEffect(blur);
+                fialog.show();
             }
         });
 
         treatapp.setOnAction(e->{
-            table.setVisible(false);
-            table2.setVisible(true);
             Demande_Recrutement demande = table2.getSelectionModel().getSelectedItem();
             if (demande != null) {
+                table.setVisible(false);
+                table2.setVisible(true);
                 new Demande_Service().upstat(String.valueOf(demande.getId()));
-            }
-        });
-
-        treatapp.setOnAction(e->{
-            table.setVisible(false);
-            table2.setVisible(true);
-            Demande_Recrutement demande = table2.getSelectionModel().getSelectedItem();
-            if (demande != null) {
-                new Demande_Service().upstat(String.valueOf(demande.getId()));
+            }else {
+                effect.setDisable(false);
+                BoxBlur blur = new BoxBlur(3,3,3);
+                JFXDialogLayout content = new JFXDialogLayout();
+                content.setHeading(new Text("Error"));
+                content.setBody(new Text("Select A Job Application So You Can Treat \n The Job Applications"));
+                JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+                JFXButton btn = new JFXButton("Done !");
+                btn.setOnAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                        fialog.close();
+                        pane.setEffect(null);
+                        effect.setDisable(true);
+                    }
+                });
+                content.setActions(btn);
+                pane.setEffect(blur);
+                fialog.show();
             }
         });
 
@@ -110,15 +136,8 @@ public class SeeAppsController implements Initializable {
 
     public void showOffres() {
         ObservableList<Offre_Emploi> offres = new Offre_Emploi_Service().getAll(1);
-        coltitre.setCellValueFactory(new PropertyValueFactory<>("titre"));
-        colposte.setCellValueFactory(new PropertyValueFactory<>("poste"));
-        coldesc.setCellValueFactory(new PropertyValueFactory<>("description"));
-        colloc.setCellValueFactory(new PropertyValueFactory<>("location"));
-        colemail.setCellValueFactory(new PropertyValueFactory<>("email"));
-        colexp.setCellValueFactory(new PropertyValueFactory<>("date_expiration"));
-        startdated.setCellValueFactory(new PropertyValueFactory<>("date_debut"));
-        categ.setCellValueFactory(new PropertyValueFactory<>("catname"));
         table.setItems(offres);
+        table.setCellFactory(studentListView -> new OffreCell());
     }
 
     public void showapps(int id) {
