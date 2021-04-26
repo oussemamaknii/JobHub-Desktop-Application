@@ -27,6 +27,7 @@
     </orderEntry>
     <orderEntry type="library" exported="" name="Connector J 8" level="project" />
     <orderEntry type="library" exported="" name="map" level="project" />
-    <orderEntry type="library" name="commons-lang3-3.12.0-javadoc" level="project" />
+    <orderEntry type="library" exported="" name="commons-lang3-3.12.0-javadoc" level="project" />
+    <orderEntry type="library" exported="" name="PDFjet" level="project" />
   </component>
 </module>

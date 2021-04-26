@@ -1,17 +1,29 @@
 package Gui.OffreEmploi;
 
 import Entities.Offre_Emploi;
+import com.pdfjet.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
 
-public class OffreCell extends ListCell<Offre_Emploi> {
+public class OffreCell extends ListCell<Offre_Emploi> implements Initializable {
 
 
     @FXML
@@ -44,6 +56,8 @@ public class OffreCell extends ListCell<Offre_Emploi> {
     private ImageView lo;
     @FXML
     private ImageView em;
+    @FXML
+    private Button pdf;
 
     private FXMLLoader mLLoader;
 
@@ -51,7 +65,7 @@ public class OffreCell extends ListCell<Offre_Emploi> {
     protected void updateItem(Offre_Emploi student, boolean empty) {
         super.updateItem(student, empty);
 
-        if(empty || student == null) {
+        if (empty || student == null) {
 
             setText(null);
             setGraphic(null);
@@ -86,6 +100,91 @@ public class OffreCell extends ListCell<Offre_Emploi> {
             setText(null);
             setGraphic(OffreCell);
         }
-}}
+
+
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        pdf.setOnAction(e->{
+            FileChooser fc =new FileChooser();
+            fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("PDF File","*.pdf"));
+            fc.setTitle("Save to PDF");
+            fc.setInitialFileName("untitled.pdf");
+            File f = fc.showSaveDialog(new Stage());
+            if (f != null) {
+                String str = f.getAbsolutePath();
+                FileOutputStream fos = null;
+                try {
+                    fos = new FileOutputStream(str);
+                } catch (FileNotFoundException fileNotFoundException) {
+                    fileNotFoundException.printStackTrace();
+                }
+                try {
+                    PDF pdf = new PDF(fos);
+                    Page page = new Page(pdf, A4.PORTRAIT);
+                    Table table = new Table();
+                    List<List<Cell>> tabledate =new ArrayList<>();
+                    List<Cell> tablerow = new ArrayList<>();
+                    Font f2 = new Font(pdf,CoreFont.HELVETICA_BOLD);
+                    Font f1 = new Font(pdf,CoreFont.HELVETICA);
+                    Cell cell =new Cell(f2,"titre");
+                    tablerow.add(cell);
+                    Cell cell1 =new Cell(f2,"poste");
+                    tablerow.add(cell1);
+                    Cell cell2 =new Cell(f2,"description");
+                    tablerow.add(cell2);
+                    Cell cell3 =new Cell(f2,"location");
+                    tablerow.add(cell3);
+                    Cell cell4 =new Cell(f2,"email");
+                    tablerow.add(cell4);
+                    Cell cell5 =new Cell(f2,"category");
+                    tablerow.add(cell5);
+                    Cell cell6 =new Cell(f2,"max salary");
+                    tablerow.add(cell6);
+                    Cell cell7 =new Cell(f2,"min salary");
+                    tablerow.add(cell7);
+                    tabledate.add(tablerow);
+                    List<Cell> tablerow1 = new ArrayList<>();
+                    Cell cel =new Cell(f2,titre.getText());
+                    tablerow.add(cel);
+                    Cell cel1 =new Cell(f2,poste.getText());
+                    tablerow.add(cel1);
+                    Cell cel2 =new Cell(f2,desc.getText());
+                    tablerow.add(cel2);
+                    Cell cel3 =new Cell(f2,location.getText());
+                    tablerow.add(cel3);
+                    Cell cel4 =new Cell(f2,email.getText());
+                    tablerow.add(cel4);
+                    Cell cel5 =new Cell(f2,categ.getText());
+                    tablerow.add(cel5);
+                    Cell cel6 =new Cell(f2,maxsal.getText());
+                    tablerow.add(cel6);
+                    Cell cel7 =new Cell(f2,minsal.getText());
+                    tablerow1.add(cel7);
+                    tabledate.add(tablerow1);
+                    table.setData(tabledate);
+                    while (true){
+                        table.drawOn(page);
+                        if (!table.hasMoreData()){
+                            table.resetRenderedPagesCount();
+                            break;
+                        }
+                        page = new Page(pdf,A4.PORTRAIT);
+                    }
+                } catch (Exception exception) {
+                    exception.printStackTrace();
+                }
+                try {
+                    pdf.fire();
+                    fos.close();
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+
+            }
+        });
+    }
+}
 
 
