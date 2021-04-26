@@ -41,8 +41,27 @@ public class Register extends Controller implements IServiceRegister {
         }
     }
     @Override
-    public void updateprofile(user User) {
+    public void updateprofile(user u) {
         String request1 = "UPDATE user SET first_name=?,last_name=?,date_of_birth=?,email=? password=?,adresse=?,phone=?,professional_title=? where id=?";
+        try {
+            PreparedStatement pst = cnx.prepareStatement(request1);
+            pst.setString(1, u.getFirstName());
+            pst.setString(2, u.getLastName());
+            pst.setString(3, u.getEmail());
+            pst.setString(4, u.getAdresse());
+            pst.setDate(5, Date.valueOf(u.getDateOfBirth()));
+            pst.setInt(6, u.getPhone());
+            String pwd = BCrypt.hashpw(u.getPassword(),BCrypt.gensalt(13));
+            pst.setString(7, pwd.substring(0,2)+"y"+pwd.substring(3));
+            pst.setString(8,u.getProfessionalTitle());
+
+            pst.executeUpdate();
+            System.out.println("Your account has been created");
+
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
     @Override
     public ObservableList<user> showUsers() {

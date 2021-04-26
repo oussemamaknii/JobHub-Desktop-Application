@@ -2,7 +2,6 @@
   <library name="activation">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/src/Librairies/activation.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/Librairies/fontawesomefx-8.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/Librairies/controlsfx-8.40.11.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/Librairies/itextpdf-5.4.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/Librairies/log4j-1.2.17.jar!/" />

@@ -15,6 +15,10 @@ public class candidateResume {
         this.experience = experience;
     }
 
+    public candidateResume(int id, int user_id, String resume_headline, String skills, String experience) {
+
+    }
+
     public candidateResume() {
 
     }

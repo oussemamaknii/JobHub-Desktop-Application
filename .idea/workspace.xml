@@ -5,36 +5,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f4d4204-6496-447a-9e48-ce02dd7edbfe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Gui/Demande/DemandeCell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Demande/DemandeListCell.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_8_40_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_8_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/google_maps_services_0_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/google_places_api_java_2_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/twilio_8_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/commons-codec-1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/commons-io-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/commons-logging-1.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/google-maps-services-0.18.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/google-places-api-java-2.1.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/grpc-context-1.25.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/gson-2.8.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/httpclient-4.3.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/httpcore-4.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/json-20140107.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/junit-4.11.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/mapsservice.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/okhttp-3.14.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/okio-1.17.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/opencensus-api-0.25.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/places.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deps/slf4j-api-1.7.26.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/User/forgotPassword.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/activation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/activation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_fontawesome_4_7_0_9_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_glyphsbrowser_all_1_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemande.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemande.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/StatController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/StatController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/StatController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/StatController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Demande_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Demande_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Demande_Recrutement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Demande_Recrutement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemande.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Demande/AddDemande.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Demande_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Demande_Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/candidateResume.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/candidateResume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Acceuil/AcceuilController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/User/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/User/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/User/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/User/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/User/updateProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/User/updateProfileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/LoginData.ini" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/LoginData.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/enddat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobapp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/strtdat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/unactive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/candidateResume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/candidateResume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/user.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/updateProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/updateProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginData.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginData.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Register.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Gui/Acceuil/FXloader.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Entities/user.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gui/User/RegisterController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Gui/User/register.fxml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Interfaces/IService.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/jobhub_app/FXMain.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Services/Register.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -43,8 +98,11 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1rRkOCZa99RN6xUlIpN6Pvv3DjM" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -56,12 +114,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../javafx-sdk-16/legal" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deps/twilio-8.11.0.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.35765123" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Utils" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Demande" />
     </key>
@@ -88,5 +150,18 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JobHub_Desktop_Application$FXMain.ic" NAME="FXMain Coverage Results" MODIFIED="1619391673516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

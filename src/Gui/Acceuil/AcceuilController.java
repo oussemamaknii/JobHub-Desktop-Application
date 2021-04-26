@@ -5,6 +5,7 @@
  */
 package Gui.Acceuil;
 
+import Services.LoginService;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -55,9 +56,10 @@ public class AcceuilController implements Initializable {
     @FXML
     private MenuItem companiesProfiles;
     @FXML
-    private TextField showloggeduser;
-    @FXML
     private MenuItem stat;
+    LoginService service = new LoginService();
+    @FXML
+    private Button forgotPass;
 
 
 
@@ -191,6 +193,16 @@ public class AcceuilController implements Initializable {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/User/updateProfile.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+        forgotPass.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/User/forgotPassword.fxml").toURI().toURL();
             } catch (MalformedURLException malformedURLException) {
                 malformedURLException.printStackTrace();
             }

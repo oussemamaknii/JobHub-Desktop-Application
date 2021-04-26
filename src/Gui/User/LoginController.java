@@ -57,93 +57,79 @@ public class LoginController extends Controller implements Initializable {
     private CheckBox remember;
     @FXML
     private Button login;
+    @FXML
+    private Button forgotPass;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        LoginService.readinifile(path, email, pw,remember);
+        LoginService.readinifile(path, email, pw, remember);
 
     }
     @FXML
     private void login(ActionEvent event) throws SQLException, IOException {
-
-
         Connection cnx = Connexion.getInstance().getConnection();
         String req = "Select * from user where email=?";
         PreparedStatement prs = cnx.prepareStatement(req);
         prs.setString(1, email.getText());
         ResultSet rs = prs.executeQuery();
-        if (!rs.next()){
+        if (!rs.next()) {
             msg.setText("Username incorrect");
-        }
-        else{
-        if (BCrypt.checkpw(pw.getText(), rs.getString("password").substring(0, 2) + "a" + rs.getString("password").substring(3))) {
-                if (!remember.isSelected()){
-                    String req1= "Select id from user where email=? ";
-                    PreparedStatement prs1= cnx.prepareStatement(req1);
+        } else {
+            if (BCrypt.checkpw(pw.getText(), rs.getString("password").substring(0, 2) + "a" + rs.getString("password").substring(3))) {
+                if (!remember.isSelected()) {
+                    String req1 = "Select id from user where email=? ";
+                    PreparedStatement prs1 = cnx.prepareStatement(req1);
                     prs.setString(1, email.getText());
-                    ResultSet res= prs.executeQuery();
-                    while (res.next()){
-                        x= res.getInt("id");
+                    ResultSet res = prs.executeQuery();
+                    while (res.next()) {
+                        x = res.getInt("id");
                     }
-                    user user= new user();
+                    user user = new user();
                     user.setId(x);
                     Controller.setUserId(x);
                     if (service.getUserByuserName(email.getText()).getRoles().equals("a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}")) {
 
                         Parent root = FXMLLoader.load(getClass().getResource("/Gui/Backoffice/Backoffice.fxml"));
                         Scene scene = new Scene(root);
-                        Node node =(Node)event.getSource();
-                        stage = (Stage)node.getScene().getWindow();
+                        Node node = (Node) event.getSource();
+                        stage = (Stage) node.getScene().getWindow();
                         stage.close();
 
                         stage.setScene(scene);
                         stage.show();
                         stage.setResizable(false);
                         return;
+                    } else {
+                        Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Acceuil/Acceuil.fxml"));
+                        Scene scene = new Scene(parent);
+                        Node node = (Node) event.getSource();
+                        stage = (Stage) node.getScene().getWindow();
+                        stage.close();
+                        stage.setScene(scene);
+                        stage.show();
+                        stage.setResizable(false);
                     }
-                    URL root_url = null;
-                    try {
-                        root_url = new File("src/Gui/Acceuil/Acceuil.fxml").toURI().toURL();
-                    } catch (MalformedURLException malformedURLException) {
-                        malformedURLException.printStackTrace();
+                    service.createiniFile(path, email.getText(), pw.getText());
+                    System.out.println("Success");
+                    String req2 = "Select id from user where email=? ";
+                    PreparedStatement prs2 = cnx.prepareStatement(req2);
+                    prs1.setString(1, email.getText());
+                    ResultSet res1 = prs.executeQuery();
+                    while (res1.next()) {
+                        x = res1.getInt("id");
                     }
-                    Pane view = new FXloader().getPane(root_url);
-                    mainpane.setCenter(view);
+                    Controller.setUserId(x);
+
+                } else {
+                    msg.setText("Invalid Password!");
                 }
-            service.createiniFile(path, email.getText(), pw.getText());
-            System.out.println("Success");
-            String req1 = "Select id from user where email=? ";
-            PreparedStatement prs1 = cnx.prepareStatement(req1);
-            prs1.setString(1, email.getText());
-            ResultSet res = prs.executeQuery();
-            while (res.next()) {
-                x = res.getInt("id");
             }
-            Controller.setUserId(x);
-        } else {
-            msg.setText("Invalid Password!");
-        }
-        }
-        // Last solution
 
-        if (!service.getUserByuserName(email.getText()).getRoles().equals("a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}")) {
-            Parent root = FXMLLoader.load(getClass().getResource("/Gui/Acceuil/Acceuil.fxml"));
-            Scene scene = new Scene(root);
-            stage.initStyle(StageStyle.TRANSPARENT);
-            scene.setFill(Color.TRANSPARENT);
-            Node node =(Node)event.getSource();
-            stage = (Stage)node.getScene().getWindow();
-            stage.close();
-
-            stage.setScene(scene);
-            stage.show();
-            stage.setResizable(false);
-            return;
-        }
         }
     }
+}
 
 

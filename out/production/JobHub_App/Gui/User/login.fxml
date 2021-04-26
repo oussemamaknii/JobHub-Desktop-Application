@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="496.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.User.LoginController">
    <children>
       <Pane layoutY="-3.0" prefHeight="496.0" prefWidth="724.0" stylesheets="@../StylSheet/Style.css">
@@ -37,7 +36,12 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <CheckBox fx:id="remember" layoutX="337.0" layoutY="287.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="116.0" text="Rembember me" />
+            <CheckBox fx:id="remember" layoutX="335.0" layoutY="307.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="116.0" text="Rembember me" />
+            <Button fx:id="forgotPass" layoutX="300.0" layoutY="254.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="147.0" text="Forgot Password?">
+               <font>
+                  <Font size="6.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

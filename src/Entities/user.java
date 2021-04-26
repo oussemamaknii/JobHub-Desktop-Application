@@ -35,13 +35,34 @@ public user (String email, String password, String firstName, String lastName, L
 
     }
 
-    public user(int id, String email, String password, int isActive, String roles) {
+    public user(int id, String email, String password, int isActive, String roles,String firstName,String lastName, int phone,
+                String professionalTitle, String adresse, String imageName, LocalDate dateOfBirth) {
     this.id = id;
     this.email = email;
     this.password = password;
     this.isActive = isActive;
     this.roles = roles;
+    this.firstName=firstName;
+    this.lastName=lastName;
+    this.phone=phone;
+    this.professionalTitle=professionalTitle;
+    this.adresse=adresse;
+    this.imageName=imageName;
+    this.dateOfBirth=dateOfBirth;
     }
+
+    public user(String email, String password, String firstName, String lastName, LocalDate dateOfBirth, String adresse, int phone, String professionalTitle) {
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.adresse = adresse;
+        this.phone = phone;
+        this.professionalTitle = professionalTitle;
+
+    }
+
 
 
     public int getId() {
