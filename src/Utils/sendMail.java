@@ -28,8 +28,6 @@ public class sendMail {
                         return new PasswordAuthentication(from,password);
                     }
                 });
-
-
         try {
             // Create a default MimeMessage object.
             MimeMessage message = new MimeMessage(session);
