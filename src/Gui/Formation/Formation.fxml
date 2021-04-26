@@ -33,75 +33,62 @@
 -->
 
 <?import javafx.scene.control.Button?>
-
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Formation.FormationController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="902.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Formation.FormationController">
     <children>
-        <Pane fx:id="pane" layoutX="7.0" layoutY="12.0" prefHeight="394.0" prefWidth="647.0" stylesheets="@../StylSheet/Style.css">
+        <Pane fx:id="pane" prefHeight="515.0" prefWidth="902.0" stylesheets="@../StylSheet/Style.css">
             <children>
-                <TextField fx:id="tfnom" layoutX="96.0" layoutY="155.0" prefHeight="26.0" prefWidth="198.0" promptText="nom" />
-                <TextField fx:id="tfformateur" layoutX="96.0" layoutY="227.0" prefHeight="26.0" prefWidth="198.0" promptText="formateur" />
-                <TextField fx:id="tfdesc" layoutX="96.0" layoutY="191.0" prefHeight="26.0" prefWidth="198.0" promptText="description" />
-                <TextField fx:id="tfadresse" layoutX="96.0" layoutY="265.0" prefHeight="37.0" prefWidth="118.0" promptText="adresse" />
-                <TextField fx:id="tfmail" layoutX="434.0" layoutY="117.0" prefHeight="26.0" prefWidth="212.0" promptText="mail" />
-                <TextField fx:id="tftel" layoutX="434.0" layoutY="153.0" prefHeight="26.0" prefWidth="178.0" promptText="tel" />
-                <TextField fx:id="tfprix" layoutX="434.0" layoutY="153.0" prefHeight="26.0" prefWidth="178.0" promptText="prix" />
-                <DatePicker fx:id="tfdatedeb" layoutX="96.0" layoutY="118.0" prefHeight="26.0" prefWidth="198.0" promptText="date_debut" />
-                <DatePicker fx:id="tfdatef" layoutX="434.0" layoutY="223.0" prefHeight="26.0" prefWidth="212.0" promptText="date_fin" />
-                <Label layoutY="122.0" prefHeight="18.0" prefWidth="80.0" text="Date debut" textFill="#061a40">
-                    <font>
-                        <Font name="System Bold" size="13.0" />
-                    </font></Label>
-                <Label layoutY="122.0" prefHeight="18.0" prefWidth="80.0" text="Nom" textFill="#061a40">
-                    <font>
-                        <Font name="System Bold" size="13.0" />
-                    </font></Label>
-
-                <Label layoutY="195.0" prefHeight="18.0" prefWidth="71.0" text="Formateur" textFill="#061a40">
-                    <font>
-                        <Font name="System Bold" size="13.0" />
-                    </font></Label>
-                <Label layoutY="231.0" prefHeight="18.0" prefWidth="71.0" text="Description" textFill="#061a40">
-                    <font>
-                        <Font name="System Bold" size="13.0" />
-                    </font></Label>
-                <Label layoutY="271.0" prefHeight="18.0" prefWidth="71.0" text="Adresse" textFill="#061a40">
-                    <font>
-                        <Font name="System Bold" size="13.0" />
-                    </font></Label>
-                <Label layoutX="340.0" layoutY="119.0" prefHeight="18.0" prefWidth="58.0" text="E-mail" textFill="#061a40">
-                    <font>
-                        <Font name="System Bold" size="13.0" />
-                    </font></Label>
-                <Label layoutX="340.0" layoutY="155.0" prefHeight="18.0" prefWidth="71.0" text="Tel" textFill="#061a40">
-                    <font>
-                        <Font name="System Bold" size="13.0" />
-                    </font></Label>
-                <Label layoutX="340.0" layoutY="191.0" prefHeight="18.0" prefWidth="71.0" text="Prix" textFill="#061a40">
-                    <font>
-                        <Font name="System Bold" size="13.0" />
-                    </font></Label>
-                <Label layoutX="340.0" layoutY="227.0" prefHeight="18.0" prefWidth="90.0" text="Date debut" textFill="#061a40">
-                    <font>
-                        <Font name="System Bold" size="13.0" />
-
-                    </font></Label>
+                <TextField fx:id="tfnom" layoutX="14.0" layoutY="36.0" prefHeight="25.0" prefWidth="165.0" promptText="nom" />
+                <TextField fx:id="tformateur" layoutX="14.0" layoutY="67.0" prefHeight="26.0" prefWidth="165.0" promptText="formateur" />
 
 
-                <Button fx:id="addoffer1" layoutX="167.0" layoutY="343.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="251.0" text="Add Formation" />
 
-                <StackPane fx:id="effect" layoutX="147.0" layoutY="145.0" prefHeight="156.0" prefWidth="362.0" />
-                <Label layoutX="50.0" layoutY="36.0" prefHeight="35.0" prefWidth="251.0" text="Ajouter une formation" textFill="#003559">
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                </Label>
+                <Button fx:id="addformation" layoutX="12.0" layoutY="428.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="74.0" text="Ajouter" />
+            <Line endX="-413.0" endY="-81.0" layoutX="414.0" layoutY="491.0" startX="-177.0" startY="-81.0" stroke="#b5b0b0" />
+            <TextField fx:id="tftel" layoutX="15.0" layoutY="290.0" prefHeight="26.0" prefWidth="165.0" promptText="tel" />
+            <TextField fx:id="tfmail" layoutX="15.0" layoutY="252.0" prefHeight="26.0" prefWidth="165.0" promptText="mail" />
+            <TextField fx:id="tfadresse" layoutX="14.0" layoutY="216.0" prefHeight="26.0" prefWidth="165.0" promptText="adresse" />
+            <TextField fx:id="tfdescription" layoutX="15.0" layoutY="105.0" prefHeight="26.0" prefWidth="165.0" promptText="description" />
+            <Label layoutX="243.0" prefHeight="49.0" prefWidth="394.0" text="Liste des formations" textFill="#2920a4">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <Button fx:id="addcateg1" layoutX="186.0" layoutY="428.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="85.0" text="supprimer" />
+            <Button fx:id="addcateg2" layoutX="95.0" layoutY="428.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="74.0" text="modifier" />
+            <TextField fx:id="tfSearch" layoutX="294.0" layoutY="49.0" prefHeight="31.0" prefWidth="291.0" promptText="Search" />
+            <TextField fx:id="tfprix" layoutX="13.0" layoutY="328.0" prefHeight="26.0" prefWidth="165.0" promptText="prix" />
+            <TableView fx:id="tvBooks" layoutX="212.0" layoutY="100.0" prefHeight="299.0" prefWidth="661.0">
+               <columns>
+                  <TableColumn fx:id="ID" prefWidth="38.39996337890625" text="id" />
+                  <TableColumn fx:id="Departement" prefWidth="66.4000244140625" text="formation" />
+                  <TableColumn fx:id="Etage" prefWidth="116.7999267578125" text="Formateur" />
+                  <TableColumn fx:id="Libre" prefWidth="76.0" text="date_debut" />
+                  <TableColumn fx:id="Departement1" prefWidth="51.20001220703125" text="date_fin" />
+                  <TableColumn fx:id="Departement11" prefWidth="78.4000244140625" text="categorie" />
+                  <TableColumn fx:id="Departement111" prefWidth="76.79998779296875" text="adresse" />
+                  <TableColumn fx:id="Departement112" prefWidth="94.39996337890625" text="tel" />
+                  <TableColumn fx:id="Departement1121" prefWidth="60.0001220703125" text="prix" />
+               </columns>
+            </TableView>
+            <ChoiceBox fx:id="choicecateg" layoutX="12.0" layoutY="365.0" prefHeight="25.0" prefWidth="165.0" />
+            <DatePicker fx:id="date_debut" layoutX="19.0" layoutY="147.0" prefHeight="25.0" prefWidth="158.0" />
+            <DatePicker fx:id="date_fin" layoutX="19.0" layoutY="182.0" prefHeight="25.0" prefWidth="158.0" />
+            <Button fx:id="addformation1" layoutX="755.0" layoutY="420.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="74.0" text="select" />
+
+
+
+
+
             </children>
         </Pane>
     </children>

@@ -33,26 +33,25 @@
 -->
 
 <?import javafx.scene.control.Button?>
-
-<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Formation.CategoryController">
     <children>
         <Pane fx:id="pane" layoutX="7.0" layoutY="12.0" prefHeight="394.0" prefWidth="647.0" stylesheets="@../StylSheet/Style.css">
             <children>
-                <TextField fx:id="tfnom" layoutX="96.0" layoutY="155.0" prefHeight="26.0" prefWidth="198.0" promptText="nom" />
-                <TextField fx:id="tfcouleur" layoutX="96.0" layoutY="227.0" prefHeight="26.0" prefWidth="198.0" promptText="couleur" />
+                <TextField fx:id="tfnom" layoutX="6.0" layoutY="155.0" prefHeight="26.0" prefWidth="198.0" promptText="nom" />
+                <TextField fx:id="tfcouleur" layoutX="14.0" layoutY="220.0" prefHeight="26.0" prefWidth="198.0" promptText="couleur" />
 
-
-                <Label layoutY="122.0" prefHeight="18.0" prefWidth="80.0" text="Nom" textFill="#061a40">
+                <Label layoutY="122.0" prefHeight="18.0" prefWidth="80.0" text="Category" textFill="#061a40">
                     <font>
                         <Font name="System Bold" size="13.0" />
                     </font></Label>
+
 
                 <Label layoutY="195.0" prefHeight="18.0" prefWidth="71.0" text="Couleur" textFill="#061a40">
                     <font>
@@ -60,14 +59,26 @@
                     </font></Label>
 
 
-                <Button fx:id="addcateg" layoutX="167.0" layoutY="343.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="251.0" text="Add Category" />
 
-                <StackPane fx:id="effect" layoutX="147.0" layoutY="145.0" prefHeight="156.0" prefWidth="362.0" />
-                <Label layoutX="50.0" layoutY="36.0" prefHeight="35.0" prefWidth="251.0" text="Ajouter une categorie" textFill="#003559">
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                </Label>
+                <Button fx:id="addcateg" layoutX="15.0" layoutY="287.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="181.0" text="Ajouter" />
+                <TableView fx:id="tvBooks" layoutX="258.0" layoutY="57.0" prefHeight="325.0" prefWidth="377.0">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="59.99993896484375" text="id" />
+                        <TableColumn fx:id="nom" prefWidth="120" text="Categorie" />
+                        <TableColumn fx:id="couleur" prefWidth="140.0" text="couleur" />
+
+
+
+                    </columns>
+                </TableView>
+            <Label layoutX="82.0" prefHeight="50.0" prefWidth="353.0" text="Liste des catégories" textFill="#1d18b9">
+               <font>
+                  <Font name="System Bold Italic" size="34.0" />
+               </font>
+            </Label>
+
+
+
             </children>
         </Pane>
     </children>

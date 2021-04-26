@@ -30,9 +30,10 @@ public class FXMain extends Application {
         primaryStage.setScene(new Scene(parent));
         primaryStage.setTitle("JobHub");
         primaryStage.show();*/
-        Parent root = FXMLLoader.load(getClass().getResource("/Gui/Formation/Category.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Gui/Formation/Formation.fxml"));
 
      ;
+
         root.setOnMousePressed(event -> {
             xOffset = event.getSceneX();
             yOffset = event.getSceneY();

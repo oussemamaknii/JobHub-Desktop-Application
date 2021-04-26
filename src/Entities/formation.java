@@ -5,38 +5,40 @@
 
 package Entities;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class formation {
     private int id;
     private int category_id;
-    private String titre;
+    private String nom;
     private String formateur;
     private String description;
     private String adresse;
-    private String tel;
+    private double tel;
     private String email;
-    private LocalDate date_debut;
-    private LocalDate date_fin;
-    private int prix;
-
-    public static void add(formation offre) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+    private Date date_debut;
+    private Date date_fin;
+    private double prix;
 
     public formation() {
+
     }
 
-    public formation(int category_id, String titre, String formateur, String description, String adresse, String tel, String email, LocalDate date_debut, LocalDate fin, int prix) {
+
+    public formation(int categId, String text, String tformateurText, String tfdescriptionText, LocalDate value, LocalDate date_finValue, String tfmailText, String tftelText, String tfprixText) {
+    }
+
+    public formation(int category_id, String nom, String formateur, String description, String adresse, double tel, String email, Date date_debut, Date date_fin, double prix) {
         this.category_id = category_id;
-        this.titre = titre;
+        this.nom = nom;
         this.formateur = formateur;
         this.description = description;
         this.adresse = adresse;
         this.tel = tel;
         this.email = email;
         this.date_debut = date_debut;
-        this.date_fin = this.date_fin;
+        this.date_fin = date_fin;
         this.prix = prix;
     }
 
@@ -57,11 +59,11 @@ public class formation {
     }
 
     public String getTitre() {
-        return this.titre;
+        return this.nom;
     }
 
     public void setTitre(String titre) {
-        this.titre = titre;
+        this.nom = titre;
     }
 
     public String getFormateur() {
@@ -88,11 +90,11 @@ public class formation {
         this.adresse = adresse;
     }
 
-    public String getTel() {
+    public double getTel() {
         return this.tel;
     }
 
-    public void setTel(String tel) {
+    public void setTel(double tel) {
         this.tel = tel;
     }
 
@@ -104,32 +106,32 @@ public class formation {
         this.email = email;
     }
 
-    public LocalDate getDate_debut() {
+    public Date getDate_debut() {
         return this.date_debut;
     }
 
-    public void setDate_debut(LocalDate date_debut) {
+    public void setDate_debut(Date date_debut) {
         this.date_debut = date_debut;
     }
 
-    public LocalDate getDate_fin() {
+    public Date getDate_fin() {
         return this.date_fin;
     }
 
-    public void setDate_fin(LocalDate date_fin) {
+    public void setDate_fin(Date date_fin) {
         this.date_fin = date_fin;
     }
 
-    public int getPrix() {
+    public double getPrix() {
         return this.prix;
     }
 
-    public void setPrix(int prix) {
+    public void setPrix(double prix) {
         this.prix = prix;
     }
 
     public String toString() {
-        return "formation{id=" + this.id + ", category_id=" + this.category_id + ", titre=" + this.titre + ", formateur=" + this.formateur + ", description=" + this.description + ", adresse=" + this.adresse + ", tel=" + this.tel + ", email=" + this.email + ", date_debut=" + this.date_debut + ", date_fin=" + this.date_fin + ", prix=" + this.prix + '}';
+        return "formation{id=" + this.id + ", category_id=" + this.category_id + ", titre=" + this.nom + ", formateur=" + this.formateur + ", description=" + this.description + ", adresse=" + this.adresse + ", tel=" + this.tel + ", email=" + this.email + ", date_debut=" + this.date_debut + ", date_fin=" + this.date_fin + ", prix=" + this.prix + '}';
     }
 
 
@@ -146,11 +148,11 @@ public class formation {
             if (this.id != other.id) {
                 return false;
             } else {
-                if (this.titre == null) {
-                    if (other.titre != null) {
+                if (this.nom == null) {
+                    if (other.nom != null) {
                         return false;
                     }
-                } else if (!this.titre.equals(other.titre)) {
+                } else if (!this.nom.equals(other.nom)) {
                     return false;
                 }
 

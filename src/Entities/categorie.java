@@ -11,7 +11,9 @@ public class categorie {
     }
 
 
-    public java.lang.String getId() {
+
+
+    public int getId() {
         return id;
     }
 
@@ -23,8 +25,8 @@ public class categorie {
         return nom;
     }
 
-    public void setTitref(String titre) {
-        this.nom = titre;
+    public void setTitref(String nom) {
+        this.nom = nom;
     }
 
     @Override
@@ -48,7 +50,7 @@ public class categorie {
     public String toString() {
         return "categorie{" +
                 "id=" + id +
-                ", titre='" + nom + '\'' +
+                ", nom='" + nom + '\'' +
                 ", couleur='" + couleur + '\'' +
                 '}';
     }
