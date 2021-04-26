@@ -111,6 +111,8 @@ public class LoginController extends Controller implements Initializable {
                         stage.setScene(scene);
                         stage.show();
                         stage.setResizable(false);
+
+
                     }
                     service.createiniFile(path, email.getText(), pw.getText());
                     System.out.println("Success");

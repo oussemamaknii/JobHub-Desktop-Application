@@ -4,6 +4,7 @@ import Entities.candidateResume;
 import Entities.education;
 import Interfaces.ICareer;
 import Utils.Connexion;
+import Utils.Controller;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -11,13 +12,14 @@ import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class CareerService implements ICareer {
+public class CareerService extends Controller implements ICareer {
     Connection cnx = Connexion.getInstance().getConnection();
+
 
     @Override
     public void addCareer(education edu, candidateResume resume) {
 
-        String request2 = "INSERT into education (resume_id,course,institute,date_from,date_to) VALUES (NULL,?,?,?,?)";
+        String request2 = "INSERT into education (resume_id,course,institute,date_from,date_to,user_id) VALUES (NULL,?,?,?,?,)";
         try{
             PreparedStatement pst2 = cnx.prepareStatement(request2);
             pst2.setString(1, edu.getCourse());

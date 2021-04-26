@@ -17,7 +17,6 @@ public class Controller {
     {
         return Controller.userId;
     }
-
     public user getUser()
     {
         return service.getUserById(userId);

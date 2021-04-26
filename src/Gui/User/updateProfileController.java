@@ -68,7 +68,6 @@ public class updateProfileController extends Controller implements Initializable
     public void initialize(URL url, ResourceBundle rb) {
         connectedUser = this.getUser();
         LoginService ser = new LoginService();
-        candidateResume resume = ser.candidateResume(connectedUser.getId());
         showFirstName.setText(connectedUser.getFirstName());
         showLastName.setText(connectedUser.getLastName());
         showAdresse.setText(connectedUser.getAdresse());
@@ -76,15 +75,15 @@ public class updateProfileController extends Controller implements Initializable
         showPhone.setText(String.valueOf(connectedUser.getPhone()));
         showDateOfBirth.setText(String.valueOf(connectedUser.getDateOfBirth()));
         showProfessionalTitle.setText(connectedUser.getProfessionalTitle());
-        System.out.println(resume.getResumeHeadline());
-        education edu = ser.education(resume.getId());
-        System.out.println(edu.getCourse());
+        System.out.println(Controller.getUserId());
+
 
         register.setOnAction(e -> {
-            if (testfields()) {
+            if (!testfields()) {
                 user update1 = new user(tfEmail.getText(), tfPassword.getText(), tfFirstName.getText(), tfLastName.getText(),
                         tfDateOfBirth.getValue(), tfAdresse.getText(), Integer.parseInt(tfPhone.getText()),tfProfessionalTitle.getText());
-                new Register().updateprofile(update1);}
+                new Register().updateprofile(update1,this.getUser());
+               ;}
         });
     }
     public boolean testfields() {

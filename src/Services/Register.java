@@ -18,6 +18,7 @@ public class Register extends Controller implements IServiceRegister {
     Connection cnx = Connexion.getInstance().getConnection();
 
 
+
     @Override
     public void Register(user u) {
         String request = "INSERT INTO user (first_name,last_name,email,adresse,date_of_birth,phone,password,is_active,created_at,roles) VALUES (?,?,?,?,?,?,?,'1',SYSDATE(),'a:1:{i:0;s:9:\"ROLE_USER\";}') ";
@@ -31,7 +32,6 @@ public class Register extends Controller implements IServiceRegister {
             pst.setInt(6, u.getPhone());
             String pwd = BCrypt.hashpw(u.getPassword(),BCrypt.gensalt(13));
             pst.setString(7, pwd.substring(0,2)+"y"+pwd.substring(3));
-
             pst.executeUpdate();
             System.out.println("Your account has been created");
 
@@ -41,24 +41,22 @@ public class Register extends Controller implements IServiceRegister {
         }
     }
     @Override
-    public void updateprofile(user u) {
-        String request1 = "UPDATE user SET first_name=?,last_name=?,date_of_birth=?,email=? password=?,adresse=?,phone=?,professional_title=? where id=?";
+    public void updateprofile(user u, user u1) {
+        String request1 = "UPDATE user SET first_name=?,last_name=?,date_of_birth=?,email=?,password=?,adresse=?,phone=?,professional_title=? where id='"+u1.getId()+"'";
         try {
             PreparedStatement pst = cnx.prepareStatement(request1);
             pst.setString(1, u.getFirstName());
             pst.setString(2, u.getLastName());
-            pst.setString(3, u.getEmail());
-            pst.setString(4, u.getAdresse());
-            pst.setDate(5, Date.valueOf(u.getDateOfBirth()));
-            pst.setInt(6, u.getPhone());
+            pst.setDate(3, Date.valueOf(u.getDateOfBirth()));
+            pst.setString(4, u.getEmail());
             String pwd = BCrypt.hashpw(u.getPassword(),BCrypt.gensalt(13));
-            pst.setString(7, pwd.substring(0,2)+"y"+pwd.substring(3));
+            pst.setString(5, pwd.substring(0,2)+"y"+pwd.substring(3));
+            pst.setString(6, u.getAdresse());
+            pst.setInt(7, u.getPhone());
             pst.setString(8,u.getProfessionalTitle());
 
             pst.executeUpdate();
-            System.out.println("Your account has been created");
-
-
+            System.out.println("Your account has been updated");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

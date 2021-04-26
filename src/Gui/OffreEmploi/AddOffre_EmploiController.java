@@ -112,9 +112,7 @@ public class AddOffre_EmploiController implements Initializable {
             return false;
         }
     }
-
     public boolean testfields() {
-
         if (tftitle.getText().length() == 0) {
             tftitle.setStyle("-fx-border-color :red ; -fx-border-width : 2px;");
             new animatefx.animation.Shake(tftitle).play();

@@ -44,12 +44,10 @@ import javax.mail.internet.MimeMessage;
  * @author Ryaan
  */
 public class ForgotPasswordController implements Initializable {
-    public static final String ACCOUNT_SID = "ACf06d8ef396999213b853a5dd057af9e2";
-    public static final String AUTH_TOKEN = "a593a1983d6b04f2beab8f16ca81614e";
+ //   public static final String ACCOUNT_SID = "ACf06d8ef396999213b853a5dd057af9e2";
+   // public static final String AUTH_TOKEN = "a593a1983d6b04f2beab8f16ca81614e";
     @FXML
     private TextField email;
-    @FXML
-    private Button resetPassword;
     @FXML
     private Label msg;
     public ResultSet rs;
@@ -57,6 +55,8 @@ public class ForgotPasswordController implements Initializable {
     public String y,z;
     public int x;
     Stage stage = new Stage();
+    @FXML
+    private Button sendEmail;
     /**
      * Initializes the controller class.
      */
@@ -79,18 +79,19 @@ public class ForgotPasswordController implements Initializable {
     }
 
 
-    private void SendMail(ActionEvent event) throws AddressException, MessagingException, SQLException, IOException {
+    @FXML
+    private void sendEmail(javafx.event.ActionEvent event) throws SQLException, MessagingException, IOException {
         if (email.getText().isEmpty()){ msg.setText("remarque : email vide");  }
         else if (!email.getText().matches("[a-zA-Z0-9\\.]+@[a-zA-Z0-9\\-\\_\\.]+\\.[a-zA-Z0-9]{2}") ){ msg.setText("remarque : email non valide");  }
         else {
             Connection conn = Connexion.getInstance().getConnection();
-            String req= "Select username,password from user where email=? ";
+            String req= "Select email,password from user where email=? ";
             PreparedStatement prs= conn.prepareStatement(req);
             prs.setString(1, email.getText());
 
             rs= prs.executeQuery();
             while (rs.next()){
-                username= rs.getString("username");
+                username= rs.getString("email");
                 pass=rs.getString("password");
             }
             y = getSaltString();
@@ -98,23 +99,22 @@ public class ForgotPasswordController implements Initializable {
             mesg="Your code is : " + y;
 
 
-            Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+         //   Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 
-            com.twilio.rest.api.v2010.account.Message messages = com.twilio.rest.api.v2010.account.Message.creator(new PhoneNumber("+21629903274"),
-                    new PhoneNumber("+14156505681"), y).create();
 
-            String from ="merghed.rayen@esprit.tn";
-            String pass="flawnnabusegmail";
+
+            String from ="tunisgottalent@gmail.com";
+            String pass="t20202020";
             String [] to={email.getText()};
             String host="mail.javatpoint.com";
             String sub="Password Recovery";
 
             Properties props = new Properties();
-            props.put("mail.smtp.host", "smtp.gmail.com");
-            props.put("mail.smtp.socketFactory.port", "465");
-            props.put("mail.smtp.socketFactory.class",
-                    "javax.net.ssl.SSLSocketFactory");
             props.put("mail.smtp.auth", "true");
+            props.put("mail.smtp.ssl.protocols", "TLSv1.2");
+            props.put("mail.smtps.ssl.protocols", "TLSv1.2");
+            props.put("mail.smtp.starttls.enable", "true");
+            props.put("mail.smtp.host", host);
             props.put("mail.smtp.port", "587");
             //get Session
             Session session = Session.getInstance(props, new javax.mail.Authenticator() {
@@ -143,9 +143,5 @@ public class ForgotPasswordController implements Initializable {
 
 
         }
-    }
-
-    @FXML
-    private void login(javafx.event.ActionEvent event) {
     }
 }
