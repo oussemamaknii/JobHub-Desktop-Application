@@ -60,9 +60,9 @@ public class Demande_Service implements IService {
         return offres;
     }
 
-    public ObservableList<Demande_Recrutement> getAllUser(int id, int from, int to) {
+    public ObservableList<Demande_Recrutement> getAllUser(int id) {
         ObservableList<Demande_Recrutement> offres = FXCollections.observableArrayList();
-        String request = "select * from demande_recrutement where candidat_id = '" + id + "' limit " + from + "," + to;
+        String request = "select * from demande_recrutement where candidat_id = '" + id +"'";
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);

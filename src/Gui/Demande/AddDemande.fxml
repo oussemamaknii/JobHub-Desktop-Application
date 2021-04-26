@@ -4,9 +4,6 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.Pagination?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
@@ -17,19 +14,9 @@
       <Pane fx:id="pane" prefHeight="719.0" prefWidth="836.0" stylesheets="@../StylSheet/Style.css">
          <children>
             <ListView fx:id="table" layoutX="94.0" layoutY="177.0" prefHeight="298.0" prefWidth="728.0" />
-            <Pagination fx:id="page" layoutX="157.0" layoutY="255.0" prefHeight="220.0" prefWidth="578.0" />
             <Button fx:id="apply" layoutX="191.0" layoutY="594.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Apply to job" />
             <Button fx:id="delete" layoutX="191.0" layoutY="657.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Delete application" />
             <Button fx:id="seeapps" layoutX="191.0" layoutY="512.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="See applications" />
-            <TableView fx:id="table2" layoutX="135.0" layoutY="189.0" prefHeight="231.0" prefWidth="566.0">
-               <columns>
-                  <TableColumn fx:id="offtit" prefWidth="100.0" text="Offre title" />
-                  <TableColumn fx:id="username" prefWidth="120.0" text="candidat name" />
-                  <TableColumn fx:id="stat" prefWidth="100.0" text="Status" />
-                  <TableColumn fx:id="stdate" prefWidth="120.0" text="Start date" />
-                  <TableColumn fx:id="enddate" prefWidth="120.0" text="End date" />
-               </columns>
-            </TableView>
             <Label layoutX="94.0" layoutY="94.0" prefHeight="35.0" prefWidth="279.0" text="Mange Your Applications" textFill="#003559">
                <font>
                   <Font size="24.0" />
@@ -39,6 +26,12 @@
             <Label fx:id="lab" layoutX="583.0" layoutY="141.0" prefHeight="27.0" prefWidth="86.0" text="Trié par :">
                <font>
                   <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ListView fx:id="table2" layoutX="100.0" layoutY="178.0" prefHeight="319.0" prefWidth="720.0" />
+            <Label fx:id="text" layoutX="109.0" layoutY="137.0" prefHeight="35.0" prefWidth="376.0" textFill="#003559">
+               <font>
+                  <Font size="24.0" />
                </font>
             </Label>
          </children>

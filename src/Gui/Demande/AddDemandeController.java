@@ -20,7 +20,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.effect.BoxBlur;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
@@ -37,38 +36,29 @@ import java.util.ResourceBundle;
 public class AddDemandeController implements Initializable {
 
     @FXML
-    private TableView<Demande_Recrutement> table2;
-    @FXML
-    private TableColumn<?, ?> offtit;
-    @FXML
-    private TableColumn<?, ?> username;
-    @FXML
-    private TableColumn<?, ?> stat;
-    @FXML
-    private TableColumn<?, ?> stdate;
-    @FXML
-    private TableColumn<?, ?> enddate;
-    @FXML
     private Button apply;
     @FXML
     private Button delete;
     @FXML
     private Button seeapps;
     @FXML
-    private ListView<Offre_Emploi> table;
+    private ListView<Demande_Recrutement> table2;
     @FXML
-    private Pagination page;
-    int alluserapps = new Demande_Service().countalluserapps(5);
-    int from = 0, to = 0,itemperpage = 5;
+    private ListView<Offre_Emploi> table;
     @FXML
     private ChoiceBox<String> tri;
     @FXML
     private Label lab;
     @FXML
+    private Label text;
+    @FXML
     private Pane pane;
     @FXML
     private StackPane effect;
 
+    int alluserapps = new Demande_Service().countalluserapps(5);
+    int from = 0, to = 0,itemperpage = 5;
+    int iduser = 5;
     /**
      * Initializes the controller class.
      */
@@ -79,8 +69,8 @@ public class AddDemandeController implements Initializable {
         table.setVisible(false);
         tri.setVisible(false);
         lab.setVisible(false);
+        effect.setDisable(true);
         table2.setVisible(false);
-        int iduser = 5;
         showapplies(iduser);
 
         tri.setOnAction(e->{
@@ -98,7 +88,6 @@ public class AddDemandeController implements Initializable {
                 new Demande_Service().apply(offre.getId(), iduser);
                 showapplies(iduser);
                 table.setVisible(false);
-                page.setVisible(true);
                 table2.setVisible(true);
             }
         });
@@ -107,7 +96,6 @@ public class AddDemandeController implements Initializable {
             table.setVisible(false);
             tri.setVisible(false);
             lab.setVisible(false);
-            page.setVisible(true);
             table2.setVisible(true);
             showapplies(iduser);
             Demande_Recrutement demande = table2.getSelectionModel().getSelectedItem();
@@ -162,8 +150,8 @@ public class AddDemandeController implements Initializable {
     }
 
     public void showoffers() {
+        text.setText("Job Offers To Apply To");
         table.setVisible(true);
-        page.setVisible(false);
         table2.setVisible(false);
         ObservableList<Offre_Emploi> offres = new Demande_Service().get_not_applied_jobs();
         table.setItems(offres);
@@ -171,22 +159,20 @@ public class AddDemandeController implements Initializable {
     }
 
     public void showapplies(int id) {
+        text.setText("YourJob Application");
         table.setVisible(false);
-        page.setVisible(true);
         table2.setVisible(true);
-        username.setCellValueFactory(new PropertyValueFactory<>("username"));
-        offtit.setCellValueFactory(new PropertyValueFactory<>("offtit"));
-        stat.setCellValueFactory(new PropertyValueFactory<>("status"));
-        stdate.setCellValueFactory(new PropertyValueFactory<>("date_debut"));
-        enddate.setCellValueFactory(new PropertyValueFactory<>("date_expiration"));
-        page.setPageCount((alluserapps / itemperpage) + 1);
-        page.setPageFactory(this::createtable);
+        ObservableList<Demande_Recrutement> offres = new Demande_Service().getAllUser(5);
+        table2.setItems(offres);
+        table2.setCellFactory(DemandeListView -> new DemandeCell());
+        /*page.setPageCount((alluserapps / itemperpage) + 1);
+        page.setPageFactory(this::createtable);*/
     }
 
     public Node createtable(int pageindex) {
         from = pageindex * itemperpage;
         to = itemperpage;
-        table2.setItems(FXCollections.observableList(new Demande_Service().getAllUser(5,from, to)));
+        table2.setItems(FXCollections.observableList(new Demande_Service().getAllUser(5/*,from, to*/)));
         return table2;
     }
 
