@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="jxmapsdemo">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/deps/jxmapsdemo.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
