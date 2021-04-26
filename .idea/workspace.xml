@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="909ab576-dcc5-410f-8430-b6569c5175fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/PDFjet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deps/PDFjet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_102.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/ListCell.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/ListCell.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub-Desktop-Application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub-Desktop-Application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/OffreCell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application/Gui/OffreEmploi/OffreCell.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/OffreCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/OffreCell.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +24,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rdXSU4pdolPQFrIGsm2TTN84ui" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -36,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/deps/PDFjet.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deps/jfoenix-9.0.10.jar" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.32262996" />

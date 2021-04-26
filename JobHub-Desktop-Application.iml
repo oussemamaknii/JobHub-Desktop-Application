@@ -9,7 +9,6 @@
     <orderEntry type="jdk" jdkName="16" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="jxmapsdemo" level="project" />
-    <orderEntry type="library" exported="" name="jfoenix-9.0.10" level="project" />
     <orderEntry type="library" exported="" name="javax.mail" level="project" />
     <orderEntry type="library" exported="" name="activation-1.1.1" level="project" />
     <orderEntry type="module-library" exported="">
@@ -29,5 +28,6 @@
     <orderEntry type="library" exported="" name="map" level="project" />
     <orderEntry type="library" exported="" name="commons-lang3-3.12.0-javadoc" level="project" />
     <orderEntry type="library" exported="" name="PDFjet" level="project" />
+    <orderEntry type="library" exported="" name="jfoenix-9.0.10" level="project" />
   </component>
 </module>
