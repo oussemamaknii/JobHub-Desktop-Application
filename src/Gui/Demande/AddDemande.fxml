@@ -9,14 +9,14 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Demande.AddDemandeController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Demande.AddDemandeController">
    <children>
-      <Pane fx:id="pane" prefHeight="719.0" prefWidth="836.0" stylesheets="@../StylSheet/Style.css">
+      <Pane fx:id="pane" prefHeight="719.0" prefWidth="874.0" stylesheets="@../StylSheet/Style.css">
          <children>
-            <ListView fx:id="table" layoutX="94.0" layoutY="177.0" prefHeight="298.0" prefWidth="728.0" />
-            <Button fx:id="apply" layoutX="191.0" layoutY="594.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Apply to job" />
-            <Button fx:id="delete" layoutX="191.0" layoutY="657.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Delete application" />
-            <Button fx:id="seeapps" layoutX="191.0" layoutY="512.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="See applications" />
+            <ListView fx:id="table" layoutX="73.0" layoutY="177.0" prefHeight="298.0" prefWidth="799.0" />
+            <Button fx:id="apply" layoutX="226.0" layoutY="595.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Apply to job" />
+            <Button fx:id="delete" layoutX="226.0" layoutY="658.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="Delete application" />
+            <Button fx:id="seeapps" layoutX="226.0" layoutY="513.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="544.0" text="See applications" />
             <Label layoutX="94.0" layoutY="94.0" prefHeight="35.0" prefWidth="279.0" text="Mange Your Applications" textFill="#003559">
                <font>
                   <Font size="24.0" />
@@ -28,7 +28,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <ListView fx:id="table2" layoutX="100.0" layoutY="178.0" prefHeight="319.0" prefWidth="720.0" />
+            <ListView fx:id="table2" layoutX="146.0" layoutY="178.0" prefHeight="319.0" prefWidth="713.0" />
             <Label fx:id="text" layoutX="109.0" layoutY="137.0" prefHeight="35.0" prefWidth="376.0" textFill="#003559">
                <font>
                   <Font size="24.0" />

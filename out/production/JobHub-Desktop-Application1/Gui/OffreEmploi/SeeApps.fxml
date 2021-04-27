@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.SeeAppsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.SeeAppsController">
    <children>
-      <Pane fx:id="pane" layoutX="14.0" layoutY="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="626.0" stylesheets="@../StylSheet/Style.css">
+      <Pane fx:id="pane" layoutX="14.0" layoutY="101.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="730.0" stylesheets="@../StylSheet/Style.css">
          <children>
-            <TableView fx:id="table2" layoutX="66.0" layoutY="35.0" prefHeight="260.0" prefWidth="472.0">
+            <TableView fx:id="table2" layoutX="122.0" layoutY="35.0" prefHeight="260.0" prefWidth="472.0">
                <columns>
                   <TableColumn fx:id="offtit" prefWidth="75.0" text="Offre title" />
                   <TableColumn fx:id="username" prefWidth="90.0" text="candidat name" />
@@ -24,10 +24,10 @@
                   <TableColumn fx:id="enddate" prefWidth="75.0" text="End dtae" />
                </columns>
             </TableView>
-            <ListView fx:id="table" layoutX="2.0" layoutY="4.0" prefHeight="300.0" prefWidth="620.0" />
-            <Button fx:id="seeapp" layoutX="50.0" layoutY="471.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="527.0" text="See Applications" />
-            <Button fx:id="treatapp" layoutX="50.0" layoutY="411.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="527.0" text="Treat Application" />
-            <Button fx:id="displayoff" layoutX="50.0" layoutY="350.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="527.0" text="Display Offers" />
+            <ListView fx:id="table" layoutX="2.0" layoutY="4.0" prefHeight="292.0" prefWidth="724.0" />
+            <Button fx:id="seeapp" layoutX="102.0" layoutY="468.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="527.0" text="See Applications" />
+            <Button fx:id="treatapp" layoutX="102.0" layoutY="408.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="527.0" text="Treat Application" />
+            <Button fx:id="displayoff" layoutX="102.0" layoutY="347.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="527.0" text="Display Offers" />
          </children>
       </Pane>
       <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="316.0" text="See Job Offer's Applications" textFill="#003559">
@@ -35,7 +35,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <StackPane fx:id="effect" layoutX="182.0" layoutY="242.0" prefHeight="144.0" prefWidth="300.0" AnchorPane.leftAnchor="182.0" AnchorPane.topAnchor="242.0">
+      <StackPane fx:id="effect" layoutX="226.0" layoutY="242.0" prefHeight="144.0" prefWidth="300.0" AnchorPane.leftAnchor="226.0" AnchorPane.topAnchor="242.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>

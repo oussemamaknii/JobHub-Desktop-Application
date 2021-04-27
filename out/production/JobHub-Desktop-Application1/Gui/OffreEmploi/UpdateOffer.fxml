@@ -48,7 +48,7 @@
                   </Pane>
                </children>
             </Pane>
-            <ListView fx:id="listdisplay" layoutX="44.0" layoutY="38.0" prefHeight="362.0" prefWidth="710.0" />
+            <ListView fx:id="listdisplay" layoutX="24.0" layoutY="33.0" prefHeight="362.0" prefWidth="750.0" />
             <Label layoutX="49.0" layoutY="-4.0" prefHeight="28.0" prefWidth="195.0" text="Update Job Offers" textFill="#003559">
                <font>
                   <Font size="24.0" />

@@ -129,10 +129,14 @@ public class OffreCell extends ListCell<Offre_Emploi> implements Initializable {
                     Font f2 = new Font(pdf, CoreFont.HELVETICA_BOLD);
                     Font f1 = new Font(pdf, CoreFont.HELVETICA);
 
-                    List<Cell> tablerow0 = new ArrayList<>();
-                    Cell titr = new Cell(f2, "Job Offer information : " + titre.getText());
-                    tablerow0.add(titr);
-                    tabledate.add(tablerow0);
+                    Paragraph p1 = new Paragraph();
+                    p1.setAlignment(Align.CENTER);
+                    p1.add(new TextLine(f2, "Job Offer information : " + titre.getText()));
+                    TextColumn column = new TextColumn(0);
+                    column.addParagraph(p1);
+                    column.setLocation(70f, 30f);
+                    float columnWidth = 470f;
+                    column.setSize(columnWidth, 100f);
 
                     List<Cell> tablerow = new ArrayList<>();
                     Cell cell = new Cell(f2, "titre");
@@ -143,15 +147,8 @@ public class OffreCell extends ListCell<Offre_Emploi> implements Initializable {
                     tablerow.add(cell2);
                     Cell cell3 = new Cell(f2, "location");
                     tablerow.add(cell3);
-                    Cell cell4 = new Cell(f2, "email");
-                    tablerow.add(cell4);
-                    Cell cell5 = new Cell(f2, "category");
-                    tablerow.add(cell5);
-                    Cell cell6 = new Cell(f2, "max salary");
-                    tablerow.add(cell6);
-                    Cell cell7 = new Cell(f2, "min salary");
-                    tablerow.add(cell7);
                     tabledate.add(tablerow);
+
                     List<Cell> tablerow1 = new ArrayList<>();
                     Cell cel = new Cell(f1, titre.getText());
                     tablerow1.add(cel);
@@ -161,16 +158,38 @@ public class OffreCell extends ListCell<Offre_Emploi> implements Initializable {
                     tablerow1.add(cel2);
                     Cell cel3 = new Cell(f1, location.getText());
                     tablerow1.add(cel3);
-                    Cell cel4 = new Cell(f1, email.getText());
-                    tablerow1.add(cel4);
-                    Cell cel5 = new Cell(f1, categ.getText());
-                    tablerow1.add(cel5);
-                    Cell cel6 = new Cell(f1, maxsal.getText());
-                    tablerow1.add(cel6);
-                    Cell cel7 = new Cell(f1, minsal.getText());
-                    tablerow1.add(cel7);
                     tabledate.add(tablerow1);
+
+
+                    List<Cell> tabler = new ArrayList<>();
+                    Cell cell4 = new Cell(f2, "email");
+                    tabler.add(cell4);
+                    Cell cell5 = new Cell(f2, "category");
+                    tabler.add(cell5);
+                    Cell cell6 = new Cell(f2, "max salary");
+                    tabler.add(cell6);
+                    Cell cell7 = new Cell(f2, "min salary");
+                    tabler.add(cell7);
+                    tabledate.add(tabler);
+
+                    List<Cell> tablero = new ArrayList<>();
+                    Cell cel99 = new Cell(f1, email.getText());
+                    tablero.add(cel99);
+                    Cell cel5 = new Cell(f1, categ.getText());
+                    tablero.add(cel5);
+                    Cell cel6 = new Cell(f1, maxsal.getText());
+                    tablero.add(cel6);
+                    Cell cel7 = new Cell(f1, minsal.getText());
+                    tablero.add(cel7);
+                    tabledate.add(tablero);
+
                     table.setData(tabledate);
+                    table.setPosition(70f, 70f);
+                    table.setColumnWidth(0, 100f);
+                    table.setColumnWidth(1, 100f);
+                    table.setColumnWidth(2, 100f);
+                    table.setColumnWidth(3, 170f);
+                    column.drawOn(page);
                     table.drawOn(page);
                     pdf.close();
                     fos.close();
