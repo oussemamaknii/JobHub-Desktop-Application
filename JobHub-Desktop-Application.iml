@@ -8,9 +8,7 @@
     </content>
     <orderEntry type="jdk" jdkName="16" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="jxmapsdemo" level="project" />
     <orderEntry type="library" exported="" name="javax.mail" level="project" />
-    <orderEntry type="library" exported="" name="activation-1.1.1" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -24,10 +22,27 @@
         <jarDirectory url="file://C:/Program Files/Java/javafx-sdk-16/lib" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
-    <orderEntry type="library" exported="" name="Connector J 8" level="project" />
-    <orderEntry type="library" exported="" name="map" level="project" />
-    <orderEntry type="library" exported="" name="commons-lang3-3.12.0-javadoc" level="project" />
-    <orderEntry type="library" exported="" name="PDFjet" level="project" />
     <orderEntry type="library" exported="" name="jfoenix-9.0.10" level="project" />
+    <orderEntry type="library" exported="" name="map" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://C:/Program Files (x86)/MySQL/Connector J 8.0" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://C:/Program Files (x86)/MySQL/Connector J 8.0" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/deps/PDFjet.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" exported="" name="commons-lang3-3.12.0-javadoc" level="project" />
   </component>
 </module>
