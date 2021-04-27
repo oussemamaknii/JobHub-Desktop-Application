@@ -6,8 +6,10 @@
 package Gui.Acceuil;
 
 import Services.LoginService;
+import Utils.Controller;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
@@ -25,7 +27,7 @@ import java.util.ResourceBundle;
  *
  * @author souso
  */
-public class AcceuilController implements Initializable {
+public class AcceuilController extends Controller implements Initializable {
 
     @FXML
     private Button exit;
@@ -140,14 +142,25 @@ public class AcceuilController implements Initializable {
             mainpane.setCenter(view);
         });
         resume.setOnAction(e -> {
-            URL root_url = null;
-            try {
-                root_url = new File("src/Gui/Career/career.fxml").toURI().toURL();
-            } catch (MalformedURLException malformedURLException) {
-                malformedURLException.printStackTrace();
+            if(this.getUser() == null) {
+                Alert a = new Alert(Alert.AlertType.INFORMATION);
+                a.setContentText("Please Login to update Add or Update your Profile!");
+                a.setTitle("Login Error");
+                a.show();
             }
-            Pane view = new FXloader().getPane(root_url);
-            mainpane.setCenter(view);
+                else{
+                    URL root_url = null;
+                    try {
+                        root_url = new File("src/Gui/Career/career.fxml").toURI().toURL();
+                    } catch (MalformedURLException malformedURLException) {
+                        malformedURLException.printStackTrace();
+                    }
+                    Pane view = new FXloader().getPane(root_url);
+                    mainpane.setCenter(view);
+                }
+
+
+
         });
         candidatesProfiles.setOnAction(e -> {
             URL root_url = null;
@@ -190,14 +203,22 @@ public class AcceuilController implements Initializable {
             mainpane.setCenter(view);
         });
         updateProfile.setOnAction(e -> {
-            URL root_url = null;
-            try {
-                root_url = new File("src/Gui/User/updateProfile.fxml").toURI().toURL();
-            } catch (MalformedURLException malformedURLException) {
-                malformedURLException.printStackTrace();
+            if(this.getUser() == null){
+                Alert a = new Alert(Alert.AlertType.INFORMATION);
+                a.setContentText("Please Login to update your profile!");
+                a.setTitle("Login Error");
+                a.show();
+            }else{
+                URL root_url = null;
+                try {
+                    root_url = new File("src/Gui/User/updateProfile.fxml").toURI().toURL();
+                } catch (MalformedURLException malformedURLException) {
+                    malformedURLException.printStackTrace();
+                }
+                Pane view = new FXloader().getPane(root_url);
+                mainpane.setCenter(view);
             }
-            Pane view = new FXloader().getPane(root_url);
-            mainpane.setCenter(view);
+
         });
         forgotPass.setOnAction(e -> {
             URL root_url = null;

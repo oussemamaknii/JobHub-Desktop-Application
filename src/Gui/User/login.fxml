@@ -11,37 +11,42 @@
 
 <AnchorPane prefHeight="496.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.User.LoginController">
    <children>
-      <Pane layoutY="-3.0" prefHeight="496.0" prefWidth="724.0" stylesheets="@../StylSheet/Style.css">
+      <Pane layoutX="-116.0" layoutY="-3.0" prefHeight="612.0" prefWidth="1058.0" stylesheets="@../StylSheet/Style.css">
          <children>
-            <TextField fx:id="email" layoutX="288.0" layoutY="123.0" prefHeight="35.0" prefWidth="171.0" stylesheets="@../StylSheet/Style.css" />
-            <Label layoutX="177.0" layoutY="123.0" prefHeight="18.0" prefWidth="81.0" stylesheets="@../StylSheet/Style.css" text="Email">
+            <TextField fx:id="email" layoutX="524.0" layoutY="193.0" prefHeight="35.0" prefWidth="171.0" stylesheets="@../StylSheet/Style.css" />
+            <Label layoutX="413.0" layoutY="193.0" prefHeight="18.0" prefWidth="81.0" stylesheets="@../StylSheet/Style.css" text="Email">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Label layoutX="160.0" layoutY="207.0" prefHeight="35.0" prefWidth="116.0" stylesheets="@../StylSheet/Style.css" text="Password">
+            <Label layoutX="396.0" layoutY="258.0" prefHeight="35.0" prefWidth="116.0" stylesheets="@../StylSheet/Style.css" text="Password">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
-            <Button fx:id="login" layoutX="217.0" layoutY="353.0" mnemonicParsing="false" onAction="#login" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Login" />
-            <PasswordField fx:id="pw" layoutX="288.0" layoutY="202.0" prefHeight="35.0" prefWidth="171.0" />
-            <Label layoutX="83.0" layoutY="22.0" prefHeight="53.0" prefWidth="619.0" stylesheets="@../StylSheet/Style.css" text="Login now and don't miss the latest job offers " textFill="#e10606">
+            <Button fx:id="login" layoutX="432.0" layoutY="427.0" mnemonicParsing="false" onAction="#login" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Login" />
+            <PasswordField fx:id="pw" layoutX="524.0" layoutY="253.0" prefHeight="35.0" prefWidth="171.0" />
+            <Label layoutX="319.0" layoutY="92.0" prefHeight="53.0" prefWidth="619.0" stylesheets="@../StylSheet/Style.css" text="Login now and don't miss the latest job offers " textFill="#e10606">
                <font>
                   <Font name="Bell MT Bold" size="24.0" />
                </font>
             </Label>
-            <Label fx:id="msg" layoutX="264.0" layoutY="253.0" prefHeight="42.0" prefWidth="197.0" textFill="#fc0000">
+            <Label fx:id="msg" layoutX="500.0" layoutY="301.0" prefHeight="35.0" prefWidth="197.0" textFill="#fc0000">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <CheckBox fx:id="remember" layoutX="335.0" layoutY="307.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="116.0" text="Rembember me" />
-            <Button fx:id="forgotPass" layoutX="300.0" layoutY="254.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="147.0" text="Forgot Password?">
+            <CheckBox fx:id="remember" layoutX="584.0" layoutY="336.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="116.0" text="Rembember me" />
+            <Button fx:id="forgotPass" layoutX="561.0" layoutY="375.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="136.0" text="Forgot Password?">
                <font>
                   <Font size="6.0" />
                </font>
             </Button>
+            <Label fx:id="welcome" layoutX="382.0" layoutY="482.0" prefHeight="78.0" prefWidth="454.0" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>

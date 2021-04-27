@@ -7,31 +7,31 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane prefHeight="530.0" prefWidth="698.0" stylesheets="@../StylSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.User.updateProfileController">
+<Pane prefHeight="627.0" prefWidth="786.0" stylesheets="@../StylSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.User.updateProfileController">
    <children>
-      <TextField fx:id="tfLastName" layoutX="172.0" layoutY="121.0" stylesheets="@../StylSheet/Style.css" />
-      <TextField fx:id="tfEmail" layoutX="424.0" layoutY="59.0" stylesheets="@../StylSheet/Style.css" />
-      <TextField fx:id="tfAdresse" layoutX="172.0" layoutY="179.0" stylesheets="@../StylSheet/Style.css" />
-      <TextField fx:id="tfPhone" layoutX="424.0" layoutY="171.0" stylesheets="@../StylSheet/Style.css" />
-      <TextField fx:id="tfFirstName" layoutX="172.0" layoutY="59.0" stylesheets="@../StylSheet/Style.css" />
-      <DatePicker fx:id="tfDateOfBirth" layoutX="423.0" layoutY="231.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
-      <Label layoutX="76.0" layoutY="63.0" prefHeight="18.0" prefWidth="81.0" stylesheets="@../StylSheet/Style.css" text="First Name" />
-      <Label layoutX="68.0" layoutY="124.0" prefHeight="18.0" prefWidth="65.0" stylesheets="@../StylSheet/Style.css" text="Last Name" />
-      <Label layoutX="76.0" layoutY="183.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Adresse" />
-      <Label layoutX="343.0" layoutY="62.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Email" />
-      <Label layoutX="337.0" layoutY="125.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Password" />
-      <Label layoutX="344.0" layoutY="183.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Phone" />
-      <Label layoutX="334.0" layoutY="235.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Date Of Birth" />
-      <Button fx:id="register" layoutX="208.0" layoutY="344.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Update Your Informations" />
-      <PasswordField fx:id="tfPassword" layoutX="423.0" layoutY="121.0" stylesheets="@../StylSheet/Style.css" />
-      <TextField fx:id="tfProfessionalTitle" layoutX="172.0" layoutY="233.0" stylesheets="@../StylSheet/Style.css" />
-      <Label layoutX="31.0" layoutY="236.0" prefHeight="18.0" prefWidth="101.0" stylesheets="@../StylSheet/Style.css" text="Professional Title" />
-      <Label fx:id="showFirstName" layoutX="170.0" layoutY="88.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
-      <Label fx:id="showEmail" layoutX="423.0" layoutY="88.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
-      <Label fx:id="showLastName" layoutX="170.0" layoutY="146.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
-      <Label fx:id="showAdresse" layoutX="172.0" layoutY="204.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
-      <Label fx:id="showProfessionalTitle" layoutX="170.0" layoutY="258.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
-      <Label fx:id="showPhone" layoutX="424.0" layoutY="204.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
-      <Label fx:id="showDateOfBirth" layoutX="423.0" layoutY="265.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
+      <TextField fx:id="tfLastName" layoutX="240.0" layoutY="198.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfEmail" layoutX="492.0" layoutY="136.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfAdresse" layoutX="240.0" layoutY="256.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfPhone" layoutX="492.0" layoutY="248.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfFirstName" layoutX="240.0" layoutY="136.0" stylesheets="@../StylSheet/Style.css" />
+      <DatePicker fx:id="tfDateOfBirth" layoutX="491.0" layoutY="308.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
+      <Label layoutX="144.0" layoutY="140.0" prefHeight="18.0" prefWidth="81.0" stylesheets="@../StylSheet/Style.css" text="First Name" />
+      <Label layoutX="136.0" layoutY="201.0" prefHeight="18.0" prefWidth="65.0" stylesheets="@../StylSheet/Style.css" text="Last Name" />
+      <Label layoutX="144.0" layoutY="260.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Adresse" />
+      <Label layoutX="411.0" layoutY="139.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Email" />
+      <Label layoutX="405.0" layoutY="202.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Password" />
+      <Label layoutX="412.0" layoutY="260.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Phone" />
+      <Label layoutX="402.0" layoutY="312.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Date Of Birth" />
+      <Button fx:id="register" layoutX="276.0" layoutY="421.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Update Your Informations" />
+      <PasswordField fx:id="tfPassword" layoutX="491.0" layoutY="198.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfProfessionalTitle" layoutX="240.0" layoutY="310.0" stylesheets="@../StylSheet/Style.css" />
+      <Label layoutX="99.0" layoutY="313.0" prefHeight="18.0" prefWidth="101.0" stylesheets="@../StylSheet/Style.css" text="Professional Title" />
+      <Label fx:id="showFirstName" layoutX="238.0" layoutY="165.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
+      <Label fx:id="showEmail" layoutX="491.0" layoutY="165.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
+      <Label fx:id="showLastName" layoutX="238.0" layoutY="223.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
+      <Label fx:id="showAdresse" layoutX="240.0" layoutY="281.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
+      <Label fx:id="showProfessionalTitle" layoutX="238.0" layoutY="335.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
+      <Label fx:id="showPhone" layoutX="492.0" layoutY="281.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
+      <Label fx:id="showDateOfBirth" layoutX="491.0" layoutY="342.0" prefHeight="25.0" prefWidth="149.0" textAlignment="CENTER" textFill="#1a05ff" />
    </children>
 </Pane>

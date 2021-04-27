@@ -6,28 +6,42 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="572.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Company.AddCompanyController">
    <children>
-      <Pane layoutY="1.0" prefHeight="572.0" prefWidth="703.0" stylesheets="@../StylSheet/Style.css">
+      <Pane layoutY="-10.0" prefHeight="638.0" prefWidth="804.0" stylesheets="@../StylSheet/Style.css">
          <children>
-            <TextField fx:id="tfCompanyEmail" layoutX="172.0" layoutY="110.0" stylesheets="@../StylSheet/Style.css" />
-            <TextField fx:id="tfWebsite" layoutX="417.0" layoutY="69.0" stylesheets="@../StylSheet/Style.css" />
-            <TextField fx:id="tfCompanyAdress" layoutX="172.0" layoutY="151.0" stylesheets="@../StylSheet/Style.css" />
-            <TextField fx:id="tfCategory" layoutX="417.0" layoutY="152.0" stylesheets="@../StylSheet/Style.css" />
-            <TextField fx:id="tfCompanyName" layoutX="173.0" layoutY="69.0" stylesheets="@../StylSheet/Style.css" />
-            <DatePicker fx:id="foundedDate" layoutX="172.0" layoutY="199.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
-            <Label layoutX="81.0" layoutY="72.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Company Name" />
-            <Label layoutX="81.0" layoutY="114.0" prefHeight="18.0" prefWidth="81.0" stylesheets="@../StylSheet/Style.css" text="Contact Email" />
-            <Label layoutX="76.0" layoutY="155.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Company Adress" />
-            <Label layoutX="343.0" layoutY="72.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Website" />
-            <Label layoutX="324.0" layoutY="114.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Company Phone" />
-            <Label layoutX="346.0" layoutY="155.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Category" />
-            <Label layoutX="81.0" layoutY="203.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Founded Date" />
-            <TextField fx:id="tfFacebook" layoutX="417.0" layoutY="192.0" stylesheets="@../StylSheet/Style.css" />
-            <Label layoutX="346.0" layoutY="195.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Facebook" />
-            <Button fx:id="addCompany" layoutX="217.0" layoutY="306.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Create Company Profile" />
-            <TextField fx:id="tfCompanyPhone" layoutX="417.0" layoutY="111.0" stylesheets="@../StylSheet/Style.css" />
+            <TextField fx:id="tfCompanyEmail" layoutX="251.0" layoutY="241.0" stylesheets="@../StylSheet/Style.css" />
+            <TextField fx:id="tfWebsite" layoutX="499.0" layoutY="150.0" stylesheets="@../StylSheet/Style.css" />
+            <TextField fx:id="tfCompanyAdress" layoutX="251.0" layoutY="320.0" stylesheets="@../StylSheet/Style.css" />
+            <TextField fx:id="tfCategory" layoutX="496.0" layoutY="320.0" stylesheets="@../StylSheet/Style.css" />
+            <TextField fx:id="tfCompanyName" layoutX="255.0" layoutY="150.0" stylesheets="@../StylSheet/Style.css" />
+            <DatePicker fx:id="foundedDate" layoutX="250.0" layoutY="396.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
+            <Label layoutX="163.0" layoutY="153.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Company Name" />
+            <Label layoutX="160.0" layoutY="245.0" prefHeight="18.0" prefWidth="81.0" stylesheets="@../StylSheet/Style.css" text="Contact Email" />
+            <Label layoutX="146.0" layoutY="323.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Company Adress" />
+            <Label layoutX="425.0" layoutY="153.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Website" />
+            <Label layoutX="403.0" layoutY="245.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Company Phone" />
+            <Label layoutX="416.0" layoutY="323.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Category" />
+            <Label layoutX="149.0" layoutY="400.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Founded Date" />
+            <TextField fx:id="tfFacebook" layoutX="496.0" layoutY="388.0" stylesheets="@../StylSheet/Style.css" />
+            <Label layoutX="414.0" layoutY="392.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Facebook" />
+            <Button fx:id="addCompany" layoutX="299.0" layoutY="492.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Create Company Profile" />
+            <TextField fx:id="tfCompanyPhone" layoutX="496.0" layoutY="241.0" stylesheets="@../StylSheet/Style.css" />
+            <Label fx:id="showCompanyName" layoutX="253.0" layoutY="192.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#2100f8" />
+            <Label layoutX="118.0" layoutY="67.0" prefHeight="53.0" prefWidth="619.0" stylesheets="@../StylSheet/Style.css" text="Create your company profile and post your offers !" textFill="#e10606">
+               <font>
+                  <Font name="Bell MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="showWebsite" layoutX="496.0" layoutY="192.0" prefHeight="17.0" prefWidth="151.0" text="Label" textFill="#2100f8" />
+            <Label fx:id="showContactEmail" layoutX="251.0" layoutY="281.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#2100f8" />
+            <Label fx:id="showCompanyAdress" layoutX="253.0" layoutY="364.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#2100f8" />
+            <Label fx:id="showFoundedDate" layoutX="251.0" layoutY="438.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#2100f8" />
+            <Label fx:id="showCompanyPhone" layoutX="496.0" layoutY="281.0" prefHeight="17.0" prefWidth="151.0" text="Label" textFill="#2100f8" />
+            <Label fx:id="showCategory" layoutX="498.0" layoutY="356.0" prefHeight="17.0" prefWidth="151.0" text="Label" textFill="#2100f8" />
+            <Label fx:id="showFacebook" layoutX="495.0" layoutY="430.0" prefHeight="17.0" prefWidth="151.0" text="Label" textFill="#2100f8" />
          </children>
       </Pane>
    </children>

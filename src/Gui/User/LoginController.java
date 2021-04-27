@@ -59,6 +59,8 @@ public class LoginController extends Controller implements Initializable {
     private Button login;
     @FXML
     private Button forgotPass;
+    @FXML
+    private Label welcome;
 
     /**
      * Initializes the controller class.
@@ -66,6 +68,16 @@ public class LoginController extends Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         LoginService.readinifile(path, email, pw, remember);
+        forgotPass.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/User/forgotPassword.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
 
     }
     @FXML
@@ -91,27 +103,16 @@ public class LoginController extends Controller implements Initializable {
                     user.setId(x);
                     Controller.setUserId(x);
                     if (service.getUserByuserName(email.getText()).getRoles().equals("a:2:{i:0;s:10:\"ROLE_ADMIN\";i:1;s:9:\"ROLE_USER\";}")) {
-
                         Parent root = FXMLLoader.load(getClass().getResource("/Gui/Backoffice/Backoffice.fxml"));
                         Scene scene = new Scene(root);
                         Node node = (Node) event.getSource();
                         stage = (Stage) node.getScene().getWindow();
                         stage.close();
-
                         stage.setScene(scene);
                         stage.show();
                         stage.setResizable(false);
                         return;
-                    } else {
-                        Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Acceuil/Acceuil.fxml"));
-                        Scene scene = new Scene(parent);
-                        Node node = (Node) event.getSource();
-                        stage = (Stage) node.getScene().getWindow();
-                        stage.close();
-                        stage.setScene(scene);
-                        stage.show();
-                        stage.setResizable(false);
-
+                    } else { welcome.setText("Welcome " + this.getUser().getFirstName()+"! Navigate through the left Menu");
 
                     }
                     service.createiniFile(path, email.getText(), pw.getText());
@@ -132,6 +133,7 @@ public class LoginController extends Controller implements Initializable {
 
         }
     }
+
 }
 
 
