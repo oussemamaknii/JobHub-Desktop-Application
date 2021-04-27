@@ -58,14 +58,28 @@ public class Formation_Service implements ServiceF <formation> {
         }
         return a;
     }
+    public void supprimer(formation t) {
+
+        try {
+            String requete = "DELETE FROM formation WHERE id=?";
+            PreparedStatement pst = Connexion.getInstance().getConnection()
+                    .prepareStatement(requete);
+            pst.setInt(1, t.getId());
+            pst.executeUpdate();
+            System.out.println("formation supprimer");
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
 
     @Override
     public void addformation(formation p) {
 
         try {
             String req =
-            "INSERT INTO formation(category_id,nom,formateur,description"
-                    + ",date_debut,date_fin,adresse,mail,tel,prix) VALUES(?,?,?,?,?,?,?,?,?,?)";
+                    "INSERT INTO formation(category_id,nom,formateur,description"
+                            + ",date_debut,date_fin,adresse,mail,tel,prix) VALUES(?,?,?,?,?,?,?,?,?,?)";
 
             PreparedStatement pst = cnx.prepareStatement(req);
 
@@ -87,7 +101,7 @@ public class Formation_Service implements ServiceF <formation> {
         }
 
 
-}
+    }
 
     public ArrayList<formation> getProduitsByNameOrID(String name){
         ArrayList<formation> res = new ArrayList<>();
@@ -110,12 +124,12 @@ public class Formation_Service implements ServiceF <formation> {
             return res;
         }
     }
-    public formation getSalleByID(String id){
+    public formation getSalleByID(String nom){
         try {
-            String requete = "SELECT * FROM formation WHERE id=?";
+            String requete = "SELECT * FROM formation WHERE nom=?";
             PreparedStatement pst = Connexion.getInstance().getConnection()
                     .prepareStatement(requete);
-            pst.setString(1, id);
+            pst.setString(1, nom);
             ResultSet rs;
             rs = pst.executeQuery();
 

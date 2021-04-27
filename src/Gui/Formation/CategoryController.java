@@ -48,7 +48,7 @@ public class CategoryController implements Initializable {
     @FXML
     private TableColumn<Category, String> description;
 
-
+    int idC;
 
 
 
@@ -61,22 +61,7 @@ public class CategoryController implements Initializable {
             id.setCellValueFactory(new PropertyValueFactory<Category,Integer>("id"));
             nom.setCellValueFactory(new PropertyValueFactory<Category, String>("titre"));
             description.setCellValueFactory(new PropertyValueFactory<Category, String>("descriptionc"));
-
-
-
-
-
-
-
-
             tvBooks.setItems(list);
-
-
-
-
-
-
-
             addcateg.setOnAction(e -> {
 
 
@@ -139,27 +124,25 @@ public class CategoryController implements Initializable {
 
 
         Category s = tvBooks.getSelectionModel().getSelectedItem();
-
+        idC = s.getId();
         id.setText(String.valueOf(s.getId()));
         nom.setText(String.valueOf(s.getTitre()));
         description.setText(String.valueOf(s.getDescriptionc()));
+
+        tfcouleur.setText(s.getCouleur());
+        tfdescription.setText(s.getDescriptionc());
+        tfnom.setText(s.getTitre());
 
     }
 
     @FXML
     private void editAction(ActionEvent event) {
-        String titre = tfnom.getText();
-        String descrcriptionc= tfdescription.getText();
+        Category cat = new Category(tfnom.getText(),tfdescription.getText(),tfcouleur.getText());
+        new Categorie_Service().updatecat(cat,idC);
 
-
-
-        Categorie_Service s = new Categorie_Service();
-
-        s.updatecat(titre,descrcriptionc);
-
-        Notifications notificationBuild = Notifications.create()
-                .title("Traitement salle")
-                .text("la salle a été modifé avec succes")
+        /*Notifications notificationBuild = Notifications.create()
+                .title("Traitement category")
+                .text("la category a été modifé avec succes")
                 .graphic(null)
                 //.hideAfter(Duration.Hours(5))
                 .position(Pos.CENTER)
@@ -169,10 +152,9 @@ public class CategoryController implements Initializable {
                         System.out.println("click here");
                     }
 
-                });
+                });*/
 
         readEvents(event);
-
 
     }
 }

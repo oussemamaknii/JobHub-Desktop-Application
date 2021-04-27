@@ -12,8 +12,9 @@ public interface ServiceG <T>{
 
 
 
-    void updatecat(String titre, String descriptionc);
 
+    //void updatecat(String titre, String descriptionc);
+    public void updatecat(Category cat, int id);
     public ObservableList<T> getAll() ;
 
 

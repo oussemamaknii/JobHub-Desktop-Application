@@ -4,16 +4,24 @@ import Entities.formation;
 import Services.Formation_Service;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseDragEvent;
+import org.controlsfx.control.Notifications;
 
 import java.awt.event.KeyEvent;
 import java.net.URL;
 import java.sql.Date;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class FormationController implements Initializable {
@@ -50,6 +58,7 @@ public class FormationController implements Initializable {
 
     @FXML
     private TableColumn<formation, DatePicker> date_debutf;
+
     @FXML
     private TableColumn<formation, DatePicker> date_finf;
     @FXML
@@ -66,7 +75,8 @@ public class FormationController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        ObservableList<formation> list = (ObservableList<formation>) new Formation_Service().getAll();
+        searchFormation();
+        /*ObservableList<formation> list = (ObservableList<formation>) new Formation_Service().getAll();
         id.setCellValueFactory(new PropertyValueFactory<formation,Integer>("id"));
 
         formation.setCellValueFactory(new PropertyValueFactory<formation, String>("formateur"));
@@ -76,7 +86,7 @@ public class FormationController implements Initializable {
         adresse.setCellValueFactory(new PropertyValueFactory<formation, String>("adresse"));
         tel.setCellValueFactory(new PropertyValueFactory<formation, Double>("tel"));
         prix.setCellValueFactory(new PropertyValueFactory<formation, Double>("prix"));
-        tvBooks.setItems(list);
+        tvBooks.setItems(list);*/
 
         choicecateg.setItems(FXCollections.observableArrayList(new Formation_Service().getCateg()));
 
@@ -103,7 +113,8 @@ public class FormationController implements Initializable {
         ObservableList<formation> list = (ObservableList<formation>) new Formation_Service().getAll();
         id.setCellValueFactory(new PropertyValueFactory<formation,Integer>("id"));
 
-        formation.setCellValueFactory(new PropertyValueFactory<formation, String>("formateur"));
+        formation.setCellValueFactory(new PropertyValueFactory<formation, String>("nom"));
+
 
         date_debutf.setCellValueFactory(new PropertyValueFactory<formation, DatePicker>("date_debut"));
         date_finf.setCellValueFactory(new PropertyValueFactory<formation, DatePicker>("date_fin"));
@@ -114,12 +125,50 @@ public class FormationController implements Initializable {
 
     }
 
+    @FXML
+    void searchFormation(){
 
+            ObservableList<formation> list = new Formation_Service().getAll();
+            id.setCellValueFactory(new PropertyValueFactory<formation,Integer>("id"));
 
+            formation.setCellValueFactory(new PropertyValueFactory<formation, String>("nom"));
+            date_debutf.setCellValueFactory(new PropertyValueFactory<formation, DatePicker>("date_debut"));
+            date_finf.setCellValueFactory(new PropertyValueFactory<formation, DatePicker>("date_fin"));
+            adresse.setCellValueFactory(new PropertyValueFactory<formation, String>("adresse"));
+            tel.setCellValueFactory(new PropertyValueFactory<formation, Double>("tel"));
+            prix.setCellValueFactory(new PropertyValueFactory<formation, Double>("prix"));
+            tvBooks.setItems(list);
+
+            FilteredList<formation> filteredData = new FilteredList<>(list, b->true);
+            tfSearch.textProperty().addListener((Observable,oldValue,newValue)->{
+                filteredData.setPredicate(formation->{
+                    if (newValue == null || newValue.isEmpty()){
+                        return  true;
+                    }
+                    String lowerCaseFilter = newValue.toLowerCase();
+                    if (formation.getTitre().toLowerCase().indexOf(lowerCaseFilter)!=-1){
+                        return true; //filter matches name
+                    }else if (formation.getFormateur().toLowerCase().indexOf(lowerCaseFilter)!=-1){
+                        return true; //filter matches formatteur
+                    }
+                else if (String.valueOf(formation.getDate_debut()).toLowerCase().indexOf(lowerCaseFilter)!=-1){
+                    return true; //filter matches date_debut
+                    }
+                    else
+                        return false; // does not match
+                });
+            });
+
+            SortedList<formation> sortedData = new SortedList<>(filteredData);
+            sortedData.comparatorProperty().bind(tvBooks.comparatorProperty());
+            tvBooks.setItems(sortedData);
+    }
+
+    /*
     public void tfSearchOnKeyReleased(javafx.scene.input.KeyEvent keyEvent) {
         String t = tfSearch.getText();
         search(t);
-    }
+    }*/
 
     public void search(String t){
         System.out.println("CLCKED");
@@ -132,13 +181,57 @@ public class FormationController implements Initializable {
         tvBooks.setItems(currentProduct);
         id.setCellValueFactory(new PropertyValueFactory<>("id"));
 
-        formation.setCellValueFactory(new PropertyValueFactory<>("formateur"));
+        formation.setCellValueFactory(new PropertyValueFactory<>("nom"));
 
         date_debutf.setCellValueFactory(new PropertyValueFactory<>("date_debut"));
         date_finf.setCellValueFactory(new PropertyValueFactory<>("date_fin"));
         adresse.setCellValueFactory(new PropertyValueFactory<>("adresse"));
         tel.setCellValueFactory(new PropertyValueFactory<>("tel"));
         prix.setCellValueFactory(new PropertyValueFactory<>("prix"));
+    }
+
+    @FXML
+    private void deleteAction(MouseDragEvent event) {
+
+    }
+
+    @FXML
+    private void removeAction(ActionEvent event) {
+        formation s = tvBooks.getSelectionModel().getSelectedItem();
+        Formation_Service crs = new Formation_Service();
+        crs.supprimer(s);
+        Notifications notificationBuild = Notifications.create()
+                .title("Traitement formation")
+                .text("la formation été supprimé avec succes")
+                .graphic(null)
+                //.hideAfter(Duration.Hours(5))
+                .position(Pos.CENTER)
+                .onAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        System.out.println("click here");
+                    }
+
+                });
+
+        readEvents(event);
+
+
+    }
+    @FXML
+    private void updateAction(ActionEvent event) {
+
+
+        formation s = tvBooks.getSelectionModel().getSelectedItem();
+
+        id.setText(String.valueOf(s.getId()));
+        formation.setText(String.valueOf(s.getTitre()));
+        date_debutf.setText(String.valueOf(s.getDate_debut()));
+        date_finf.setText(String.valueOf(s.getDate_fin()));
+        adresse.setText(String.valueOf(s.getAdresse()));
+        tel.setText(String.valueOf(s.getTel()));
+        prix.setText(String.valueOf(s.getPrix()));
+
     }
 
 }

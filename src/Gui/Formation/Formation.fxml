@@ -58,9 +58,9 @@
             <TextField fx:id="tfmail" layoutX="35.0" layoutY="345.0" prefHeight="26.0" prefWidth="165.0" promptText="mail" />
             <TextField fx:id="tfadresse" layoutX="35.0" layoutY="302.0" prefHeight="26.0" prefWidth="165.0" promptText="adresse" />
             <TextField fx:id="tfdescription" layoutX="35.0" layoutY="174.0" prefHeight="26.0" prefWidth="165.0" promptText="description" />
-            <Button fx:id="supprimer" layoutX="189.0" layoutY="547.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="85.0" text="supprimer" />
+            <Button fx:id="btnremove" onAction="#removeAction"  layoutX="189.0" layoutY="547.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="85.0" text="supprimer" />
             <Button fx:id="modifier" layoutX="98.0" layoutY="547.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="74.0" text="modifier" />
-            <TextField fx:id="tfSearch"  onKeyReleased="#tfSearchOnKeyReleased" layoutX="413.0" layoutY="75.0" prefHeight="31.0" prefWidth="291.0" promptText="Search" />
+            <TextField fx:id="tfSearch"   layoutX="413.0" layoutY="75.0" prefHeight="31.0" prefWidth="291.0" promptText="Search" />
             <TextField fx:id="tfprix" layoutX="35.0" layoutY="435.0" prefHeight="26.0" prefWidth="165.0" promptText="prix" />
             <TableView fx:id="tvBooks" layoutX="251.0" layoutY="118.0" prefHeight="421.0" prefWidth="515.0">
                <columns>
@@ -76,7 +76,7 @@
             <ChoiceBox fx:id="choicecateg" layoutX="35.0" layoutY="476.0" prefHeight="25.0" prefWidth="165.0" />
             <DatePicker fx:id="date_debut" layoutX="35.0" layoutY="217.0" prefHeight="25.0" prefWidth="165.0" />
             <DatePicker fx:id="date_fin" layoutX="35.0" layoutY="258.0" prefHeight="25.0" prefWidth="165.0" />
-            <Button fx:id="select" layoutX="816.0" layoutY="555.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="74.0" text="Select" />
+            <Button fx:id="btnUpdate1"  onAction="#updateAction" layoutX="816.0" layoutY="555.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="74.0" text="Select" />
             <Label layoutX="288.0" layoutY="14.0" text="Liste des formations" textFill="#321076">
                <font>
                   <Font name="Comic Sans MS Bold Italic" size="38.0" />

@@ -23,7 +23,7 @@ public class formation {
     private double prix;
 
 
-    public formation(int category_id, String nom, String formateur, String description, String adresse, double tel, String email, Date date_debut, Date date_fin, double prix) {
+    public formation(int anInt, String rsString1, String string, String rsString, String s, double aDouble, String string1, Date date, Date rsDate, double rsDouble) {
         this.category_id = category_id;
         this.nom = nom;
         this.formateur = formateur;
@@ -35,6 +35,7 @@ public class formation {
         this.date_fin = date_fin;
         this.prix = prix;
     }
+
 
 
 
@@ -59,6 +60,9 @@ public class formation {
     }
 
 
+    public String getNom() {
+        return nom;
+    }
 
     public int getId() {
         return this.id;

@@ -49,23 +49,19 @@ public  class Categorie_Service implements ServiceG<Category> {
                     .prepareStatement(requete);
             pst.setInt(1, t.getId());
             pst.executeUpdate();
-            System.out.println("formation supprimer");
+            System.out.println("category supprimer");
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }
     }
+
 @Override
-    public void updatecat(String titre, String descriptionc){
+    public void updatecat(Category cat, int id){
 
         try {
 
-            String requete = "UPDATE Category SET titre=? where id=?";
+            String requete = "UPDATE category SET titre='"+cat.getTitre()+"'  where id='"+id+"'  ";
             PreparedStatement pst = cnx.prepareStatement(requete);
-
-            pst.setString(1, titre);
-            pst.setString(2, titre);
-
-
             pst.executeUpdate();
             System.out.println("Type modifié !");
         } catch (SQLException ex) {
