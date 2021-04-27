@@ -69,7 +69,7 @@ public class Mail {
             //Attachment body part.
             System.out.println("env!!!");
             MimeBodyPart pdfAttachment = new MimeBodyPart();
-            pdfAttachment.attachFile("E:\\Etudes\\ESPRIT\\Esprit_3A28\\Semestre 2\\PiDev\\Desktop\\FinalWork\\JobHub-Desktop-Application\\src\\Gui\\Commande\\Facture.pdf");
+            pdfAttachment.attachFile("C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\src\\Gui\\Commande\\Facture.pdf");
             System.out.println("env!!!125");
             //Attach body parts
             emailContent.addBodyPart(textBodyPart);
