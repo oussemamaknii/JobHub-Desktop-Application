@@ -15,6 +15,25 @@
       <root url="jar://$PROJECT_DIR$/deps/map/okhttp-3.14.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/deps/map/opencensus-api-0.25.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/deps/map/slf4j-api-1.7.26.jar!/" />
+      <root url="file://$PROJECT_DIR$/deps" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/controlsfx-8.40.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/fontawesomefx-8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/fontawesomefx-glyphsbrowser-all-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/gson-2.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/itextpdf-5.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/jakarta.xml.bind-api-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/jfoenix-9.0.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/slf4j-api-1.7.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/techsoftemail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/TrayTester.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/richtextfx-demos-fat-0.6.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/rating-java-0.1.1.jar!/" />
+      <root url="file://$PROJECT_DIR$/src/Librairies/lib" />
+      <root url="file://$PROJECT_DIR$/src/Librairies" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/lombok.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/deps/commons-lang3-3.12.0-javadoc.jar!/" />
@@ -22,6 +41,13 @@
     <SOURCES>
       <root url="jar://$PROJECT_DIR$/deps/commons-lang3-3.12.0-test-sources.jar!/" />
       <root url="jar://$PROJECT_DIR$/deps/commons-lang3-3.12.0-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/deps" />
+      <root url="file://$PROJECT_DIR$/src/Librairies/lib" />
     </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/deps" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/src/Librairies" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/src/Librairies/lib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/deps" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$PROJECT_DIR$/src/Librairies/lib" recursive="false" type="SOURCES" />
   </library>
 </component>

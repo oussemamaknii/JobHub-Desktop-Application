@@ -19,6 +19,14 @@ public class Produit {
 
     }
 
+    public Produit(String name,String ref, String description,float price, int quantity, String image){
+        this.name = name;
+        this.ref =  ref;
+        this.description = description;
+        this.price = price;
+        this.quantity= quantity;
+        this.image = image;
+    }
     public Produit(int id, String name,String ref, String description,float price, int quantity, String image){
         this.id = id;
         this.name = name;
@@ -98,24 +106,6 @@ public class Produit {
                 ", quantity=" + quantity +
                 ", image='" + image + '\'' +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if(this == obj){
-            return true;
-        }
-        if (this == null){
-            return  false;
-        }
-        if (getClass() != obj.getClass()){
-            return false;
-        }
-        final Produit other = (Produit) obj;
-        if(this.id != other.id){
-            return false;
-        }
-        return true;
     }
 
     @Override

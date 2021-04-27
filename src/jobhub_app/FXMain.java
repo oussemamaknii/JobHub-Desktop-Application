@@ -26,11 +26,12 @@ import java.net.URL;
 public class FXMain extends Application {
     public double xOffset,yOffset;
     public FXMain(){}
-    
+
     @Override
     public void start(Stage primaryStage) throws IOException{
-        URL root_url = new File("src/Gui/Acceuil/Acceuil.fxml").toURI().toURL();
-        Parent parent = FXMLLoader.load(root_url);
+       URL root_url = new File("src/Gui/Acceuil/Acceuil.fxml").toURI().toURL();
+      Parent parent = FXMLLoader.load(root_url);
+      //Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Backoffice/Backoffice.fxml"));
         Scene scene = new Scene(parent);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         scene.setFill(Color.TRANSPARENT);
@@ -59,5 +60,5 @@ public class FXMain extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }

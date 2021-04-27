@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="734.0" prefWidth="841.0" style="-fx-background-color: transparent;" styleClass="CenterContent" stylesheets="@Commande.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Commande.PaymentController">
+   <children>
+      <ScrollPane prefHeight="806.0" prefWidth="881.0" styleClass="CenterContent" stylesheets="@Commande.css">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="805.0" prefWidth="982.0">
+               <children>
+                  <Pane fx:id="banner" layoutX="35.0" layoutY="39.0" prefHeight="146.0" prefWidth="787.0" styleClass="banner" stylesheets="@Commande.css">
+                     <children>
+                        <Label layoutX="47.0" layoutY="14.0" text="PAIEMENT" textFill="WHITE">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="113.0" fitWidth="137.0" layoutX="603.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/giphy.gif" />
+                           </image>
+                        </ImageView>
+                         
+                     </children>
+                  </Pane>
+                  <JFXButton layoutX="345.0" layoutY="594.0" prefHeight="33.0" prefWidth="158.0" style="-fx-background-color: #106AD2;" text="Payer" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXButton>
+                   <ImageView fitHeight="39.0" fitWidth="222.0" layoutX="328.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+                       <image>
+                           <Image url="@../Images/Group800.png" />
+                       </image>
+                   </ImageView>
+                   <Label layoutX="375.0" layoutY="297.0" prefHeight="35.0" prefWidth="97.0" text="Paiement" textFill="WHITE">
+                       <font>
+                           <Font name="Source Sans Pro Semibold" size="14.0" />
+                       </font>
+                   </Label>
+                   <Pane layoutX="489.0" layoutY="387.0" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #E8E8E8; -fx-border-color: rgba(0,0,0,0.6); -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 3px;">
+                     <children>
+                        <TextField fx:id="cardNumber" layoutX="5.0" layoutY="7.0" prefHeight="25.0" prefWidth="251.0" promptText="cardNumber" />
+                     </children></Pane>
+                   <Pane layoutX="489.0" layoutY="452.0" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #E8E8E8; -fx-border-color: rgba(0,0,0,0.6); -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 3px;">
+                     <children>
+                        <TextField fx:id="moiExpiration" layoutX="3.0" layoutY="7.0" prefHeight="25.0" prefWidth="251.0" promptText="moiExpiration" />
+                     </children></Pane>
+                  <Pane layoutX="108.0" layoutY="452.0" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #E8E8E8; -fx-border-color: rgba(0,0,0,0.6); -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 3px;">
+                     <children>
+                        <TextField fx:id="securityCode" layoutX="3.0" layoutY="7.0" prefHeight="25.0" prefWidth="256.0" promptText="securityCode" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="299.0" layoutY="521.0" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #E8E8E8; -fx-border-color: rgba(0,0,0,0.6); -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 3px;">
+                     <children>
+                        <TextField fx:id="anneeExpiration" layoutX="3.0" layoutY="4.0" prefHeight="31.0" prefWidth="251.0" promptText="anneExpiration" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="108.0" layoutY="387.0" prefHeight="39.0" prefWidth="260.0" style="-fx-background-color: #E8E8E8; -fx-border-color: rgba(0,0,0,0.6); -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 3px;">
+                     <children>
+                        <TextField fx:id="cardHolderName" layoutX="4.0" layoutY="7.0" prefHeight="25.0" prefWidth="248.0" promptText="cardHolderName" />
+                     </children>
+                  </Pane>
+                   <WebView fx:id="webview" layoutX="20.0" layoutY="634.0" prefHeight="541.0" prefWidth="833.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

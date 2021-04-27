@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2b3f63;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Backoffice.ProductCartController">
+   <children>
+      <Label layoutX="26.0" layoutY="33.0" prefHeight="45.0" prefWidth="189.0" text="Commande numero:" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="refOrder" layoutX="226.0" layoutY="44.0" prefHeight="23.0" prefWidth="101.0" text="ref" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableCart" layoutX="67.0" layoutY="117.0" prefHeight="230.0" prefWidth="452.0">
+        <columns>
+          <TableColumn fx:id="idP" prefWidth="75.0" text="Reference Produit" />
+          <TableColumn fx:id="QtyP" prefWidth="75.0" text="Quantité" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ImageView fx:id="close" fitHeight="23.0" fitWidth="30.0" layoutX="537.0" layoutY="14.0" onMouseClicked="#cancel" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/close.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
