@@ -15,19 +15,13 @@ public class formation {
     private String formateur;
     private String description;
     private String adresse;
+    private String catname;
     private double tel;
     private String email;
     private Date date_debut;
     private Date date_fin;
     private double prix;
 
-    public formation() {
-
-    }
-
-
-    public formation(int categId, String text, String tformateurText, String tfdescriptionText, LocalDate value, LocalDate date_finValue, String tfmailText, String tftelText, String tfprixText) {
-    }
 
     public formation(int category_id, String nom, String formateur, String description, String adresse, double tel, String email, Date date_debut, Date date_fin, double prix) {
         this.category_id = category_id;
@@ -42,6 +36,30 @@ public class formation {
         this.prix = prix;
     }
 
+
+
+    public String getCatname() {
+        return catname;
+    }
+
+    public void setCatname(String catname) {
+        this.catname = catname;
+    }
+    public formation() {
+        this.category_id = category_id;
+        this.nom = nom;
+        this.formateur = formateur;
+        this.description = description;
+        this.adresse = adresse;
+        this.tel = tel;
+        this.email = email;
+        this.date_debut = date_debut;
+        this.date_fin = date_fin;
+        this.prix = prix;
+    }
+
+
+
     public int getId() {
         return this.id;
     }
@@ -50,7 +68,7 @@ public class formation {
         this.id = id;
     }
 
-    public int getCategory_id() {
+    public int getCategory_id(String value) {
         return this.category_id;
     }
 
@@ -62,8 +80,8 @@ public class formation {
         return this.nom;
     }
 
-    public void setTitre(String titre) {
-        this.nom = titre;
+    public void setTitre(String nom) {
+        this.nom = nom;
     }
 
     public String getFormateur() {
@@ -168,4 +186,6 @@ public class formation {
     public void setCategory(int category_id) {
         this.category_id = category_id;
     }
+
+
 }

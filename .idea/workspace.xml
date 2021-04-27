@@ -26,144 +26,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Listecategorie.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/ServiceF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Delete.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/ServiceF.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Categorie_Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/ServiceG.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Commande.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Demande_Recrutement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Commande.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Commande.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/CommandeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Panier.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/PanierController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ProductSingleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/Shop2.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/ShopController2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Commande/shop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemande.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Demande/AddDemandeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Category.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Category.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/DeletOffreEmploi.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/DeletOffreEmploiController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/ListCell.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/OffreCell.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/SeeApps.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/SeeAppsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOffer.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/OffreEmploi/UpdateOfferController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProduct.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Book.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/BookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Card.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/DeleteProduct.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/DeleteProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ProductSingle.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ProductSingleController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ProductSingleController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/ShopController2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/shopbeta.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePaiment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceProduit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Demande_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Offre_Emploi_Service.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePaiment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceProduit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/categpng.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/email.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/icons8_Box_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/icons8_GPS_Antenna_64px_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/icons8_Home_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/icons8_Meanpath_64px_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/icons8_Open_Envelope_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/icons8_Person_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/icons8_Search_52px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/icons8_Sign_Out_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/icons8_Slider__32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/icons8_Xbox_Menu_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jimmy-fallon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/job.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/loc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/post.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Commande.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Demande_Recrutement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/categorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/categorie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/categorie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/categorie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/formation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/formation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/DeleteFormation.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/DeleteFormationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Formation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Formation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/LiseFormation.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Formation_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Formation_Service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entities/formation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/formation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Commande.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Commande.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/CommandeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Panier.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/PanierController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Shop2.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/ShopController2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/shop.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemande.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Formation/Category.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/Category.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Formation/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Formation/DeleteFormation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/Listecategorie.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Formation/DeleteFormationController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Formation/LiseFormation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/Delete.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploi.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/DeletOffreEmploiController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/ListCell.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/OffreCell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/SeeApps.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/SeeAppsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/UpdateOffer.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/UpdateOfferController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddProduct.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Book.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/BookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Card.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/DeleteProduct.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/DeleteProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ProductSingle.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ProductSingleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Shop.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/shopbeta.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServiceCommande.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServicePaiment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServicePanier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServiceProduit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/ServiceF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ServiceF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Categorie_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Categorie_Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Demande_Service.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Formation_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Formation_Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Offre_Emploi_Service.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ServiceCommande.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ServicePaiment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ServicePanier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ServiceProduit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,10 +57,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -261,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619060188391</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1619399917055</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619399917055</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

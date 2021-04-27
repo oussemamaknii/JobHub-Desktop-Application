@@ -1,49 +1,67 @@
 package Gui.Formation;
+import Entities.formation;
 import Services.Categorie_Service;
+import Services.Formation_Service;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.Initializable;
 import java.util.List;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.lang.Object;
-import Entities.categorie;
+import Entities.Category;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseDragEvent;
+import org.controlsfx.control.Notifications;
 
 public class CategoryController implements Initializable {
-    public ObservableList<categorie> currentProduct = FXCollections.observableArrayList();
+    public ObservableList<Category> currentProduct = FXCollections.observableArrayList();
     @FXML
     private TextField tfnom;
-@FXML
-        private TextField tfcouleur;
+
+    @FXML
+    private TextField tfdescription;
+
+    @FXML
+    private TextField tfcouleur;
 
         @FXML
         private Button addcateg;
+    @FXML
+    private Button btnremove;
+    @FXML
+    private Button editbtn;
 
 
     @FXML
-    private TableView<categorie> tvBooks;
+    private TableView<Category> tvBooks;
     @FXML
-    private TableColumn<categorie, Integer> id;
+    private TableColumn<Category, Integer> id;
     @FXML
-    private TableColumn<categorie, String> nom;
+    private TableColumn<Category, String> nom;
     @FXML
-    private TableColumn<categorie, String> couleur;
+    private TableColumn<Category, String> description;
 
 
 
 
-        @Override
+
+
+    @Override
         public void initialize(URL url, ResourceBundle rb) {
 
 
-            ObservableList<categorie> list = (ObservableList<categorie>) new Categorie_Service ().getAll();
-            id.setCellValueFactory(new PropertyValueFactory<categorie,Integer>("id"));
-            nom.setCellValueFactory(new PropertyValueFactory<categorie, String>("nom"));
-            couleur.setCellValueFactory(new PropertyValueFactory<categorie, String>("couleur"));
+            ObservableList<Category> list = (ObservableList<Category>) new Categorie_Service ().getAll();
+            id.setCellValueFactory(new PropertyValueFactory<Category,Integer>("id"));
+            nom.setCellValueFactory(new PropertyValueFactory<Category, String>("titre"));
+            description.setCellValueFactory(new PropertyValueFactory<Category, String>("descriptionc"));
+
 
 
 
@@ -62,16 +80,175 @@ public class CategoryController implements Initializable {
             addcateg.setOnAction(e -> {
 
 
-                categorie p=new categorie();
-
-                p.setTitref(tfnom.getText());
+                Category p=new Category();
+                p.setDescriptionc(tfdescription.getText());
+                p.setTitre(tfnom.getText());
                 p.setCouleur(tfcouleur.getText());
 
 
                 new Categorie_Service().addcateg(p);
+                readEvents(e);
 
             });
         }
+    private void readEvents(ActionEvent event) {
+
+
+        ObservableList<Category> list = (ObservableList<Category>) new Categorie_Service().getAll();
+        id.setCellValueFactory(new PropertyValueFactory<Category,Integer>("id"));
+
+        nom.setCellValueFactory(new PropertyValueFactory<Category, String>("titre"));
+
+
+        description.setCellValueFactory(new PropertyValueFactory<Category, String>("descriptionc"));
+
+        tvBooks.setItems(list);
+
+    }
+    @FXML
+    private void deleteAction(MouseDragEvent event) {
+
+    }
+
+    @FXML
+    private void removeAction(ActionEvent event) {
+        Category s = tvBooks.getSelectionModel().getSelectedItem();
+        Categorie_Service crs = new Categorie_Service();
+        crs.supprimer(s);
+        Notifications notificationBuild = Notifications.create()
+                .title("Traitement category")
+                .text("la salle a été supprimé avec succes")
+                .graphic(null)
+                //.hideAfter(Duration.Hours(5))
+                .position(Pos.CENTER)
+                .onAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        System.out.println("click here");
+                    }
+
+                });
+
+        readEvents(event);
+
+
+    }
+
+    @FXML
+    private void updateAction(ActionEvent event) {
+
+
+        Category s = tvBooks.getSelectionModel().getSelectedItem();
+
+        id.setText(String.valueOf(s.getId()));
+        nom.setText(String.valueOf(s.getTitre()));
+        description.setText(String.valueOf(s.getDescriptionc()));
+
+    }
+
+    @FXML
+    private void editAction(ActionEvent event) {
+        String titre = tfnom.getText();
+        String descrcriptionc= tfdescription.getText();
+
+
+
+        Categorie_Service s = new Categorie_Service();
+
+        s.updatecat(titre,descrcriptionc);
+
+        Notifications notificationBuild = Notifications.create()
+                .title("Traitement salle")
+                .text("la salle a été modifé avec succes")
+                .graphic(null)
+                //.hideAfter(Duration.Hours(5))
+                .position(Pos.CENTER)
+                .onAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        System.out.println("click here");
+                    }
+
+                });
+
+        readEvents(event);
+
+
+    }
+}
+
+
+/**
+    @FXML
+    private void removeAction(ActionEvent event) {
+        Category s = tvBooks.getSelectionModel().getSelectedItem();
+        Categorie_Service crs = new Categorie_Service();
+        crs.supprimer(s);
+        Notifications notificationBuild = Notifications.create()
+                .title("Traitement categorie")
+                .text("la salle a été supprimé avec succes")
+                .graphic(null)
+                //.hideAfter(Duration.Hours(5))
+                .position(Pos.CENTER)
+                .onAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        System.out.println("click here");
+                    }
+
+                });
+        notificationBuild.show();
+        readEvents(event);
+
+    }
+
+    @FXML
+    private void updateAction(ActionEvent event) {
+
+
+        Category s = tvBooks.getSelectionModel().getSelectedItem();
+
+        nom.setText(String.valueOf(s.getTitre()));
+        description.setText(String.valueOf(s.getDescriptionc()));
+
+    }
+
+
+
+
+
+
+    @FXML
+    private void editAction(ActionEvent event) {
+
+
+
+
+        String titre = String.valueOf(Integer.parseInt(titre.getText()));
+
+        Categorie_Service s = new Categorie_Service();
+
+        s.updatecat(titre);
+        Notifications notificationBuild = Notifications.create()
+                .title("Traitement salle")
+                .text("la categorie a été modifé avec succes")
+                .graphic(null)
+                //.hideAfter(Duration.Hours(5))
+                .position(Pos.CENTER)
+                .onAction(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent event) {
+                        System.out.println("click here");
+                    }
+
+                });
+        notificationBuild.show();
+        readEvents(event);
+
+
+    }
+
+
 
 
     }
