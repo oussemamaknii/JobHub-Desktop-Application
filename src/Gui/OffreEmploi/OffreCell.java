@@ -103,7 +103,6 @@ public class OffreCell extends ListCell<Offre_Emploi> implements Initializable {
 
 }
 
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {

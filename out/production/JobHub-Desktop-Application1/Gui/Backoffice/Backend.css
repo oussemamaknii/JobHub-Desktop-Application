@@ -1,0 +1,45 @@
+/*
+ * Empty Stylesheet file.
+ */
+ .text-field{
+ -fx-border-width : 0px 0px 0px 3px;
+ }
+.button
+{
+   -fx-background-color :  #212529;
+}
+.button:hover
+{
+    -fx-background-color : #28a745;
+}
+.button:pressed
+{
+    -fx-background-color : #28a745;
+}
+.button:focused{
+    -fx-background-color : #28a745;
+    -fx-border-color : #20c997;
+    -fx-border-width : 0px 0px 0px 3px;
+}
+.table-view .column-header,
+.table-view .column-header-background .filter{
+    -fx-cell-size:20;
+    -fx-background-color:  #212529;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-view .cell{
+    -fx-cell-size: 30;
+    -fx-alignment: center-left;
+    -fx-text-fill: #000000;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected{
+    -fx-background-color: #28a745;
+ }

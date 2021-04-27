@@ -31,8 +31,9 @@
       <root url="jar://$PROJECT_DIR$/src/Librairies/TrayTester.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/Librairies/richtextfx-demos-fat-0.6.10.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/Librairies/rating-java-0.1.1.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/Librairies/mysql-connector-java-8.0.23.jar!/" />
       <root url="file://$PROJECT_DIR$/src/Librairies/lib" />
+      <root url="file://$PROJECT_DIR$/src/Librairies" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/lombok.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$PROJECT_DIR$/deps/commons-lang3-3.12.0-javadoc.jar!/" />
@@ -44,6 +45,7 @@
       <root url="file://$PROJECT_DIR$/src/Librairies/lib" />
     </SOURCES>
     <jarDirectory url="file://$PROJECT_DIR$/deps" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/src/Librairies" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/src/Librairies/lib" recursive="false" />
     <jarDirectory url="file://$PROJECT_DIR$/deps" recursive="false" type="SOURCES" />
     <jarDirectory url="file://$PROJECT_DIR$/src/Librairies/lib" recursive="false" type="SOURCES" />

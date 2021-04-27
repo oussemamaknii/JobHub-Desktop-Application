@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Produit.AddProductController">
+<children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="802.0" VBox.vgrow="ALWAYS">
+        <children>
+            <TextField fx:id="tfref" layoutX="152.0" layoutY="93.0" />
+            <TextField fx:id="tfdesc" layoutX="443.0" layoutY="53.0" prefHeight="61.0" prefWidth="149.0" />
+            <TextField fx:id="tfprice" layoutX="152.0" layoutY="222.0" />
+            <TextField fx:id="tfname" layoutX="152.0" layoutY="152.0" />
+            <Label layoutX="344.0" layoutY="287.0" prefHeight="18.0" prefWidth="39.0" text="Image" />
+            <Label layoutX="70.0" layoutY="156.0" prefHeight="18.0" prefWidth="39.0" text="Name" />
+            <Label layoutX="67.0" layoutY="97.0" prefHeight="18.0" prefWidth="39.0" text="Ref" />
+            <Label layoutX="336.0" layoutY="97.0" prefHeight="18.0" prefWidth="71.0" text="Description" />
+            <Label layoutX="70.0" layoutY="226.0" prefHeight="18.0" prefWidth="71.0" text="Price" />
+            <Label layoutX="70.0" layoutY="287.0" prefHeight="18.0" prefWidth="71.0" text="Quantity" />
+            <Spinner fx:id="sPquantity" editable="true" layoutX="152.0" layoutY="283.0" />
+            <Button fx:id="btnImage" layoutX="446.0" layoutY="283.0" mnemonicParsing="false" onAction="#loadImage" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #343a40;" text="Upload" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="12.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="loadImg" fitHeight="150.0" fitWidth="200.0" layoutX="407.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox layoutX="5.0" layoutY="1.0" prefHeight="44.0" prefWidth="625.0" style="-fx-background-color: #212529;">
+               <children>
+                  <Label prefHeight="44.0" prefWidth="171.0" text="Product Records" textFill="#28a745">
+                     <font>
+                        <Font name="Bauhaus 93" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <JFXButton fx:id="addproduct" buttonType="RAISED" layoutX="187.0" layoutY="349.0" onMouseClicked="#addProduct" prefHeight="25.0" prefWidth="53.0" style="-fx-background-color: #28a745;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="clearproduct" buttonType="RAISED" layoutX="407.0" layoutY="349.0" onMouseClicked="#clean" prefHeight="25.0" prefWidth="53.0" ripplerFill="WHITE" style="-fx-background-color: #ffc107;" text="Clean" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="cancel" buttonType="RAISED" layoutX="291.0" layoutY="349.0" onMouseClicked="#cancel" prefHeight="25.0" prefWidth="64.0" ripplerFill="WHITE" style="-fx-background-color: #dc3545;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="12.0" />
+               </font>
+            </JFXButton>
+
+        </children>
+    </AnchorPane>
+</children>
+</VBox>
