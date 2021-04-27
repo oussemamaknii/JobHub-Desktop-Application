@@ -22,6 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="" />
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" afterDir="false" />
@@ -36,26 +37,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="package-info" />
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="jdkForImporter" value="#JAVA_HOME" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1rRkOCZa99RN6xUlIpN6Pvv3DjM" />
+  <component name="ProjectId" id="1rkvc8yc9hJhb2V37N3G7Klmas7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -64,31 +49,36 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Program Files/Java/javafx-sdk-16/lib" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/Gui/Commande" />
     <property name="last_opened_file_path" value="C:/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.13927579" />
-    <property name="project.structure.side.proportion" value="0.35765123" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="build.tools" />
+    <property name="project.structure.side.proportion" value="0.32262996" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Demande" />
-    </key>
+  <component name="RunManager">
+    <configuration name="FXMain" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jobhub_app.FXMain" />
+      <module name="JobHub-Desktop-Application1" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-16\lib&quot; --add-modules=javafx.swing,javafx.graphics,javafx.fxml,javafx.media,javafx.web --add-reads javafx.graphics=ALL-UNNAMED --add-opens javafx.controls/com.sun.javafx.charts=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio.common=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.css=ALL-UNNAMED --add-opens javafx.base/com.sun.javafx.runtime=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="" />
+      <created>1619529574292</created>
       <changelist id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="" />
       <created>1618941488543</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1618941488543</updated>
+      <updated>1619529574292</updated>
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1619452872266</created>
@@ -117,9 +107,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="280" y="35" key="SettingsEditor" timestamp="1619553315226">
     <state x="605" y="167" key="#com.intellij.ide.util.MemberChooser" timestamp="1619537937963">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
+    <state x="280" y="35" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1619553315226" />
     <state x="605" y="167" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1619537937963" />
     <state x="559" y="216" key="FileChooserDialogImpl" timestamp="1619456623379">
       <screen x="0" y="0" width="1600" height="900" />

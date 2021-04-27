@@ -37,22 +37,23 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.AddOffre_EmploiController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="671.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OffreEmploi.AddOffre_EmploiController">
    <children>
-      <Pane fx:id="pane" layoutX="7.0" layoutY="12.0" prefHeight="394.0" prefWidth="647.0" stylesheets="@../StylSheet/Style.css">
+      <Pane fx:id="pane" layoutX="7.0" layoutY="12.0" prefHeight="607.0" prefWidth="647.0" stylesheets="@../StylSheet/Style.css">
          <children>
             <TextField fx:id="tfpost" layoutX="96.0" layoutY="155.0" prefHeight="26.0" prefWidth="198.0" promptText="Post" />
-            <TextField fx:id="tfloc" layoutX="96.0" layoutY="227.0" prefHeight="26.0" prefWidth="198.0" promptText="Location" />
+            <TextField fx:id="tfloc" layoutX="95.0" layoutY="278.0" prefHeight="26.0" prefWidth="198.0" promptText="Location" />
             <TextField fx:id="tfdesc" layoutX="96.0" layoutY="191.0" prefHeight="26.0" prefWidth="198.0" promptText="Description" />
-            <TextField fx:id="tffile" layoutX="96.0" layoutY="265.0" prefHeight="37.0" prefWidth="118.0" promptText="File" />
+            <TextField fx:id="tffile" layoutX="97.0" layoutY="227.0" prefHeight="37.0" prefWidth="118.0" promptText="File" />
             <TextField fx:id="tfemil" layoutX="434.0" layoutY="117.0" prefHeight="26.0" prefWidth="212.0" promptText="E-mail" />
             <TextField fx:id="tfmax" layoutX="434.0" layoutY="153.0" prefHeight="26.0" prefWidth="178.0" promptText="Max Salary " />
             <TextField fx:id="tftitle" layoutX="96.0" layoutY="118.0" prefHeight="26.0" prefWidth="198.0" promptText="Title" />
-            <DatePicker fx:id="tfexp" layoutX="434.0" layoutY="223.0" prefHeight="26.0" prefWidth="212.0" promptText="Expiration Date" />
+            <DatePicker fx:id="tfexp" layoutX="434.0" layoutY="233.0" prefHeight="26.0" prefWidth="212.0" promptText="Expiration Date" />
             <Label layoutY="122.0" prefHeight="18.0" prefWidth="39.0" text="Title" textFill="#061a40">
                <font>
                   <Font name="System Bold" size="13.0" />
@@ -65,11 +66,11 @@
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
-            <Label layoutY="231.0" prefHeight="18.0" prefWidth="71.0" text="Location" textFill="#061a40">
+            <Label layoutX="-1.0" layoutY="282.0" prefHeight="18.0" prefWidth="71.0" text="Location" textFill="#061a40">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
-            <Label layoutY="271.0" prefHeight="18.0" prefWidth="71.0" text="File" textFill="#061a40">
+            <Label layoutX="1.0" layoutY="233.0" prefHeight="18.0" prefWidth="71.0" text="File" textFill="#061a40">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
@@ -81,30 +82,31 @@
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
-            <Label layoutX="340.0" layoutY="191.0" prefHeight="18.0" prefWidth="71.0" text="Min Salary" textFill="#061a40">
+            <Label layoutX="340.0" layoutY="194.0" prefHeight="18.0" prefWidth="71.0" text="Min Salary" textFill="#061a40">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
-            <Label layoutX="340.0" layoutY="227.0" prefHeight="18.0" prefWidth="90.0" text="Expiration date" textFill="#061a40">
+            <Label layoutX="340.0" layoutY="237.0" prefHeight="18.0" prefWidth="90.0" text="Expiration date" textFill="#061a40">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
-            <TextField fx:id="tfmin" layoutX="434.0" layoutY="189.0" prefHeight="26.0" prefWidth="178.0" promptText="Min Salary" />
-            <Label layoutX="340.0" layoutY="267.0" prefHeight="18.0" prefWidth="90.0" text="Category" textFill="#061a40">
+            <TextField fx:id="tfmin" layoutX="434.0" layoutY="192.0" prefHeight="26.0" prefWidth="178.0" promptText="Min Salary" />
+            <Label layoutX="340.0" layoutY="280.0" prefHeight="18.0" prefWidth="90.0" text="Category" textFill="#061a40">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
-            <ChoiceBox fx:id="choicecateg" layoutX="435.0" layoutY="264.0" prefHeight="28.0" prefWidth="212.0" />
-            <Button fx:id="addoffer1" layoutX="167.0" layoutY="343.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="251.0" text="Add Offer" />
-            <Button layoutX="222.0" layoutY="267.0" mnemonicParsing="false" onAction="#filechooser" prefHeight="37.0" prefWidth="71.0" text="Image" />
+            <ChoiceBox fx:id="choicecateg" layoutX="435.0" layoutY="277.0" prefHeight="28.0" prefWidth="212.0" />
+            <Button fx:id="addoffer1" layoutX="198.0" layoutY="556.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="251.0" text="Add Offer" />
+            <Button layoutX="223.0" layoutY="229.0" mnemonicParsing="false" onAction="#filechooser" prefHeight="37.0" prefWidth="71.0" text="Image" />
             <Label layoutX="612.0" layoutY="150.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
-            <Label layoutX="612.0" layoutY="188.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
+            <Label layoutX="612.0" layoutY="192.0" prefHeight="28.0" prefWidth="32.0" text="DT" />
             <StackPane fx:id="effect" layoutX="147.0" layoutY="145.0" prefHeight="156.0" prefWidth="362.0" />
             <Label layoutX="50.0" layoutY="36.0" prefHeight="35.0" prefWidth="251.0" text="Add A Job Offer" textFill="#003559">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
+            <BorderPane fx:id="map" layoutX="14.0" layoutY="332.0" prefHeight="212.0" prefWidth="620.0" />
          </children>
       </Pane>
    </children>

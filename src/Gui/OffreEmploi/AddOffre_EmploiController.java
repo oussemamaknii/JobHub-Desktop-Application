@@ -14,17 +14,19 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.effect.BoxBlur;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Text;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebEvent;
+import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
 
 import java.io.File;
@@ -33,6 +35,8 @@ import java.time.LocalDate;
 import java.util.ResourceBundle;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * FXML Controller class
@@ -46,8 +50,6 @@ public class AddOffre_EmploiController implements Initializable {
     @FXML
     private TextField tfdesc;
     @FXML
-    private TextField tfloc;
-    @FXML
     private TextField tffile;
     @FXML
     private TextField tfemil;
@@ -55,6 +57,8 @@ public class AddOffre_EmploiController implements Initializable {
     private TextField tfmax;
     @FXML
     private TextField tftitle;
+    @FXML
+    private BorderPane loc;
     @FXML
     private DatePicker tfexp;
     @FXML
@@ -66,7 +70,13 @@ public class AddOffre_EmploiController implements Initializable {
     @FXML
     private Pane pane;
     @FXML
+    private BorderPane map;
+    @FXML
     private StackPane effect;
+    AutoCompleteAddressField tfloc = new AutoCompleteAddressField();
+
+    double lat;
+    double lon;
 
     /**
      * Initializes the controller class.
@@ -75,6 +85,7 @@ public class AddOffre_EmploiController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         tfexp.setEditable(false);
         effect.setDisable(true);
+        autocomplete();
         tfmax.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue,
@@ -84,6 +95,8 @@ public class AddOffre_EmploiController implements Initializable {
                 }
             }
         });
+
+        showmap();
 
         tffile.setEditable(false);
         tfmin.textProperty().addListener(new ChangeListener<String>() {
@@ -107,11 +120,11 @@ public class AddOffre_EmploiController implements Initializable {
                 );
                 new Offre_Emploi_Service().add(offer);
                 effect.setDisable(false);
-                BoxBlur blur = new BoxBlur(3,3,3);
+                BoxBlur blur = new BoxBlur(3, 3, 3);
                 JFXDialogLayout content = new JFXDialogLayout();
                 content.setHeading(new Text("Adding A Job Offer"));
-                content.setBody(new Text("Your Job\n Title : "+offer.getTitre()+" Post needed : "+offer.getPoste()+"\nHas Been added successfully !"));
-                JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+                content.setBody(new Text("Your Job\n Title : " + offer.getTitre() + " Post needed : " + offer.getPoste() + "\nHas Been added successfully !"));
+                JFXDialog fialog = new JFXDialog(effect, content, JFXDialog.DialogTransition.CENTER);
                 JFXButton btn = new JFXButton("Done !");
                 btn.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
@@ -124,8 +137,54 @@ public class AddOffre_EmploiController implements Initializable {
                 content.setActions(btn);
                 pane.setEffect(blur);
                 fialog.show();
-                }
+            }
         });
+    }
+
+    private void autocomplete() {
+
+        tfloc.getEntryMenu().setOnAction((ActionEvent e) ->
+        {
+            ((MenuItem) e.getTarget()).addEventHandler(Event.ANY, (Event event) ->
+            {
+                if (tfloc.getLastSelectedObject() != null) {
+                    tfloc.setText(tfloc.getLastSelectedObject().toString());
+                }
+            });
+        });
+        loc.setCenter(tfloc);
+    }
+
+    private void showmap() {
+
+        WebView webView = new WebView();
+        WebEngine webEngine = webView.getEngine();
+        final URL urlGoogleMaps = getClass().getResource("map.html");
+        webEngine.load(urlGoogleMaps.toExternalForm());
+        webEngine.setOnAlert(new EventHandler<WebEvent<String>>() {
+            @Override
+            public void handle(WebEvent<String> e) {
+                System.out.println(e.toString());
+            }
+        });/*
+        update.setOnAction(new EventHandler<ActionEvent>() {
+
+            @Override
+            public void handle(ActionEvent arg0) {
+                lat = Double.parseDouble(lati.getText());
+                lon = Double.parseDouble(longi.getText());
+
+                System.out.printf("%.2f %.2f%n", lat, lon);
+
+                webEngine.executeScript("" +
+                        "window.lat = " + lat + ";" +
+                        "window.lon = " + lon + ";" +
+                        "document.goToLocation(window.lat, window.lon);"
+                );
+            }
+        });*/
+        map.setCenter(webView);
+
     }
 
     @FXML
