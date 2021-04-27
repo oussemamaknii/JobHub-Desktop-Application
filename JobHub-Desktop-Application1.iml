@@ -19,5 +19,18 @@
         <jarDirectory url="file://C:/Program Files (x86)/MySQL/Connector J 8.0" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://C:/Program Files/Java/javafx-sdk-16/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://C:/Program Files/Java/javafx-sdk-16/lib" />
+        </SOURCES>
+        <jarDirectory url="file://C:/Program Files/Java/javafx-sdk-16/lib" recursive="false" />
+        <jarDirectory url="file://C:/Program Files/Java/javafx-sdk-16/lib" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>
