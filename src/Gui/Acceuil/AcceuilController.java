@@ -43,6 +43,11 @@ public class AcceuilController implements Initializable {
     private MenuItem userapps;
     @FXML
     private MenuItem stat;
+    @FXML
+    private MenuItem shopMI;
+
+    @FXML
+    private MenuItem cartMI;
 
 
     /**
@@ -81,6 +86,7 @@ public class AcceuilController implements Initializable {
             Pane view = new FXloader().getPane(root_url);
             mainpane.setCenter(view);
         });
+
 
         exit.setOnAction(e -> {
             Stage stage1 = (Stage) exit.getScene().getWindow();
@@ -135,6 +141,28 @@ public class AcceuilController implements Initializable {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/OffreEmploi/stat.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+
+        shopMI.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/Produit/Shop2.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+
+        cartMI.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/Produit/Card.fxml").toURI().toURL();
             } catch (MalformedURLException malformedURLException) {
                 malformedURLException.printStackTrace();
             }

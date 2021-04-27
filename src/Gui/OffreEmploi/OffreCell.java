@@ -101,8 +101,8 @@ public class OffreCell extends ListCell<Offre_Emploi> implements Initializable {
             setGraphic(OffreCell);
         }
 
+}
 
-    }
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {

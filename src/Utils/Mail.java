@@ -1,5 +1,5 @@
 package Utils;
-/*
+
 import java.io.IOException;
 import java.util.Properties;
 import javax.activation.DataHandler;
@@ -20,7 +20,7 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMultipart;
 import Utils.pdf;
 
- */
+
 
 
 /**
@@ -28,30 +28,30 @@ import Utils.pdf;
  * @author Mintoua
  */
 
-/*
+
 public class Mail {
     public Mail() {
     }
-
 
     public static void sendMail(String recepient ) throws Exception{
         System.out.println("preparing to send emaill!!!!!!!!!!!");
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", "true");
-        properties.put("mail.smtp.host", "smtp.googlemail.com");
-        properties.put("mail.smtp.port", "587");
+        properties.put("mail.smtp.host", "smtp.gmail.com");
+        properties.put("mail.smtp.port", "587"); //465
+        properties.put("mail.smtp.ssl.protocols", "TLSv1.2");
+        properties.put("mail.smtps.ssl.protocols", "TLSv1.2");
         properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.ssl.trust", "smtp.gmail.com");
         System.out.println("preparing ");
-        String myAccountEmail = "tunisgottalent@gmail.com";
-        String password = "t20202020";
+        String myAccountEmail = "tpkdmta@gmail.com";
+        String password = "anonymous24";
         Session session = Session.getInstance(properties, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
                 return new PasswordAuthentication(myAccountEmail, password);
             }
         });
-
-
 
 
         MimeMessage msg = new MimeMessage(session);
@@ -69,7 +69,7 @@ public class Mail {
             //Attachment body part.
             System.out.println("env!!!");
             MimeBodyPart pdfAttachment = new MimeBodyPart();
-            pdfAttachment.attachFile("C:\\Users\\Yasmine\\Desktop\\yasmine\\ProjetJava\\CycleProJava\\CyclePro\\velo.pdf");
+            pdfAttachment.attachFile("E:\\Etudes\\ESPRIT\\Esprit_3A28\\Semestre 2\\PiDev\\Desktop\\FinalWork\\JobHub-Desktop-Application\\src\\Gui\\Commande\\Facture.pdf");
             System.out.println("env!!!125");
             //Attach body parts
             emailContent.addBodyPart(textBodyPart);
@@ -90,4 +90,3 @@ public class Mail {
     }
 }
 
- */

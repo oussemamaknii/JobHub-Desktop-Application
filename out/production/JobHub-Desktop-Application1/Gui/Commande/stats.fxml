@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="497.0" prefWidth="685.0" style="-fx-background-color: #47597a;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Commande.StatsController">
+    <children>
+        <PieChart fx:id="pie" layoutX="22.0" layoutY="119.0" prefHeight="335.0" prefWidth="624.0" style="-fx-background-color: #Dddfe3;" />
+        <Label layoutX="22.0" layoutY="50.0" prefHeight="35.0" prefWidth="250.0" text="Order's Statistiques" textFill="WHITE">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="close" fitHeight="25.0" fitWidth="33.0" layoutX="622.0" layoutY="14.0" onMouseClicked="#handleClose" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/close.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

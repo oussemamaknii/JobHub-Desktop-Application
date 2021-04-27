@@ -1,7 +1,9 @@
 package Interfaces;
 
 
+import Entities.Commande;
 import Entities.Panier;
+import javafx.collections.ObservableList;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -16,4 +18,5 @@ public interface IServicePanier<Panier> {
     boolean delete(int idPanier) throws SQLException;
     boolean update(Entities.Panier panier) throws SQLException;
     List<Panier> readAll() throws SQLException;
+    public ObservableList<Panier> getPanier(int idC) ;
 }

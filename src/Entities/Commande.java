@@ -89,21 +89,6 @@ public class Commande {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (this == null) return false;
-        if (getClass() != obj.getClass()){
-            return false;
-        }
-        final Commande other = (Commande) obj;
-        if (this.id != other.id){
-            return false;
-        }
-
-        return true;
-    }
-
-    @Override
     public int hashCode() {
         int hash = 3;
         return hash;
