@@ -23,35 +23,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/Gui/Commande/ListCellCommande.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Commande/ListCellCommande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Commande/StatsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Commande/stats.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Backoffice/ProductCart.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Backoffice/ProductCartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Commande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Commande.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Produit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Produit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Book.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/AddProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/Shop2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/MyBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/MyBookController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/myBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/myBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServiceCommande.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServiceCommande.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Commande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Commande.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Produit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Book.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Book.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/OffreCell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/OffreCell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/MyBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/MyBookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Produit/myBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/myBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServiceCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IServiceCommande.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ServiceCommande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ServiceCommande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServicePanier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IServicePanier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/ServicePanier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ServicePanier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,30 +129,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="605" y="167" key="#com.intellij.ide.util.MemberChooser" timestamp="1619484137281">
+    <state x="605" y="167" key="#com.intellij.ide.util.MemberChooser" timestamp="1619537937963">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="605" y="167" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1619484137281" />
+    <state x="605" y="167" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1619537937963" />
     <state x="559" y="216" key="FileChooserDialogImpl" timestamp="1619456623379">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="559" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1619456623379" />
-    <state width="1540" height="84" key="GridCell.Tab.0.bottom" timestamp="1619487120867">
+    <state width="1540" height="68" key="GridCell.Tab.0.bottom" timestamp="1619540665978">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="84" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619487120867" />
-    <state width="1540" height="84" key="GridCell.Tab.0.center" timestamp="1619487120866">
+    <state width="1540" height="68" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619540665978" />
+    <state width="1540" height="68" key="GridCell.Tab.0.center" timestamp="1619540665977">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="84" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619487120866" />
-    <state width="1540" height="84" key="GridCell.Tab.0.left" timestamp="1619487120866">
+    <state width="1540" height="68" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619540665977" />
+    <state width="1540" height="68" key="GridCell.Tab.0.left" timestamp="1619540665977">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="84" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619487120866" />
-    <state width="1540" height="84" key="GridCell.Tab.0.right" timestamp="1619487120867">
+    <state width="1540" height="68" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619540665977" />
+    <state width="1540" height="68" key="GridCell.Tab.0.right" timestamp="1619540665977">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="84" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619487120867" />
+    <state width="1540" height="68" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619540665977" />
     <state x="333" y="49" key="SettingsEditor" timestamp="1619456628995">
       <screen x="0" y="0" width="1600" height="900" />
     </state>

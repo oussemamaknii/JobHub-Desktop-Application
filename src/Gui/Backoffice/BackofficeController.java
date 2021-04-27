@@ -10,11 +10,15 @@ import Services.Offre_Emploi_Service;
 import Services.ServiceCommande;
 import Services.ServiceProduit;
 import animatefx.animation.FadeInDown;
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXDialog;
+import com.jfoenix.controls.JFXDialogLayout;
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -22,12 +26,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.effect.BoxBlur;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.fxml.Initializable;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -88,9 +94,6 @@ public class BackofficeController implements Initializable {
     private GridPane pnHome;
 
     @FXML
-    private FontAwesomeIcon faSearch;
-
-    @FXML
     private TextField tfSearch;
 
 
@@ -104,7 +107,10 @@ public class BackofficeController implements Initializable {
     private TextField tfSearchOrder;
 
     @FXML
-    private FontAwesomeIcon deletStrashOrder;
+    private StackPane effect;
+
+    @FXML
+    private JFXButton viewProducts;
 
     @FXML
     private ListView<Commande> listCommande;
@@ -121,6 +127,7 @@ public class BackofficeController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         searchCommandes();
         searchProduits();
+        pnHome.toFront();
     }
 
 
@@ -239,6 +246,59 @@ public class BackofficeController implements Initializable {
         }
     }
 
+
+    @FXML
+    void orderProducts(MouseEvent event) {
+        Commande orderTab = listCommande.getSelectionModel().getSelectedItem();
+        if(orderTab!=null){
+            final double[] xOffset = new double[1];
+            final double[] yOffset = new double[1];
+            FXMLLoader loader = new FXMLLoader ();
+            loader.setLocation(getClass().getResource("ProductCart.fxml"));
+            try {
+                loader.load();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+
+            ProductCartController pcController = loader.getController();
+            pcController.setRecords(orderTab.getId());
+            Parent parent = loader.getRoot();
+            Stage stage = new Stage();
+            parent.setOnMousePressed(e -> {
+                xOffset[0] = e.getSceneX();
+                yOffset[0] = e.getSceneY();
+            });
+
+            parent.setOnMouseDragged(e -> {
+                stage.setX(e.getScreenX() - xOffset[0]);
+                stage.setY(e.getScreenY() - yOffset[0]);
+            });
+            stage.setScene(new Scene(parent));
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.show();
+            searchCommandes();
+        }else {
+            effect.setDisable(false);
+            BoxBlur blur = new BoxBlur(3,3,3);
+            JFXDialogLayout content = new JFXDialogLayout();
+            content.setHeading(new Text("Error!!!"));
+            content.setBody(new Text("Select the Item first !!"));
+            JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+            JFXButton btn = new JFXButton("OK!");
+            btn.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    fialog.close();
+                    effect.setEffect(null);
+                }
+            });
+            content.setActions(btn);
+            effect.setEffect(blur);
+            fialog.show();
+        }
+    }
+
     @FXML
     void suppOrder(MouseEvent event) {
         Commande order = listCommande.getSelectionModel().getSelectedItem();
@@ -259,6 +319,24 @@ public class BackofficeController implements Initializable {
                     searchCommandes();
                 }
             });
+        }else{
+            effect.setDisable(false);
+            BoxBlur blur = new BoxBlur(3,3,3);
+            JFXDialogLayout content = new JFXDialogLayout();
+            content.setHeading(new Text("Error!!!"));
+            content.setBody(new Text("Select the Item first !!"));
+            JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+            JFXButton btn = new JFXButton("OK!");
+            btn.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    fialog.close();
+                    effect.setEffect(null);
+                }
+            });
+            content.setActions(btn);
+            effect.setEffect(blur);
+            fialog.show();
         }
     }
 
@@ -282,30 +360,69 @@ public class BackofficeController implements Initializable {
                     searchProduits();
                 }
             });
+        }else{
+            effect.setDisable(false);
+            BoxBlur blur = new BoxBlur(3,3,3);
+            JFXDialogLayout content = new JFXDialogLayout();
+            content.setHeading(new Text("Error!!!"));
+            content.setBody(new Text("Select the Item first !!"));
+            JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+            JFXButton btn = new JFXButton("OK!");
+            btn.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    fialog.close();
+                    effect.setEffect(null);
+                }
+            });
+            content.setActions(btn);
+            effect.setEffect(blur);
+            fialog.show();
         }
     }
 
     @FXML
     void editProd(MouseEvent event) {
         Produit productTab = productGrid.getSelectionModel().getSelectedItem();
-        FXMLLoader loader = new FXMLLoader ();
-        loader.setLocation(getClass().getResource("/Gui/Produit/AddProduct.fxml"));
-        try {
-            loader.load();
-        } catch (IOException ex) {
-            ex.printStackTrace();
+        if(productTab!=null){
+            FXMLLoader loader = new FXMLLoader ();
+            loader.setLocation(getClass().getResource("/Gui/Produit/AddProduct.fxml"));
+            try {
+                loader.load();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+
+            AddProductController addPController = loader.getController();
+            addPController.setUpdate(true);
+            addPController.setRecords(productTab.getId(),productTab.getRef(),productTab.getName(),
+                    productTab.getPrice(),productTab.getDescription(),productTab.getImage());
+            Parent parent = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(parent));
+            stage.initStyle(StageStyle.UTILITY);
+            stage.show();
+            searchProduits();
+        }else {
+            effect.setDisable(false);
+            BoxBlur blur = new BoxBlur(3,3,3);
+            JFXDialogLayout content = new JFXDialogLayout();
+            content.setHeading(new Text("Error!!!"));
+            content.setBody(new Text("Select the Item first !!"));
+            JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+            JFXButton btn = new JFXButton("OK!");
+            btn.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    fialog.close();
+                    effect.setEffect(null);
+                }
+            });
+            content.setActions(btn);
+            effect.setEffect(blur);
+            fialog.show();
         }
 
-        AddProductController addPController = loader.getController();
-        addPController.setUpdate(true);
-        addPController.setRecords(productTab.getId(),productTab.getRef(),productTab.getName(),
-                productTab.getPrice(),productTab.getDescription(),productTab.getImage());
-        Parent parent = loader.getRoot();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(parent));
-        stage.initStyle(StageStyle.UTILITY);
-        stage.show();
-        searchProduits();
     }
 
     @FXML

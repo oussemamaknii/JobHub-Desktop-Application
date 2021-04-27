@@ -137,7 +137,7 @@ public class CardController implements Initializable {
         Date date = Calendar.getInstance().getTime();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         String dateCommande = dateFormat.format(date);
-/*
+
         Commande commande = new Commande(Total,false,dateCommande,1);
         Notifications notificationBuilder2 = Notifications.create()
                 .title("Confrimation Commande")
@@ -170,7 +170,7 @@ public class CardController implements Initializable {
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
-        }*/
+        }
 
         Alert dg = new Alert(Alert.AlertType.CONFIRMATION);
         dg.setTitle("ConfrimationDialogbox");

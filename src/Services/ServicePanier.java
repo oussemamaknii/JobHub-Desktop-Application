@@ -1,8 +1,11 @@
 package Services;
 
 import Entities.Panier;
+import Entities.Produit;
 import Interfaces.IServicePanier;
 import Utils.Connexion;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -82,5 +85,28 @@ public class ServicePanier implements IServicePanier {
             System.out.println(err.getMessage());
         }
         return list;
+    }
+
+    @Override
+    public ObservableList<Panier> getPanier(int idC) {
+        ObservableList<Panier> Oblist = FXCollections.observableArrayList();
+        String requete = "select * from product_cart where idOrder=?";
+        try{
+
+            PreparedStatement preparedStatement = cnx.prepareStatement(requete);
+            preparedStatement.setInt(1, idC);
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()){
+                Panier panier = new Panier(resultSet.getInt("id"),resultSet.getInt("quantity"),
+                        resultSet.getInt("idOrder"),resultSet.getInt("idProduct"));
+
+                Oblist.add(panier);
+            }
+
+        } catch (SQLException err){
+            System.out.println(err.getMessage());
+        }
+        return Oblist;
     }
 }

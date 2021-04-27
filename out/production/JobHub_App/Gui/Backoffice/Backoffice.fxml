@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
@@ -18,6 +19,20 @@
 
 <AnchorPane prefHeight="579.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Backoffice.BackofficeController">
    <children>
+      <Pane fx:id="pnStatus" layoutX="230.0" layoutY="68.0" prefHeight="86.0" prefWidth="793.0" style="-fx-background-color: #999;">
+         <children>
+            <Label fx:id="lbStatus" layoutX="29.0" layoutY="32.0" prefHeight="35.0" prefWidth="224.0" stylesheets="@Backend.css" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbStatusMin" layoutX="29.0" layoutY="14.0" text="Home/" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
       <Button fx:id="btnClose" layoutX="935.0" layoutY="-4.0" mnemonicParsing="false" onMouseClicked="#handleClose" prefHeight="35.0" prefWidth="88.0" stylesheets="@Backend.css" text="LogOut">
          <graphic>
             <FontAwesomeIcon fill="#d93730" glyphName="CLOSE" size="20" />
@@ -158,7 +173,7 @@
             </Button>
          </children>
       </VBox>
-      <StackPane layoutX="239.0" layoutY="167.0">
+      <StackPane fx:id="effect" layoutX="239.0" layoutY="167.0">
          <children>
             <GridPane fx:id="pnUsers" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;" StackPane.alignment="CENTER">
                <columnConstraints>
@@ -169,14 +184,6 @@
                </rowConstraints>
             </GridPane>
             <GridPane fx:id="pnFormations" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
-               </rowConstraints>
-            </GridPane>
-            <GridPane fx:id="pnHome" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                </columnConstraints>
@@ -272,10 +279,15 @@
                            <font>
                               <Font name="Bell MT Bold" size="14.0" />
                            </font></Button>
+                        <JFXButton fx:id="viewProducts" buttonType="RAISED" onMouseClicked="#orderProducts" prefHeight="30.0" prefWidth="115.0" text="View Products" textFill="WHITE">
+                           <font>
+                              <Font name="Bell MT Bold" size="14.0" />
+                           </font>
+                        </JFXButton>
                      </children>
                   </HBox>
                   <ListView fx:id="listCommande" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2b3f63;" GridPane.rowIndex="2" />
-                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                  <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
                      <children>
                         <Label layoutX="34.0" layoutY="13.0" prefHeight="27.0" prefWidth="78.0" text="Reference" textFill="WHITE">
                            <font>
@@ -306,21 +318,15 @@
                   </Pane>
                </children>
             </GridPane>
+            <GridPane fx:id="pnHome" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
          </children>
       </StackPane>
-      <Pane fx:id="pnStatus" layoutX="230.0" layoutY="68.0" prefHeight="86.0" prefWidth="793.0" style="-fx-background-color: #999;">
-         <children>
-            <Label fx:id="lbStatus" layoutX="29.0" layoutY="32.0" prefHeight="35.0" prefWidth="224.0" stylesheets="@Backend.css" text="Home" textFill="WHITE">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-            <Label fx:id="lbStatusMin" layoutX="29.0" layoutY="14.0" text="Home/" textFill="WHITE">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
    </children>
 </AnchorPane>

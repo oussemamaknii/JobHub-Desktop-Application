@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -23,10 +24,10 @@ public class MyBookController {
     private ImageView productImage;
 
     @FXML
-    private TextField productName;
+    private Label productName;
 
     @FXML
-    private TextField productPrice;
+    private Label productPrice;
     int idProduit;
     int qtyStock;
     String ref,desc,img;
