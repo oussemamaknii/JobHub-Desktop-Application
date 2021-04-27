@@ -28,6 +28,8 @@ public class AcceuilController implements Initializable {
     @FXML
     private Button exit;
     @FXML
+    private Button home;
+    @FXML
     private BorderPane mainpane;
     @FXML
     private MenuItem addoffre;
@@ -48,6 +50,26 @@ public class AcceuilController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+
+        URL root_url1 = null;
+        try {
+            root_url1 = new File("src/Gui/Acceuil/firstpage.fxml").toURI().toURL();
+        } catch (MalformedURLException malformedURLException) {
+            malformedURLException.printStackTrace();
+        }
+        Pane view1 = new FXloader().getPane(root_url1);
+        mainpane.setCenter(view1);
+
+        home.setOnAction(e->{
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/Acceuil/firstpage.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
 
         addoffre.setOnAction(e -> {
             URL root_url = null;
