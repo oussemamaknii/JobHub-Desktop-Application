@@ -1,0 +1,29 @@
+<component name="libraryTable">
+  <library name="PDFjet1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/deps/PDFjet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jxmapsdemo.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jfoenix-9.0.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/commons-lang3-3.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/commons-lang3-3.12.0-tests.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/activation-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/map/google-maps-services-0.18.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/map/grpc-context-1.25.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/map/gson-2.8.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/map/okhttp-3.14.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/map/okio-1.17.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/map/opencensus-api-0.25.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/map/slf4j-api-1.7.26.jar!/" />
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/deps/commons-lang3-3.12.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/deps/commons-lang3-3.12.0-test-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/commons-lang3-3.12.0-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+  </library>
+</component>
