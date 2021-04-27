@@ -44,9 +44,9 @@
             </ImageView>
          </children>
       </HBox>
-      <ScrollPane layoutX="14.0" layoutY="189.0" prefHeight="483.0" prefWidth="905.0">
+      <ScrollPane layoutX="14.0" layoutY="189.0" prefHeight="483.0" prefWidth="905.0" style="-fx-background-color: #B9D6F2;">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="856.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="856.0" style="-fx-background-color: #B9D6F2;">
                <children>
                   <GridPane fx:id="productGrid" prefHeight="0.0" prefWidth="0.0">
                     <rowConstraints>

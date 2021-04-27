@@ -1,6 +1,7 @@
 package Gui.Backoffice;
 
 import Entities.Cart;
+import Entities.Commande;
 import Entities.Produit;
 import Gui.Produit.AddProductController;
 import Services.ServiceProduit;
@@ -12,19 +13,24 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class BookController {
+public class BookController extends ListCell<Produit> {
 
     @FXML
     private ImageView productImage;
+
+    @FXML
+    private AnchorPane ProduitCell;
 
     @FXML
     private Label lbName;
@@ -47,33 +53,46 @@ public class BookController {
     @FXML
     private Label lbDesc;
 
+    private FXMLLoader mLLoader;
     int idProduit;
     int qtyStock;
     String img;
 
-    @FXML
-    void editProd(MouseEvent event) {
-        Produit productTab = new Produit(idProduit,lbName.getText(),lbRef.getText(),lbDesc.getText(),Float.parseFloat(lbPrice.getText()),
-                qtyStock,img);
-        FXMLLoader loader = new FXMLLoader ();
-        loader.setLocation(getClass().getResource("/Gui/Produit/AddProduct.fxml"));
-        try {
-            loader.load();
-        } catch (IOException ex) {
-            ex.printStackTrace();
+    @Override
+    protected void updateItem(Produit student, boolean empty) {
+        super.updateItem(student, empty);
+
+        if(empty || student == null) {
+
+            setText(null);
+            setGraphic(null);
+
+        } else {
+            if (mLLoader == null) {
+                mLLoader = new FXMLLoader(getClass().getResource("Book.fxml"));
+                mLLoader.setController(this);
+
+                try {
+                    mLLoader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+            Image image = new Image(getClass().getResourceAsStream("/Gui/Images/"+student.getImage()));
+            productImage.setImage(image);
+            lbName.setText(student.getName());
+            lbDesc.setText(student.getDescription());
+            lbRef.setText(student.getRef());
+            lbPrice.setText(String.valueOf(student.getPrice()));
+            lbQty.setText(String.valueOf(student.getQuantity()));
+
+            setText(null);
+            setGraphic(ProduitCell);
         }
-
-        AddProductController addPController = loader.getController();
-        addPController.setUpdate(true);
-        addPController.setRecords(productTab.getId(),productTab.getRef(),productTab.getName(),
-                productTab.getPrice(),productTab.getDescription(),productTab.getImage());
-        Parent parent = loader.getRoot();
-        Stage stage = new Stage();
-        stage.setScene(new Scene(parent));
-        stage.initStyle(StageStyle.UTILITY);
-        stage.show();
-
     }
+/*
+
 
     @FXML
     void suppProd(MouseEvent event) {
@@ -81,7 +100,6 @@ public class BookController {
                 qtyStock,img);
         if(produit != null){
             try {
-
                 new ServiceProduit().delete(idProduit);
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
@@ -105,4 +123,7 @@ public class BookController {
         img = produit.getImage();
         qtyStock = produit.getQuantity();
     }
+
+ */
+
 }

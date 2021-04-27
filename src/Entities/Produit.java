@@ -109,24 +109,6 @@ public class Produit {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if(this == obj){
-            return true;
-        }
-        if (this == null){
-            return  false;
-        }
-        if (getClass() != obj.getClass()){
-            return false;
-        }
-        final Produit other = (Produit) obj;
-        if(this.id != other.id){
-            return false;
-        }
-        return true;
-    }
-
-    @Override
     public int hashCode() {
         int hash = 7;
         return hash;

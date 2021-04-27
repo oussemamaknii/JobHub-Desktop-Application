@@ -87,7 +87,7 @@ public class AddProductController implements Initializable {
 
         int qty = sPquantity.getValue();
         String img = productImage;
-        if(name.isEmpty()||ref.isEmpty()||desc.isEmpty()||prix.isNaN()||img.isEmpty()||(img ==null)){
+        if(name.isEmpty()||ref.isEmpty()||desc.isEmpty()||prix.isNaN()||(img ==null)){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setContentText("Please Fill All Data");
@@ -153,7 +153,7 @@ public class AddProductController implements Initializable {
         tfname.setText(nom);
         tfprice.setText(String.valueOf(prix)+"  DT");
         tfdesc.setText(desc);
-        loadImg.setImage(new Image(getClass().getResourceAsStream(img)));
+        loadImg.setImage(new Image(getClass().getResourceAsStream("/Gui/Images/"+img)));
         btnImage.setText("Upload");
     }
 }

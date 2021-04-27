@@ -11,7 +11,7 @@
 
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="273.0" prefWidth="201.0" stylesheets="@shop.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Produit.MyBookController">
    <children>
-      <Pane prefHeight="273.0" prefWidth="201.0" styleClass="beta" stylesheets="@shop.css">
+      <Pane prefHeight="273.0" prefWidth="201.0" style="-fx-background-color: #B9D6F2;" styleClass="beta" stylesheets="@shop.css">
          <children>
             <ImageView fx:id="productImage" fitHeight="130.0" fitWidth="108.0" layoutX="60.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
                <image>

@@ -86,6 +86,8 @@ public class OffreCell extends ListCell<Offre_Emploi> {
             setText(null);
             setGraphic(OffreCell);
         }
-}}
+}
+
+}
 
 

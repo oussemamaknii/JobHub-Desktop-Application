@@ -1,8 +1,12 @@
 package Gui.Backoffice;
 
 import Entities.Commande;
+import Entities.Offre_Emploi;
 import Entities.Produit;
+import Gui.Commande.ListCellCommande;
+import Gui.OffreEmploi.OffreCell;
 import Gui.Produit.AddProductController;
+import Services.Offre_Emploi_Service;
 import Services.ServiceCommande;
 import Services.ServiceProduit;
 import animatefx.animation.FadeInDown;
@@ -94,32 +98,18 @@ public class BackofficeController implements Initializable {
     private FontAwesomeIcon faRefresh;
 
     @FXML
+    private FontAwesomeIcon faRefreshOrder;
+
+    @FXML
     private TextField tfSearchOrder;
 
     @FXML
-    private TableView<Commande> tableOrder;
+    private FontAwesomeIcon deletStrashOrder;
 
     @FXML
-    private TableColumn<Commande, String> totalColOrder;
-
+    private ListView<Commande> listCommande;
     @FXML
-    private TableColumn<Commande, String> stateColOrder;
-
-    @FXML
-    private TableColumn<Commande, String> DateColOrder;
-
-    @FXML
-    private TableColumn<Commande, String> idUserColOrder;
-
-    @FXML
-    private GridPane productGrid;
-
-    @FXML
-    private GridPane prodGrid;
-
-    @FXML
-    private AnchorPane anchorProd;
-
+    private ListView<Produit> productGrid;
 
     private List<Produit> productsList;
     ObservableList <Produit> dataList;
@@ -129,8 +119,10 @@ public class BackofficeController implements Initializable {
     Produit productTab = null ;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        loadDataInPaneProduit();
+        searchCommandes();
+        searchProduits();
     }
+
 
     @FXML
     private void handleClicks(ActionEvent event){
@@ -161,7 +153,8 @@ public class BackofficeController implements Initializable {
             lbStatus.setText("Commandes");
             pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(43,63,99), CornerRadii.EMPTY, Insets.EMPTY)));
             pnCommandes.toFront();
-            searchOrder();
+           // showCommandes();
+
         }
         else
         if(event.getSource() == btnGFormation){
@@ -191,33 +184,6 @@ public class BackofficeController implements Initializable {
         }
     }
 
-    void loadDataInPaneProduit(){
-        productsList = new ArrayList<>(getProducts());
-        int column = 0;
-        int row =1;
-
-        try {
-            for (Produit prod : productsList){
-                FXMLLoader fxmlLoader = new FXMLLoader();
-                fxmlLoader.setLocation(getClass().getResource("Book.fxml"));
-
-                HBox hBoxItem = fxmlLoader.load();
-                BookController bookController = fxmlLoader.getController();
-                bookController.setData(prod);
-                if (column == 1){
-                    column=0;
-                    ++row;
-                }
-
-                productGrid.add(hBoxItem,column++,row);
-
-                GridPane.setMargin(hBoxItem, new Insets(10));
-            }
-        }catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
     @FXML
     void addP(MouseEvent event) {
         try {
@@ -243,79 +209,209 @@ public class BackofficeController implements Initializable {
         } catch (IOException exception) {
             exception.printStackTrace();
         }
-        loadDataInPaneProduit();
+        searchProduits();
+    }
+
+    @FXML
+    void orderStats(MouseEvent event){
+        try {
+
+            final double[] xOffset = new double[1];
+            final double[] yOffset = new double[1];
+            Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Commande/stats.fxml"));
+            Scene scene = new Scene(parent);
+            Stage stage= new Stage();
+            parent.setOnMousePressed(e -> {
+                xOffset[0] = e.getSceneX();
+                yOffset[0] = e.getSceneY();
+            });
+
+            parent.setOnMouseDragged(e -> {
+                stage.setX(e.getScreenX() - xOffset[0]);
+                stage.setY(e.getScreenY() - yOffset[0]);
+            });
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.show();
+
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+    @FXML
+    void suppOrder(MouseEvent event) {
+        Commande order = listCommande.getSelectionModel().getSelectedItem();
+        if (order != null) {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Deleting Order");
+            alert.setContentText("Do you really wanna delete this application ?");
+            ButtonType okButton = new ButtonType("Yes", ButtonBar.ButtonData.YES);
+            ButtonType cancelButton = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
+            alert.getButtonTypes().setAll(okButton, cancelButton);
+            alert.showAndWait().ifPresent(type -> {
+                if (type == okButton) {
+                    try {
+                        new ServiceCommande().delete(order.getId());
+                    } catch (SQLException throwables) {
+                        throwables.printStackTrace();
+                    }
+                    searchCommandes();
+                }
+            });
+        }
+    }
+
+    @FXML
+    void suppProduct(MouseEvent event) {
+        Produit prod = productGrid.getSelectionModel().getSelectedItem();
+        if (prod != null) {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Deleting Product");
+            alert.setContentText("Do you really wanna delete this ?");
+            ButtonType okButton = new ButtonType("Yes", ButtonBar.ButtonData.YES);
+            ButtonType cancelButton = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
+            alert.getButtonTypes().setAll(okButton, cancelButton);
+            alert.showAndWait().ifPresent(type -> {
+                if (type == okButton) {
+                    try {
+                        new ServiceProduit().delete(prod.getId());
+                    } catch (SQLException throwables) {
+                        throwables.printStackTrace();
+                    }
+                    searchProduits();
+                }
+            });
+        }
+    }
+
+    @FXML
+    void editProd(MouseEvent event) {
+        Produit productTab = productGrid.getSelectionModel().getSelectedItem();
+        FXMLLoader loader = new FXMLLoader ();
+        loader.setLocation(getClass().getResource("/Gui/Produit/AddProduct.fxml"));
+        try {
+            loader.load();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+
+        AddProductController addPController = loader.getController();
+        addPController.setUpdate(true);
+        addPController.setRecords(productTab.getId(),productTab.getRef(),productTab.getName(),
+                productTab.getPrice(),productTab.getDescription(),productTab.getImage());
+        Parent parent = loader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(parent));
+        stage.initStyle(StageStyle.UTILITY);
+        stage.show();
+        searchProduits();
     }
 
     @FXML
     void refresh(MouseEvent event) {
         if(event.getSource()== faRefresh){
-            productsList = new ArrayList<>(getProducts());
-            int column = 0;
-            int row =1;
-
-            try {
-                for (Produit prod : productsList){
-                    FXMLLoader fxmlLoader = new FXMLLoader();
-                    fxmlLoader.setLocation(getClass().getResource("Book.fxml"));
-
-                    HBox hBoxItem = fxmlLoader.load();
-                    BookController bookController = fxmlLoader.getController();
-                    bookController.setData(prod);
-                    if (column == 1){
-                        column=0;
-                        ++row;
-                    }
-
-                    productGrid.getChildren().removeAll();
-                    new FadeInDown(hBoxItem).play();
-                    prodGrid.add(hBoxItem,column++,row);
-                    productGrid.getChildren().setAll(prodGrid);
-
-
-                    GridPane.setMargin(hBoxItem, new Insets(10));
-                }
-            }catch (IOException e) {
-                e.printStackTrace();
-            }
+            showProduits();
         }
     }
 
     @FXML
-    void searchOrder(){
+    void refreshOrder(MouseEvent event) {
+        if(event.getSource()== faRefreshOrder){
+            searchCommandes();
+        }
+    }
+
+    public void showCommandes() {
+        ObservableList<Commande> orders = null;
         try {
-            ObservableList<Commande> commandes = new ServiceCommande().getAll();
-            totalColOrder.setCellValueFactory(new PropertyValueFactory<>("totalPayment"));
-            stateColOrder.setCellValueFactory(new PropertyValueFactory<>("state"));
-            DateColOrder.setCellValueFactory(new PropertyValueFactory<>("date"));
-            idUserColOrder.setCellValueFactory(new PropertyValueFactory<>("idUser"));
-            tableOrder.setItems(commandes);
-
-            FilteredList<Commande> filteredData = new FilteredList<>(commandes,b->true);
-            tfSearchOrder.textProperty().addListener((Observable,oldValue,newValue)->{
-               filteredData.setPredicate(order->{
-                   if (newValue == null || newValue.isEmpty()){
-                       return  true;
-                   }
-                   String lowerCaseFilter = newValue.toLowerCase();
-                   if (order.getDate().toLowerCase().indexOf(lowerCaseFilter)!=-1){
-                       return true; //filter matches name
-                   }else if (String.valueOf(order.isState()).indexOf(lowerCaseFilter)!=-1){
-                       return true; //filter matches ref
-                   }
-                   else if (String.valueOf(order.getIdUser()).indexOf(lowerCaseFilter)!=-1)
-                       return true; // filter matches qty
-                        else
-                            return false; // does not match
-               });
-            });
-
-            SortedList<Commande> sortedData = new SortedList<>(filteredData);
-            sortedData.comparatorProperty().bind(tableOrder.comparatorProperty());
-            tableOrder.setItems(sortedData);
-
+            orders = new ServiceCommande().getAll();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        listCommande.setItems(orders);
+        listCommande.setCellFactory(studentListView -> new ListCellCommande());
+    }
+
+    public void showProduits(){
+        ObservableList<Produit> products = null;
+        try {
+            products = new ServiceProduit().readAll();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        productGrid.setItems(products);
+        productGrid.setCellFactory(studentListView -> new BookController());
+    }
+
+    public void searchCommandes(){
+        ObservableList<Commande> commandes=null;
+        try {
+            commandes = new ServiceCommande().getAll();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        FilteredList<Commande> filteredData = new FilteredList(commandes, p -> true);
+        tfSearchOrder.textProperty().addListener((observable, oldValue, newValue) -> {
+            filteredData.setPredicate(client -> {
+                // If filter text is empty, display all persons.
+                if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                }
+                // Compare first name and last name of every client with filter text.
+                String lowerCaseFilter = newValue.toLowerCase();
+
+                if (client.getDate().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; //filter matches date
+                } else if (String.valueOf(client.getId()).toLowerCase().contains(lowerCaseFilter)) {
+                    return true; //filter matches ref
+                } else if(String.valueOf(client.isState()).toLowerCase().contains(lowerCaseFilter)){
+                    return true; //matches state
+                }
+                return false; //Does not match
+            });
+        });
+
+        //Wrap the FilteredList in a SortedList.
+        SortedList<Commande> sortedData = new SortedList<>(filteredData);
+
+        //put the sorted list into the listview
+        listCommande.setItems(sortedData);
+        listCommande.setCellFactory(studentListView -> new ListCellCommande());
+    }
+
+    public void searchProduits(){
+        ObservableList<Produit> produits=null;
+        try {
+            produits = new ServiceProduit().readAll();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        FilteredList<Produit> filteredData = new FilteredList(produits, p -> true);
+        tfSearch.textProperty().addListener((observable, oldValue, newValue) -> {
+            filteredData.setPredicate(client -> {
+                // If filter text is empty, display all persons.
+                if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                }
+                // Compare first name and last name of every client with filter text.
+                String lowerCaseFilter = newValue.toLowerCase();
+
+                if (client.getName().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; //filter matches date
+                } else if (client.getRef().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; //filter matches ref
+                }
+                return false; //Does not match
+            });
+        });
+
+        //Wrap the FilteredList in a SortedList.
+        SortedList<Produit> sortedData = new SortedList<>(filteredData);
+
+        //put the sorted list into the listview
+        productGrid.setItems(sortedData);
+        productGrid.setCellFactory(studentListView -> new BookController());
     }
 
     private List<Produit> getProducts(){

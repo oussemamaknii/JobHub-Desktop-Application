@@ -5,6 +5,7 @@ import Entities.Commande;
 import Entities.Produit;
 import com.itextpdf.text.DocumentException;
 import javafx.collections.ObservableList;
+import javafx.scene.chart.PieChart;
 
 import java.io.FileNotFoundException;
 import java.sql.SQLException;
@@ -24,4 +25,6 @@ public interface IServiceCommande {
     public Commande getCommande(int idCommande) throws SQLException;
     public void historique(int idCommande, ObservableList<Cart> panier) throws SQLException, DocumentException, FileNotFoundException;
     public int[] statistiques() throws SQLException;
+    public ObservableList<PieChart.Data> getdata();
+    int orders();
 }

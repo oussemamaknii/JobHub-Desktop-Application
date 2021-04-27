@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CommadeCell" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="52.0" prefWidth="757.0" style="-fx-background-color: #2b3f63;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="ref" layoutX="14.0" layoutY="16.0" prefHeight="22.0" prefWidth="67.0" text="Ref" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="total" layoutX="131.0" layoutY="12.0" prefHeight="29.0" prefWidth="91.0" text="Total" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="state" layoutX="247.0" layoutY="12.0" prefHeight="29.0" prefWidth="54.0" text="Etat" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="date" layoutX="386.0" layoutY="12.0" prefHeight="29.0" prefWidth="145.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label fx:id="username" layoutX="576.0" layoutY="12.0" prefHeight="29.0" prefWidth="145.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

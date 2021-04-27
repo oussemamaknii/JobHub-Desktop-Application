@@ -11,6 +11,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 import com.sun.jdi.StringReference;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.chart.PieChart;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -122,8 +123,7 @@ public class ServiceCommande implements IServiceCommande {
             PreparedStatement pst = cnx.prepareStatement(req);
             ResultSet rs = pst.executeQuery();
             while (rs.next()){
-                list.add(new Commande(rs.getFloat("total_payment"),rs.getBoolean("state"),rs.getString("date"),rs.getInt("id_user")));
-                return list;
+                list.add(new Commande(rs.getInt("id"),rs.getFloat("total_payment"),rs.getBoolean("state"),rs.getString("date"),rs.getInt("id_user")));
             }
         }catch (SQLException err){
             System.out.println(err.getMessage());
@@ -165,6 +165,38 @@ public class ServiceCommande implements IServiceCommande {
         }
         return new Commande();
     }
+    public int orders(){
+        String req = "select count(*) from";
+
+        try {
+            Statement st = cnx.createStatement();
+            ResultSet rs = st.executeQuery(req);
+            while ( rs.next()){
+                return  rs.getInt(1);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return 0;
+    }
+    public ObservableList<PieChart.Data> getdata(){
+        ObservableList<PieChart.Data> list = FXCollections.observableArrayList();
+        String request = "select count(state),date from `order` where state = 0";
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                String date = rs.getString(2);
+                Double count = rs.getDouble(1);
+                PieChart.Data data = new PieChart.Data(date,count);
+                list.add(data);
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return list;
+    }
+
 
     @Override
     public int[] statistiques() throws SQLException {
