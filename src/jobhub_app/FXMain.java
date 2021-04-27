@@ -29,9 +29,9 @@ public class FXMain extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException{
-       URL root_url = new File("src/Gui/Acceuil/Acceuil.fxml").toURI().toURL();
-      Parent parent = FXMLLoader.load(root_url);
-      //Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Backoffice/Backoffice.fxml"));
+      // URL root_url = new File("src/Gui/Acceuil/Acceuil.fxml").toURI().toURL();
+    //  Parent parent = FXMLLoader.load(root_url);
+      Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Backoffice/Backoffice.fxml"));
         Scene scene = new Scene(parent);
         primaryStage.initStyle(StageStyle.TRANSPARENT);
         scene.setFill(Color.TRANSPARENT);
