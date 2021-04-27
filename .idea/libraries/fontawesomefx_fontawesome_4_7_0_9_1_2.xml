@@ -1,0 +1,42 @@
+<component name="libraryTable">
+  <library name="fontawesomefx-fontawesome-4.7.0-9.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/deps/fontawesomefx-fontawesome-4.7.0-9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/commons-io-2.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jjwt-jackson-0.11.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/httpcore-4.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jaxb-api-2.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/slf4j-api-1.7.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jackson-annotations-2.12.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/ini4j-0.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/gson-2.8.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/okio-1.17.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/junit-4.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jBCrypt-0.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/httpcore-4.4.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/json-20140107.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jjwt-api-0.11.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/google-maps-services-0.18.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/glassfish-corba-omgapi-4.2.0-b002.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/okhttp-3.14.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/grpc-context-1.25.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jjwt-impl-0.11.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/javax.activation-api-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/opencensus-api-0.25.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/slf4j-api-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jackson-core-2.12.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/commons-codec-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/fontawesomefx-commons-9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/httpclient-4.3.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jfoenix-9.0.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/httpclient-4.5.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/google-places-api-java-2.1.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jackson-databind-2.12.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/jackson-datatype-jsr310-2.12.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/commons-logging-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

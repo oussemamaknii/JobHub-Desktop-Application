@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane prefHeight="614.0" prefWidth="684.0" stylesheets="@../StylSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Career.CareerController">
+   <children>
+      <TextField fx:id="tfSkills" layoutX="246.0" layoutY="278.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfCourse" layoutX="497.0" layoutY="226.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfExperience" layoutX="246.0" layoutY="332.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfResumeHeadline" layoutX="246.0" layoutY="216.0" stylesheets="@../StylSheet/Style.css" />
+      <DatePicker fx:id="dateTo" layoutX="497.0" layoutY="367.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
+      <Label layoutX="150.0" layoutY="220.0" prefHeight="18.0" prefWidth="106.0" stylesheets="@../StylSheet/Style.css" text="Resume Headline" />
+      <Label layoutX="150.0" layoutY="282.0" prefHeight="18.0" prefWidth="65.0" stylesheets="@../StylSheet/Style.css" text="Skills" />
+      <Label layoutX="150.0" layoutY="336.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Experience" />
+      <Label layoutX="413.0" layoutY="230.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Course" />
+      <Label layoutX="413.0" layoutY="291.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Institute" />
+      <Label layoutX="413.0" layoutY="336.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Date From" />
+      <Label layoutX="413.0" layoutY="371.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Date To" />
+      <Button fx:id="addCareer" layoutX="274.0" layoutY="415.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Add Career" />
+      <DatePicker fx:id="dateFrom" layoutX="497.0" layoutY="330.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfInstitute" layoutX="497.0" layoutY="279.0" stylesheets="@../StylSheet/Style.css" />
+   </children>
+</Pane>

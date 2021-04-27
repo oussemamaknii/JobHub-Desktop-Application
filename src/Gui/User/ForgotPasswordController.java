@@ -5,8 +5,7 @@
  */
 package Gui.User;
 
-import java.awt.event.ActionEvent;
-import java.io.File;
+
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
@@ -18,8 +17,7 @@ import java.util.Random;
 import java.util.ResourceBundle;
 
 import Utils.Connexion;
-import com.twilio.Twilio;
-import com.twilio.type.PhoneNumber;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -31,10 +29,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
+
 
 import javax.mail.*;
-import javax.mail.internet.AddressException;
+
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
@@ -77,8 +75,6 @@ public class ForgotPasswordController implements Initializable {
         return saltStr;
 
     }
-
-
     @FXML
     private void sendEmail(javafx.event.ActionEvent event) throws SQLException, MessagingException, IOException {
         if (email.getText().isEmpty()){ msg.setText("remarque : email vide");  }
@@ -98,14 +94,12 @@ public class ForgotPasswordController implements Initializable {
             z = email.getText();
             mesg="Your code is : " + y;
 
-
          //   Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-
-
 
             String from ="tunisgottalent@gmail.com";
             String pass="t20202020";
-            String [] to={email.getText()};
+            String [] to;
+            to = new String[]{email.getText()};
             String host="mail.javatpoint.com";
             String sub="Password Recovery";
 
@@ -129,8 +123,7 @@ public class ForgotPasswordController implements Initializable {
             message.setText(mesg);
             //send message
             Transport.send(message);
-            System.out.println("message sent successfully");
-
+            System.out.println("Message sent successfully");
             Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Acceuil/Acceuil.fxml"));
             Scene scene = new Scene(parent);
             Node node = (Node) event.getSource();

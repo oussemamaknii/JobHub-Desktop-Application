@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="google-maps-services-0.18.0">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/deps/google-maps-services-0.18.0.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

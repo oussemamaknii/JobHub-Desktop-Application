@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="lombok">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/Librairies/lombok.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/controlsfx-8.40.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/itextpdf-5.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/jfoenix-8.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/jfoenix-9.0.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/fontawesomefx-glyphsbrowser-all-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/fontawesomefx-8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/rating-java-0.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/richtextfx-demos-fat-0.6.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/slf4j-api-1.7.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/slf4j-log4j12-1.7.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/techsoftemail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/Librairies/TrayTester.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
