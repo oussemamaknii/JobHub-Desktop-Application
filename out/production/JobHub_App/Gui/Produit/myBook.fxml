@@ -29,9 +29,14 @@
                   <Font name="System Bold Italic" size="12.0" />
                </font>
             </Label>
-            <Label fx:id="productPrice" layoutX="57.0" layoutY="206.0" prefHeight="24.0" prefWidth="127.0" text="Prix">
+            <Label fx:id="productPrice" layoutX="57.0" layoutY="206.0" prefHeight="24.0" prefWidth="74.0" text="Prix">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="125.0" layoutY="209.0" text="DT">
+               <font>
+                  <Font name="System Bold" size="13.0" />
                </font>
             </Label>
          </children>

@@ -139,13 +139,13 @@ public class CardController implements Initializable {
         String dateCommande = dateFormat.format(date);
 
         Commande commande = new Commande(Total,false,dateCommande,1);
-        Notifications notificationBuilder2 = Notifications.create()
+        /*Notifications notificationBuilder2 = Notifications.create()
                 .title("Confrimation Commande")
                 .text("Commande ajoutée avec succès")
                 .graphic(null)
                 .hideAfter(Duration.seconds(5))
                 .position(Pos.BOTTOM_RIGHT);
-        notificationBuilder2.showConfirm();
+        notificationBuilder2.showConfirm();*/
         serviceCommande.create(commande);
         try {
             serviceCommande.historique(serviceCommande.getLastCommande(),panier);
@@ -157,11 +157,19 @@ public class CardController implements Initializable {
             throwables.printStackTrace();
         }
 
+
         try {
             Mail.sendMail("tpkdmta@gmail.com");
         } catch (Exception e) {
             e.printStackTrace();
         }
+                /*Notifications notificationBuilder2 = Notifications.create()
+                .title("Confrimation Mail")
+                .text("Mail envoyé avec avec succès")
+                .graphic(null)
+                .hideAfter(Duration.seconds(5))
+                .position(Pos.BOTTOM_RIGHT);
+        notificationBuilder2.showConfirm();*/
         ServicePanier servicePanier = new ServicePanier();
         for (Cart p : panier){
             try {
@@ -170,7 +178,13 @@ public class CardController implements Initializable {
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
-        }
+        }/*Notifications notificationBuilder2 = Notifications.create()
+                .title("Confrimation Panier")
+                .text("Panier ajoutée avec succès")
+                .graphic(null)
+                .hideAfter(Duration.seconds(5))
+                .position(Pos.BOTTOM_RIGHT);
+        notificationBuilder2.showConfirm();*/
 
         Alert dg = new Alert(Alert.AlertType.CONFIRMATION);
         dg.setTitle("ConfrimationDialogbox");

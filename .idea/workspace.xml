@@ -23,25 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/Gui/Backoffice/ProductCart.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Backoffice/ProductCartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Backoffice/BackofficeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/CardController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/MyBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/MyBookController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/myBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Produit/myBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/IServicePanier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/ServicePanier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/jobhub_app/FXMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/Backoffice.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Backoffice/BackofficeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Facture.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/Facture.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/MyBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/MyBookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Produit/myBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/myBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServicePanier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IServicePanier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/ServicePanier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/ServicePanier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,22 +125,22 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="559" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1619456623379" />
-    <state width="1540" height="68" key="GridCell.Tab.0.bottom" timestamp="1619540665978">
+    <state width="1554" height="470" key="GridCell.Tab.0.bottom" timestamp="1619551438393">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="68" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619540665978" />
-    <state width="1540" height="68" key="GridCell.Tab.0.center" timestamp="1619540665977">
+    <state width="1554" height="470" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619551438393" />
+    <state width="1554" height="470" key="GridCell.Tab.0.center" timestamp="1619551438392">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="68" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619540665977" />
-    <state width="1540" height="68" key="GridCell.Tab.0.left" timestamp="1619540665977">
+    <state width="1554" height="470" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619551438392" />
+    <state width="1554" height="470" key="GridCell.Tab.0.left" timestamp="1619551438392">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="68" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619540665977" />
-    <state width="1540" height="68" key="GridCell.Tab.0.right" timestamp="1619540665977">
+    <state width="1554" height="470" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619551438392" />
+    <state width="1554" height="470" key="GridCell.Tab.0.right" timestamp="1619551438392">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="68" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619540665977" />
+    <state width="1554" height="470" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619551438392" />
     <state x="333" y="49" key="SettingsEditor" timestamp="1619456628995">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -169,6 +157,14 @@
           <properties class="java.lang.NumberFormatException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Gui/Produit/ShopController.java</url>
+          <line>76</line>
+          <properties class="Gui.Produit.ShopController" method="getShopProducts">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
