@@ -96,11 +96,7 @@ public class updateCompanyController extends Controller implements Initializable
             showFacebook.setText(company.getFacebookLink());
             showContactEmail.setText(company.getContactEmail());
             companyImage.setImage(new Image(getClass().getResource("/uploads/" + company.getCompanyImageName()).toExternalForm()));        }
-
-
-
        deleteCompany.setOnAction(e -> {
-           msgg.setText("Company Deleted");
            System.out.println("Company Deleted");
            new CompanyService().deleteCompany(Controller.getUserId());
        });

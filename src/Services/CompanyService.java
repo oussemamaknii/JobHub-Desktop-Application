@@ -16,6 +16,7 @@ public class CompanyService implements IServiceCompany {
     @Override
     public void AddCompany(company comp) {
         String request = "INSERT INTO company (company_name,contact_email,company_adress,founded_date,website,contact_phone,category,facebook_link,user_id,status) VALUES (?,?,?,?,?,?,?,?,'"+Controller.getUserId()+"',0) ";
+
         try {
             PreparedStatement pst = cnx.prepareStatement(request);
             pst.setString(1, comp.getCompanyName());
@@ -27,12 +28,18 @@ public class CompanyService implements IServiceCompany {
             pst.setString(7, comp.getCategory());
             pst.setString(8, comp.getFacebookLink());
             pst.executeUpdate();
-            System.out.println("Your Company Profile has been created");
-
-
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        String request1 = "UPDATE user SET roles=a:2:{i:0;s:12:\"ROLE_COMPANY\";i:1;s:9:\"ROLE_USER\";} where id='"+Controller.getUserId()+"'";
+        try{
+            PreparedStatement pst1 = cnx.prepareStatement(request1);
+            pst1.executeUpdate();
+        }catch (SQLException throwables){
+            throwables.printStackTrace();
+        }
+        System.out.println("Your Company Profile has been created");
+
     }
 
     @Override

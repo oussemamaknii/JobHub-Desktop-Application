@@ -16,6 +16,7 @@ import javafx.scene.control.TextField;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.scene.control.Label;
 
 /**
  * FXML Controller class
@@ -34,12 +35,19 @@ public class CareerController implements Initializable {
     private TextField tfResumeHeadline;
     @FXML
     private DatePicker dateTo;
-    @FXML
     private Button addCareer;
     @FXML
     private TextField tfInstitute;
     @FXML
     private DatePicker dateFrom;
+    @FXML
+    private Button addResume;
+    @FXML
+    private Label msgResume;
+    @FXML
+    private Label msgEducation;
+    @FXML
+    private Button addEducation;
 
     /**
      * Initializes the controller class.
@@ -49,8 +57,6 @@ public class CareerController implements Initializable {
         addCareer.setOnAction(e -> {
             education educatio1 = new education(tfCourse.getText(),tfInstitute.getText(),dateFrom.getValue(),dateTo.getValue());
             candidateResume resume1 = new candidateResume(tfResumeHeadline.getText(),tfSkills.getText(),tfExperience.getText());
-
-
             new CareerService().addCareer(educatio1,resume1);
         });
 

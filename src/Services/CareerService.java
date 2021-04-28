@@ -19,9 +19,10 @@ public class CareerService extends Controller implements ICareer {
     @Override
     public void addCareer(education edu, candidateResume resume) {
 
-        String request2 = "INSERT into education (resume_id,course,institute,date_from,date_to,user_id) VALUES (NULL,?,?,?,?,)";
+        String request2 = "INSERT into education (resume_id,course,institute,date_from,date_to) VALUES (NULL,?,?,?,?)";
         try{
             PreparedStatement pst2 = cnx.prepareStatement(request2);
+
             pst2.setString(1, edu.getCourse());
             pst2.setString(2,edu.getInstitute());
             pst2.setDate(3, Date.valueOf(edu.getDateFrom()));
@@ -32,7 +33,7 @@ public class CareerService extends Controller implements ICareer {
         }catch (SQLException throwables){
             throwables.printStackTrace();
         }
-        String request1 = "INSERT into candidate_resume (resume_headline,skills,experience) VALUES (?,?,?)";
+        String request1 = "INSERT into candidate_resume (resume_headline,skills,experience) VALUES (?,?,?) where user_id='"+Controller.getUserId()+"'";
         try {
             PreparedStatement pst1 = cnx.prepareStatement(request1);
             pst1.setString(1, resume.getResumeHeadline());

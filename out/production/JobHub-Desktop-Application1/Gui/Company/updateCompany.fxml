@@ -45,6 +45,11 @@
             <Label fx:id="showFacebook" layoutX="495.0" layoutY="430.0" prefHeight="17.0" prefWidth="151.0" textFill="#2100f8" />
             <Button fx:id="deleteCompany" layoutX="299.0" layoutY="552.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Delete Company" />
             <ImageView fx:id="companyImage" fitHeight="128.0" fitWidth="149.0" layoutX="35.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="msgg" layoutX="291.0" layoutY="606.0" prefHeight="42.0" prefWidth="266.0" text="Company Deleted" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>
