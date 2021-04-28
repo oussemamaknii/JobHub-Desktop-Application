@@ -14,10 +14,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import javax.imageio.stream.FileImageInputStream;
+import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -101,7 +99,7 @@ public class OffreCell extends ListCell<Offre_Emploi> implements Initializable {
             setGraphic(OffreCell);
         }
 
-}
+    }
 
 
     @Override
@@ -128,6 +126,19 @@ public class OffreCell extends ListCell<Offre_Emploi> implements Initializable {
                     List<List<Cell>> tabledate = new ArrayList<>();
                     Font f2 = new Font(pdf, CoreFont.HELVETICA_BOLD);
                     Font f1 = new Font(pdf, CoreFont.HELVETICA);
+
+                    InputStream is = new FileInputStream("C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images\\logo.png");
+
+                    BufferedInputStream bis1 = new BufferedInputStream(is);
+
+                    com.pdfjet.Image image1 = new com.pdfjet.Image(pdf, bis1, ImageType.PNG);
+                    page.setBrushColor(128,128,128);
+
+                    image1.setPosition(1, 1);
+                    // image1.scaleBy(.4)
+                    image1.scaleBy(0.3f, 0.4f);
+                    // image1.setRotateCW90(true);
+                    image1.drawOn(page);
 
                     Paragraph p1 = new Paragraph();
                     p1.setAlignment(Align.CENTER);

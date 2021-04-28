@@ -45,9 +45,14 @@ public class AcceuilController implements Initializable {
     private MenuItem stat;
     @FXML
     private MenuItem shopMI;
-
     @FXML
     private MenuItem cartMI;
+    @FXML
+    private MenuItem addevent;
+    @FXML
+    private MenuItem listevent;
+    @FXML
+    private MenuItem editevent;
 
 
     /**
@@ -65,7 +70,7 @@ public class AcceuilController implements Initializable {
         Pane view1 = new FXloader().getPane(root_url1);
         mainpane.setCenter(view1);
 
-        home.setOnAction(e->{
+        home.setOnAction(e -> {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/Acceuil/firstpage.fxml").toURI().toURL();
@@ -93,7 +98,7 @@ public class AcceuilController implements Initializable {
             stage1.close();
         });
 
-        deloff.setOnAction(e->{
+        deloff.setOnAction(e -> {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/OffreEmploi/DeletOffreEmploi.fxml").toURI().toURL();
@@ -104,7 +109,7 @@ public class AcceuilController implements Initializable {
             mainpane.setCenter(view);
         });
 
-        treatapps.setOnAction(e->{
+        treatapps.setOnAction(e -> {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/OffreEmploi/SeeApps.fxml").toURI().toURL();
@@ -115,7 +120,7 @@ public class AcceuilController implements Initializable {
             mainpane.setCenter(view);
         });
 
-        userapps.setOnAction(e->{
+        userapps.setOnAction(e -> {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/Demande/AddDemande.fxml").toURI().toURL();
@@ -170,7 +175,7 @@ public class AcceuilController implements Initializable {
             mainpane.setCenter(view);
         });
 
- 	addevent.setOnAction(e -> {
+        addevent.setOnAction(e -> {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/evenement/Add_event.fxml").toURI().toURL();

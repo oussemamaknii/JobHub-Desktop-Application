@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="ListAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" stylesheets="@../StylSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.evenement.List_eventController">
+    <children>
+        <Label layoutX="-6.0" layoutY="-3.0" prefHeight="53.0" prefWidth="1289.0" style="-fx-background-color: transparent; -fx-text-fill: white;" text="                                       Available Events" textFill="WHITE">
+            <font>
+                <Font name="Comic Sans MS Bold" size="25.0" />
+            </font>
+        </Label>
+        <TextField fx:id="search" layoutX="27.0" layoutY="64.0" onKeyReleased="#fiterEvents" prefHeight="27.0" prefWidth="183.0" promptText="search" style="-fx-background-color: white; -fx-border-color: #B7C3D7; -fx-border-radius: 2em;" />
+        <ScrollPane fx:id="ScrollPane1" layoutX="12.0" layoutY="133.0" prefHeight="514.0" prefWidth="1256.0" style="-fx-background-color: #BCD4F4;">
+            <content>
+                <AnchorPane fx:id="growPane" minHeight="0.0" minWidth="0.0" prefHeight="979.0" prefWidth="1370.0" style="-fx-background-color: #BCD4F4;">
+                    <children>
+                        <GridPane fx:id="gridP" layoutX="53.0" layoutY="160.0" prefHeight="298.0" prefWidth="454.0" style="-fx-background-color: transparent;">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="240.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="238.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="238.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="238.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                        </GridPane>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+
+        <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="1169.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+        <VBox layoutX="182.0" layoutY="91.0" prefHeight="201.0" prefWidth="168.0" />
+        <Text fx:id="testText" layoutX="159.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+
+    </children>
+</AnchorPane>
