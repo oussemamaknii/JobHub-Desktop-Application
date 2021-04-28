@@ -18,31 +18,42 @@ public class company {
     private String twitterLink;
     private double stars;
     private int userId;
+    private String companyImageName;
 
 
-    public company(int id, String website, LocalDate foundedDate, String category, String country, String description, String companyName, String contactEmail, int contactPhone, String companyAdress, String facebookLink, String twitterLink, double stars,int userId) {
 
-        this.id = id;
-        this.website = website;
-        this.foundedDate = foundedDate;
-        this.category = category;
-        this.country = country;
-        this.description = description;
-        this.companyName = companyName;
-        this.contactEmail = contactEmail;
-        this.contactPhone = contactPhone;
-        this.companyAdress = companyAdress;
-        this.facebookLink = facebookLink;
-        this.twitterLink = twitterLink;
-        this.stars = stars;
-        this.userId = userId;
-    }
 
     public company() {
     }
 
-    public company(String companyName, String contactEmail, String companyAdress, LocalDate foundedDate, String website, int contactPhone, String category, String facebookLink,int userId) {
+    public company(String companyName, String contactEmail, String companyAdress, LocalDate foundedDate, String website, int contactPhone, String category, String facebookLink) {
+        this.companyName = companyName;
+        this.contactEmail = contactEmail;
+        this.companyAdress = companyAdress;
+        this.foundedDate = foundedDate;
+        this.website = website;
+        this.contactPhone = contactPhone;
+        this.category = category;
+        this.facebookLink = facebookLink;
+    }
+    public company(String companyName, String contactEmail, String companyAdress, LocalDate foundedDate, String website, int contactPhone, String category, String facebookLink,String companyImageName) {
+        this.companyName = companyName;
+        this.contactEmail = contactEmail;
+        this.companyAdress = companyAdress;
+        this.foundedDate = foundedDate;
+        this.website = website;
+        this.contactPhone = contactPhone;
+        this.category = category;
+        this.facebookLink = facebookLink;
+        this.companyImageName = companyImageName;
+    }
 
+    public String getCompanyImageName() {
+        return companyImageName;
+    }
+
+    public void setCompanyImageName(String companyImageName) {
+        this.companyImageName = companyImageName;
     }
 
     public int getUserId() {

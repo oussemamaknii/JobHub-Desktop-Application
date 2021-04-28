@@ -31,6 +31,5 @@
             <Font name="Bell MT Bold" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="userId" layoutX="14.0" layoutY="27.0" />
    </children>
 </AnchorPane>

@@ -4,13 +4,14 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="572.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Company.updateCompanyController">
    <children>
-      <Pane layoutY="-10.0" prefHeight="638.0" prefWidth="804.0" stylesheets="@../StylSheet/Style.css">
+      <Pane layoutY="-10.0" prefHeight="699.0" prefWidth="934.0" stylesheets="@../StylSheet/Style.css">
          <children>
             <TextField fx:id="tfCompanyEmail" layoutX="251.0" layoutY="241.0" stylesheets="@../StylSheet/Style.css" />
             <TextField fx:id="tfWebsite" layoutX="499.0" layoutY="150.0" stylesheets="@../StylSheet/Style.css" />
@@ -29,20 +30,21 @@
             <Label layoutX="414.0" layoutY="392.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Facebook" />
             <Button fx:id="updateCompany" layoutX="299.0" layoutY="492.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Update Company Profile" />
             <TextField fx:id="tfCompanyPhone" layoutX="496.0" layoutY="241.0" stylesheets="@../StylSheet/Style.css" />
-            <Label fx:id="showCompanyName" layoutX="253.0" layoutY="192.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#2100f8" />
+            <Label fx:id="showCompanyName" layoutX="253.0" layoutY="192.0" prefHeight="17.0" prefWidth="149.0" textFill="#2100f8" />
             <Label layoutX="212.0" layoutY="62.0" prefHeight="53.0" prefWidth="520.0" stylesheets="@../StylSheet/Style.css" text="Update your company profile !" textFill="#e10606">
                <font>
                   <Font name="Bell MT Bold" size="24.0" />
                </font>
             </Label>
-            <Label fx:id="showWebsite" layoutX="496.0" layoutY="192.0" prefHeight="17.0" prefWidth="151.0" text="Label" textFill="#2100f8" />
-            <Label fx:id="showContactEmail" layoutX="251.0" layoutY="281.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#2100f8" />
-            <Label fx:id="showCompanyAdress" layoutX="253.0" layoutY="364.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#2100f8" />
-            <Label fx:id="showFoundedDate" layoutX="251.0" layoutY="438.0" prefHeight="17.0" prefWidth="149.0" text="Label" textFill="#2100f8" />
-            <Label fx:id="showCompanyPhone" layoutX="496.0" layoutY="281.0" prefHeight="17.0" prefWidth="151.0" text="Label" textFill="#2100f8" />
-            <Label fx:id="showCategory" layoutX="498.0" layoutY="356.0" prefHeight="17.0" prefWidth="151.0" text="Label" textFill="#2100f8" />
-            <Label fx:id="showFacebook" layoutX="495.0" layoutY="430.0" prefHeight="17.0" prefWidth="151.0" text="Label" textFill="#2100f8" />
-            <Button fx:id="deleteCompany" layoutX="299.0" layoutY="552.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Update Company Profile" />
+            <Label fx:id="showWebsite" layoutX="496.0" layoutY="192.0" prefHeight="17.0" prefWidth="151.0" textFill="#2100f8" />
+            <Label fx:id="showContactEmail" layoutX="251.0" layoutY="281.0" prefHeight="17.0" prefWidth="149.0" textFill="#2100f8" />
+            <Label fx:id="showCompanyAdress" layoutX="253.0" layoutY="364.0" prefHeight="17.0" prefWidth="149.0" textFill="#2100f8" />
+            <Label fx:id="showFoundedDate" layoutX="251.0" layoutY="438.0" prefHeight="17.0" prefWidth="149.0" textFill="#2100f8" />
+            <Label fx:id="showCompanyPhone" layoutX="496.0" layoutY="281.0" prefHeight="17.0" prefWidth="151.0" textFill="#2100f8" />
+            <Label fx:id="showCategory" layoutX="498.0" layoutY="356.0" prefHeight="17.0" prefWidth="151.0" textFill="#2100f8" />
+            <Label fx:id="showFacebook" layoutX="495.0" layoutY="430.0" prefHeight="17.0" prefWidth="151.0" textFill="#2100f8" />
+            <Button fx:id="deleteCompany" layoutX="299.0" layoutY="552.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Delete Company" />
+            <ImageView fx:id="companyImage" fitHeight="128.0" fitWidth="149.0" layoutX="35.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </Pane>
    </children>

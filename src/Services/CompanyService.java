@@ -15,7 +15,7 @@ public class CompanyService implements IServiceCompany {
     Connection cnx = Connexion.getInstance().getConnection();
     @Override
     public void AddCompany(company comp) {
-        String request = "INSERT INTO company (company_name,contact_email,company_adress,founded_date,website,contact_phone,category,facebook_link,user_id) VALUES (?,?,?,?,?,?,?,?,?) ";
+        String request = "INSERT INTO company (company_name,contact_email,company_adress,founded_date,website,contact_phone,category,facebook_link,user_id,status) VALUES (?,?,?,?,?,?,?,?,'"+Controller.getUserId()+"',0) ";
         try {
             PreparedStatement pst = cnx.prepareStatement(request);
             pst.setString(1, comp.getCompanyName());
@@ -26,7 +26,6 @@ public class CompanyService implements IServiceCompany {
             pst.setInt(6, comp.getContactPhone());
             pst.setString(7, comp.getCategory());
             pst.setString(8, comp.getFacebookLink());
-            pst.setInt(9,Controller.getUserId());
             pst.executeUpdate();
             System.out.println("Your Company Profile has been created");
 
@@ -37,8 +36,8 @@ public class CompanyService implements IServiceCompany {
     }
 
     @Override
-    public void updateCompany(company comp, int userId) {
-        String request = "UPDATE company set company_name=?,contact_email=?,company_adress=?,founded_date=?,website=?,contact_phone=?,category=?,facebook_link=? where user_id=? ";
+    public void updateCompany(company comp) {
+        String request = "UPDATE company set company_name=?,contact_email=?,company_adress=?,founded_date=?,website=?,contact_phone=?,category=?,facebook_link=? where user_id='"+Controller.getUserId()+"' ";
         try {
             PreparedStatement pst = cnx.prepareStatement(request);
             pst.setString(1, comp.getCompanyName());
@@ -78,6 +77,7 @@ public class CompanyService implements IServiceCompany {
                 company1.setContactPhone(rs.getInt("contact_phone"));
                 company1.setFacebookLink(rs.getString("facebook_link"));
                 company1.setStars(rs.getDouble("stars"));
+
 
 
                 companies.add(company1);

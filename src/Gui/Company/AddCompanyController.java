@@ -51,13 +51,13 @@ public class AddCompanyController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        userId.setVisible(false);
-        userId.setText(String.valueOf(Controller.getUserId()));
         addCompany.setOnAction(e -> {
-            if (!testfields()) {
+           // if (!testfields()) {
+                System.out.println(Controller.getUserId());
                 company company1 = new company(tfCompanyName.getText(), tfCompanyEmail.getText(), tfCompanyAdress.getText(), foundedDate.getValue(),
-                        tfWebsite.getText(), Integer.parseInt(tfCompanyPhone.getText()), tfCategory.getText(),tfFacebook.getText(),Integer.parseInt(userId.getText()));;
-                new CompanyService().AddCompany(company1);}
+                        tfWebsite.getText(), Integer.parseInt(tfCompanyPhone.getText()), tfCategory.getText(),tfFacebook.getText());
+                System.out.println(company1);
+                new CompanyService().AddCompany(company1);
         });
     }
     public boolean testfields(){

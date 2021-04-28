@@ -18,6 +18,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
@@ -34,6 +35,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+import javafx.scene.image.ImageView;
 /**
  * FXML Controller class
  *
@@ -58,9 +60,9 @@ public class LoginController extends Controller implements Initializable {
     @FXML
     private Button login;
     @FXML
-    private Button forgotPass;
-    @FXML
     private Label welcome;
+    @FXML
+    private ImageView photo;
 
     /**
      * Initializes the controller class.
@@ -104,6 +106,8 @@ public class LoginController extends Controller implements Initializable {
                         stage.setResizable(false);
                         return;
                     } else { welcome.setText("Welcome " + this.getUser().getFirstName()+"! Navigate through the left Menu");
+                        photo.setImage(new Image(getClass().getResource("/uploads/"+this.getUser().getImageName()).toExternalForm()));
+
 
                     }
                     service.createiniFile(path, email.getText(), pw.getText());
@@ -118,8 +122,10 @@ public class LoginController extends Controller implements Initializable {
                     Controller.setUserId(x);
 
                 } else {
-                    msg.setText("Invalid Password!");
+
                 }
+            }else{
+                msg.setText("Invalid Password!");
             }
 
         }

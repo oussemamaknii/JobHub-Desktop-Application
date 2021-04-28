@@ -12,8 +12,20 @@ import Utils.Controller;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.stage.FileChooser;
+
+import java.awt.event.ActionEvent;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.net.URL;
+import java.nio.channels.FileChannel;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.scene.image.ImageView;
 
 /**
  * FXML Controller class
@@ -54,6 +66,13 @@ public class updateProfileController extends Controller implements Initializable
     @FXML
     private Label showDateOfBirth;
     private user connectedUser;
+    FileChooser saveFileChooser = new FileChooser();
+    File saveFile;
+    File srcFile, destFile;
+    @FXML
+    private ImageView profileImage;
+    @FXML
+    private Label mess;
 
 
     /**
@@ -61,6 +80,8 @@ public class updateProfileController extends Controller implements Initializable
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        profileImage.setImage(new Image(getClass().getResource("/uploads/" + this.getUser().getImageName()).toExternalForm()));
+        mess.setText("Welcome " + this.getUser().getFirstName() + ",Please Update your profile");
         connectedUser = this.getUser();
         LoginService ser = new LoginService();
         showFirstName.setText(connectedUser.getFirstName());
@@ -71,16 +92,16 @@ public class updateProfileController extends Controller implements Initializable
         showDateOfBirth.setText(String.valueOf(connectedUser.getDateOfBirth()));
         showProfessionalTitle.setText(connectedUser.getProfessionalTitle());
         System.out.println(Controller.getUserId());
-
-
         register.setOnAction(e -> {
             if (!testfields()) {
                 user update1 = new user(tfEmail.getText(), tfPassword.getText(), tfFirstName.getText(), tfLastName.getText(),
-                        tfDateOfBirth.getValue(), tfAdresse.getText(), Integer.parseInt(tfPhone.getText()),tfProfessionalTitle.getText());
-                new Register().updateprofile(update1,this.getUser());
-               ;}
+                        tfDateOfBirth.getValue(), tfAdresse.getText(), Integer.parseInt(tfPhone.getText()), tfProfessionalTitle.getText());
+                new Register().updateprofile(update1, this.getUser());
+                ;
+            }
         });
     }
+
     public boolean testfields() {
         if (tfPassword.getText().length() < 6) {
             tfPassword.setStyle("-fx-border-color :red ; -fx-border-width : 2px;");
@@ -103,6 +124,34 @@ public class updateProfileController extends Controller implements Initializable
         return false;
     }
 
+    @FXML
+    private void uploadImage(ActionEvent event) {
+        File file = saveFileChooser.showOpenDialog(null);
+        if (file != null) {
+            srcFile = file;
+            if (srcFile != null) {
+                try {
+                    System.out.println(System.getProperty("user.dir"));
+                    String p = System.getProperty("user.dir") + "/src/uploads/" + srcFile.getName();
+                    System.out.println(p);
+                    copyFile(srcFile, new File(p));
+                } catch (IOException ex) {
+                    Logger.getLogger(updateProfileController.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    }
+    public void copyFile(File sourceFile, File destFile) throws IOException {
+        if (!destFile.exists()) {
+            destFile.createNewFile();
+        }
+        try (
+                FileChannel in = new FileInputStream(sourceFile).getChannel();
+                FileChannel out = new FileOutputStream(destFile).getChannel();) {
+
+            out.transferFrom(in, 0, in.size());
+        }
+    }
     public user getConnectedUser() {
         return connectedUser;
     }
@@ -110,5 +159,7 @@ public class updateProfileController extends Controller implements Initializable
     public void setConnectedUser(user connectedUser) {
         this.connectedUser = connectedUser;
     }
+
+
 
 }

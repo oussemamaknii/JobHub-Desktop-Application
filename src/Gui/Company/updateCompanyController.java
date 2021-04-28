@@ -6,7 +6,11 @@
 package Gui.Company;
 import Entities.company;
 import Services.CompanyService;
+import Services.Offre_Emploi_Service;
+import Utils.Connexion;
 import Utils.Controller;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -14,8 +18,16 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
 /**
  * FXML Controller class
@@ -60,6 +72,11 @@ public class updateCompanyController extends Controller implements Initializable
     private Label showFacebook;
     @FXML
     private Button deleteCompany;
+    List<company> companyList= new ArrayList<company>();
+    @FXML
+    private ImageView companyImage;
+    @FXML
+    private Label msgg;
 
 
     /**
@@ -67,16 +84,34 @@ public class updateCompanyController extends Controller implements Initializable
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        companyList = showCompanies();
+        for (company company :companyList
+             ) {
+            showCompanyName.setText(company.getCompanyName());
+            showCategory.setText(company.getCategory());
+            showCompanyAdress.setText(company.getCompanyAdress());
+            showCompanyPhone.setText(String.valueOf(company.getContactPhone()));
+            showFoundedDate.setText(String.valueOf(company.getFoundedDate()));
+            showWebsite.setText(company.getWebsite());
+            showFacebook.setText(company.getFacebookLink());
+            showContactEmail.setText(company.getContactEmail());
+            companyImage.setImage(new Image(getClass().getResource("/uploads/" + company.getCompanyImageName()).toExternalForm()));        }
+
+
+
        deleteCompany.setOnAction(e -> {
+           msgg.setText("Company Deleted");
+           System.out.println("Company Deleted");
            new CompanyService().deleteCompany(Controller.getUserId());
        });
 
+
         updateCompany.setOnAction(e -> {
-            if (!testfields()) {
+      //      if (!testfields()) {
 
                 company company = new company(tfCompanyName.getText(), tfCompanyEmail.getText(), tfCompanyAdress.getText(), foundedDate.getValue(),
-                        tfWebsite.getText(), Integer.parseInt(tfCompanyPhone.getText()), tfCategory.getText(),tfFacebook.getText(),Integer.parseInt(String.valueOf(Controller.getUserId())));
-                new CompanyService().updateCompany(company, Controller.getUserId());}
+                        tfWebsite.getText(), Integer.parseInt(tfCompanyPhone.getText()), tfCategory.getText(),tfFacebook.getText());
+                new CompanyService().updateCompany(company);
         });
 
     }
@@ -91,6 +126,36 @@ public class updateCompanyController extends Controller implements Initializable
 
         return true;
     }
+
+    public List<company> showCompanies() {
+        Connection cnx = Connexion.getInstance().getConnection();
+        List<company> companies = new ArrayList<company>();
+        String request = "select * from company where user_id='"+Controller.getUserId()+"'";
+        try {
+            Statement statement = cnx.createStatement();
+            ResultSet rs = statement.executeQuery(request);
+            while (rs.next()) {
+                company company1 = new company();
+                company1.setCompanyName(rs.getString("company_name"));
+                company1.setFoundedDate(rs.getDate("founded_date").toLocalDate());
+                company1.setWebsite(rs.getString("website"));
+                company1.setCompanyAdress(rs.getString("company_adress"));
+                company1.setCategory(rs.getString("category"));
+                company1.setContactEmail(rs.getString("contact_email"));
+                company1.setContactPhone(rs.getInt("contact_phone"));
+                company1.setFacebookLink(rs.getString("facebook_link"));
+                companies.add(company1);
+                System.out.println(rs.getString("company_name"));
+                showCompanyName.setText(rs.getString("company_name"));
+                company1.setCompanyImageName(rs.getString("company_image_name"));
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
+        }
+        return companies;
+
+    }
+
 }
 
     
