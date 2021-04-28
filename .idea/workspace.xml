@@ -26,14 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Formation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Formation.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Formation_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Formation_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Formation_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Formation_Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619570008562</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <created>1619619325513</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619619325513</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update">
+      <created>1619619428526</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619619428526</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
