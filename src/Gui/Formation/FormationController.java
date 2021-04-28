@@ -1,8 +1,8 @@
 package Gui.Formation;
 
-import Entities.Category;
+
 import Entities.formation;
-import Services.Categorie_Service;
+
 import Services.Formation_Service;
 import Utils.Connexion;
 import javafx.collections.FXCollections;
@@ -20,11 +20,11 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseDragEvent;
 import org.controlsfx.control.Notifications;
 
-import java.awt.event.KeyEvent;
+
 import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Locale;
+
 import java.util.ResourceBundle;
 
 public class FormationController implements Initializable {
@@ -59,10 +59,7 @@ public class FormationController implements Initializable {
 
     @FXML
     private TableColumn<formation, String> formation;
-    @FXML
-    private Button btnremove;
-    @FXML
-    private Button editbtn;
+
 
     @FXML
     private TableColumn<formation, DatePicker> date_debutf;
