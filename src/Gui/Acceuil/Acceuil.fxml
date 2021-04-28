@@ -92,7 +92,7 @@
                         <Image url="@../../../images/logo.png" />
                      </image>
                   </ImageView>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="24.0" layoutY="252.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Offers" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="260.0">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-1.0" layoutY="290.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Offers" textFill="WHITE" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="290.0">
                     <items>
                       <MenuItem fx:id="addoffre" mnemonicParsing="false" text="Add Job Offer" />
                       <MenuItem fx:id="deloff" mnemonicParsing="false" text="Delete Job Offer" />
@@ -114,7 +114,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </MenuButton>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="6.0" layoutY="205.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Applicayions" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-1.0" layoutY="252.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Applications" textFill="WHITE" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="252.0">
                      <items>
                         <MenuItem fx:id="userapps" mnemonicParsing="false" text="Manage Applications" />
                      </items>
@@ -154,7 +154,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="6.0" layoutY="311.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="291.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Profile" textFill="WHITE">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="5.0" layoutY="328.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="291.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Profile" textFill="WHITE">
                      <items>
                         <MenuItem fx:id="updateProfile" mnemonicParsing="false" text="See Your Profile" />
                         <MenuItem fx:id="resume" mnemonicParsing="false" text="Resume" />
@@ -193,6 +193,24 @@
                         </ImageView>
                      </graphic>
                   </MenuButton>
+                  <Button fx:id="createCompany" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="6.0" layoutY="207.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="249.0" style="-fx-background-color: transparent;" text="Create company" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Box_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
             </AnchorPane>
          </children>

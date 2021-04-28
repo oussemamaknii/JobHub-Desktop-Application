@@ -4,16 +4,18 @@
  * and open the template in the editor.
  */
 package Gui.Company;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import Entities.company;
 import Services.CompanyService;
+import Utils.Controller;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-
-import java.net.URL;
-import java.util.ResourceBundle;
 
 /**
  * FXML Controller class
@@ -35,31 +37,28 @@ public class AddCompanyController implements Initializable {
     @FXML
     private DatePicker foundedDate;
     @FXML
-    private TextField tfCompanyPhone;
-    @FXML
     private TextField tfFacebook;
     @FXML
-    private Button addCompany;
+    private TextField  tfCompanyPhone;
+    @FXML
+    private TextField userId;
 
+    @FXML
+    private Button addCompany;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        userId.setVisible(false);
+        userId.setText(String.valueOf(Controller.getUserId()));
         addCompany.setOnAction(e -> {
-
-
-            if (testfields()) {
-
-
+            if (!testfields()) {
                 company company1 = new company(tfCompanyName.getText(), tfCompanyEmail.getText(), tfCompanyAdress.getText(), foundedDate.getValue(),
-                        tfWebsite.getText(), Integer.parseInt(tfCompanyPhone.getText()), tfCategory.getText(),tfFacebook.getText());
+                        tfWebsite.getText(), Integer.parseInt(tfCompanyPhone.getText()), tfCategory.getText(),tfFacebook.getText(),Integer.parseInt(userId.getText()));;
                 new CompanyService().AddCompany(company1);}
-
         });
-
     }
     public boolean testfields(){
         if (tfCompanyName.getText().isEmpty()) {
@@ -88,8 +87,6 @@ public class AddCompanyController implements Initializable {
             tfCategory.setStyle(null);
 
         return true;
-
-    }
-
+    }    
     
 }

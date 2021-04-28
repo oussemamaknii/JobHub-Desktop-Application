@@ -5,8 +5,6 @@
  */
 package Gui.User;
 
-import Entities.candidateResume;
-import Entities.education;
 import Entities.user;
 import Services.LoginService;
 import Services.Register;
@@ -14,10 +12,7 @@ import Utils.Controller;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-
 import java.net.URL;
-import java.sql.SQLException;
-import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 /**

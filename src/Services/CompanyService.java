@@ -3,6 +3,7 @@ package Services;
 import Entities.company;
 import Interfaces.IServiceCompany;
 import Utils.Connexion;
+import Utils.Controller;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -14,7 +15,30 @@ public class CompanyService implements IServiceCompany {
     Connection cnx = Connexion.getInstance().getConnection();
     @Override
     public void AddCompany(company comp) {
-        String request = "INSERT INTO company (company_name,contact_email,company_adress,founded_date,website,contact_phone,category,facebook_link) VALUES (?,?,?,?,?,?,?,?) ";
+        String request = "INSERT INTO company (company_name,contact_email,company_adress,founded_date,website,contact_phone,category,facebook_link,user_id) VALUES (?,?,?,?,?,?,?,?,?) ";
+        try {
+            PreparedStatement pst = cnx.prepareStatement(request);
+            pst.setString(1, comp.getCompanyName());
+            pst.setString(2, comp.getContactEmail());
+            pst.setString(3, comp.getCompanyAdress());
+            pst.setDate(4, Date.valueOf(comp.getFoundedDate()));
+            pst.setString(5, comp.getWebsite());
+            pst.setInt(6, comp.getContactPhone());
+            pst.setString(7, comp.getCategory());
+            pst.setString(8, comp.getFacebookLink());
+            pst.setInt(9,Controller.getUserId());
+            pst.executeUpdate();
+            System.out.println("Your Company Profile has been created");
+
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
+    @Override
+    public void updateCompany(company comp, int userId) {
+        String request = "UPDATE company set company_name=?,contact_email=?,company_adress=?,founded_date=?,website=?,contact_phone=?,category=?,facebook_link=? where user_id=? ";
         try {
             PreparedStatement pst = cnx.prepareStatement(request);
             pst.setString(1, comp.getCompanyName());
@@ -26,16 +50,12 @@ public class CompanyService implements IServiceCompany {
             pst.setString(7, comp.getCategory());
             pst.setString(8, comp.getFacebookLink());
             pst.executeUpdate();
-            System.out.println("Your Company Profile has been created");
+            System.out.println("Your Company Profile has been updated");
 
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-    }
-
-    @Override
-    public void updateCompany(company comp) {
 
 
     }
@@ -66,5 +86,20 @@ public class CompanyService implements IServiceCompany {
             Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
         }
         return companies;
+    }
+
+    @Override
+    public boolean deleteCompany(int userId) {
+        String req = "delete from company where user_id=? ";
+        try {
+            PreparedStatement pst = cnx.prepareStatement(req);
+            pst.setInt(1, userId);
+            pst.executeUpdate();
+            System.out.println("Company Deleted");
+            return true;
+        } catch (SQLException err) {
+            System.out.println(err.getMessage());
+        }
+        return false;
     }
 }

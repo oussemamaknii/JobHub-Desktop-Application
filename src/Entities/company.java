@@ -17,9 +17,11 @@ public class company {
     private String facebookLink;
     private String twitterLink;
     private double stars;
+    private int userId;
 
 
-    public company(int id, String website, LocalDate foundedDate, String category, String country, String description, String companyName, String contactEmail, int contactPhone, String companyAdress, String facebookLink, String twitterLink, double stars) {
+    public company(int id, String website, LocalDate foundedDate, String category, String country, String description, String companyName, String contactEmail, int contactPhone, String companyAdress, String facebookLink, String twitterLink, double stars,int userId) {
+
         this.id = id;
         this.website = website;
         this.foundedDate = foundedDate;
@@ -33,12 +35,22 @@ public class company {
         this.facebookLink = facebookLink;
         this.twitterLink = twitterLink;
         this.stars = stars;
+        this.userId = userId;
     }
 
     public company() {
     }
 
-    public company(String companyName, String contactEmail, String companyAdress, LocalDate foundedDate, String website, int contactPhone, String category, String facebookLink) {
+    public company(String companyName, String contactEmail, String companyAdress, LocalDate foundedDate, String website, int contactPhone, String category, String facebookLink,int userId) {
+
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public int getId() {

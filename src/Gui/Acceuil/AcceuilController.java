@@ -62,6 +62,8 @@ public class AcceuilController extends Controller implements Initializable {
     LoginService service = new LoginService();
     @FXML
     private Button forgotPass;
+    @FXML
+    private Button createCompany;
 
 
 
@@ -119,7 +121,27 @@ public class AcceuilController extends Controller implements Initializable {
             Pane view = new FXloader().getPane(root_url);
             mainpane.setCenter(view);
         });
-
+        createCompany.setOnAction(e->{
+            if (this.getUser().getRoles().equals("a:2:{i:0;s:12:\"ROLE_COMPANY\";i:1;s:9:\"ROLE_USER\";}")){
+                URL root_url = null;
+                try {
+                    root_url = new File("src/Gui/Company/updateCompany.fxml").toURI().toURL();
+                } catch (MalformedURLException malformedURLException) {
+                    malformedURLException.printStackTrace();
+                }
+                Pane view = new FXloader().getPane(root_url);
+                mainpane.setCenter(view);
+            }else{
+                URL root_url = null;
+                try {
+                    root_url = new File("src/Gui/Company/addCompany.fxml").toURI().toURL();
+                } catch (MalformedURLException malformedURLException) {
+                    malformedURLException.printStackTrace();
+                }
+                Pane view = new FXloader().getPane(root_url);
+                mainpane.setCenter(view);
+            }
+        });
         userapps.setOnAction(e->{
             URL root_url = null;
             try {
@@ -143,7 +165,7 @@ public class AcceuilController extends Controller implements Initializable {
         });
         resume.setOnAction(e -> {
             if(this.getUser() == null) {
-                Alert a = new Alert(Alert.AlertType.INFORMATION);
+                Alert a = new Alert(Alert.AlertType.WARNING);
                 a.setContentText("Please Login to update Add or Update your Profile!");
                 a.setTitle("Login Error");
                 a.show();
@@ -158,9 +180,6 @@ public class AcceuilController extends Controller implements Initializable {
                     Pane view = new FXloader().getPane(root_url);
                     mainpane.setCenter(view);
                 }
-
-
-
         });
         candidatesProfiles.setOnAction(e -> {
             URL root_url = null;
@@ -183,14 +202,29 @@ public class AcceuilController extends Controller implements Initializable {
             mainpane.setCenter(view);
         });
         company.setOnAction(e -> {
-            URL root_url = null;
-            try {
-                root_url = new File("src/Gui/Company/addCompany.fxml").toURI().toURL();
-            } catch (MalformedURLException malformedURLException) {
-                malformedURLException.printStackTrace();
+            if(this.getUser() == null){
+                Alert a = new Alert(Alert.AlertType.NONE);
+                a.setContentText("Please Login!");
+                a.setTitle("Login Error");
+                a.show();
             }
-            Pane view = new FXloader().getPane(root_url);
-            mainpane.setCenter(view);
+            if(!this.getUser().getRoles().equals("a:2:{i:0;s:12:\"ROLE_COMPANY\";i:1;s:9:\"ROLE_USER\";}"))
+            {
+                Alert a = new Alert(Alert.AlertType.WARNING);
+                a.setContentText("Please Create company Profile!");
+                a.setTitle("Redirection Error");
+                a.show();
+            }else{
+                URL root_url = null;
+                try {
+                    root_url = new File("src/Gui/Company/updateCompany.fxml").toURI().toURL();
+                } catch (MalformedURLException malformedURLException) {
+                    malformedURLException.printStackTrace();
+                }
+                Pane view = new FXloader().getPane(root_url);
+                mainpane.setCenter(view);
+            }
+
         });
         login.setOnAction(e -> {
             URL root_url = null;
@@ -204,7 +238,7 @@ public class AcceuilController extends Controller implements Initializable {
         });
         updateProfile.setOnAction(e -> {
             if(this.getUser() == null){
-                Alert a = new Alert(Alert.AlertType.INFORMATION);
+                Alert a = new Alert(Alert.AlertType.WARNING);
                 a.setContentText("Please Login to update your profile!");
                 a.setTitle("Login Error");
                 a.show();
