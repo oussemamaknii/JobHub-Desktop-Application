@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="655.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Career.UpdateResumeController">
+   <children>
+      <TextField fx:id="tfSkills" layoutX="212.0" layoutY="237.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfCourse" layoutX="515.0" layoutY="140.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfExperience" layoutX="212.0" layoutY="291.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfResumeHeadline" layoutX="212.0" layoutY="175.0" stylesheets="@../StylSheet/Style.css" />
+      <DatePicker fx:id="dateTo" layoutX="511.0" layoutY="317.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
+      <Label layoutX="116.0" layoutY="179.0" prefHeight="18.0" prefWidth="106.0" stylesheets="@../StylSheet/Style.css" text="Resume Headline" />
+      <Label layoutX="116.0" layoutY="241.0" prefHeight="18.0" prefWidth="65.0" stylesheets="@../StylSheet/Style.css" text="Skills" />
+      <Label layoutX="116.0" layoutY="295.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Experience" />
+      <Label layoutX="431.0" layoutY="144.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Course" />
+      <Label layoutX="422.0" layoutY="198.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Institute" />
+      <Label layoutX="428.0" layoutY="259.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Date From" />
+      <Label layoutX="428.0" layoutY="321.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Date To" />
+      <Button fx:id="UpdateResume" layoutX="174.0" layoutY="372.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="204.0" stylesheets="@../StylSheet/Style.css" text="Update Resume" />
+      <DatePicker fx:id="dateFrom" layoutX="512.0" layoutY="253.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfInstitute" layoutX="511.0" layoutY="194.0" stylesheets="@../StylSheet/Style.css" />
+      <Button fx:id="updateEducation" layoutX="484.0" layoutY="412.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="204.0" stylesheets="@../StylSheet/Style.css" text="Update Education" />
+      <Label layoutX="144.0" layoutY="55.0" prefHeight="40.0" prefWidth="513.0" text="Update your Resume, it's the first thing seen by recruiters!" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="showExperience" layoutX="213.0" layoutY="314.0" prefHeight="32.0" prefWidth="127.0" textFill="#3300ff" />
+      <Label fx:id="showDateTo" layoutX="522.0" layoutY="359.0" prefHeight="26.0" prefWidth="127.0" textFill="#3300ff" />
+      <Label fx:id="showResumeHeadline" layoutX="212.0" layoutY="200.0" prefHeight="32.0" prefWidth="127.0" textFill="#3300ff" />
+      <Label fx:id="showSkills" layoutX="213.0" layoutY="261.0" prefHeight="32.0" prefWidth="127.0" textFill="#3300ff" />
+      <Label fx:id="showCourse" layoutX="522.0" layoutY="163.0" prefHeight="32.0" prefWidth="127.0" textFill="#3300ff" />
+      <Label fx:id="showInstitute" layoutX="522.0" layoutY="221.0" prefHeight="32.0" prefWidth="127.0" textFill="#3300ff" />
+      <Label fx:id="showDateFrom" layoutX="515.0" layoutY="279.0" prefHeight="32.0" prefWidth="127.0" textFill="#3300ff" />
+      <Button fx:id="deleteResume" layoutX="175.0" layoutY="432.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="204.0" stylesheets="@../StylSheet/Style.css" text="Delete Resume" />
+      <Label fx:id="msgg" layoutX="163.0" layoutY="498.0" prefHeight="63.0" prefWidth="215.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

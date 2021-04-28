@@ -96,12 +96,13 @@ public class updateCompanyController extends Controller implements Initializable
             showFacebook.setText(company.getFacebookLink());
             showContactEmail.setText(company.getContactEmail());
             companyImage.setImage(new Image(getClass().getResource("/uploads/" + company.getCompanyImageName()).toExternalForm()));        }
+
        deleteCompany.setOnAction(e -> {
-           System.out.println("Company Deleted");
+
            new CompanyService().deleteCompany(Controller.getUserId());
+           System.out.println("Company Deleted");
+           msgg.setText("Company Deleted");
        });
-
-
         updateCompany.setOnAction(e -> {
       //      if (!testfields()) {
 
@@ -142,7 +143,6 @@ public class updateCompanyController extends Controller implements Initializable
                 company1.setFacebookLink(rs.getString("facebook_link"));
                 companies.add(company1);
                 System.out.println(rs.getString("company_name"));
-                showCompanyName.setText(rs.getString("company_name"));
                 company1.setCompanyImageName(rs.getString("company_image_name"));
             }
         } catch (SQLException e) {

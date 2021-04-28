@@ -156,9 +156,10 @@
                   </Button>
                   <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="5.0" layoutY="328.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="291.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Profile" textFill="WHITE">
                      <items>
-                        <MenuItem fx:id="updateProfile" mnemonicParsing="false" text="See Your Profile" />
-                        <MenuItem fx:id="resume" mnemonicParsing="false" text="Resume" />
-                        <MenuItem fx:id="company" mnemonicParsing="false" text="Company" />
+                        <MenuItem fx:id="updateProfile" mnemonicParsing="false" text="Update Profile" />
+                        <MenuItem fx:id="resume" mnemonicParsing="false" text="Add Resume" />
+                        <MenuItem fx:id="company" mnemonicParsing="false" text="Update Company" />
+                        <MenuItem fx:id="updateResume" mnemonicParsing="false" text="Update Resume" />
                      </items>
                      <padding>
                         <Insets left="40.0" />

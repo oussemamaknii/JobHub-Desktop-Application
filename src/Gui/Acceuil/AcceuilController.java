@@ -64,6 +64,8 @@ public class AcceuilController extends Controller implements Initializable {
     private Button forgotPass;
     @FXML
     private Button createCompany;
+    @FXML
+    private MenuItem updateResume;
 
 
 
@@ -252,7 +254,6 @@ public class AcceuilController extends Controller implements Initializable {
                 Pane view = new FXloader().getPane(root_url);
                 mainpane.setCenter(view);
             }
-
         });
         forgotPass.setOnAction(e -> {
             URL root_url = null;
@@ -263,6 +264,23 @@ public class AcceuilController extends Controller implements Initializable {
             }
             Pane view = new FXloader().getPane(root_url);
             mainpane.setCenter(view);
+        });
+        updateResume.setOnAction(e -> {
+            if(this.getUser() == null){
+                Alert a = new Alert(Alert.AlertType.WARNING);
+                a.setContentText("Please Login to update your Resume!");
+                a.setTitle("Login Error");
+                a.show();
+            }else{
+                URL root_url = null;
+                try {
+                    root_url = new File("src/Gui/Career/updateResume.fxml").toURI().toURL();
+                } catch (MalformedURLException malformedURLException) {
+                    malformedURLException.printStackTrace();
+                }
+                Pane view = new FXloader().getPane(root_url);
+                mainpane.setCenter(view);
+            }
         });
     }
 }

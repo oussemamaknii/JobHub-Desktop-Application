@@ -5,23 +5,32 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <Pane prefHeight="614.0" prefWidth="684.0" stylesheets="@../StylSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Career.CareerController">
    <children>
-      <TextField fx:id="tfSkills" layoutX="246.0" layoutY="278.0" stylesheets="@../StylSheet/Style.css" />
-      <TextField fx:id="tfCourse" layoutX="497.0" layoutY="226.0" stylesheets="@../StylSheet/Style.css" />
-      <TextField fx:id="tfExperience" layoutX="246.0" layoutY="332.0" stylesheets="@../StylSheet/Style.css" />
-      <TextField fx:id="tfResumeHeadline" layoutX="246.0" layoutY="216.0" stylesheets="@../StylSheet/Style.css" />
-      <DatePicker fx:id="dateTo" layoutX="497.0" layoutY="367.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
-      <Label layoutX="150.0" layoutY="220.0" prefHeight="18.0" prefWidth="106.0" stylesheets="@../StylSheet/Style.css" text="Resume Headline" />
-      <Label layoutX="150.0" layoutY="282.0" prefHeight="18.0" prefWidth="65.0" stylesheets="@../StylSheet/Style.css" text="Skills" />
-      <Label layoutX="150.0" layoutY="336.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Experience" />
-      <Label layoutX="413.0" layoutY="230.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Course" />
-      <Label layoutX="413.0" layoutY="291.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Institute" />
-      <Label layoutX="413.0" layoutY="336.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Date From" />
-      <Label layoutX="413.0" layoutY="371.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Date To" />
-      <Button fx:id="addCareer" layoutX="274.0" layoutY="415.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="258.0" stylesheets="@../StylSheet/Style.css" text="Add Career" />
-      <DatePicker fx:id="dateFrom" layoutX="497.0" layoutY="330.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
-      <TextField fx:id="tfInstitute" layoutX="497.0" layoutY="279.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfSkills" layoutX="176.0" layoutY="213.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfCourse" layoutX="479.0" layoutY="116.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfExperience" layoutX="176.0" layoutY="267.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfResumeHeadline" layoutX="176.0" layoutY="151.0" stylesheets="@../StylSheet/Style.css" />
+      <DatePicker fx:id="dateTo" layoutX="476.0" layoutY="266.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
+      <Label layoutX="80.0" layoutY="155.0" prefHeight="18.0" prefWidth="106.0" stylesheets="@../StylSheet/Style.css" text="Resume Headline" />
+      <Label layoutX="80.0" layoutY="217.0" prefHeight="18.0" prefWidth="65.0" stylesheets="@../StylSheet/Style.css" text="Skills" />
+      <Label layoutX="80.0" layoutY="271.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Experience" />
+      <Label layoutX="395.0" layoutY="120.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Course" />
+      <Label layoutX="386.0" layoutY="182.0" prefHeight="18.0" prefWidth="71.0" stylesheets="@../StylSheet/Style.css" text="Institute" />
+      <Label layoutX="392.0" layoutY="235.0" prefHeight="18.0" prefWidth="58.0" stylesheets="@../StylSheet/Style.css" text="Date From" />
+      <Label layoutX="392.0" layoutY="270.0" prefHeight="18.0" prefWidth="90.0" stylesheets="@../StylSheet/Style.css" text="Date To" />
+      <Button fx:id="addResume" layoutX="148.0" layoutY="348.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="204.0" stylesheets="@../StylSheet/Style.css" text="Add Resume" />
+      <DatePicker fx:id="dateFrom" layoutX="476.0" layoutY="229.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
+      <TextField fx:id="tfInstitute" layoutX="479.0" layoutY="179.0" stylesheets="@../StylSheet/Style.css" />
+      <Button fx:id="addEducation" layoutX="437.0" layoutY="348.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="204.0" stylesheets="@../StylSheet/Style.css" text="Add Education" />
+      <Label layoutX="108.0" layoutY="31.0" prefHeight="40.0" prefWidth="482.0" text="Add your Resume, it's the first thing seen by recruiters!" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="msgResume" layoutX="189.0" layoutY="300.0" prefHeight="32.0" prefWidth="127.0" text="Label" />
+      <Label fx:id="msgEducation" layoutX="486.0" layoutY="306.0" prefHeight="26.0" prefWidth="127.0" text="Label" />
    </children>
 </Pane>

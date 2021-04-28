@@ -6,8 +6,13 @@
 package Gui.Career;
 
 import Entities.candidateResume;
+import Entities.company;
 import Entities.education;
 import Services.CareerService;
+import Services.CompanyService;
+import Services.Offre_Emploi_Service;
+import Utils.Connexion;
+import Utils.Controller;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -15,8 +20,18 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 
 /**
  * FXML Controller class
@@ -48,20 +63,18 @@ public class CareerController implements Initializable {
     private Label msgEducation;
     @FXML
     private Button addEducation;
-
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        addCareer.setOnAction(e -> {
-            education educatio1 = new education(tfCourse.getText(),tfInstitute.getText(),dateFrom.getValue(),dateTo.getValue());
-            candidateResume resume1 = new candidateResume(tfResumeHeadline.getText(),tfSkills.getText(),tfExperience.getText());
-            new CareerService().addCareer(educatio1,resume1);
+        addResume.setOnAction(e -> {
+            candidateResume resume = new candidateResume(tfResumeHeadline.getText(),tfSkills.getText(),tfExperience.getText());
+            new CareerService().addResume(resume);
+            msgResume.setText("Your Resume has been added");
         });
 
-
-
     }
+
 
 }

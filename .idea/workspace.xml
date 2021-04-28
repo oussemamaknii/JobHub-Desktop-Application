@@ -23,11 +23,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f4d4204-6496-447a-9e48-ce02dd7edbfe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Gui/Career/updateResume.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Entities/candidateResume.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Entities/candidateResume.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/AcceuilController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/CareerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/CareerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/career.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/career.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Interfaces/ICareer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Interfaces/ICareer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/LoginData.ini" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/LoginData.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/CareerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/CareerService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/CompanyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/CompanyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/candidateResume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/candidateResume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Career/CareerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Career/CareerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Career/career.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Career/career.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Company/updateCompany.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Company/updateCompany.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Company/updateCompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Company/updateCompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/ICareer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ICareer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LoginData.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginData.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/CareerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CareerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CompanyService.java" afterDir="false" />
     </list>

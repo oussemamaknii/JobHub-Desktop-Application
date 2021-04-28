@@ -39,9 +39,7 @@ public class CompanyService implements IServiceCompany {
             throwables.printStackTrace();
         }
         System.out.println("Your Company Profile has been created");
-
     }
-
     @Override
     public void updateCompany(company comp) {
         String request = "UPDATE company set company_name=?,contact_email=?,company_adress=?,founded_date=?,website=?,contact_phone=?,category=?,facebook_link=? where user_id='"+Controller.getUserId()+"' ";
@@ -57,13 +55,9 @@ public class CompanyService implements IServiceCompany {
             pst.setString(8, comp.getFacebookLink());
             pst.executeUpdate();
             System.out.println("Your Company Profile has been updated");
-
-
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-
-
     }
 
     @Override
@@ -84,9 +78,6 @@ public class CompanyService implements IServiceCompany {
                 company1.setContactPhone(rs.getInt("contact_phone"));
                 company1.setFacebookLink(rs.getString("facebook_link"));
                 company1.setStars(rs.getDouble("stars"));
-
-
-
                 companies.add(company1);
             }
         } catch (SQLException e) {
@@ -94,7 +85,6 @@ public class CompanyService implements IServiceCompany {
         }
         return companies;
     }
-
     @Override
     public boolean deleteCompany(int userId) {
         String req = "delete from company where user_id=? ";
