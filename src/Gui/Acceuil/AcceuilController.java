@@ -53,6 +53,10 @@ public class AcceuilController implements Initializable {
     private MenuItem listevent;
     @FXML
     private MenuItem editevent;
+    @FXML
+    private Button categ;
+    @FXML
+    private Button form;
 
 
     /**
@@ -85,6 +89,28 @@ public class AcceuilController implements Initializable {
             URL root_url = null;
             try {
                 root_url = new File("src/Gui/OffreEmploi/AddOffre_Emploi.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+
+        categ.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/Formation/Category.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            mainpane.setCenter(view);
+        });
+
+        form.setOnAction(e -> {
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/Formation/Formation.fxml").toURI().toURL();
             } catch (MalformedURLException malformedURLException) {
                 malformedURLException.printStackTrace();
             }

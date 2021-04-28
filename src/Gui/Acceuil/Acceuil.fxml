@@ -31,9 +31,9 @@
                <center>
                   <Pane prefHeight="703.0" prefWidth="856.0" BorderPane.alignment="CENTER" />
                </center></BorderPane>
-            <AnchorPane layoutX="14.0" layoutY="182.0" prefHeight="586.0" prefWidth="287.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="168.0">
+            <AnchorPane layoutX="14.0" layoutY="182.0" prefHeight="608.0" prefWidth="287.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="178.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="168.0">
                <children>
-                  <Button fx:id="home" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-3.0" layoutY="99.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="200.0">
+                  <Button fx:id="home" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-3.0" layoutY="99.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="150.0">
                      <padding>
                         <Insets left="45.0" />
                      </padding>
@@ -51,7 +51,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-13.0" layoutY="385.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Profile" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="-13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="450.0">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-13.0" layoutY="385.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Profile" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="-13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="400.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -69,7 +69,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-13.0" layoutY="460.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Exit" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="-13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="500.0">
+                  <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-13.0" layoutY="460.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Exit" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="-13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="550.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -92,7 +92,7 @@
                         <Image url="@../../../images/logo.png" />
                      </image>
                   </ImageView>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-3.0" layoutY="219.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Offers" textFill="WHITE" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="300.0">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-3.0" layoutY="219.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Offers" textFill="WHITE" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="250.0">
                     <items>
                       <MenuItem fx:id="addoffre" mnemonicParsing="false" text="Add Job Offer" />
                       <MenuItem fx:id="deloff" mnemonicParsing="false" text="Delete Job Offer" />
@@ -114,7 +114,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </MenuButton>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-3.0" layoutY="159.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Applicayions" textFill="WHITE" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="250.0">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-3.0" layoutY="159.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Applicayions" textFill="WHITE" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="200.0">
                      <items>
                         <MenuItem fx:id="userapps" mnemonicParsing="false" text="Manage Applications" />
                      </items>
@@ -132,7 +132,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </MenuButton>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-3.0" layoutY="268.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="287.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Shop" textFill="WHITE" AnchorPane.topAnchor="350.0">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-3.0" layoutY="268.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="287.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Shop" textFill="WHITE" AnchorPane.topAnchor="300.0">
                      <items>
                         <MenuItem fx:id="shopMI" mnemonicParsing="false" text="Shop" />
                      </items>
@@ -150,7 +150,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </MenuButton>
-                  <MenuButton fx:id="events" alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="-3.0" layoutY="340.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="287.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="events" textFill="WHITE" AnchorPane.topAnchor="400.0">
+                  <MenuButton fx:id="events" alignment="BASELINE_LEFT" graphicTextGap="25.0" layoutX="-3.0" layoutY="340.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="287.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="events" textFill="WHITE" AnchorPane.topAnchor="350.0">
                      <font>
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
@@ -170,6 +170,42 @@
                         <Insets left="35.0" />
                      </padding>
                   </MenuButton>
+                  <Button fx:id="form" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-3.0" layoutY="395.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Formation" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.topAnchor="450.0">
+                     <padding>
+                        <Insets left="40.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/form.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="categ" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="7.0" layoutY="405.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Category" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.topAnchor="500.0">
+                     <padding>
+                        <Insets left="35.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/categpng.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
          </children>

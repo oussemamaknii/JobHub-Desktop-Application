@@ -23,29 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Entities/formation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/Category.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/CategoryController$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/CategoryController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/Formation.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/FormationController$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/FormationController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Interfaces/ServiceF.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Interfaces/ServiceG.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/Categorie_Service.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/Formation_Service.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entities/formation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/Category.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/ServiceF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interfaces/ServiceG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Categorie_Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/Formation_Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/form.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/form.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Entities/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/AcceuilController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
