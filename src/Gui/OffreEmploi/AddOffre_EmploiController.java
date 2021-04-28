@@ -157,7 +157,7 @@ public class AddOffre_EmploiController implements Initializable {
 
     private void showmap() {
 
-        WebView webView = new WebView();
+            WebView webView = new WebView();
         WebEngine webEngine = webView.getEngine();
         final URL urlGoogleMaps = getClass().getResource("map.html");
         webEngine.load(urlGoogleMaps.toExternalForm());

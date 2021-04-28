@@ -76,7 +76,7 @@ public class CardController implements Initializable {
 
     @FXML
     private Button removebtn;
-    @FXML
+  //  @FXML
     private AnchorPane centerContent;
     ObservableList<Cart> panier = FXCollections.observableArrayList();
 
@@ -86,11 +86,6 @@ public class CardController implements Initializable {
         new Bounce(banner).play();
     }
 
-    @FXML
-    void cancel(MouseEvent event) {
-        Stage stg = (Stage) removebtn.getScene().getWindow();
-        stg.close();
-    }
 
     public void displayCart(ObservableList<Cart> panierCart, AnchorPane aP){
 
@@ -138,14 +133,10 @@ public class CardController implements Initializable {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         String dateCommande = dateFormat.format(date);
 
+
+
+
         Commande commande = new Commande(Total,false,dateCommande,1);
-        /*Notifications notificationBuilder2 = Notifications.create()
-                .title("Confrimation Commande")
-                .text("Commande ajoutée avec succès")
-                .graphic(null)
-                .hideAfter(Duration.seconds(5))
-                .position(Pos.BOTTOM_RIGHT);
-        notificationBuilder2.showConfirm();*/
         serviceCommande.create(commande);
         try {
             serviceCommande.historique(serviceCommande.getLastCommande(),panier);
@@ -163,28 +154,14 @@ public class CardController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-                /*Notifications notificationBuilder2 = Notifications.create()
-                .title("Confrimation Mail")
-                .text("Mail envoyé avec avec succès")
-                .graphic(null)
-                .hideAfter(Duration.seconds(5))
-                .position(Pos.BOTTOM_RIGHT);
-        notificationBuilder2.showConfirm();*/
         ServicePanier servicePanier = new ServicePanier();
         for (Cart p : panier){
             try {
-               // System.out.println(p.getIdProduit());
                 servicePanier.add(new Panier(p.getQuantite(),p.getIdProduit(), serviceCommande.getLastCommande() ));
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
-        }/*Notifications notificationBuilder2 = Notifications.create()
-                .title("Confrimation Panier")
-                .text("Panier ajoutée avec succès")
-                .graphic(null)
-                .hideAfter(Duration.seconds(5))
-                .position(Pos.BOTTOM_RIGHT);
-        notificationBuilder2.showConfirm();*/
+        }
 
         Alert dg = new Alert(Alert.AlertType.CONFIRMATION);
         dg.setTitle("ConfrimationDialogbox");
@@ -222,8 +199,20 @@ public class CardController implements Initializable {
                 }
         );
 
-
     }
+
+    @FXML
+    void displayCatalogue(ActionEvent event) throws IOException {
+        FXMLLoader Loader = new FXMLLoader(getClass().getResource("/Gui/Produit/Shop2.fxml"));
+        Parent fxml = Loader.load();
+        ShopController e = Loader.getController();
+        e.redirectionFromPanier(centerContent, panier);
+        //e.redirectionFromPanier(centerContent, panier, user);
+        centerContent.getChildren().removeAll();
+        new FadeInDown(fxml).play();
+        centerContent.getChildren().setAll(fxml);
+    }
+
     public void prixTotal() {
         int subtotal = 0;
         for (Cart panier1 : panier) {

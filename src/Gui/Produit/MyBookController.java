@@ -2,6 +2,7 @@ package Gui.Produit;
 
 import Entities.Cart;
 import Entities.Produit;
+import animatefx.animation.FadeInDown;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,6 +14,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -33,10 +35,12 @@ public class MyBookController {
     String ref,desc,img;
     ObservableList<Cart> panier = FXCollections.observableArrayList();
 
+    AnchorPane centerContent;
+
     @FXML
     void addToCart(ActionEvent event) {
         Cart produitPanier = new Cart(idProduit,productName.getText(),Float.parseFloat(productPrice.getText()),1,img,1);
-        FXMLLoader loader = new FXMLLoader ();
+      /*  FXMLLoader loader = new FXMLLoader ();
         loader.setLocation(getClass().getResource("/Gui/Produit/AddCart.fxml"));
         try {
             loader.load();
@@ -62,10 +66,24 @@ public class MyBookController {
         });
         stage.setScene(new Scene(parent));
         stage.initStyle(StageStyle.TRANSPARENT);
-        stage.show();
+        stage.show();*/
+        FXMLLoader loader = new FXMLLoader ();
+        loader.setLocation(getClass().getResource("/Gui/Produit/AddCart.fxml"));
+        try {
+            loader.load();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+        Parent parent = loader.getRoot();
+        AddCartController addPController = loader.getController();
+        addPController.setRecords(idProduit,ref,productName.getText(),Float.parseFloat(productPrice.getText()),desc,img,panier,centerContent);
+        centerContent.getChildren().removeAll();
+        new FadeInDown(parent).play();
+        centerContent.getChildren().setAll(parent);
     }
 
-    public void setData(Produit produit){
+    public void setData(Produit produit, AnchorPane content){
+        centerContent = content;
         Image image = new Image(getClass().getResourceAsStream(produit.getImage()));
         productImage.setImage(image);
         productName.setText(produit.getName());
