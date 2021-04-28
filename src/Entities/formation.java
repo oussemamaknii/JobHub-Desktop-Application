@@ -23,19 +23,30 @@ public class formation {
     private double prix;
 
 
-    public formation(int anInt, String rsString1, String string, String rsString, String s, double aDouble, String string1, Date date, Date rsDate, double rsDouble) {
-        this.category_id = category_id;
+    public formation( String nom, String formateur, String description, String adresse,  double tel, String email, Date date_debut, Date date_fin, double prix) {
+
         this.nom = nom;
         this.formateur = formateur;
         this.description = description;
-        this.adresse = adresse;
         this.tel = tel;
+        this.adresse = adresse;
         this.email = email;
         this.date_debut = date_debut;
         this.date_fin = date_fin;
         this.prix = prix;
     }
-
+    public formation(int category_id, String nom, String formateur, String description, String adresse,  double tel, String email, Date date_debut, Date date_fin, double prix) {
+        this.category_id = category_id;
+        this.nom = nom;
+        this.formateur = formateur;
+        this.description = description;
+        this.tel = tel;
+        this.adresse = adresse;
+        this.email = email;
+        this.date_debut = date_debut;
+        this.date_fin = date_fin;
+        this.prix = prix;
+    }
 
 
 
@@ -61,7 +72,7 @@ public class formation {
 
 
     public String getNom() {
-        return nom;
+        return this.nom;
     }
 
     public int getId() {
@@ -80,9 +91,7 @@ public class formation {
         this.category_id = category_id;
     }
 
-    public String getTitre() {
-        return this.nom;
-    }
+
 
     public void setTitre(String nom) {
         this.nom = nom;

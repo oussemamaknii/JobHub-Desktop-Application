@@ -12,8 +12,7 @@ public interface ServiceF <T>{
    /**void supprimer(formation t);**/
 
    public void addformation(T entity);
+    public void updatecat(formation cat, int id);
 
-
-   public ArrayList<formation> getProduitsByNameOrID(String name);
    public   ObservableList<T> getAll() ;
 }

@@ -26,24 +26,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_8_40_111.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/ServiceG.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Category.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Category.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/formation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/formation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Delete.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Formation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Formation.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Listecategorie.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/UpdateFormation.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/UpdateFormationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/ServiceF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/ServiceF.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Categorie_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Categorie_Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Formation_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Formation_Service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entities/formation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/formation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Formation/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Formation/Delete.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Formation/Listecategorie.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Formation/UpdateFormation.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Formation/UpdateFormationController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Interfaces/ServiceF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ServiceF.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/ServiceG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ServiceG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/Categorie_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Categorie_Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Formation_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Formation_Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,8 +90,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../projet ms" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/controlsfx-8.40.11.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.21717791" />
     <property name="project.structure.side.proportion" value="0.32958803" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -156,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619500771076</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <created>1619545594573</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619545594573</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

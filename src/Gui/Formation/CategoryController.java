@@ -2,11 +2,17 @@ package Gui.Formation;
 import Entities.formation;
 import Services.Categorie_Service;
 import Services.Formation_Service;
+import Utils.Connexion;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.Initializable;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 import java.net.URL;
 import java.util.ArrayList;
@@ -15,6 +21,7 @@ import java.lang.Object;
 import Entities.Category;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseDragEvent;
@@ -22,6 +29,7 @@ import org.controlsfx.control.Notifications;
 
 public class CategoryController implements Initializable {
     public ObservableList<Category> currentProduct = FXCollections.observableArrayList();
+
     @FXML
     private TextField tfnom;
 
@@ -75,6 +83,7 @@ public class CategoryController implements Initializable {
                 readEvents(e);
 
             });
+
         }
     private void readEvents(ActionEvent event) {
 
@@ -102,7 +111,7 @@ public class CategoryController implements Initializable {
         crs.supprimer(s);
         Notifications notificationBuild = Notifications.create()
                 .title("Traitement category")
-                .text("la salle a été supprimé avec succes")
+                .text("la categorie a été supprimé avec succes")
                 .graphic(null)
                 //.hideAfter(Duration.Hours(5))
                 .position(Pos.CENTER)
@@ -113,7 +122,6 @@ public class CategoryController implements Initializable {
                     }
 
                 });
-
         readEvents(event);
 
 
@@ -134,6 +142,7 @@ public class CategoryController implements Initializable {
         tfnom.setText(s.getTitre());
 
     }
+
 
     @FXML
     private void editAction(ActionEvent event) {
@@ -157,6 +166,11 @@ public class CategoryController implements Initializable {
         readEvents(event);
 
     }
+
+
+
+
+
 }
 
 

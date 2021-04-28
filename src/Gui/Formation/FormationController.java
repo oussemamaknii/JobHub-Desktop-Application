@@ -1,7 +1,10 @@
 package Gui.Formation;
 
+import Entities.Category;
 import Entities.formation;
+import Services.Categorie_Service;
 import Services.Formation_Service;
+import Utils.Connexion;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -11,6 +14,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseDragEvent;
@@ -18,14 +22,14 @@ import org.controlsfx.control.Notifications;
 
 import java.awt.event.KeyEvent;
 import java.net.URL;
-import java.sql.Date;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class FormationController implements Initializable {
     public ObservableList<formation> currentProduct = FXCollections.observableArrayList();
+    int idC;
     @FXML
     private Button addformation;
     @FXML
@@ -55,6 +59,10 @@ public class FormationController implements Initializable {
 
     @FXML
     private TableColumn<formation, String> formation;
+    @FXML
+    private Button btnremove;
+    @FXML
+    private Button editbtn;
 
     @FXML
     private TableColumn<formation, DatePicker> date_debutf;
@@ -71,11 +79,20 @@ public class FormationController implements Initializable {
 
     @FXML
     private TextField tfSearch;
+    @FXML
+    private PieChart pieChart;
+    ObservableList<PieChart.Data> piechartdata;
+
+    private void refresh()
+    {       pieChart.setData(piechartdata);
 
 
+    }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         searchFormation();
+
+
         /*ObservableList<formation> list = (ObservableList<formation>) new Formation_Service().getAll();
         id.setCellValueFactory(new PropertyValueFactory<formation,Integer>("id"));
 
@@ -91,20 +108,25 @@ public class FormationController implements Initializable {
         choicecateg.setItems(FXCollections.observableArrayList(new Formation_Service().getCateg()));
 
         addformation.setOnAction(e -> {
-            formation p = new formation(new Formation_Service().getCategId(choicecateg.getValue()), tfnom.getText(),
-                    tformateur.getText(),
-                    tfdescription.getText(),
-                    tfadresse.getText(),
-                    Double.parseDouble(tftel.getText()),
-                    tfmail.getText(),
-                    Date.valueOf(date_debut.getValue()),
-                    Date.valueOf(date_fin.getValue()),
-                    Double.parseDouble(tfprix.getText()));
-
+            int idCat = new Formation_Service().getCategId(choicecateg.getValue());
+            String nom = tfnom.getText();
+            String formateur = tformateur.getText();
+            String add = tfadresse.getText();
+            double tel = Double.parseDouble(tftel.getText());
+            Date date_deb = Date.valueOf(date_debut.getValue());
+            Date date_f = Date.valueOf(date_fin.getValue());
+            double prix = Double.parseDouble(tfprix.getText());
+            String desc = tfdescription.getText();
+            String email = tfmail.getText();
+            formation p = new formation(idCat,nom,formateur,desc,add,tel,email,date_deb,date_f,prix);
             new Formation_Service().addformation(p);
             readEvents(e);
 
         });
+
+        Stat();
+        pieChart.setData(piechartdata);
+        refresh();
     }
 
     private void readEvents(ActionEvent event) {
@@ -114,15 +136,12 @@ public class FormationController implements Initializable {
         id.setCellValueFactory(new PropertyValueFactory<formation,Integer>("id"));
 
         formation.setCellValueFactory(new PropertyValueFactory<formation, String>("nom"));
-
-
         date_debutf.setCellValueFactory(new PropertyValueFactory<formation, DatePicker>("date_debut"));
         date_finf.setCellValueFactory(new PropertyValueFactory<formation, DatePicker>("date_fin"));
         adresse.setCellValueFactory(new PropertyValueFactory<formation, String>("adresse"));
         tel.setCellValueFactory(new PropertyValueFactory<formation, Double>("tel"));
         prix.setCellValueFactory(new PropertyValueFactory<formation, Double>("prix"));
         tvBooks.setItems(list);
-
     }
 
     @FXML
@@ -130,6 +149,7 @@ public class FormationController implements Initializable {
 
             ObservableList<formation> list = new Formation_Service().getAll();
             id.setCellValueFactory(new PropertyValueFactory<formation,Integer>("id"));
+
 
             formation.setCellValueFactory(new PropertyValueFactory<formation, String>("nom"));
             date_debutf.setCellValueFactory(new PropertyValueFactory<formation, DatePicker>("date_debut"));
@@ -146,7 +166,7 @@ public class FormationController implements Initializable {
                         return  true;
                     }
                     String lowerCaseFilter = newValue.toLowerCase();
-                    if (formation.getTitre().toLowerCase().indexOf(lowerCaseFilter)!=-1){
+                    if (formation.getNom().toLowerCase().indexOf(lowerCaseFilter)!=-1){
                         return true; //filter matches name
                     }else if (formation.getFormateur().toLowerCase().indexOf(lowerCaseFilter)!=-1){
                         return true; //filter matches formatteur
@@ -170,25 +190,6 @@ public class FormationController implements Initializable {
         search(t);
     }*/
 
-    public void search(String t){
-        System.out.println("CLCKED");
-        ArrayList<formation> l;
-        Formation_Service cp = new Formation_Service();
-
-        l =cp.getProduitsByNameOrID(t);
-        currentProduct.clear();
-        currentProduct.addAll(l);
-        tvBooks.setItems(currentProduct);
-        id.setCellValueFactory(new PropertyValueFactory<>("id"));
-
-        formation.setCellValueFactory(new PropertyValueFactory<>("nom"));
-
-        date_debutf.setCellValueFactory(new PropertyValueFactory<>("date_debut"));
-        date_finf.setCellValueFactory(new PropertyValueFactory<>("date_fin"));
-        adresse.setCellValueFactory(new PropertyValueFactory<>("adresse"));
-        tel.setCellValueFactory(new PropertyValueFactory<>("tel"));
-        prix.setCellValueFactory(new PropertyValueFactory<>("prix"));
-    }
 
     @FXML
     private void deleteAction(MouseDragEvent event) {
@@ -218,19 +219,85 @@ public class FormationController implements Initializable {
 
 
     }
+
+
+
+    private PreparedStatement pst,pst1;
+    private ResultSet rs=null;
+    private ResultSet rs1=null;
+    private void Stat(){
+
+        ArrayList<Integer> np=new ArrayList<Integer>();
+        ArrayList<String> cat=new ArrayList<String>();
+        Connection cnx = Connexion.getInstance().getConnection();
+
+        piechartdata=FXCollections.observableArrayList();
+        try {
+
+            pst=cnx.prepareStatement("select * from category");
+            rs=pst.executeQuery();
+
+            while(rs.next() )
+            {
+
+
+                pst1=cnx.prepareStatement("select count(*) as countab FROM formation WHERE category_id="+rs.getInt("id"));
+                rs1=pst1.executeQuery();
+                while(rs1.next())
+                {
+                    int i=Integer.valueOf(rs1.getString("countab"));
+                    piechartdata.add(new PieChart.Data(rs.getString("titre"),i));
+
+                    np.add(i);
+                    cat.add(rs.getString("titre"));
+                }
+
+            }
+        } catch (SQLException ex) {
+            System.out.println("stat reclamation");
+        }
+        pieChart.setData(piechartdata);
+    }
+
     @FXML
     private void updateAction(ActionEvent event) {
 
 
         formation s = tvBooks.getSelectionModel().getSelectedItem();
-
+        idC = s.getId();
         id.setText(String.valueOf(s.getId()));
-        formation.setText(String.valueOf(s.getTitre()));
+        formation.setText(String.valueOf(s.getNom()));
+
         date_debutf.setText(String.valueOf(s.getDate_debut()));
         date_finf.setText(String.valueOf(s.getDate_fin()));
         adresse.setText(String.valueOf(s.getAdresse()));
         tel.setText(String.valueOf(s.getTel()));
         prix.setText(String.valueOf(s.getPrix()));
+
+
+        tfnom.setText(s.getNom());
+        tformateur.setText(s.getFormateur());
+        tfdescription.setText(s.getDescription());
+        date_debutf.setText(String.valueOf(s.getDate_fin()));
+        date_finf.setText(String.valueOf(s.getDate_fin()));
+        tfadresse.setText(s.getAdresse());
+        tfmail.setText(s.getEmail());
+        tftel.setText(String.valueOf(s.getTel()));
+        tfprix.setText(String.valueOf(s.getPrix()));
+
+
+    }
+
+
+    @FXML
+    private void editAction(ActionEvent event) {
+
+
+        formation cat = new formation(tfnom.getText(),tformateur.getText(),tfdescription.getText(),tfadresse.getText(),Double.parseDouble(tftel.getText()),tfmail.getText(),Date.valueOf(date_debut.getValue()),Date.valueOf(date_fin.getValue()),Double.parseDouble(tfprix.getText()));
+        new Formation_Service().updatecat(cat,idC);
+
+
+        readEvents(event);
 
     }
 

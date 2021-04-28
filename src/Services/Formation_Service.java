@@ -1,5 +1,6 @@
 package Services;
 
+import Entities.Category;
 import Entities.formation;
 import Interfaces.ServiceF;
 import Utils.Connexion;
@@ -17,7 +18,7 @@ public class Formation_Service implements ServiceF <formation> {
 
     public ArrayList<String> getCateg() {
         ArrayList<String> ids = new ArrayList<>();
-        String request = "select titre from Category";
+        String request = "select titre from category";
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);
@@ -32,7 +33,7 @@ public class Formation_Service implements ServiceF <formation> {
 
     public int getCategId(String value){
         int result = 0;
-        String request = "select id from Category where titre = '" + value+"'";
+        String request = "select id from category where titre = '" + value+"'";
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);
@@ -77,14 +78,14 @@ public class Formation_Service implements ServiceF <formation> {
     public void addformation(formation p) {
 
         try {
-            String req =
+           /** String req =
                     "INSERT INTO formation(category_id,nom,formateur,description"
-                            + ",date_debut,date_fin,adresse,mail,tel,prix) VALUES(?,?,?,?,?,?,?,?,?,?)";
-
+                            + ",date_debut,date_fin,adresse,mail,tel,prix) VALUES(?,?,?,?,?,?,?,?,?,?)";**/
+            String req = "INSERT INTO formation (category_id, nom, formateur, description,date_debut,date_fin,adresse,mail,tel,prix) VALUES (?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pst = cnx.prepareStatement(req);
-
+            System.out.println(p);
             pst.setInt(1,p.getCategory());
-            pst.setString(2,p.getTitre());
+            pst.setString(2,p.getNom());
             pst.setString(3,p.getFormateur());
             pst.setString(4,p.getDescription());
             pst.setDate(5, p.getDate_debut());
@@ -102,47 +103,21 @@ public class Formation_Service implements ServiceF <formation> {
 
 
     }
+    @Override
+    public void updatecat(formation cat, int id){
 
-    public ArrayList<formation> getProduitsByNameOrID(String name){
-        ArrayList<formation> res = new ArrayList<>();
         try {
-            String requete = "SELECT * FROM formation WHERE formateur LIKE ? OR id =?";
-            PreparedStatement pst = Connexion.getInstance().getConnection()
-                    .prepareStatement(requete);
-            pst.setString(1, '%'+name+'%');
-            pst.setString(2, name);
-            ResultSet rs;
-            rs = pst.executeQuery();
 
-            while(rs.next()){
-                formation temp = new formation();
-                res.add(temp);
-            }
-            return res;
+            String requete = "UPDATE formation SET nom='"+cat.getNom()+"'  where id='"+id+"'  ";
+            PreparedStatement pst = cnx.prepareStatement(requete);
+            pst.executeUpdate();
+            System.out.println("Type modifié !");
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-            return res;
         }
-    }
-    public formation getSalleByID(String nom){
-        try {
-            String requete = "SELECT * FROM formation WHERE nom=?";
-            PreparedStatement pst = Connexion.getInstance().getConnection()
-                    .prepareStatement(requete);
-            pst.setString(1, nom);
-            ResultSet rs;
-            rs = pst.executeQuery();
 
-            while(rs.next()){
-                formation temp = new formation(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getDouble(6),rs.getString(7),rs.getDate(8),rs.getDate(9),rs.getDouble(10));
-                return temp;
-            }
-            return null;
-        } catch (SQLException ex) {
-            System.out.println(ex.getMessage());
-            return null;
-        }
     }
+
 
     public ObservableList<formation> getAll() {
 
@@ -157,7 +132,6 @@ public class Formation_Service implements ServiceF <formation> {
                 s.setId(rst.getInt("id"));
                 s.setTitre(rst.getString("nom"));
                 s.setCategory_id(rst.getInt("category_id"));
-
                 s.setFormateur(rst.getString("formateur"));
                 s.setDate_debut(rst.getDate("date_debut"));
                 s.setDate_fin(rst.getDate("date_fin"));
