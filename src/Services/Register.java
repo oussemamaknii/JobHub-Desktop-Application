@@ -21,7 +21,7 @@ public class Register extends Controller implements IServiceRegister {
 
     @Override
     public void Register(user u) {
-        String request = "INSERT INTO user (first_name,last_name,email,adresse,date_of_birth,phone,password,is_active,created_at,roles) VALUES (?,?,?,?,?,?,?,'1',SYSDATE(),'a:1:{i:0;s:9:\"ROLE_USER\";}') ";
+        String request = "INSERT INTO user (first_name,last_name,email,adresse,date_of_birth,phone,password,is_active,created_at,roles,image_name) VALUES (?,?,?,?,?,?,?,'1',SYSDATE(),'a:1:{i:0;s:9:\"ROLE_USER\";}',?) ";
         try {
             PreparedStatement pst = cnx.prepareStatement(request);
             pst.setString(1, u.getFirstName());
@@ -32,6 +32,7 @@ public class Register extends Controller implements IServiceRegister {
             pst.setInt(6, u.getPhone());
             String pwd = BCrypt.hashpw(u.getPassword(),BCrypt.gensalt(13));
             pst.setString(7, pwd.substring(0,2)+"y"+pwd.substring(3));
+            pst.setString(8,u.getImageName());
             pst.executeUpdate();
             System.out.println("Your account has been created");
 

@@ -17,25 +17,16 @@ import java.util.Random;
 import java.util.ResourceBundle;
 
 import Utils.Connexion;
-
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-
-
+import org.mindrot.jbcrypt.BCrypt;
 import javax.mail.*;
-
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-
 /**
  * FXML Controller class
  *
@@ -50,11 +41,12 @@ public class ForgotPasswordController implements Initializable {
     private Label msg;
     public ResultSet rs;
     public String username,pass,mesg;
-    public String y,z;
-    public int x;
+    public String y;
     Stage stage = new Stage();
     @FXML
     private Button sendEmail;
+    @FXML
+    private Label label;
     /**
      * Initializes the controller class.
      */
@@ -62,7 +54,6 @@ public class ForgotPasswordController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }
-
     protected String getSaltString() {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder salt = new StringBuilder();
@@ -73,11 +64,10 @@ public class ForgotPasswordController implements Initializable {
         }
         String saltStr = salt.toString();
         return saltStr;
-
     }
     @FXML
     private void sendEmail(javafx.event.ActionEvent event) throws SQLException, MessagingException, IOException {
-        if (email.getText().isEmpty()){ msg.setText("remarque : email vide");  }
+        if (email.getText().isEmpty()){ msg.setText("Please enter your email");  }
         else if (!email.getText().matches("[a-zA-Z0-9\\.]+@[a-zA-Z0-9\\-\\_\\.]+\\.[a-zA-Z0-9]{2}") ){ msg.setText("remarque : email non valide");  }
         else {
             Connection conn = Connexion.getInstance().getConnection();
@@ -91,18 +81,20 @@ public class ForgotPasswordController implements Initializable {
                 pass=rs.getString("password");
             }
             y = getSaltString();
-            z = email.getText();
-            mesg="Your code is : " + y;
-
+            mesg="Your temporary password is : " + y + "Don't forget to update it";
+            String req1 = "UPDATE user SET password=? where email='"+email.getText()+"'";
+            PreparedStatement prs1= conn.prepareStatement(req1);
+            String pwd = BCrypt.hashpw(y,BCrypt.gensalt(13));
+            prs1.setString(1, pwd.substring(0,2)+"y"+pwd.substring(3));
+            prs1.executeUpdate();
+            System.out.println(pwd);
+            System.out.println(y);
          //   Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-
-            String from ="tunisgottalent@gmail.com";
-            String pass="t20202020";
-            String [] to;
-            to = new String[]{email.getText()};
-            String host="mail.javatpoint.com";
+            String from ="jobhubwebsiteesprit@gmail.com";
+            String pass="jobhub0000";
+            String  to = email.getText();
+            String host="smtp.gmail.com";
             String sub="Password Recovery";
-
             Properties props = new Properties();
             props.put("mail.smtp.auth", "true");
             props.put("mail.smtp.ssl.protocols", "TLSv1.2");
@@ -117,22 +109,17 @@ public class ForgotPasswordController implements Initializable {
                 }
             });
             //compose message
-            MimeMessage message = new MimeMessage(session);
-            message.addRecipient(Message.RecipientType.TO,new InternetAddress(email.getText()));
-            message.setSubject(sub);
-            message.setText(mesg);
+            MimeMessage mes = new MimeMessage(session);
+            mes.setFrom(new InternetAddress(username));
+            mes.setRecipient(MimeMessage.RecipientType.TO, new InternetAddress(to));
+            mes.setSubject(sub);
+            mes.setText(mesg);
+            Transport.send(mes);
+            System.out.println("sent");
             //send message
-            Transport.send(message);
+            Transport.send(mes);
             System.out.println("Message sent successfully");
-            Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Acceuil/Acceuil.fxml"));
-            Scene scene = new Scene(parent);
-            Node node = (Node) event.getSource();
-            stage = (Stage) node.getScene().getWindow();
-            stage.close();
-            stage.setScene(scene);
-            stage.show();
-            stage.setResizable(false);
-            scene.setFill(Color.TRANSPARENT);
+            label.setText("Message sent successfully");
 
 
         }

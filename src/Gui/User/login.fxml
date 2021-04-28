@@ -37,11 +37,6 @@
                </font>
             </Label>
             <CheckBox fx:id="remember" layoutX="584.0" layoutY="336.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="116.0" text="Rembember me" />
-            <Button fx:id="forgotPass" layoutX="561.0" layoutY="375.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="136.0" text="Forgot Password?">
-               <font>
-                  <Font size="6.0" />
-               </font>
-            </Button>
             <Label fx:id="welcome" layoutX="382.0" layoutY="482.0" prefHeight="78.0" prefWidth="454.0" textFill="RED">
                <font>
                   <Font name="System Bold Italic" size="18.0" />

@@ -68,16 +68,7 @@ public class LoginController extends Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         LoginService.readinifile(path, email, pw, remember);
-        forgotPass.setOnAction(e -> {
-            URL root_url = null;
-            try {
-                root_url = new File("src/Gui/User/forgotPassword.fxml").toURI().toURL();
-            } catch (MalformedURLException malformedURLException) {
-                malformedURLException.printStackTrace();
-            }
-            Pane view = new FXloader().getPane(root_url);
-            mainpane.setCenter(view);
-        });
+
 
     }
     @FXML
