@@ -49,26 +49,8 @@ public class CareerService extends Controller implements ICareer {
 
     }
 
-    @Override
-    public void addEducation(education edu) {
-
-        String request2 = "INSERT into education (resume_id,course,institute,date_from,date_to) VALUES (NULL,?,?,?,?)";
-        try{
-            PreparedStatement pst2 = cnx.prepareStatement(request2);
-
-            pst2.setString(1, edu.getCourse());
-            pst2.setString(2,edu.getInstitute());
-            pst2.setDate(3, Date.valueOf(edu.getDateFrom()));
-            pst2.setDate(4,Date.valueOf(edu.getDateTo()));
-            pst2.executeUpdate();
-            System.out.println("Your Education has been added");
-
-        }catch (SQLException throwables){
-            throwables.printStackTrace();
-        }
 
 
-    }
 
     @Override
     public ObservableList<candidateResume> showResumes() {
@@ -125,4 +107,23 @@ public class CareerService extends Controller implements ICareer {
         }
         return false;
     }
+
+    @Override
+    public boolean deleteEducation(int resume_id) {
+        String req = "delete from education where resume_id=? ";
+        try {
+            PreparedStatement pst = cnx.prepareStatement(req);
+            pst.setInt(1, resume_id);
+            pst.executeUpdate();
+            System.out.println("Education Deleted");
+            return true;
+        } catch (SQLException err) {
+            System.out.println(err.getMessage());
+        }
+        return false;
+    }
+
+
+
+
 }

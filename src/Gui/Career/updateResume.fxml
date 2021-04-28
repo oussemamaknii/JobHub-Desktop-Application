@@ -38,10 +38,11 @@
       <Label fx:id="showInstitute" layoutX="522.0" layoutY="221.0" prefHeight="32.0" prefWidth="127.0" textFill="#3300ff" />
       <Label fx:id="showDateFrom" layoutX="515.0" layoutY="279.0" prefHeight="32.0" prefWidth="127.0" textFill="#3300ff" />
       <Button fx:id="deleteResume" layoutX="175.0" layoutY="432.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="204.0" stylesheets="@../StylSheet/Style.css" text="Delete Resume" />
-      <Label fx:id="msgg" layoutX="163.0" layoutY="498.0" prefHeight="63.0" prefWidth="215.0" textFill="RED">
+      <Label fx:id="msgg" layoutX="163.0" layoutY="498.0" prefHeight="63.0" prefWidth="281.0" textFill="RED">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
+      <Label fx:id="resumeId" layoutX="37.0" layoutY="38.0" />
    </children>
 </AnchorPane>

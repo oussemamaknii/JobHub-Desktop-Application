@@ -43,5 +43,6 @@
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </Label>
+      <Label fx:id="resumeId" layoutX="37.0" layoutY="38.0" />
    </children>
 </AnchorPane>
