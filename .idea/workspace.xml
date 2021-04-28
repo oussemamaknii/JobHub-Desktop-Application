@@ -22,22 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/jobhub_app/FXMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Facture.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/Facture.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/Payment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/PaymentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Card.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Card.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/MyBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/MyBookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
-    </list>
+    <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,22 +111,22 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="559" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1619639537454" />
-    <state width="1540" height="100" key="GridCell.Tab.0.bottom" timestamp="1619641850849">
+    <state width="1477" height="150" key="GridCell.Tab.0.bottom" timestamp="1619644532997">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="100" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619641850849" />
-    <state width="1540" height="100" key="GridCell.Tab.0.center" timestamp="1619641850849">
+    <state width="1477" height="150" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619644532997" />
+    <state width="1477" height="150" key="GridCell.Tab.0.center" timestamp="1619644532997">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="100" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619641850849" />
-    <state width="1540" height="100" key="GridCell.Tab.0.left" timestamp="1619641850848">
+    <state width="1477" height="150" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619644532997" />
+    <state width="1477" height="150" key="GridCell.Tab.0.left" timestamp="1619644532997">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="100" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619641850848" />
-    <state width="1540" height="100" key="GridCell.Tab.0.right" timestamp="1619641850849">
+    <state width="1477" height="150" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619644532997" />
+    <state width="1477" height="150" key="GridCell.Tab.0.right" timestamp="1619644532997">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="100" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619641850849" />
+    <state width="1477" height="150" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619644532997" />
     <state x="325" y="49" key="SettingsEditor" timestamp="1619560212881">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
