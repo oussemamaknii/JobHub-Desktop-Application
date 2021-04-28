@@ -26,29 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/controlsfx_8_40_111.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/ServiceG.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JobHub_App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub_App.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Entities/formation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Entities/formation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Delete.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Formation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Formation.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/FormationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/Listecategorie.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/UpdateFormation.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Gui/Formation/UpdateFormationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/ServiceF.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Interfaces/ServiceF.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Categorie_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Categorie_Service.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub_App/Services/Formation_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub_App/Services/Formation_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/formation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/formation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Formation/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/CategoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/ServiceF.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ServiceF.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/Formation_Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Formation_Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619545594573</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <created>1619570008562</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619570008562</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

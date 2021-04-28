@@ -59,18 +59,19 @@
             <TextField fx:id="tfmail" layoutX="35.0" layoutY="345.0" prefHeight="26.0" prefWidth="165.0" promptText="mail" />
             <TextField fx:id="tfadresse" layoutX="35.0" layoutY="302.0" prefHeight="26.0" prefWidth="165.0" promptText="adresse" />
             <TextField fx:id="tfdescription" layoutX="35.0" layoutY="174.0" prefHeight="26.0" prefWidth="165.0" promptText="description" />
-            <Button fx:id="btnremove"   layoutX="237.0" layoutY="539.0" mnemonicParsing="false" onAction="#removeAction" prefHeight="39.0" prefWidth="85.0" text="supprimer" />
-            <Button fx:id="editbtn"   onAction="#editAction"      layoutX="146.0" layoutY="539.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="74.0" text="modifier" />
+            <Button fx:id="btnremove" layoutX="237.0" layoutY="539.0" mnemonicParsing="false" onAction="#removeAction" prefHeight="39.0" prefWidth="85.0" text="supprimer" />
+            <Button fx:id="editbtn" layoutX="146.0" layoutY="539.0" mnemonicParsing="false" onAction="#editAction" prefHeight="39.0" prefWidth="74.0" text="modifier" />
             <TextField fx:id="tfSearch" layoutX="419.0" layoutY="88.0" prefHeight="31.0" prefWidth="291.0" promptText="Search" />
             <TextField fx:id="tfprix" layoutX="35.0" layoutY="435.0" prefHeight="26.0" prefWidth="165.0" promptText="prix" />
             <TableView fx:id="tvBooks" layoutX="342.0" layoutY="127.0" prefHeight="308.0" prefWidth="575.0">
                <columns>
                   <TableColumn fx:id="id" prefWidth="38.39996337890625" text="id" />
                   <TableColumn fx:id="formation" prefWidth="105.5999755859375" text="formation" />
+
                   <TableColumn fx:id="date_debutf" prefWidth="88.0" text="date_debut" />
                
                   <TableColumn fx:id="date_finf" prefWidth="88.0" text="date_fin" />
-                  <TableColumn fx:id="adresse" prefWidth="86.39996337890625" text="email" />
+                  <TableColumn fx:id="adresse" prefWidth="86.39996337890625" text="adresse" />
                   <TableColumn fx:id="tel" prefWidth="91.2000732421875" text="tel" />
                   <TableColumn fx:id="prix" prefWidth="76.800048828125" text="prix" />
 
@@ -79,7 +80,7 @@
             <ChoiceBox fx:id="choicecateg" layoutX="35.0" layoutY="476.0" prefHeight="25.0" prefWidth="165.0" />
             <DatePicker fx:id="date_debut" layoutX="35.0" layoutY="217.0" prefHeight="25.0" prefWidth="165.0" />
             <DatePicker fx:id="date_fin" layoutX="35.0" layoutY="258.0" prefHeight="25.0" prefWidth="165.0" />
-            <Button fx:id="btnUpdate1"  onAction="#updateAction"  layoutX="257.0" layoutY="395.0" mnemonicParsing="false"  prefHeight="39.0" prefWidth="74.0" text="Select" />
+            <Button fx:id="btnUpdate1" layoutX="257.0" layoutY="395.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="39.0" prefWidth="74.0" text="Select" />
             <Label layoutX="375.0" layoutY="14.0" text="Liste des formations" textFill="#321076">
                <font>
                   <Font name="Comic Sans MS Bold Italic" size="38.0" />

@@ -72,6 +72,7 @@ public class FormationController implements Initializable {
     @FXML
     private TableColumn<formation, String> adresse;
 
+
     @FXML
     private TableColumn<formation, Double> tel;
     @FXML
@@ -168,7 +169,7 @@ public class FormationController implements Initializable {
                     String lowerCaseFilter = newValue.toLowerCase();
                     if (formation.getNom().toLowerCase().indexOf(lowerCaseFilter)!=-1){
                         return true; //filter matches name
-                    }else if (formation.getFormateur().toLowerCase().indexOf(lowerCaseFilter)!=-1){
+                    }else if (formation.getAdresse().toLowerCase().indexOf(lowerCaseFilter)!=-1){
                         return true; //filter matches formatteur
                     }
                 else if (String.valueOf(formation.getDate_debut()).toLowerCase().indexOf(lowerCaseFilter)!=-1){

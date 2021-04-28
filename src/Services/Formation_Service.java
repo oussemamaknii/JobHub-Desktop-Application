@@ -7,6 +7,8 @@ import Utils.Connexion;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
+import javax.swing.table.TableColumn;
+import java.awt.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -46,7 +48,7 @@ public class Formation_Service implements ServiceF <formation> {
         return result;
     }
     public String getcatname(int id){
-        String request = "select titre from category where id = '"+id+"'";
+        String request = "select titre from category where titre = '"+id+"'";
         String a = "";
         try {
             Statement statement = cnx.createStatement();
@@ -130,15 +132,18 @@ public class Formation_Service implements ServiceF <formation> {
             while (rst.next()){
                 formation s= new formation();
                 s.setId(rst.getInt("id"));
+
                 s.setTitre(rst.getString("nom"));
-                s.setCategory_id(rst.getInt("category_id"));
+                s.setDescription(rst.getString("description"));
                 s.setFormateur(rst.getString("formateur"));
                 s.setDate_debut(rst.getDate("date_debut"));
                 s.setDate_fin(rst.getDate("date_fin"));
                 s.setAdresse(rst.getString("adresse"));
-                s.setAdresse(rst.getString("mail"));
+                s.setEmail(rst.getString("mail"));
                 s.setTel(rst.getDouble("tel"));
                 s.setPrix(rst.getDouble("prix"));
+
+
 
                 formation.add(s);
             }
