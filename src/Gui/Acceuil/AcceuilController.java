@@ -49,6 +49,15 @@ public class AcceuilController implements Initializable {
     @FXML
     private MenuItem cartMI;
 
+    @FXML
+    private MenuItem editevent;
+    @FXML
+    private MenuItem addevent;
+
+
+    @FXML
+    private MenuItem listevent;
+
 
     /**
      * Initializes the controller class.
