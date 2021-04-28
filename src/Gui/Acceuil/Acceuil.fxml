@@ -135,7 +135,6 @@
                   <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-3.0" layoutY="268.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="287.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Shop" textFill="WHITE" AnchorPane.topAnchor="350.0">
                      <items>
                         <MenuItem fx:id="shopMI" mnemonicParsing="false" text="Shop" />
-                        <MenuItem fx:id="cartMI" mnemonicParsing="false" text="Cart" />
                      </items>
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">

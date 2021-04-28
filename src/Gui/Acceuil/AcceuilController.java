@@ -164,17 +164,6 @@ public class AcceuilController implements Initializable {
             mainpane.setCenter(view);
         });
 
-        cartMI.setOnAction(e -> {
-            URL root_url = null;
-            try {
-                root_url = new File("src/Gui/Produit/Card.fxml").toURI().toURL();
-            } catch (MalformedURLException malformedURLException) {
-                malformedURLException.printStackTrace();
-            }
-            Pane view = new FXloader().getPane(root_url);
-            mainpane.setCenter(view);
-        });
-
         addevent.setOnAction(e -> {
             URL root_url = null;
             try {

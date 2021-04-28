@@ -187,8 +187,6 @@ public class Add_eventController implements Initializable {
         setImageFile(selectedFile);
     }
 
-
-
     @FXML
     private void HandleButtonOption(ActionEvent event) {
     }
