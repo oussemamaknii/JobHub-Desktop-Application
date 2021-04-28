@@ -3,6 +3,7 @@ package Gui.Backoffice;
 import Entities.Commande;
 import Entities.Offre_Emploi;
 import Entities.Produit;
+import Gui.Acceuil.FXloader;
 import Gui.Commande.ListCellCommande;
 import Gui.OffreEmploi.OffreCell;
 import Gui.Produit.AddProductController;
@@ -37,7 +38,9 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -58,13 +61,16 @@ public class BackofficeController implements Initializable {
     private Button btnGCommande;
 
     @FXML
-    private Button btnGFormation;
+    private Button form;
 
     @FXML
     private Button btnGEvent;
 
     @FXML
     private Button btnGRating;
+
+    @FXML
+    private Button categ;
 
     @FXML
     private Pane pnStatus;
@@ -91,6 +97,9 @@ public class BackofficeController implements Initializable {
     private GridPane pnFormations;
 
     @FXML
+    private GridPane gridcateg;
+
+    @FXML
     private GridPane pnHome;
 
     @FXML
@@ -112,17 +121,24 @@ public class BackofficeController implements Initializable {
     @FXML
     private JFXButton viewProducts;
 
+
+    @FXML
+    private BorderPane affform;
+
+    @FXML
+    private BorderPane affcateg;
+
     @FXML
     private ListView<Commande> listCommande;
     @FXML
     private ListView<Produit> productGrid;
 
     private List<Produit> productsList;
-    ObservableList <Produit> dataList;
+    ObservableList<Produit> dataList;
 
 
+    Produit productTab = null;
 
-    Produit productTab = null ;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         searchCommandes();
@@ -132,61 +148,85 @@ public class BackofficeController implements Initializable {
 
 
     @FXML
-    private void handleClicks(ActionEvent event){
-
-        if(event.getSource() == btnHome){
+    private void handleClicks(ActionEvent event) {
+        if (event.getSource() == btnHome) {
+            affform.setVisible(false);
+            affcateg.setVisible(false);
             lbStatusMin.setText("/Home");
             lbStatus.setText("Home");
-            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(40,95,60), CornerRadii.EMPTY, Insets.EMPTY)));
+            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(40, 95, 60), CornerRadii.EMPTY, Insets.EMPTY)));
             pnHome.toFront();
-        }
-        else
-        if(event.getSource() == btnGUser){
+        } else if (event.getSource() == btnGUser) {
+            affform.setVisible(false);
+            affcateg.setVisible(false);
             lbStatusMin.setText("/Home/GUsers");
             lbStatus.setText("Users");
-            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(63,43,99), CornerRadii.EMPTY, Insets.EMPTY)));
+            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(63, 43, 99), CornerRadii.EMPTY, Insets.EMPTY)));
             pnUsers.toFront();
-        }
-        else
-        if(event.getSource() == btnGProduits){
+        } else if (event.getSource() == btnGProduits) {
+            affform.setVisible(false);
+            affcateg.setVisible(false);
             lbStatusMin.setText("/Home/Gestion Produits");
             lbStatus.setText("Produits");
-            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(43,99,63), CornerRadii.EMPTY, Insets.EMPTY)));
+            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(43, 99, 63), CornerRadii.EMPTY, Insets.EMPTY)));
             pnProducts.toFront();
-        }
-        else
-        if(event.getSource() == btnGCommande){
+        } else if (event.getSource() == btnGCommande) {
+            affform.setVisible(false);
+            affcateg.setVisible(false);
             lbStatusMin.setText("/Home/Gestion Commande");
             lbStatus.setText("Commandes");
-            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(43,63,99), CornerRadii.EMPTY, Insets.EMPTY)));
+            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(43, 63, 99), CornerRadii.EMPTY, Insets.EMPTY)));
             pnCommandes.toFront();
-           // showCommandes();
+            // showCommandes();
 
-        }
-        else
-        if(event.getSource() == btnGFormation){
+        } else if (event.getSource() == form) {
+            affform.setVisible(true);
+            affcateg.setVisible(false);
             lbStatusMin.setText("/Home/Gestion Formation");
             lbStatus.setText("Formation");
-            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(99,43,63), CornerRadii.EMPTY, Insets.EMPTY)));
+            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(99, 43, 63), CornerRadii.EMPTY, Insets.EMPTY)));
             pnFormations.toFront();
-        }
-        else
-        if(event.getSource() == btnGEvent){
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/Formation/Formation.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            affform.setCenter(view);
+        } else if (event.getSource() == btnGEvent) {
+            affform.setVisible(false);
+            affcateg.setVisible(false);
             lbStatusMin.setText("/Home/Gestion Evenements");
             lbStatus.setText("Evenements");
-            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(99,63,43), CornerRadii.EMPTY, Insets.EMPTY)));
-        }
-        else
-        if(event.getSource() == btnGRating){
+            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(99, 63, 43), CornerRadii.EMPTY, Insets.EMPTY)));
+        } else if (event.getSource() == btnGRating) {
+            affform.setVisible(false);
+            affcateg.setVisible(false);
             lbStatusMin.setText("/Home/Gestion Ratings");
             lbStatus.setText("Ratings");
-            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(63,99,43), CornerRadii.EMPTY, Insets.EMPTY)));
+            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(63, 99, 43), CornerRadii.EMPTY, Insets.EMPTY)));
+        } else if (event.getSource() == categ) {
+            affform.setVisible(false);
+            affcateg.setVisible(true);
+            gridcateg.toFront();
+            lbStatusMin.setText("/Home/Gestion Category");
+            lbStatus.setText("Categories");
+            pnStatus.setBackground(new Background(new BackgroundFill(Color.rgb(63, 99, 43), CornerRadii.EMPTY, Insets.EMPTY)));
+            URL root_url = null;
+            try {
+                root_url = new File("src/Gui/Formation/Category.fxml").toURI().toURL();
+            } catch (MalformedURLException malformedURLException) {
+                malformedURLException.printStackTrace();
+            }
+            Pane view = new FXloader().getPane(root_url);
+            affcateg.setCenter(view);
         }
     }
 
     @FXML
     void handleClose(MouseEvent event) {
-        if(event.getSource() == btnClose){
+        if (event.getSource() == btnClose) {
             System.exit(0);
         }
     }
@@ -199,7 +239,7 @@ public class BackofficeController implements Initializable {
             final double[] yOffset = new double[1];
             Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Produit/AddProduct.fxml"));
             Scene scene = new Scene(parent);
-            Stage stage= new Stage();
+            Stage stage = new Stage();
             parent.setOnMousePressed(e -> {
                 xOffset[0] = e.getSceneX();
                 yOffset[0] = e.getSceneY();
@@ -220,14 +260,14 @@ public class BackofficeController implements Initializable {
     }
 
     @FXML
-    void orderStats(MouseEvent event){
+    void orderStats(MouseEvent event) {
         try {
 
             final double[] xOffset = new double[1];
             final double[] yOffset = new double[1];
             Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Commande/stats.fxml"));
             Scene scene = new Scene(parent);
-            Stage stage= new Stage();
+            Stage stage = new Stage();
             parent.setOnMousePressed(e -> {
                 xOffset[0] = e.getSceneX();
                 yOffset[0] = e.getSceneY();
@@ -250,10 +290,10 @@ public class BackofficeController implements Initializable {
     @FXML
     void orderProducts(MouseEvent event) {
         Commande orderTab = listCommande.getSelectionModel().getSelectedItem();
-        if(orderTab!=null){
+        if (orderTab != null) {
             final double[] xOffset = new double[1];
             final double[] yOffset = new double[1];
-            FXMLLoader loader = new FXMLLoader ();
+            FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("ProductCart.fxml"));
             try {
                 loader.load();
@@ -278,13 +318,13 @@ public class BackofficeController implements Initializable {
             stage.initStyle(StageStyle.UNDECORATED);
             stage.show();
             searchCommandes();
-        }else {
+        } else {
             effect.setDisable(false);
-            BoxBlur blur = new BoxBlur(3,3,3);
+            BoxBlur blur = new BoxBlur(3, 3, 3);
             JFXDialogLayout content = new JFXDialogLayout();
             content.setHeading(new Text("Error!!!"));
             content.setBody(new Text("Select the Item first !!"));
-            JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+            JFXDialog fialog = new JFXDialog(effect, content, JFXDialog.DialogTransition.CENTER);
             JFXButton btn = new JFXButton("OK!");
             btn.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
@@ -319,13 +359,13 @@ public class BackofficeController implements Initializable {
                     searchCommandes();
                 }
             });
-        }else{
+        } else {
             effect.setDisable(false);
-            BoxBlur blur = new BoxBlur(3,3,3);
+            BoxBlur blur = new BoxBlur(3, 3, 3);
             JFXDialogLayout content = new JFXDialogLayout();
             content.setHeading(new Text("Error!!!"));
             content.setBody(new Text("Select the Item first !!"));
-            JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+            JFXDialog fialog = new JFXDialog(effect, content, JFXDialog.DialogTransition.CENTER);
             JFXButton btn = new JFXButton("OK!");
             btn.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
@@ -360,13 +400,13 @@ public class BackofficeController implements Initializable {
                     searchProduits();
                 }
             });
-        }else{
+        } else {
             effect.setDisable(false);
-            BoxBlur blur = new BoxBlur(3,3,3);
+            BoxBlur blur = new BoxBlur(3, 3, 3);
             JFXDialogLayout content = new JFXDialogLayout();
             content.setHeading(new Text("Error!!!"));
             content.setBody(new Text("Select the Item first !!"));
-            JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+            JFXDialog fialog = new JFXDialog(effect, content, JFXDialog.DialogTransition.CENTER);
             JFXButton btn = new JFXButton("OK!");
             btn.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
@@ -384,8 +424,8 @@ public class BackofficeController implements Initializable {
     @FXML
     void editProd(MouseEvent event) {
         Produit productTab = productGrid.getSelectionModel().getSelectedItem();
-        if(productTab!=null){
-            FXMLLoader loader = new FXMLLoader ();
+        if (productTab != null) {
+            FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/Gui/Produit/AddProduct.fxml"));
             try {
                 loader.load();
@@ -395,21 +435,21 @@ public class BackofficeController implements Initializable {
 
             AddProductController addPController = loader.getController();
             addPController.setUpdate(true);
-            addPController.setRecords(productTab.getId(),productTab.getRef(),productTab.getName(),
-                    productTab.getPrice(),productTab.getDescription(),productTab.getImage());
+            addPController.setRecords(productTab.getId(), productTab.getRef(), productTab.getName(),
+                    productTab.getPrice(), productTab.getDescription(), productTab.getImage());
             Parent parent = loader.getRoot();
             Stage stage = new Stage();
             stage.setScene(new Scene(parent));
             stage.initStyle(StageStyle.UTILITY);
             stage.show();
             searchProduits();
-        }else {
+        } else {
             effect.setDisable(false);
-            BoxBlur blur = new BoxBlur(3,3,3);
+            BoxBlur blur = new BoxBlur(3, 3, 3);
             JFXDialogLayout content = new JFXDialogLayout();
             content.setHeading(new Text("Error!!!"));
             content.setBody(new Text("Select the Item first !!"));
-            JFXDialog fialog = new JFXDialog(effect,content,JFXDialog.DialogTransition.CENTER);
+            JFXDialog fialog = new JFXDialog(effect, content, JFXDialog.DialogTransition.CENTER);
             JFXButton btn = new JFXButton("OK!");
             btn.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
@@ -427,14 +467,14 @@ public class BackofficeController implements Initializable {
 
     @FXML
     void refresh(MouseEvent event) {
-        if(event.getSource()== faRefresh){
+        if (event.getSource() == faRefresh) {
             showProduits();
         }
     }
 
     @FXML
     void refreshOrder(MouseEvent event) {
-        if(event.getSource()== faRefreshOrder){
+        if (event.getSource() == faRefreshOrder) {
             searchCommandes();
         }
     }
@@ -450,7 +490,7 @@ public class BackofficeController implements Initializable {
         listCommande.setCellFactory(studentListView -> new ListCellCommande());
     }
 
-    public void showProduits(){
+    public void showProduits() {
         ObservableList<Produit> products = null;
         try {
             products = new ServiceProduit().readAll();
@@ -461,8 +501,8 @@ public class BackofficeController implements Initializable {
         productGrid.setCellFactory(studentListView -> new BookController());
     }
 
-    public void searchCommandes(){
-        ObservableList<Commande> commandes=null;
+    public void searchCommandes() {
+        ObservableList<Commande> commandes = null;
         try {
             commandes = new ServiceCommande().getAll();
         } catch (SQLException throwables) {
@@ -482,7 +522,7 @@ public class BackofficeController implements Initializable {
                     return true; //filter matches date
                 } else if (String.valueOf(client.getId()).toLowerCase().contains(lowerCaseFilter)) {
                     return true; //filter matches ref
-                } else if(String.valueOf(client.isState()).toLowerCase().contains(lowerCaseFilter)){
+                } else if (String.valueOf(client.isState()).toLowerCase().contains(lowerCaseFilter)) {
                     return true; //matches state
                 }
                 return false; //Does not match
@@ -497,8 +537,8 @@ public class BackofficeController implements Initializable {
         listCommande.setCellFactory(studentListView -> new ListCellCommande());
     }
 
-    public void searchProduits(){
-        ObservableList<Produit> produits=null;
+    public void searchProduits() {
+        ObservableList<Produit> produits = null;
         try {
             produits = new ServiceProduit().readAll();
         } catch (SQLException throwables) {
@@ -531,15 +571,15 @@ public class BackofficeController implements Initializable {
         productGrid.setCellFactory(studentListView -> new BookController());
     }
 
-    private List<Produit> getProducts(){
+    private List<Produit> getProducts() {
         List<Produit> lp = new ArrayList<>();
         ArrayList<Produit> products = new ServiceProduit().getAll();
 
-        for (int i = 0; i < products.size(); i++){
+        for (int i = 0; i < products.size(); i++) {
             Produit product = new Produit();
             product.setName(products.get(i).getName());
             product.setPrice(products.get(i).getPrice());
-            product.setImage("/Gui/Images/"+products.get(i).getImage());
+            product.setImage("/Gui/Images/" + products.get(i).getImage());
             product.setDescription(products.get(i).getDescription());
             product.setQuantity(products.get(i).getQuantity());
             product.setRef(products.get(i).getRef());

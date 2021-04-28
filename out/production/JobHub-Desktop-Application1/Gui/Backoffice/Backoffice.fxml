@@ -8,6 +8,7 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
@@ -17,9 +18,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="579.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Backoffice.BackofficeController">
+<AnchorPane prefHeight="657.0" prefWidth="1184.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Backoffice.BackofficeController">
    <children>
-      <Pane fx:id="pnStatus" layoutX="230.0" layoutY="68.0" prefHeight="86.0" prefWidth="793.0" style="-fx-background-color: #999;">
+      <Pane fx:id="pnStatus" layoutX="234.0" layoutY="31.0" prefHeight="86.0" prefWidth="944.0" style="-fx-background-color: #999;">
          <children>
             <Label fx:id="lbStatus" layoutX="29.0" layoutY="32.0" prefHeight="35.0" prefWidth="224.0" stylesheets="@Backend.css" text="Home" textFill="WHITE">
                <font>
@@ -33,7 +34,7 @@
             </Label>
          </children>
       </Pane>
-      <Button fx:id="btnClose" layoutX="935.0" layoutY="-4.0" mnemonicParsing="false" onMouseClicked="#handleClose" prefHeight="35.0" prefWidth="88.0" stylesheets="@Backend.css" text="LogOut">
+      <Button fx:id="btnClose" layoutX="1085.0" layoutY="-4.0" mnemonicParsing="false" onMouseClicked="#handleClose" prefHeight="35.0" prefWidth="88.0" stylesheets="@Backend.css" text="LogOut">
          <graphic>
             <FontAwesomeIcon fill="#d93730" glyphName="CLOSE" size="20" />
          </graphic>
@@ -41,7 +42,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <VBox prefHeight="585.0" prefWidth="230.0" style="-fx-background-color: #212529;">
+      <VBox prefHeight="646.0" prefWidth="230.0" style="-fx-background-color: #212529;">
          <children>
             <Pane prefHeight="157.0" prefWidth="230.0">
                <children>
@@ -120,7 +121,7 @@
                   <Insets top="5.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="btnGFormation" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Gestion Formations" textFill="WHITE">
+            <Button fx:id="form" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Gestion Formations" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon fill="#27d057" glyphName="ARROWS" size="20" />
                </graphic>
@@ -136,6 +137,20 @@
                <VBox.margin>
                   <Insets top="5.0" />
                </VBox.margin>
+            </Button>
+            <Button fx:id="categ" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Gestion Category" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon fill="#27d057" glyphName="ARROWS" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="50.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
             </Button>
             <Button fx:id="btnGEvent" alignment="BASELINE_LEFT" graphicTextGap="10.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="42.0" prefWidth="224.0" stylesheets="@Backend.css" text="Gestion Evenements" textFill="WHITE">
                <graphic>
@@ -182,78 +197,6 @@
                <rowConstraints>
                   <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
                </rowConstraints>
-            </GridPane>
-            <GridPane fx:id="pnFormations" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;">
-               <columnConstraints>
-                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
-               </rowConstraints>
-            </GridPane>
-            <GridPane fx:id="pnProducts" alignment="BASELINE_LEFT" prefHeight="427.0" prefWidth="783.0" style="-fx-background-color: #666;">
-              <columnConstraints>
-                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-              </columnConstraints>
-              <rowConstraints>
-                <RowConstraints maxHeight="190.66668701171875" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="190.66668701171875" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="363.0" vgrow="SOMETIMES" />
-              </rowConstraints>
-               <children>
-                  <HBox prefHeight="35.0" prefWidth="783.0" spacing="20.0">
-                     <children>
-                        <FontAwesomeIcon fx:id="faSearch" fill="#27d057" glyphName="SEARCH" size="20">
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin></FontAwesomeIcon>
-                        <TextField fx:id="tfSearch" prefHeight="26.0" prefWidth="332.0" style="-fx-border-color: #27d057;" />
-                        <FontAwesomeIcon fx:id="faRefresh" fill="#27d057" glyphName="REFRESH" onMouseClicked="#refresh" size="20" wrappingWidth="23.14285659790039" />
-                        <FontAwesomeIcon fx:id="editProd" fill="#33b955" glyphName="PENCIL_SQUARE" onMouseClicked="#editProd" size="30" text="" />
-                        <FontAwesomeIcon fx:id="deletStrashProd" fill="#e10101" glyphName="TRASH" onMouseClicked="#suppProduct" size="30" wrappingWidth="25.714284896850586" />
-                        <Button fx:id="btnAddProduct" graphicTextGap="11.0" mnemonicParsing="false" onMouseClicked="#addP" prefHeight="29.0" prefWidth="150.0" stylesheets="@Backend.css" text="Add Product">
-                           <graphic>
-                              <FontAwesomeIcon fill="#27d057" glyphName="PLUS" onMouseClicked="#addP" size="15" />
-                           </graphic>
-                        </Button>
-                     </children>
-                  </HBox>
-                  <ListView fx:id="productGrid" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
-                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
-                     <children>
-                        <Label layoutX="14.0" layoutY="10.0" prefHeight="27.0" prefWidth="53.0" text="Image" textFill="WHITE">
-                           <font>
-                              <Font name="Bauhaus 93" size="14.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="99.0" layoutY="10.0" prefHeight="27.0" prefWidth="53.0" text="Auteur" textFill="WHITE">
-                           <font>
-                              <Font name="Bauhaus 93" size="14.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="202.0" layoutY="10.0" prefHeight="27.0" prefWidth="78.0" text="Reference" textFill="WHITE">
-                           <font>
-                              <Font name="Bauhaus 93" size="14.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="314.0" layoutY="10.0" prefHeight="27.0" prefWidth="95.0" text="Prix Unitaire" textFill="WHITE">
-                           <font>
-                              <Font name="Bauhaus 93" size="14.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="440.0" layoutY="10.0" prefHeight="27.0" prefWidth="88.0" text="Quantité" textFill="WHITE">
-                           <font>
-                              <Font name="Bauhaus 93" size="14.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="612.0" layoutY="10.0" prefHeight="27.0" prefWidth="95.0" text="Description" textFill="WHITE">
-                           <font>
-                              <Font name="Bauhaus 93" size="14.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </Pane>
-               </children>
             </GridPane>
             <GridPane fx:id="pnCommandes" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #666;">
                <columnConstraints>
@@ -325,6 +268,92 @@
                <rowConstraints>
                   <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
                </rowConstraints>
+            </GridPane>
+            <GridPane fx:id="pnProducts" alignment="BASELINE_LEFT" prefHeight="427.0" prefWidth="783.0" style="-fx-background-color: #666;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="190.66668701171875" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="190.66668701171875" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="363.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox prefHeight="35.0" prefWidth="783.0" spacing="20.0">
+                     <children>
+                        <FontAwesomeIcon fx:id="faSearch" fill="#27d057" glyphName="SEARCH" size="20">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin></FontAwesomeIcon>
+                        <TextField fx:id="tfSearch" prefHeight="26.0" prefWidth="332.0" style="-fx-border-color: #27d057;" />
+                        <FontAwesomeIcon fx:id="faRefresh" fill="#27d057" glyphName="REFRESH" onMouseClicked="#refresh" size="20" wrappingWidth="23.14285659790039" />
+                        <FontAwesomeIcon fx:id="editProd" fill="#33b955" glyphName="PENCIL_SQUARE" onMouseClicked="#editProd" size="30" text="" />
+                        <FontAwesomeIcon fx:id="deletStrashProd" fill="#e10101" glyphName="TRASH" onMouseClicked="#suppProduct" size="30" wrappingWidth="25.714284896850586" />
+                        <Button fx:id="btnAddProduct" graphicTextGap="11.0" mnemonicParsing="false" onMouseClicked="#addP" prefHeight="29.0" prefWidth="150.0" stylesheets="@Backend.css" text="Add Product">
+                           <graphic>
+                              <FontAwesomeIcon fill="#27d057" glyphName="PLUS" onMouseClicked="#addP" size="15" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="productGrid" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                  <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Label layoutX="14.0" layoutY="10.0" prefHeight="27.0" prefWidth="53.0" text="Image" textFill="WHITE">
+                           <font>
+                              <Font name="Bauhaus 93" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="99.0" layoutY="10.0" prefHeight="27.0" prefWidth="53.0" text="Auteur" textFill="WHITE">
+                           <font>
+                              <Font name="Bauhaus 93" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="202.0" layoutY="10.0" prefHeight="27.0" prefWidth="78.0" text="Reference" textFill="WHITE">
+                           <font>
+                              <Font name="Bauhaus 93" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="314.0" layoutY="10.0" prefHeight="27.0" prefWidth="95.0" text="Prix Unitaire" textFill="WHITE">
+                           <font>
+                              <Font name="Bauhaus 93" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="440.0" layoutY="10.0" prefHeight="27.0" prefWidth="88.0" text="Quantité" textFill="WHITE">
+                           <font>
+                              <Font name="Bauhaus 93" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="612.0" layoutY="10.0" prefHeight="27.0" prefWidth="95.0" text="Description" textFill="WHITE">
+                           <font>
+                              <Font name="Bauhaus 93" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </GridPane>
+            <GridPane fx:id="pnFormations" alignment="BASELINE_LEFT" prefHeight="490.0" prefWidth="889.0" style="-fx-background-color: #fff;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <BorderPane fx:id="affform" prefHeight="508.0" prefWidth="890.0" />
+               </children>
+            </GridPane>
+            <GridPane fx:id="gridcateg" alignment="BASELINE_LEFT" prefHeight="393.0" prefWidth="783.0" style="-fx-background-color: #fff;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="393.0" minHeight="10.0" prefHeight="344.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <BorderPane fx:id="affcateg" prefHeight="200.0" prefWidth="200.0" />
+               </children>
             </GridPane>
          </children>
       </StackPane>
