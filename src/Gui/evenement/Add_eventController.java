@@ -109,7 +109,7 @@ public class Add_eventController implements Initializable {
                         Integer.parseInt(tfnbre_place.getText()));
                 event.setImage(list.get(0));
                 File f=new File(getImageFile().getAbsolutePath());
-                f.renameTo(new File("C:\\xampp\\htdocs\\JobHub-Desktop-Application-master\\images\\"+list.get(0)));
+                f.renameTo(new File("CC:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images"+list.get(0)));
 
                 new evenementService().add(event);
                 BoxBlur blur = new BoxBlur(3,3,3);
@@ -173,7 +173,7 @@ public class Add_eventController implements Initializable {
     @FXML
     private void filechooser(ActionEvent event) {
         FileChooser fc = new FileChooser();
-        fc.setInitialDirectory(new File("C:\\xampp\\htdocs\\JobHub-Desktop-Application-master\\images"));
+        fc.setInitialDirectory(new File("C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images"));
         File selectedFile = fc.showOpenDialog(null);
 
         if (selectedFile != null) {

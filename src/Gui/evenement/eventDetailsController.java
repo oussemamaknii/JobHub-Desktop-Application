@@ -56,7 +56,7 @@ public class eventDetailsController implements Initializable {
 
     public void setImage(String i)
     {
-        Image image =  new Image("file:///C:\\xampp\\htdocs\\JobHub-Desktop-Application-master\\images\\"+i);
+        Image image =  new Image("file:///C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images"+i);
 
         eventImage.setImage(image);
         eventImage.setStyle("-fx-background-color:transparent;");

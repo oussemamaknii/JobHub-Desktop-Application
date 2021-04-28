@@ -187,7 +187,7 @@ public class List_eventController implements Initializable {
 
                 Circle cir2 = new Circle(80,80,80);
                 cir2.setStroke(Color.SEAGREEN);
-                Image im = new Image("file:///C:\\xampp\\htdocs\\JobHub-Desktop-Application-master\\images\\" + lp.get(i).getImage());
+                Image im = new Image("file:///C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images\\" + lp.get(i).getImage());
                 cir2.setFill(new ImagePattern(im));
                 cir2.setTranslateY(15);
 
@@ -331,7 +331,7 @@ public class List_eventController implements Initializable {
                 Places.setTranslateX(30);
 
 
-                Image img = new Image("file:///C:\\xampp\\htdocs\\JobHub-Desktop-Application-master\\images\\crossIcon.png");
+                Image img = new Image("file:///C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images\\crossIcon.png");
                 ImageView view = new ImageView(img);
                 view.setFitHeight(20);
 
@@ -408,7 +408,7 @@ public class List_eventController implements Initializable {
                 int idEvent2=lp.get(i).getId();
                 event selectedEvent=lp.get(i);
                 System.out.println(lp.get(i).getImage());
-                Image image = new Image("file:///C:\\xampp\\htdocs\\JobHub-Desktop-Application-master\\images\\" + lp.get(i).getImage());
+                Image image = new Image("file:///C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images\\" + lp.get(i).getImage());
                 ImageView imageView = new ImageView(image);
                 imageView.setTranslateY(30);
                 imageView.setFitHeight(150);
@@ -453,7 +453,7 @@ public class List_eventController implements Initializable {
 
                 Circle cir2 = new Circle(80,80,80);
                 cir2.setStroke(Color.SEAGREEN);
-                Image im = new Image("file:///C:\\xampp\\htdocs\\JobHub-Desktop-Application-master\\images\\" + lp.get(i).getImage());
+                Image im = new Image("file:///C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images\\" + lp.get(i).getImage());
                 cir2.setFill(new ImagePattern(im));
                 cir2.setTranslateY(15);
 
@@ -596,7 +596,7 @@ public class List_eventController implements Initializable {
                 Places.setTranslateX(30);
 
 
-                Image img = new Image("file:///C:\\xampp\\htdocs\\JobHub-Desktop-Application-master\\images\\crossIcon.png");
+                Image img = new Image("file:///C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images\\crossIcon.png");
                 ImageView view = new ImageView(img);
                 view.setFitHeight(20);
 
