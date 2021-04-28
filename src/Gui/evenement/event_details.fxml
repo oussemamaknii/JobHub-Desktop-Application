@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="descriptionEvent" prefHeight="746.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.evenement.eventDetailsController">
+   <children>
+      <Label fx:id="eventName" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" layoutY="43.0" prefHeight="17.0" prefWidth="389.0" text="My Event" textFill="#3907ee">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></Label>
+      <ImageView fx:id="eventImage" fitHeight="150.0" fitWidth="200.0" layoutX="258.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="prixEvent" layoutX="68.0" layoutY="179.0" prefHeight="21.0" prefWidth="69.0" />
+      <Label layoutX="14.0" layoutY="251.0" text="description :">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <ScrollPane fx:id="commentScrollPane" layoutX="25.0" layoutY="480.0" prefHeight="164.0" prefWidth="667.0">
+        <content>
+          <AnchorPane fx:id="commentAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="187.0" prefWidth="656.0" />
+        </content>
+      </ScrollPane>
+      <Label layoutX="25.0" layoutY="413.0" prefHeight="35.0" prefWidth="130.0" text="comments:" textFill="#845bff">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label fx:id="descriptionEn" layoutX="22.0" layoutY="296.0" prefHeight="108.0" prefWidth="645.0" />
+      <TextField fx:id="commentField" layoutX="42.0" layoutY="688.0" onKeyReleased="#checkComment" prefHeight="25.0" prefWidth="422.0" />
+      <Button fx:id="addCommentBtn" layoutX="485.0" layoutY="688.0" mnemonicParsing="false" onAction="#addNewComment" text="Send" />
+   </children>
+</AnchorPane>
