@@ -44,7 +44,7 @@ public class AddCartController implements Initializable {
 
     @FXML
     private ImageView loadImg;
-    @FXML
+  //  @FXML
     private AnchorPane centerContent;
 
     @FXML
@@ -93,7 +93,6 @@ public class AddCartController implements Initializable {
         centerContent.getChildren().removeAll();
         new FadeInDown(parent).play();
         centerContent.getChildren().setAll(parent);
-
     }
 
     @FXML
@@ -102,7 +101,7 @@ public class AddCartController implements Initializable {
         stg.close();
     }
 
-    public void setRecords(int id, String ref,String nom, Float prix,String desc,String img,ObservableList<Cart> pa){
+    public void setRecords(int id, String ref,String nom, Float prix,String desc,String img,ObservableList<Cart> pa, AnchorPane cP){
         produitPanier = new Cart(id,nom,prix,1,img,1);
         productId = id;
         lbRef.setText(ref);
@@ -110,7 +109,7 @@ public class AddCartController implements Initializable {
         lbPrice.setText(String.valueOf(prix)+"DT");
         lbDesc.setText(desc);
         loadImg.setImage(new Image(getClass().getResourceAsStream(img)));
-
+        centerContent = cP;
         if(panier.isEmpty())
             panier.addAll(pa);
         else {

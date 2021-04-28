@@ -39,7 +39,7 @@ public class ShopController implements Initializable {
     private Pane banner;
 
     @FXML
-    private Pane centerContent;
+    private AnchorPane centerContent;
 
     private List<Produit> productsList;
     ObservableList<Cart> panier = FXCollections.observableArrayList();
@@ -49,6 +49,7 @@ public class ShopController implements Initializable {
         new Bounce(banner).play();
         loadProductPane();
     }
+
     void loadProductPane(){
         productsList = new ArrayList<>(getShopProducts());
         int column = 0;
@@ -61,7 +62,7 @@ public class ShopController implements Initializable {
 
                 HBox hBoxItem = fxmlLoader.load();
                 MyBookController bookController = fxmlLoader.getController();
-                bookController.setData(prod);
+                bookController.setData(prod,centerContent);
                 if (column == 3){
                     column=0;
                     ++row;
@@ -74,6 +75,7 @@ public class ShopController implements Initializable {
             e.printStackTrace();
         }
     }
+
     private List<Produit> getShopProducts(){
         List<Produit> lp = new ArrayList<>();
         ArrayList<Produit> products = new ServiceProduit().getAll();
@@ -97,6 +99,17 @@ public class ShopController implements Initializable {
         centerContent = c;
         panier.clear();
 
+    }
+
+    public void redirectionFromPanier(AnchorPane c, ObservableList<Cart> p) {
+        centerContent = c;
+        if(panier.isEmpty())
+            panier.addAll(p);
+        else {
+            panier.clear();
+            panier.addAll(p);
+        }
+      //  user=u;
     }
 
 }

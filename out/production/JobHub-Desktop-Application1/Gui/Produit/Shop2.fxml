@@ -18,44 +18,49 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="centerContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Produit.ShopController">
+
+<AnchorPane fx:id="centerContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Produit.ShopController">
    <children>
-      <Pane fx:id="banner" layoutX="14.0" layoutY="20.0" prefHeight="115.0" prefWidth="882.0" styleClass="banner" stylesheets="@shop.css">
+      <Pane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="922.0">
          <children>
-            <Label layoutX="37.0" layoutY="14.0" text="SHOP" textFill="WHITE">
-               <font>
-                  <Font name="Source Sans Pro Semibold" size="30.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="90.0" fitWidth="98.0" layoutX="760.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/giphy.gif" />
-               </image>
-            </ImageView>
+            <Pane fx:id="banner" layoutX="14.0" layoutY="20.0" prefHeight="115.0" prefWidth="882.0" styleClass="banner" stylesheets="@shop.css">
+               <children>
+                  <Label layoutX="37.0" layoutY="14.0" text="SHOP" textFill="WHITE">
+                     <font>
+                        <Font name="Source Sans Pro Semibold" size="30.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="90.0" fitWidth="98.0" layoutX="760.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/giphy.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <HBox layoutX="261.0" layoutY="153.0" prefHeight="33.0" prefWidth="348.0" styleClass="search" stylesheets="@shop.css">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="318.0" promptText="Search" />
+                  <ImageView fitHeight="28.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/search.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <ScrollPane layoutX="14.0" layoutY="189.0" prefHeight="544.0" prefWidth="905.0" style="-fx-background-color: #B9D6F2;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="533.0" prefWidth="856.0" style="-fx-background-color: #B9D6F2;">
+                     <children>
+                        <GridPane fx:id="productGrid" prefHeight="0.0" prefWidth="0.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
          </children>
       </Pane>
-      <HBox layoutX="261.0" layoutY="153.0" prefHeight="33.0" prefWidth="348.0" styleClass="search" stylesheets="@shop.css">
-         <children>
-            <TextField prefHeight="25.0" prefWidth="318.0" promptText="Search" />
-            <ImageView fitHeight="28.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/search.png" />
-               </image>
-            </ImageView>
-         </children>
-      </HBox>
-      <ScrollPane layoutX="14.0" layoutY="189.0" prefHeight="483.0" prefWidth="905.0" style="-fx-background-color: #B9D6F2;">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="856.0" style="-fx-background-color: #B9D6F2;">
-               <children>
-                  <GridPane fx:id="productGrid" prefHeight="0.0" prefWidth="0.0">
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                  </GridPane>
-               </children>
-            </AnchorPane>
-        </content>
-      </ScrollPane>
    </children>
-</Pane>
+</AnchorPane>

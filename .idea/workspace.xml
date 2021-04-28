@@ -22,7 +22,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="" />
+    <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/jobhub_app/FXMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Facture.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/Facture.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/Payment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/AddProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Card.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Card.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/CardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/MyBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/MyBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/Shop2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Produit/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/Gui/Commande" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Librairies/lib/javafx.base.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Index_Passée/PiJava/CycleProJava/CyclePro" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.17820658" />
@@ -53,54 +68,7 @@
     <configuration name="FXMain" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="jobhub_app.FXMain" />
       <module name="JobHub-Desktop-Application1" />
-      <option name="VM_PARAMETERS" value="--module-path C:\javafx-sdk-16\lib --add-modules javafx.controls,javafx.fxml" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="JobHub-Desktop-Application1" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="JobHub-Desktop-Application1" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\javafx-sdk-16\lib&quot; --add-modules javafx.controls,javafx.fxml --add-modules=javafx.swing,javafx.graphics,javafx.fxml,javafx.media,javafx.web --add-reads javafx.graphics=ALL-UNNAMED --add-opens javafx.controls/com.sun.javafx.charts=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio.common=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.css=ALL-UNNAMED --add-opens javafx.base/com.sun.javafx.runtime=ALL-UNNAMED" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,7 +78,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="" />
-      <changelist id="042c0776-9f74-4a3a-adaf-c80d3073cfb5" name="Default Changelist" comment="" />
       <created>1618941488543</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -143,34 +110,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="254" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619559777369">
+    <state x="101" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619565617951">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="254" y="115" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1619559777369" />
+    <state x="101" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1619565617951" />
+    <state x="427" y="159" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1619565437824">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="427" y="159" key="#com.intellij.ide.macro.MacrosDialog/0.0.1600.900@0.0.1600.900" timestamp="1619565437824" />
     <state x="605" y="167" key="#com.intellij.ide.util.MemberChooser" timestamp="1619558633777">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="605" y="167" key="#com.intellij.ide.util.MemberChooser/0.0.1600.900@0.0.1600.900" timestamp="1619558633777" />
-    <state x="559" y="216" key="FileChooserDialogImpl" timestamp="1619559651769">
+    <state x="559" y="216" key="FileChooserDialogImpl" timestamp="1619639537454">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="559" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1619559651769" />
-    <state width="1540" height="87" key="GridCell.Tab.0.bottom" timestamp="1619560253317">
+    <state x="559" y="216" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1619639537454" />
+    <state width="1540" height="100" key="GridCell.Tab.0.bottom" timestamp="1619641850849">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="87" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619560253317" />
-    <state width="1540" height="87" key="GridCell.Tab.0.center" timestamp="1619560253317">
+    <state width="1540" height="100" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1619641850849" />
+    <state width="1540" height="100" key="GridCell.Tab.0.center" timestamp="1619641850849">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="87" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619560253317" />
-    <state width="1540" height="87" key="GridCell.Tab.0.left" timestamp="1619560253317">
+    <state width="1540" height="100" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1619641850849" />
+    <state width="1540" height="100" key="GridCell.Tab.0.left" timestamp="1619641850848">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="87" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619560253317" />
-    <state width="1540" height="87" key="GridCell.Tab.0.right" timestamp="1619560253317">
+    <state width="1540" height="100" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1619641850848" />
+    <state width="1540" height="100" key="GridCell.Tab.0.right" timestamp="1619641850849">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1540" height="87" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619560253317" />
+    <state width="1540" height="100" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1619641850849" />
     <state x="325" y="49" key="SettingsEditor" timestamp="1619560212881">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -187,14 +158,6 @@
           <properties class="java.lang.NumberFormatException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Gui/Produit/ShopController.java</url>
-          <line>76</line>
-          <properties class="Gui.Produit.ShopController" method="getShopProducts">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

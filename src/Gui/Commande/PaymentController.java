@@ -83,7 +83,7 @@ public class PaymentController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         new Bounce(banner).play();
         webview.setVisible(false);
-        cardNumberBool = cardHolderNameBool = securityCodeBool = moiExpirationBool = anneeExpirationBool = false;
+        cardNumberBool = cardHolderNameBool = securityCodeBool = moiExpirationBool = anneeExpirationBool = true;
 
         RequiredFieldValidator requiredFieldValidator = new RequiredFieldValidator();
         requiredFieldValidator.setMessage("Champ obligatoire");
@@ -173,6 +173,7 @@ public class PaymentController implements Initializable {
         panier = p;
         idCommande = idcommande;
     }
+
     @FXML
     void payerAction(ActionEvent event) throws SQLException, DocumentException, FileNotFoundException {
 
