@@ -94,8 +94,7 @@ public class Category {
                 + "]");
     }
 
-    public Category(int id, String titre, String descriptionc, String couleur) {
-        this.id = id;
+    public Category( String titre, String descriptionc, String couleur) {
         this.titre = titre;
         this.descriptionc = descriptionc;
         this.couleur = couleur;

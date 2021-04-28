@@ -22,20 +22,30 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="">
+    <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Entities/formation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/Category.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/CategoryController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/CategoryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/Formation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/FormationController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Formation/FormationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Interfaces/ServiceF.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Interfaces/ServiceG.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/Categorie_Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/Formation_Service.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entities/formation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/Category.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/Formation.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/Formation/FormationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/ServiceF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces/ServiceG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Categorie_Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/Formation_Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Commande/Facture.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Commande/Facture.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Commande/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Commande/PaymentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/AddCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/AddCartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/AddProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/AddProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/CardController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/CardController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/CardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/CardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/MyBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/MyBookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Produit/ShopController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Commande/Facture.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Commande/Facture.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/evenement/Add_eventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/evenement/Add_eventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Entities/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Entities/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Category.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +82,66 @@
     <property name="project.structure.side.proportion" value="0.37595907" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Gui\Formation" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Interfaces" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Entities" />
+      <recent name="C:\Users\souso\Desktop\JobHub-Desktop-Application\src\Services" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="FXMain" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="jobhub_app.FXMain" />
       <module name="JobHub-Desktop-Application1" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-16\lib&quot; --add-modules=javafx.swing,javafx.graphics,javafx.fxml,javafx.media,javafx.web --add-reads javafx.graphics=ALL-UNNAMED --add-opens javafx.controls/com.sun.javafx.charts=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.iio.common=ALL-UNNAMED --add-opens javafx.graphics/com.sun.javafx.css=ALL-UNNAMED --add-opens javafx.base/com.sun.javafx.runtime=ALL-UNNAMED" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="JobHub-Desktop-Application1" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="JobHub-Desktop-Application1" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

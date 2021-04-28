@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Formation.CategoryController">
+    <children>
+        <Pane fx:id="pane" layoutX="7.0" layoutY="12.0" prefHeight="433.0" prefWidth="653.0" stylesheets="@../StylSheet/Style.css">
+            <children>
+                <TextField fx:id="tfnom" layoutX="14.0" layoutY="127.0" prefHeight="26.0" prefWidth="198.0" promptText="nom" />
+
+                <TextField fx:id="tfdescription" layoutX="14.0" layoutY="240.0" prefHeight="26.0" prefWidth="198.0" promptText="description" />
+
+                <Label layoutX="6.0" layoutY="91.0" prefHeight="18.0" prefWidth="80.0" text="Category" textFill="#061a40">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></Label>
+
+
+                <Label layoutY="162.0" prefHeight="26.0" prefWidth="71.0" text="Couleur" textFill="#061a40">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font></Label>
+
+
+
+                <Button fx:id="addcateg" layoutX="15.0" layoutY="287.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="181.0" text="Ajouter" />
+                <TableView fx:id="tvBooks" onMouseDragEntered="#deleteAction"  layoutX="302.0" layoutY="52.0" prefHeight="325.0" prefWidth="291.0">
+                    <columns>
+                        <TableColumn fx:id="id" prefWidth="59.99993896484375" text="id" />
+                        <TableColumn fx:id="nom" prefWidth="120" text="Categorie" />
+                        <TableColumn fx:id="description" prefWidth="120" text="description" />
+
+
+
+
+                    </columns>
+                </TableView>
+            <Label layoutX="82.0" prefHeight="50.0" prefWidth="353.0" text="Liste des catégories" textFill="#1d18b9">
+               <font>
+                  <Font name="System Bold Italic" size="34.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfcouleur" layoutX="14.0" layoutY="188.0" prefHeight="26.0" prefWidth="198.0" promptText="couleur" />
+            <Label layoutY="220.0" prefHeight="18.0" prefWidth="71.0" text="Description" textFill="#061a40">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnremove"  onAction="#removeAction"  layoutX="127.0" layoutY="336.0" mnemonicParsing="false"  prefHeight="39.0" prefWidth="85.0" text="supprimer" />
+            <Button fx:id="editbtn"   onAction="#editAction"   layoutX="15.0" layoutY="336.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="91.0" text="modifier" />
+
+
+
+            </children>
+        </Pane>
+      <Button fx:id="btnUpdate1"  onAction="#updateAction"  layoutX="510.0" layoutY="394.0" mnemonicParsing="false"  prefHeight="39.0" prefWidth="85.0" style="-fx-background-color: #FF7F50;" text="Select" textFill="WHITE" />
+    </children>
+</Pane>
