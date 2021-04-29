@@ -78,6 +78,7 @@ public class UpdateResumeController implements Initializable {
     private Label resumeId;
     List<candidateResume> resumeList = new ArrayList<candidateResume>();
     List<education> educationList = new ArrayList<education>();
+    int x;
 
 
     /**
@@ -100,7 +101,7 @@ public class UpdateResumeController implements Initializable {
            showResumeHeadline .setText(resume.getResumeHeadline());
             showExperience.setText(resume.getExperience());
             showSkills.setText(resume.getSkills());
-
+            int x = resume.getId();
         }
         System.out.println(resumeList);
         UpdateResume.setOnAction(e -> {
@@ -112,7 +113,7 @@ public class UpdateResumeController implements Initializable {
         updateEducation.setOnAction(e -> {
             //      if (!testfields()) {
             education edu = new education(tfCourse.getText(), tfInstitute.getText(), dateFrom.getValue(),dateTo.getValue());
-            updateEducation(edu);
+            new CareerService().updateEducation(edu);
             msgg.setText("Your Education has been updated");
         });
         deleteResume.setOnAction(e -> {
@@ -142,43 +143,11 @@ public class UpdateResumeController implements Initializable {
             Logger.getLogger(Offre_Emploi_Service.class.getName()).log(Level.SEVERE, e.getMessage(), e);
         }
         return resumes;
-
-    }
-    public void addEducation(education edu) {
-
-        String request2 = "INSERT into education (resume_id,course,institute,date_from,date_to) VALUES ('"+resumeId+"',?,?,?,?)";
-        try{
-            PreparedStatement pst2 = cnx.prepareStatement(request2);
-            pst2.setString(1, edu.getCourse());
-            pst2.setString(2,edu.getInstitute());
-            pst2.setDate(3, Date.valueOf(edu.getDateFrom()));
-            pst2.setDate(4,Date.valueOf(edu.getDateTo()));
-            pst2.executeUpdate();
-            System.out.println("Your Education has been added");
-
-        }catch (SQLException throwables){
-            throwables.printStackTrace();
-        }
-    }
-    public void updateEducation(education education) {
-        String request1 = "UPDATE education course=?,institute=?,date_from=?,date_to=? where resume_id='"+resumeId+"' ";
-        try {
-            PreparedStatement pst1 = cnx.prepareStatement(request1);
-            pst1.setString(1, education.getCourse());
-            pst1.setString(2, education.getInstitute());
-            pst1.setString(3, String.valueOf(education.getDateFrom()));
-            pst1.setString(4, String.valueOf(education.getDateTo()));
-            pst1.executeUpdate();
-            System.out.println("Your Education has been added");
-
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
     }
     public List<education> showEducation() {
         Connection cnx = Connexion.getInstance().getConnection();
         List<education> educations = new ArrayList<education>();
-        String request = "select * from education where resume_id='" + resumeId+ "'";
+        String request = "select * from education where resume_id= '"+x+"' ";
         try {
             Statement statement = cnx.createStatement();
             ResultSet rs = statement.executeQuery(request);

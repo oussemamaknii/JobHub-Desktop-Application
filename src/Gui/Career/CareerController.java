@@ -73,6 +73,11 @@ public class CareerController implements Initializable {
             new CareerService().addResume(resume);
             msgResume.setText("Your Resume has been added");
         });
+        addEducation.setOnAction(e -> {
+            education edu = new education(tfCourse.getText(),tfInstitute.getText(),dateFrom.getValue(),dateTo.getValue());
+            new CareerService().addEducation(edu);
+            msgResume.setText("Your Education has been added");
+        });
 
     }
 

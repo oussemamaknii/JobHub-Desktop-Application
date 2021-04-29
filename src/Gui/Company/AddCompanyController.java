@@ -15,6 +15,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 /**
@@ -40,11 +41,11 @@ public class AddCompanyController implements Initializable {
     private TextField tfFacebook;
     @FXML
     private TextField  tfCompanyPhone;
-    @FXML
-    private TextField userId;
 
     @FXML
     private Button addCompany;
+    @FXML
+    private Label msgg;
 
     /**
      * Initializes the controller class.
@@ -52,12 +53,13 @@ public class AddCompanyController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         addCompany.setOnAction(e -> {
-           // if (!testfields()) {
+     //      if (!testfields()) {
                 System.out.println(Controller.getUserId());
                 company company1 = new company(tfCompanyName.getText(), tfCompanyEmail.getText(), tfCompanyAdress.getText(), foundedDate.getValue(),
                         tfWebsite.getText(), Integer.parseInt(tfCompanyPhone.getText()), tfCategory.getText(),tfFacebook.getText());
                 System.out.println(company1);
                 new CompanyService().AddCompany(company1);
+                msgg.setText("Your company has been created");
         });
     }
     public boolean testfields(){

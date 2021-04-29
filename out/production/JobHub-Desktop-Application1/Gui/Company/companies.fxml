@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="588.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Company.CompaniesController">
+<AnchorPane prefHeight="658.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Company.CompaniesController">
    <children>
       <Pane layoutX="20.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="600.0">
          <children>
-            <TableView fx:id="table" layoutX="-16.0" layoutY="-20.0" prefHeight="588.0" prefWidth="714.0">
+            <TableView fx:id="table" layoutX="32.0" layoutY="131.0" prefHeight="490.0" prefWidth="716.0">
                <columns>
                   <TableColumn fx:id="colCompanyName" prefWidth="103.0" text="Company Name" />
                   <TableColumn fx:id="colFoundedDate" prefWidth="108.0" text="Founded Date" />
@@ -22,6 +24,11 @@
                   <TableColumn fx:id="colRating" prefWidth="70.0" text="Rating" />
                </columns>
             </TableView>
+            <Label layoutX="290.0" layoutY="24.0" prefHeight="78.0" prefWidth="241.0" text="Companies List" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>

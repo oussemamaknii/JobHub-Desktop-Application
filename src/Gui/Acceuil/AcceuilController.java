@@ -205,7 +205,7 @@ public class AcceuilController extends Controller implements Initializable {
         });
         company.setOnAction(e -> {
             if(this.getUser() == null){
-                Alert a = new Alert(Alert.AlertType.NONE);
+                Alert a = new Alert(Alert.AlertType.WARNING);
                 a.setContentText("Please Login!");
                 a.setTitle("Login Error");
                 a.show();

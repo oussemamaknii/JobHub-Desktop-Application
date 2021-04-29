@@ -31,5 +31,10 @@
             <Font name="Bell MT Bold" size="24.0" />
          </font>
       </Label>
+      <Label fx:id="msgg" layoutX="314.0" layoutY="540.0" prefHeight="42.0" prefWidth="289.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

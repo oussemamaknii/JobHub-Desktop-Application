@@ -68,7 +68,6 @@ public class ForgotPasswordController implements Initializable {
     @FXML
     private void sendEmail(javafx.event.ActionEvent event) throws SQLException, MessagingException, IOException {
         if (email.getText().isEmpty()){ msg.setText("Please enter your email");  }
-        else if (!email.getText().matches("[a-zA-Z0-9\\.]+@[a-zA-Z0-9\\-\\_\\.]+\\.[a-zA-Z0-9]{2}") ){ msg.setText("remarque : email non valide");  }
         else {
             Connection conn = Connexion.getInstance().getConnection();
             String req= "Select email,password from user where email=? ";
@@ -81,7 +80,7 @@ public class ForgotPasswordController implements Initializable {
                 pass=rs.getString("password");
             }
             y = getSaltString();
-            mesg="Your temporary password is : " + y + "Don't forget to update it";
+            mesg="Your temporary password is : " + y + " ,Don't forget to update it";
             String req1 = "UPDATE user SET password=? where email='"+email.getText()+"'";
             PreparedStatement prs1= conn.prepareStatement(req1);
             String pwd = BCrypt.hashpw(y,BCrypt.gensalt(13));

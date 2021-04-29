@@ -113,7 +113,7 @@ public class LoginController extends Controller implements Initializable {
 
                 if (remember.isSelected()) {
                     service.createiniFile(path, email.getText(), pw.getText());
-                }   System.out.println("Success");
+                } System.out.println("Success");
                     String req2 = "Select id from user where email=? ";
                     PreparedStatement prs2 = cnx.prepareStatement(req2);
                     prs1.setString(1, email.getText());

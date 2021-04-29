@@ -36,17 +36,7 @@ public class company {
         this.category = category;
         this.facebookLink = facebookLink;
     }
-    public company(String companyName, String contactEmail, String companyAdress, LocalDate foundedDate, String website, int contactPhone, String category, String facebookLink,String companyImageName) {
-        this.companyName = companyName;
-        this.contactEmail = contactEmail;
-        this.companyAdress = companyAdress;
-        this.foundedDate = foundedDate;
-        this.website = website;
-        this.contactPhone = contactPhone;
-        this.category = category;
-        this.facebookLink = facebookLink;
-        this.companyImageName = companyImageName;
-    }
+
 
     public String getCompanyImageName() {
         return companyImageName;

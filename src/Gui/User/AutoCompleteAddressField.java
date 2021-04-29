@@ -19,7 +19,6 @@ import java.util.logging.Logger;
 import javafx.application.Platform;
 import javafx.beans.value.ObservableValue;
 
-//https://stackoverflow.com/questions/37647933/how-can-i-use-the-google-maps-apis-in-a-javafx-desktop-application/37650603
 public class AutoCompleteAddressField extends AutoCompleteTextField
 {
     private static final String API_KEY = "AIzaSyBr4DKSW58r6tZXyZDYnPTBc7IRAQS2R1U";
@@ -32,7 +31,6 @@ public class AutoCompleteAddressField extends AutoCompleteTextField
         {
             this.prediction = prediction;
         }
-
         @Override
         public String toString()
         {
@@ -43,9 +41,7 @@ public class AutoCompleteAddressField extends AutoCompleteTextField
         {
             return this.prediction;
         }
-
     }
-
     public AutoCompleteAddressField()
     {
         super(new TreeSet<>(Comparator.comparing(AutoCompleteAddressField.AddressPrediction::toString)));
