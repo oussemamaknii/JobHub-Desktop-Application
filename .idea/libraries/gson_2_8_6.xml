@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="gson-2.8.6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/deps/gson-2.8.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/okhttp-3.14.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/google-maps-services-0.18.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/slf4j-api-1.7.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/deps/okio-1.17.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

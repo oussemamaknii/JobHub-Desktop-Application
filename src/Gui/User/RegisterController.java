@@ -7,12 +7,22 @@ package Gui.User;
 
 import Entities.user;
 import Services.Register;
+import com.google.maps.model.AddressComponentType;
+import com.google.maps.model.PlaceDetails;
+import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
-
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.VBox;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import se.walkercrou.places.Place;
 
 /**
  * FXML Controller class
@@ -37,37 +47,47 @@ public class RegisterController implements Initializable {
     private PasswordField tfPassword;
     @FXML
     private TextField tfPhone;
+
+    private final AutoCompleteAddressField Place1 = new AutoCompleteAddressField();
+
     @FXML
-    private TextField tfProfessionalTitle;
-    @FXML
-    private Label showFirstName;
-    @FXML
-    private Label showEmail;
-    @FXML
-    private Label showLastName;
-    @FXML
-    private Label showAdresse;
-    @FXML
-    private Label showProfessionalTitle;
-    @FXML
-    private Label showPhone;
-    @FXML
-    private Label showDateOfBirth;
+    private VBox root;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        Place1.setPromptText("Place");
+
+        Place1.getEntryMenu().setOnAction((ActionEvent e)
+                -> {
+            ((MenuItem) e.getTarget()).addEventHandler(Event.ANY, (Event event)
+                    -> {
+                if (Place1.getLastSelectedObject() != null) {
+                    Place1.setText(Place1.getLastSelectedObject().toString());
+                    PlaceDetails place = AutoCompleteAddressField.getPlace((AutoCompleteAddressField.AddressPrediction) Place1.getLastSelectedObject());
+                    if (place != null) {
+                        Place1.setText(Place1.getLastSelectedObject().toString());
+                    } else {
+                        Place1.clear();
+                    }
+                }
+            });
+        });
+        System.out.println("here");
 
         register.setOnAction(e -> {
-            if (testfields()) {
 
+         //   if (testfields()) {
 
             user register1 = new user(tfEmail.getText(), tfPassword.getText(), tfFirstName.getText(), tfLastName.getText(),
-                    tfDateOfBirth.getValue(), tfAdresse.getText(), Integer.parseInt(tfPhone.getText()));
-            new Register().Register(register1);}
+                    tfDateOfBirth.getValue(), Place1.getText(), Integer.parseInt(tfPhone.getText()));
+            System.out.println(register1);
+            new Register().Register(register1);
         });
+        root.getChildren().addAll(Place1);
+
     }
     public boolean testfields(){
         if (tfFirstName.getText().isEmpty()) {

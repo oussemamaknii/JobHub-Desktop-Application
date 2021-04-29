@@ -84,7 +84,6 @@ public class LoginController extends Controller implements Initializable {
             msg.setText("Username incorrect");
         } else {
             if (BCrypt.checkpw(pw.getText(), rs.getString("password").substring(0, 2) + "a" + rs.getString("password").substring(3))) {
-                if (!remember.isSelected()) {
                     String req1 = "Select id from user where email=? ";
                     PreparedStatement prs1 = cnx.prepareStatement(req1);
                     prs.setString(1, email.getText());
@@ -105,13 +104,16 @@ public class LoginController extends Controller implements Initializable {
                         stage.show();
                         stage.setResizable(false);
                         return;
-                    } else { welcome.setText("Welcome " + this.getUser().getFirstName()+"! Navigate through the left Menu");
+                    } else {
+                        welcome.setText("Welcome " + this.getUser().getFirstName()+"! Navigate through the left Menu");
                         photo.setImage(new Image(getClass().getResource("/uploads/"+this.getUser().getImageName()).toExternalForm()));
-
-
+                        photo.setFitHeight(150);
+                        photo.setFitWidth(150);
                     }
+
+                if (remember.isSelected()) {
                     service.createiniFile(path, email.getText(), pw.getText());
-                    System.out.println("Success");
+                }   System.out.println("Success");
                     String req2 = "Select id from user where email=? ";
                     PreparedStatement prs2 = cnx.prepareStatement(req2);
                     prs1.setString(1, email.getText());
@@ -120,14 +122,9 @@ public class LoginController extends Controller implements Initializable {
                         x = res1.getInt("id");
                     }
                     Controller.setUserId(x);
-
-                } else {
-
-                }
             }else{
                 msg.setText("Invalid Password!");
             }
-
         }
     }
 

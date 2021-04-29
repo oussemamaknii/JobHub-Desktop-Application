@@ -7,7 +7,9 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <Pane prefHeight="627.0" prefWidth="786.0" stylesheets="@../StylSheet/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.User.updateProfileController">
@@ -43,5 +45,7 @@
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Label>
+      <AnchorPane fx:id="anchor" layoutX="68.0" layoutY="412.0" prefHeight="200.0" prefWidth="200.0" />
+      <VBox fx:id="root" layoutX="602.0" layoutY="405.0" prefHeight="200.0" prefWidth="100.0" />
    </children>
 </Pane>

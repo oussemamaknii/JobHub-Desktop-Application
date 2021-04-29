@@ -23,15 +23,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f4d4204-6496-447a-9e48-ce02dd7edbfe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_mime4j_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/httpclient_4_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/httpmime_4_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/kotlin_stdlib_1_3_50.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/User/AutoCompleteAddressField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Gui/User/AutoCompleteTextField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/uploadAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_23.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/CareerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/CareerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/career.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/career.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Interfaces/ICareer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Interfaces/ICareer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/CareerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/CareerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Career/UpdateResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Career/UpdateResumeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Career/updateResume.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Career/updateResume.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Interfaces/ICareer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/ICareer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/CareerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CareerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JobHub-Desktop-Application1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JobHub-Desktop-Application1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/UpdateResumeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/UpdateResumeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/updateResume.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/updateResume.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Company/updateCompanyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Company/updateCompanyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/updateProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/updateProfile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/updateProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/updateProfileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Interfaces/IServiceRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Interfaces/IServiceRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/uploads/1-6044160aa3551.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/uploads/1-6044160aa3551.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/uploads/19143974_1035199573281346_4219495649777378571_o-6044160aa5df0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/uploads/19143974_1035199573281346_4219495649777378571_o-6044160aa5df0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Company/updateCompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Company/updateCompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/updateProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/updateProfile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/updateProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/updateProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Interfaces/IServiceRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interfaces/IServiceRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/1-6044160aa3551.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/1-6044160aa3551.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uploads/19143974_1035199573281346_4219495649777378571_o-6044160aa5df0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/uploads/19143974_1035199573281346_4219495649777378571_o-6044160aa5df0.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +71,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -85,7 +111,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/deps/activation-1.1.1.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deps/httpmime-4.3.1.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.13927579" />
     <property name="project.structure.side.proportion" value="0.35765123" />
@@ -132,6 +158,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.reflect.InaccessibleObjectException" package="java.lang.reflect" />
+          <option name="timeStamp" value="2" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

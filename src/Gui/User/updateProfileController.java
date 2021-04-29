@@ -8,24 +8,35 @@ package Gui.User;
 import Entities.user;
 import Services.LoginService;
 import Services.Register;
+import Utils.Connexion;
 import Utils.Controller;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
+import javafx.scene.layout.StackPane;
 import javafx.stage.FileChooser;
 
-import java.awt.event.ActionEvent;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.channels.FileChannel;
+import java.sql.Connection;
+
+import java.util.Random;
 import java.util.ResourceBundle;
+import java.util.UUID;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.scene.image.ImageView;
+import javafx.event.Event;
+
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
+import javafx.event.ActionEvent;
 
 /**
  * FXML Controller class
@@ -73,6 +84,11 @@ public class updateProfileController extends Controller implements Initializable
     private ImageView profileImage;
     @FXML
     private Label mess;
+    Connection con = Connexion.getInstance().getConnection();
+    @FXML
+
+
+
 
 
     /**
@@ -80,8 +96,13 @@ public class updateProfileController extends Controller implements Initializable
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+
+
         profileImage.setImage(new Image(getClass().getResource("/uploads/" + this.getUser().getImageName()).toExternalForm()));
-        mess.setText("Welcome " + this.getUser().getFirstName() + ",Please Update your profile");
+        profileImage.setFitWidth(150);
+        profileImage.setFitHeight(150);
+        profileImage.setOnMouseClicked(this::updatePhotoProfilAction);
+        mess.setText("Welcome " + this.getUser().getFirstName() + ", Please Update your profile");
         connectedUser = this.getUser();
         LoginService ser = new LoginService();
         showFirstName.setText(connectedUser.getFirstName());
@@ -91,16 +112,15 @@ public class updateProfileController extends Controller implements Initializable
         showPhone.setText(String.valueOf(connectedUser.getPhone()));
         showDateOfBirth.setText(String.valueOf(connectedUser.getDateOfBirth()));
         showProfessionalTitle.setText(connectedUser.getProfessionalTitle());
-        System.out.println(Controller.getUserId());
         register.setOnAction(e -> {
             if (!testfields()) {
                 user update1 = new user(tfEmail.getText(), tfPassword.getText(), tfFirstName.getText(), tfLastName.getText(),
                         tfDateOfBirth.getValue(), tfAdresse.getText(), Integer.parseInt(tfPhone.getText()), tfProfessionalTitle.getText());
                 new Register().updateprofile(update1, this.getUser());
-                ;
             }
         });
     }
+
 
     public boolean testfields() {
         if (tfPassword.getText().length() < 6) {
@@ -123,24 +143,28 @@ public class updateProfileController extends Controller implements Initializable
             tfPhone.setStyle(null);
         return false;
     }
-
-    @FXML
-    private void uploadImage(ActionEvent event) {
+    public void updatePhotoProfilAction(Event event)
+    {
         File file = saveFileChooser.showOpenDialog(null);
-        if (file != null) {
-            srcFile = file;
-            if (srcFile != null) {
-                try {
-                    System.out.println(System.getProperty("user.dir"));
-                    String p = System.getProperty("user.dir") + "/src/uploads/" + srcFile.getName();
-                    System.out.println(p);
-                    copyFile(srcFile, new File(p));
-                } catch (IOException ex) {
-                    Logger.getLogger(updateProfileController.class.getName()).log(Level.SEVERE, null, ex);
-                }
-            }
+        try {
+            UUID uuid = UUID.randomUUID();
+            String uuidAsString = uuid.toString();
+            String imageName= uuidAsString + file.getName();
+            String p = System.getProperty("user.dir") + "/src/uploads/" + imageName;
+            copyFile(file, new File(p));
+            user up_user = new user();
+            up_user= connectedUser;
+            up_user.setImageName(imageName);
+            connectedUser.setImageName(imageName);
+            this.getUser();
+            new Register().modifierUserPhoto(up_user);
+        } catch (Exception ex) {
+            Logger.getLogger(updateProfileController.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+
     }
+
     public void copyFile(File sourceFile, File destFile) throws IOException {
         if (!destFile.exists()) {
             destFile.createNewFile();

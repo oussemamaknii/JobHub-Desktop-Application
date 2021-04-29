@@ -43,7 +43,7 @@
                   <Font name="System Bold Italic" size="18.0" />
                </font>
             </Label>
-            <ImageView fx:id="photo" fitHeight="150.0" fitWidth="200.0" layoutX="182.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="photo" fitHeight="192.0" fitWidth="204.0" layoutX="178.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </Pane>
    </children>

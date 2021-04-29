@@ -5,19 +5,29 @@
  */
 package Gui.Company;
 import Entities.company;
+import Entities.user;
+import Gui.User.updateProfileController;
 import Services.CompanyService;
 import Services.Offre_Emploi_Service;
+import Services.Register;
 import Utils.Connexion;
 import Utils.Controller;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
+import java.awt.event.ActionEvent;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.net.URL;
+import java.nio.channels.FileChannel;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +38,7 @@ import java.util.logging.Logger;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.FileChooser;
 
 /**
  * FXML Controller class
@@ -77,6 +88,9 @@ public class updateCompanyController extends Controller implements Initializable
     private ImageView companyImage;
     @FXML
     private Label msgg;
+    FileChooser saveFileChooser = new FileChooser();
+    File saveFile;
+    File srcFile, destFile;
 
 
     /**
@@ -150,6 +164,51 @@ public class updateCompanyController extends Controller implements Initializable
         }
         return companies;
 
+    }
+    public void updatePhotoProfilAction(Event event)
+    {
+        File file = saveFileChooser.showOpenDialog(null);
+        try {
+            //-------
+            srcFile = file;
+            String p = System.getProperty("user.dir") + "/src/uploads/" + srcFile.getName();
+            copyFile(srcFile, new File(p));
+        } catch (Exception ex) {
+            Logger.getLogger(updateProfileController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       // user up_user = new user();
+       // up_user= connectedUser;
+        //up_user.setImageName(srcFile.getName());
+        //new Register().modifierUserPhoto(up_user);
+
+    }
+
+    @FXML
+    private void uploadImage(ActionEvent event) {
+        File file = saveFileChooser.showOpenDialog(null);
+        if (file != null) {
+            srcFile = file;
+            if (srcFile != null) {
+                try {
+                    String p = System.getProperty("user.dir") + "/src/uploads/" + srcFile.getName();
+                    System.out.println(p);
+                    copyFile(srcFile, new File(p));
+                } catch (IOException ex) {
+                    Logger.getLogger(updateProfileController.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    }
+    public void copyFile(File sourceFile, File destFile) throws IOException {
+        if (!destFile.exists()) {
+            destFile.createNewFile();
+        }
+        try (
+                FileChannel in = new FileInputStream(sourceFile).getChannel();
+                FileChannel out = new FileOutputStream(destFile).getChannel();) {
+
+            out.transferFrom(in, 0, in.size());
+        }
     }
 
 }
