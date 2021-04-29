@@ -110,7 +110,6 @@ public class LoginController extends Controller implements Initializable {
                         photo.setFitHeight(150);
                         photo.setFitWidth(150);
                     }
-
                 if (remember.isSelected()) {
                     service.createiniFile(path, email.getText(), pw.getText());
                 } System.out.println("Success");

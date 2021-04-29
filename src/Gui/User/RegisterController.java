@@ -36,8 +36,6 @@ public class RegisterController implements Initializable {
     @FXML
     private TextField tfEmail;
     @FXML
-    private TextField tfAdresse;
-    @FXML
     private TextField tfFirstName;
     @FXML
     private DatePicker tfDateOfBirth;
@@ -52,6 +50,8 @@ public class RegisterController implements Initializable {
 
     @FXML
     private VBox root;
+    @FXML
+    private Label msgg;
 
     /**
      * Initializes the controller class.
@@ -80,11 +80,11 @@ public class RegisterController implements Initializable {
         register.setOnAction(e -> {
 
          //   if (testfields()) {
-
             user register1 = new user(tfEmail.getText(), tfPassword.getText(), tfFirstName.getText(), tfLastName.getText(),
                     tfDateOfBirth.getValue(), Place1.getText(), Integer.parseInt(tfPhone.getText()));
             System.out.println(register1);
             new Register().Register(register1);
+            msgg.setText("Your Account has been Created! Welcome to Jobhub");
         });
         root.getChildren().addAll(Place1);
 

@@ -7,16 +7,12 @@ import java.util.Properties;
 
 public class sendMail {
     public static void sendMail(String emailAddress, String emailSubject, String emailMessage  ){
-
         String to = emailAddress;
         String subject = emailSubject;
         String msg =emailMessage;
         final String from ="jobhubwebsiteesprit@gmail.com";
         final  String password ="t20202020";
         String host = "smtp.gmail.com";
-
-
-
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.ssl.protocols", "TLSv1.2");

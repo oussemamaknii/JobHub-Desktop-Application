@@ -210,6 +210,8 @@ public class AcceuilController extends Controller implements Initializable {
                 a.setTitle("Login Error");
                 a.show();
             }
+
+
             if(!this.getUser().getRoles().equals("a:2:{i:0;s:12:\"ROLE_COMPANY\";i:1;s:9:\"ROLE_USER\";}"))
             {
                 Alert a = new Alert(Alert.AlertType.WARNING);

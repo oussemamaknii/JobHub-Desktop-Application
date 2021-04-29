@@ -16,7 +16,6 @@
    <children>
       <TextField fx:id="tfLastName" layoutX="285.0" layoutY="255.0" stylesheets="@../StylSheet/Style.css" />
       <TextField fx:id="tfEmail" layoutX="537.0" layoutY="193.0" stylesheets="@../StylSheet/Style.css" />
-      <TextField fx:id="tfAdresse" layoutX="285.0" layoutY="313.0" stylesheets="@../StylSheet/Style.css" />
       <TextField fx:id="tfPhone" layoutX="537.0" layoutY="305.0" stylesheets="@../StylSheet/Style.css" />
       <TextField fx:id="tfFirstName" layoutX="285.0" layoutY="193.0" stylesheets="@../StylSheet/Style.css" />
       <DatePicker fx:id="tfDateOfBirth" layoutX="536.0" layoutY="365.0" prefHeight="26.0" prefWidth="151.0" stylesheets="@../StylSheet/Style.css" />
@@ -46,6 +45,11 @@
          </font>
       </Label>
       <AnchorPane fx:id="anchor" layoutX="68.0" layoutY="412.0" prefHeight="200.0" prefWidth="200.0" />
-      <VBox fx:id="root" layoutX="602.0" layoutY="405.0" prefHeight="200.0" prefWidth="100.0" />
+      <VBox fx:id="root" layoutX="285.0" layoutY="306.0" prefHeight="40.0" prefWidth="139.0" />
+      <Label fx:id="msgg" layoutX="318.0" layoutY="434.0" prefHeight="27.0" prefWidth="258.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

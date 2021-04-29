@@ -24,31 +24,21 @@
   <component name="ChangeListManager">
     <list default="true" id="5f4d4204-6496-447a-9e48-ce02dd7edbfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Entities/company.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Entities/company.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/AcceuilController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/CareerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/CareerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/UpdateResumeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/UpdateResumeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/career.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Career/career.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/AutoCompleteAddressField$AddressPrediction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/AutoCompleteAddressField$AddressPrediction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/AutoCompleteAddressField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/AutoCompleteAddressField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/ForgotPasswordController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/ForgotPasswordController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/ForgotPasswordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/ForgotPasswordController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Company/AddCompanyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Company/AddCompanyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Company/addCompany.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Company/addCompany.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Company/updateCompanyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Company/updateCompanyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/updateProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/updateProfile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/CompanyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/CompanyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/updateProfileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/User/updateProfileController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Career/CareerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Career/CareerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Career/UpdateResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Career/UpdateResumeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Career/career.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Career/career.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Company/AddCompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Company/AddCompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Company/addCompany.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Company/addCompany.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Company/companies.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Company/companies.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/User/AutoCompleteAddressField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/AutoCompleteAddressField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/User/ForgotPasswordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/ForgotPasswordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Company/updateCompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Company/updateCompanyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/User/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/User/showUsers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/showUsers.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/register.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui/User/updateProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/updateProfile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/User/updateProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/User/updateProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/sendMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/sendMail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

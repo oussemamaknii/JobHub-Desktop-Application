@@ -10,6 +10,7 @@ import Services.LoginService;
 import Services.Register;
 import Utils.Connexion;
 import Utils.Controller;
+import com.google.maps.model.PlaceDetails;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -48,7 +49,6 @@ public class updateProfileController extends Controller implements Initializable
     private TextField tfLastName;
     @FXML
     private TextField tfEmail;
-    @FXML
     private TextField tfAdresse;
     @FXML
     private TextField tfPhone;
@@ -85,17 +85,36 @@ public class updateProfileController extends Controller implements Initializable
     @FXML
     private Label mess;
     Connection con = Connexion.getInstance().getConnection();
+    private final AutoCompleteAddressField Place1 = new AutoCompleteAddressField();
     @FXML
-
-
-
-
+    private AnchorPane anchor;
+    @FXML
+    private VBox root;
+    @FXML
+    private Label msgg;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        Place1.setPromptText("Place");
+
+        Place1.getEntryMenu().setOnAction((ActionEvent e)
+                -> {
+            ((MenuItem) e.getTarget()).addEventHandler(Event.ANY, (Event event)
+                    -> {
+                if (Place1.getLastSelectedObject() != null) {
+                    Place1.setText(Place1.getLastSelectedObject().toString());
+                    PlaceDetails place = AutoCompleteAddressField.getPlace((AutoCompleteAddressField.AddressPrediction) Place1.getLastSelectedObject());
+                    if (place != null) {
+                        Place1.setText(Place1.getLastSelectedObject().toString());
+                    } else {
+                        Place1.clear();
+                    }
+                }
+            });
+        });
 
 
         profileImage.setImage(new Image(getClass().getResource("/uploads/" + this.getUser().getImageName()).toExternalForm()));
@@ -115,10 +134,11 @@ public class updateProfileController extends Controller implements Initializable
         register.setOnAction(e -> {
             if (!testfields()) {
                 user update1 = new user(tfEmail.getText(), tfPassword.getText(), tfFirstName.getText(), tfLastName.getText(),
-                        tfDateOfBirth.getValue(), tfAdresse.getText(), Integer.parseInt(tfPhone.getText()), tfProfessionalTitle.getText());
+                        tfDateOfBirth.getValue(), Place1.getText(), Integer.parseInt(tfPhone.getText()), tfProfessionalTitle.getText());
                 new Register().updateprofile(update1, this.getUser());
+                msgg.setText("Your profile has been updated");
             }
-        });
+        });root.getChildren().addAll(Place1);
     }
 
 

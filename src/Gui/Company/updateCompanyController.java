@@ -5,22 +5,17 @@
  */
 package Gui.Company;
 import Entities.company;
-import Entities.user;
 import Gui.User.updateProfileController;
 import Services.CompanyService;
 import Services.Offre_Emploi_Service;
-import Services.Register;
 import Utils.Connexion;
 import Utils.Controller;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
-
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.FileInputStream;
@@ -34,7 +29,6 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -206,7 +200,6 @@ public class updateCompanyController extends Controller implements Initializable
         try (
                 FileChannel in = new FileInputStream(sourceFile).getChannel();
                 FileChannel out = new FileOutputStream(destFile).getChannel();) {
-
             out.transferFrom(in, 0, in.size());
         }
     }
