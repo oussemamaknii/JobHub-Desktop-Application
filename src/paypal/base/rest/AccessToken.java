@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.experimental.Accessors;
 
 @Getter
-@AllArgsConstructor
+//@AllArgsConstructor
 @EqualsAndHashCode
 @Accessors(chain = true)
 public class AccessToken {
