@@ -21,7 +21,7 @@ import javafx.beans.value.ObservableValue;
 public class AutoCompleteAddressField extends AutoCompleteTextField
 {
 
-    private static final String API_KEY = "AIzaSyAKQPm9hQWK41iN6oAZf-FNIJnHFvTrkG0";
+    private static final String API_KEY = "AIzaSyBr4DKSW58r6tZXyZDYnPTBc7IRAQS2R1U";
 
     public AutoCompleteAddressField()
     {
