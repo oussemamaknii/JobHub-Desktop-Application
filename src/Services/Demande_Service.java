@@ -6,15 +6,11 @@ import Interfaces.IService;
 import Utils.Connexion;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 public class Demande_Service implements IService {
-
     Connection cnx = Connexion.getInstance().getConnection();
-
     @Override
     public void add(Object entity) {
 
