@@ -22,34 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/imagesevent2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagesevent4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/event2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/event4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/AcceuilController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Acceuil/AcceuilController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Demande/AddDemandeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Demande/AddDemandeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/Add_eventController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/Add_eventController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/List_eventController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/List_eventController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/edit_EventController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/edit_EventController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/eventDetailsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/eventDetailsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/Demande_Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Services/Demande_Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/event2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/event4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/jobhub_app/FXMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/jobhub_app/FXMain$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/jobhub_app/FXMain$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/jobhub_app/FXMain$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/jobhub_app/FXMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/jobhub_app/FXMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/Acceuil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Acceuil/AcceuilController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/evenement/Add_eventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/evenement/Add_eventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/evenement/List_eventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/evenement/List_eventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/evenement/edit_EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/evenement/edit_EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gui/evenement/eventDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/evenement/eventDetailsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobhub_app/FXMain.java" afterDir="false" />
-    </list>
+    <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
