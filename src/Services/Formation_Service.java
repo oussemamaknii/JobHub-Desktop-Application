@@ -48,7 +48,7 @@ public class Formation_Service implements ServiceF <formation> {
         return result;
     }
     public String getcatname(int id){
-        String request = "select titre from category where titre = '"+id+"'";
+        String request = "select titre from category where id = '"+id+"'";
         String a = "";
         try {
             Statement statement = cnx.createStatement();

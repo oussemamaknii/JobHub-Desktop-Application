@@ -254,7 +254,7 @@ public class ServiceCommande implements IServiceCommande {
     @Override
     public void historique(int idCommande, ObservableList<Cart> paniers) throws DocumentException, FileNotFoundException, BadElementException, SQLException {
         Document document = new Document();
-        String file_name = "C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\src\\Gui\\Commande\\Facture.pdf";
+        String file_name = "C:\\Users\\Ryaan\\Desktop\\projet\\JobHub-Desktop-Application\\src\\Gui\\Commande\\Facture.pdf";
         PdfWriter.getInstance(document, new FileOutputStream(file_name));
         document.open();
         System.out.println("Montant " + this.getCommande(idCommande).getTotalPayment());
@@ -267,7 +267,7 @@ public class ServiceCommande implements IServiceCommande {
         Paragraph p3 = new Paragraph("Email: useremail" );
         Paragraph p2 = new Paragraph("Montant: " + this.getCommande(idCommande).getTotalPayment() + "$ ");
         try {
-            document.add(Image.getInstance("C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images\\logo.png"));
+            document.add(Image.getInstance("C:\\Users\\Ryaan\\Desktop\\projet\\JobHub-Desktop-Application\\images\\logo.png"));
         } catch (IOException ex) {
             Logger.getLogger(ServiceCommande.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -290,7 +290,7 @@ public class ServiceCommande implements IServiceCommande {
 
         for (Cart panier : paniers) {
             try {
-                table.addCell(Image.getInstance("E:\\Etudes\\ESPRIT\\Esprit_3A28\\Semestre 2\\PiDev\\Desktop\\FinalWork\\JobHub-Desktop-Application\\src\\" + panier.getImage()));
+                table.addCell(Image.getInstance("C:\\Users\\Ryaan\\Desktop\\projet\\JobHub-Desktop-Application\\src" + panier.getImage()));
             } catch (IOException ex) {
                 Logger.getLogger(ServiceCommande.class.getName()).log(Level.SEVERE, null, ex);
             }

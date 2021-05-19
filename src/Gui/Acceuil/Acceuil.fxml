@@ -114,7 +114,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </MenuButton>
-                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-3.0" layoutY="159.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Applicayions" textFill="WHITE" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="200.0">
+                  <MenuButton alignment="BASELINE_LEFT" graphicTextGap="20.0" layoutX="-3.0" layoutY="159.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: transparent;" stylesheets="@../StylSheet/Style.css" text="Job Applications" textFill="WHITE" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="200.0">
                      <items>
                         <MenuItem fx:id="userapps" mnemonicParsing="false" text="Manage Applications" />
                      </items>

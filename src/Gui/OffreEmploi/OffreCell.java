@@ -127,7 +127,7 @@ public class OffreCell extends ListCell<Offre_Emploi> implements Initializable {
                     Font f2 = new Font(pdf, CoreFont.HELVETICA_BOLD);
                     Font f1 = new Font(pdf, CoreFont.HELVETICA);
 
-                    InputStream is = new FileInputStream("C:\\Users\\souso\\Desktop\\JobHub-Desktop-Application\\images\\logo.png");
+                    InputStream is = new FileInputStream("C:\\Users\\Ryaan\\Desktop\\projet\\JobHub-Desktop-Application\\images\\logo.png");
 
                     BufferedInputStream bis1 = new BufferedInputStream(is);
 
