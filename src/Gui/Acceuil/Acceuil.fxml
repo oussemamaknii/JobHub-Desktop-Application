@@ -31,7 +31,7 @@
                <center>
                   <Pane prefHeight="703.0" prefWidth="856.0" BorderPane.alignment="CENTER" />
                </center></BorderPane>
-            <AnchorPane layoutX="14.0" layoutY="182.0" prefHeight="521.0" prefWidth="287.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="168.0">
+            <AnchorPane layoutX="14.0" layoutY="182.0" prefHeight="546.0" prefWidth="288.0" style="-fx-background-color: linear-gradient(to left top , #0353A4, #006DAA, #003559);; -fx-background-radius: 1em;" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="168.0">
                <children>
                   <Button fx:id="home" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-3.0" layoutY="99.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Home" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="150.0">
                      <padding>
@@ -69,7 +69,7 @@
                         <Font name="Leelawadee UI Semilight" size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-13.0" layoutY="460.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Exit" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="-13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="450.0">
+                  <Button fx:id="exit" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-13.0" layoutY="460.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="280.0" style="-fx-background-color: transparent;" text="Exit" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="-13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="500.0">
                      <padding>
                         <Insets left="50.0" />
                      </padding>
@@ -170,6 +170,24 @@
                         <Insets left="35.0" />
                      </padding>
                   </MenuButton>
+                  <Button fx:id="backend" alignment="BASELINE_LEFT" graphicTextGap="22.0" layoutX="-15.0" layoutY="449.0" lineSpacing="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="264.0" style="-fx-background-color: transparent;" text="BackEnd" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="-15.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="449.0">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8_Sign_Out_32px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="14.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
          </children>

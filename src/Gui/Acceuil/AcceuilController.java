@@ -6,14 +6,20 @@
 package Gui.Acceuil;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -27,6 +33,8 @@ public class AcceuilController implements Initializable {
 
     @FXML
     private Button exit;
+    @FXML
+    private Button backend;
     @FXML
     private Button home;
     @FXML
@@ -79,6 +87,23 @@ public class AcceuilController implements Initializable {
             }
             Pane view = new FXloader().getPane(root_url);
             mainpane.setCenter(view);
+        });
+
+        backend.setOnAction(e -> {
+            try {
+                Parent parent = FXMLLoader.load(getClass().getResource("/Gui/Backoffice/Backoffice.fxml"));
+                Scene scene = new Scene(parent);
+                Stage primaryStage = new Stage();
+                primaryStage.initStyle(StageStyle.TRANSPARENT);
+                scene.setFill(Color.TRANSPARENT);
+                primaryStage.setTitle("JobHub Application");
+                primaryStage.setScene(scene);
+                Stage stage1 = (Stage) exit.getScene().getWindow();
+                stage1.close();
+                primaryStage.show();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
         });
 
         addoffre.setOnAction(e -> {
