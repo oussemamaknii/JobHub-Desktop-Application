@@ -24,6 +24,18 @@
   <component name="ChangeListManager">
     <list default="true" id="8a28b3d0-6750-4e85-bc9f-06dbbaf54296" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Demande/AddDemandeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/Demande/AddDemandeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/OffreEmploi/AddOffre_EmploiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/OffreEmploi/AddOffre_EmploiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/Add_eventController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/Add_eventController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/List_eventController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/List_eventController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/edit_EventController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/edit_EventController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/eventDetailsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JobHub-Desktop-Application1/Gui/evenement/eventDetailsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/Demande/AddDemandeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/OffreEmploi/AddOffre_EmploiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/evenement/Add_eventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/evenement/Add_eventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/evenement/List_eventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/evenement/List_eventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/evenement/edit_EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/evenement/edit_EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gui/evenement/eventDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui/evenement/eventDetailsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

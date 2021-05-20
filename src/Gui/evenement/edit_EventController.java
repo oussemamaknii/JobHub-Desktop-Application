@@ -85,7 +85,7 @@ public class edit_EventController implements Initializable {
         try {
             event myEvent=es.fetchMyEvent(Gui.evenement.List_eventController.idEvent);
             oldEvent=myEvent;
-            Image image =  new Image("file:///C:\\Users\\Ryaan\\Desktop\\projet\\JobHub-Desktop-Application\\images\\"+myEvent.getImage());
+            Image image =  new Image("file:///C:\\Users\\Ryaan\\Desktop\\master\\JobHub-Desktop-Application\\images\\"+myEvent.getImage());
             eventImg.setImage(image);
             eventImg.setStyle("-fx-background-color:transparent;");
             eventdate.setValue(myEvent.getDate());
@@ -109,7 +109,7 @@ public class edit_EventController implements Initializable {
         if(list.size()>0){
             updatedEvent.setImage(list.get(0));
             File f=new File(getImageFile().getAbsolutePath());
-            f.renameTo(new File("C:\\Users\\Ryaan\\Desktop\\projet\\JobHub-Desktop-Application\\images\\"+list.get(0)));
+            f.renameTo(new File("C:\\Users\\Ryaan\\Desktop\\master\\JobHub-Desktop-Application\\images\\"+list.get(0)));
 
         }else{
             updatedEvent.setImage(oldEvent.getImage());
@@ -155,7 +155,7 @@ public class edit_EventController implements Initializable {
     @FXML
     void uploadFIle(ActionEvent event) {
         FileChooser fc = new FileChooser();
-        fc.setInitialDirectory(new File("C:\\Users\\Ryaan\\Desktop\\projet\\JobHub-Desktop-Application\\images"));
+        fc.setInitialDirectory(new File("C:\\Users\\Ryaan\\Desktop\\master\\JobHub-Desktop-Application\\images"));
         File selectedFile = fc.showOpenDialog(null);
 
         if (selectedFile != null) {

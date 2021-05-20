@@ -114,7 +114,7 @@ public class AddOffre_EmploiController implements Initializable {
         addoffer1.setOnAction(e -> {
             if (testfields()) {
                 Offre_Emploi offer = new Offre_Emploi(new Offre_Emploi_Service().getCategId(choicecateg.getValue()),
-                        tftitle.getText(), tfpost.getText(), tfdesc.getText(), tfloc.getText(), tffile.getText(),
+                        tftitle.getText(), tfpost.getText(), tfdesc.getText(), tfloc.getText(), "desc.png",
                         tfemil.getText(), LocalDate.now(), tfexp.getValue(), Integer.parseInt(tfmax.getText()),
                         Integer.parseInt(tfmin.getText())
                 );
@@ -190,7 +190,7 @@ public class AddOffre_EmploiController implements Initializable {
     @FXML
     private void filechooser(ActionEvent event) {
         FileChooser c = new FileChooser();
-        c.getExtensionFilters().add(new FileChooser.ExtensionFilter("image files", "*.jpg"));
+        c.getExtensionFilters().add(new FileChooser.ExtensionFilter("image files", "*.png"));
         File f = c.showOpenDialog(null);
         if (f != null)
             tffile.setText(f.getAbsolutePath());

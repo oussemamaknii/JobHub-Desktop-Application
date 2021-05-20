@@ -194,7 +194,7 @@ public class AddDemandeController implements Initializable {
     }
 
     private Boolean sendemail(int iduser, String titre) {
-        String to = "oussema.makni@esprit.tn";
+        String to = "flawnflawn@gmail.com";
         String host = "smtp.gmail.com";
         final String username = "jobhubwebsiteesprit@gmail.com";
         final String password = "jobhub0000";
